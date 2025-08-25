@@ -1,0 +1,2 @@
+2025-08-25 13:32:01,524 - INFO - Loading HubSpot data from hubspot_data.csv
+2025-08-25 13:32:01,526 - ERROR - Could not find input file: [Errno 2] No such file or directory: 'hubspot_data.csv'

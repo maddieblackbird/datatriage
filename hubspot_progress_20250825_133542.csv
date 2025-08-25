@@ -1,0 +1,934 @@
+Deal Name,Company name,Address,google_places_id,"Macro Geo (NYC, SF, CHS, DC, LA, NASH, DEN)",Error?,verified_place_id,confidence_score,match_status,notes,processed
+82 Queen French Quarter,82 Queen,82 Queen St,ChIJDZ7DvBF6_ogRhOZ4IH9ehhE,CHS,,,0.0,PLACE_ID_NOT_FOUND,"No Google Places result was found to compare against the HubSpot record. Cannot validate the existing Google Places ID ChIJDZ7DvBF6_ogRhOZ4IH9ehhE without a corresponding search result. | 82 Queen French Quarter appears to be a legitimate restaurant name with a specific address (82 Queen St). The name suggests it's likely located in a French Quarter area, possibly New Orleans or Charleston. The existing Google Places ID should be verified independently since no search result was returned to confirm its accuracy.",True
+Crown Shy Financial District,Crown Shy,70 Pine Street Ground Floor,ChIJ__9LNBZawokREnkOiVx7ydc,NYC,,,0.0,PLACE_ID_NOT_FOUND,"No Google Places result was found to compare against the HubSpot record. Cannot validate the existing Google Places ID ChIJ__9LNBZawokREnkOiVx7ydc without a corresponding search result. | Crown Shy is a known upscale restaurant located in the Financial District of NYC at 70 Pine Street. The lack of Google Places search results could indicate an API issue, search parameter problem, or the restaurant may have closed/changed. The existing Places ID should be verified independently since no matching result was returned to validate against.",True
+Falansai Bushwick,Falansai,112 Harrison Place,ChIJc11gFQJcwokRcOejfRbBPpo,NYC,,,0.0,PLACE_ID_NOT_FOUND,"No Google Places result was found to compare against the HubSpot record. Cannot validate the existing Google Places ID (ChIJc11gFQJcwokRcOejfRbBPpo) without a corresponding search result. | Falansai Bushwick appears to be a legitimate Vietnamese restaurant in Brooklyn, NY. The address '112 Harrison Place' seems plausible for the Bushwick area. However, without a Google Places search result, I cannot verify if the existing place ID is correct or if the restaurant is still active/findable in Google's database. The restaurant may have closed, moved, or the search parameters may need adjustment.",True
+Bobwhite Counter Alphabet City,Bobwhite Counter (East Village),124 E 14th St,ChIJhb1Sx3lZwokR7-zaifOkCwo,NYC,,,0.0,PLACE_ID_NOT_FOUND,"No Google Places result was found to compare against the HubSpot record. Cannot validate the existing Google Places ID ChIJhb1Sx3lZwokR7-zaifOkCwo without a corresponding search result. | Bobwhite Counter appears to be a legitimate restaurant concept (known for fried chicken). The address 124 E 14th St in NYC (Alphabet City area) seems plausible. However, without a Google Places search result, I cannot verify if this specific location exists or if the provided Place ID is accurate. The restaurant may have closed, moved, or the search may have failed to find it.",True
+Blanca Bushwick,Blanca,261 Moore St,ChIJrSjk6QBcwokRJ12Xetu0rX4,NYC,,,0.0,PLACE_ID_NOT_FOUND,"No Google Places result was found to compare against the original record. Cannot validate the existing Google Places ID (ChIJrSjk6QBcwokRJ12Xetu0rX4) without a search result. | Blanca is a known high-end restaurant in Bushwick, Brooklyn. The address 261 Moore St appears legitimate for this area. The existing Google Places ID should be verified independently since no search result was returned. This could indicate the restaurant may have closed, changed names, or there may be an issue with the search query.",True
+White Horse Tavern West Village,White Horse Tavern,567 Hudson Street,ChIJGfAs0ZRZwokR584EB4uBkyU,NYC,,,0.0,PLACE_ID_NOT_FOUND,"No Google Places result was found to compare against the original record. Cannot validate the existing Google Places ID ChIJGfAs0ZRZwokR584EB4uBkyU without a corresponding search result. | White Horse Tavern is a well-known historic restaurant/bar in NYC's West Village. The address 567 Hudson Street appears legitimate for this area. The existing Google Places ID should be verified through a direct lookup rather than search, as the establishment may have specific naming variations or the search parameters may not have captured it properly.",True
+Davey's Ice Cream East Village,Davey’s Ice Cream (EV),74 Meserole Ave,ChIJBxhQcdtZwokRZZDSUen2K1w,NYC,,,0.0,PLACE_ID_NOT_FOUND,"No Google Places result was found to compare against the HubSpot record. Cannot validate the existing Google Places ID ChIJBxhQcdtZwokRZZDSUen2K1w without a corresponding search result. | Davey's Ice Cream appears to be a legitimate ice cream establishment based on the name. The address '74 Meserole Ave' suggests this is in Brooklyn, NY (Meserole Ave runs through Greenpoint/Williamsburg area), though the name indicates 'East Village' which is in Manhattan. This geographic discrepancy should be investigated. The existing Google Places ID should be verified independently since no search result was returned.",True
+Madame Vo East Village,Madame Vo,212 E 10th St,ChIJqRaETJxZwokRik6wrAXTOd4,NYC,,,0.0,PLACE_ID_NOT_FOUND,"No Google Places result was found to compare against the HubSpot record. Cannot validate the existing Google Places ID ChIJqRaETJxZwokRik6wrAXTOd4 without a search result. | Madame Vo East Village appears to be a legitimate Vietnamese restaurant based on the name and East Village location (212 E 10th St, NYC). The lack of Google Places search results could indicate the restaurant may have closed, changed names, or there may be an issue with the search query. The existing Places ID should be verified independently.",True
+Benjamin Prime Midtown East,Benjamin Prime,23 E 40th St,ChIJOdx0HQFZwokRzHFDS_GXQxk,NYC,,,0.0,PLACE_ID_NOT_FOUND,"No Google Places result was found to compare against the HubSpot record. Cannot validate the existing Google Places ID ChIJOdx0HQFZwokRzHFDS_GXQxk without a corresponding search result. | Benjamin Prime appears to be a legitimate steakhouse/restaurant name, and the address (23 E 40th St) is in Midtown East Manhattan, which is consistent with the name. The existing Google Places ID should be verified independently since no search result was returned to confirm its accuracy.",True
+Empellón Taqueria & Bar Greenwich Village,Empellon Taqueria West Village,,ChIJS3YtZJRZwokR15ezAH-2Sec,NYC,,,0.0,,,False
+KYU  Noho,KYU NYC,251 Northwest 25th Street,ChIJRUXf9uBZwokR9WS3NBhSjYk,NYC,,,0.0,,,False
+Nom Wah Nolita,Nom Wah Nolita,10 Kenmare St,ChIJLxEbJoZZwokRBgg1pE4COTo,NYC,,,0.0,,,False
+Andros Taverna North Side,Andros Taverna,2542 North Milwaukee Avenue,ChIJWfaiPh_ND4gRaRT5k6Wp24g,NYC,,,0.0,,,False
+Foul Witch Alphabet City,Foul Witch,15 Avenue A,ChIJq6oPsoNZwokR1hGiiD3wy8g,NYC,,,0.0,,,False
+Mah-Ze-Dahr Battery Park City,Mah Ze Dahr Brookfield Place,,ChIJU7XySD9bwokRzxnhM1S8uWw,NYC,,,0.0,,,False
+Please Don't Tell East Village,PDT,113 St Marks Pl,ChIJb67-ZZ1ZwokRRxBYr3GlFp0,NYC,,,0.0,,,False
+Crif Dogs East Village,Crif Dogs,113 St Marks Pl,ChIJd4cu_9RZwokROtuVsYCgPAE,NYC,,,0.0,,,False
+Nami Nori Williamsburg,Nami Nori (Williamsburg),33 Carmine Street,ChIJS9NJoSBZwokRW6254XR11Uo,NYC,,,0.0,,,False
+Kubeh Greenwich Village,Kubeh,464 6th Ave,ChIJ5fW8U5ZZwokRlk_uZ6uLlgg,NYC,,,0.0,,,False
+F&F Pizzeria Carroll Gardens,F&F Pizzeria,459 Court Street,ChIJO32xszpbwokRVr_g36taCbI,NYC,,,0.0,,,False
+Romeos East Village,Romeo’s,118 Saint Marks Pl,ChIJ5dKgkl1ZwokRVaLe0VlqPXg,NYC,,,0.0,,,False
+Unregular Bakery Punchcard,Unregular Bakery Union Square,,ChIJ52QMLUtZwokRZwW4R7FUo2M,NYC,,,0.0,,,False
+Bobwhite Counter Jersey City,Bobwhite Counter (Jersey City),,ChIJN5aJDSdRwokRYvp9FA96GX4,NYC,,,0.0,,,False
+Anton's West Village,Anton’s,570 Hudson St,ChIJvdgj3uVZwokRDFVNZGAg43U,NYC,,,0.0,,,False
+Jajaja Mexicana West Village,Jajaja West Village,162 E Broadway,ChIJh-s4YNNZwokRKuwXrP5FHqY,NYC,,,0.0,,,False
+Raku East Village Regulars,Sanraku - Japanese Sushi Restaurant,342 East 6th Street,ChIJ8eEu0JxZwokRNFpDI_HBFmc,NYC,,,0.0,,,False
+Rosemary's West Village,Rosemary's West,350 1st Ave.,ChIJCW5gj5ZZwokRtfK4UZxkcr4,NYC,,,0.0,,,False
+Rancho Lewis NoMo,Rancho Lewis,1503 King St,ChIJhRZB6_B6_ogRzcrTCfdU3aA,CHS,,,0.0,,,False
+Uncork Wraggborough,Uncork Charleston,476 King St,ChIJBUxFNWp6_ogRbCCh69ktiXo,CHS,,,0.0,,,False
+Naks East Village,NAKS,201 1st Ave.,ChIJQfYrEfNZwokRFPKHZM6aH4w,NYC,,,0.0,,,False
+Kwei Fei Riverland Terrace,Beautiful South by Kwei Fei,1977 Maybank Hwy,ChIJ2Y6RTt55_ogR01tw5zmzHJc,CHS,,,0.0,,,False
+Sea Fire Grill Regulars,Sea Fire Grill,"158 E 48th St, Between 3rd and, Lexington Ave",ChIJpYNIR_1YwokRNMXI4Qk1lwQ,NYC,,,0.0,,,False
+Insa Gowanus,Insa,328 Douglass Street,ChIJo-EvNqtbwokRjZnXUY-cyCk,NYC,,,0.0,,,False
+Lewis Barbecue NoMo,Lewis Barbecue,464 North Nassau Street,ChIJS1r2V196_ogRcfkNioUMYJo,NYC,,,0.0,,,False
+Melfi's Downtown Charleston,Melfi’s,,ChIJ1-7uvCx7_ogRk997qqBzibY,CHS,,,0.0,,,False
+Virginia's East Village,Virginia’s,647 East 11th Street,ChIJVZXlLHdZwokR9Vd3zCwFaqQ,NYC,,,0.0,,,False
+Sip & Guzzle,Sip & Guzzle,"29 Cornelia St, New York, NY",ChIJ49KsB19ZwokR8VwrMbECQr8,NYC,,,0.0,,,False
+The Musket Room,Musket Room,265 Elizabeth St,ChIJ3TJ4moVZwokRkyy0hZnv_RA,NYC,,,0.0,,,False
+Little Prince South Village,Little Prince,199 Prince St,ChIJ5c-evI1ZwokRhHh6FjhuLH8,NYC,,,0.0,,,False
+Benjamin Steakhouse Midtown East,Benjamin Steakhouse,,ChIJ3TH9CwFZwokRIvNO1SP0WLg,NYC,,,0.0,,,False
+Alidoro Bryant Park,Alidoro Bryant park,601 Lexington Ave,ChIJyUQIwQBZwokRgIql4YCchfA,NYC,,,0.0,,,False
+The Alderman Midtown,Alderman,,ChIJFfDd9lVYwokRHprgDkRnHh4,NYC,,,0.0,,,False
+The Daily Inman Park,The Daily (Inman Park),652 B King St,ChIJWTGUwM8H9YgRpg7-fUaVBVg,CHS,,,0.0,,,False
+The Daily (Charleston - King St) Regulars,The Daily (Charleston - King St),,ChIJDdSww0J6_ogRvvj8m1N0UbY,CHS,,,0.0,,,False
+Ensenada Williamsburg,Ensenada,168 Borinquen Pl,ChIJVQhDBhxbwokRLwobz9lb_qk,NYC,,,0.0,,,False
+Altair Midtown,Altair,351 W 38th St,ChIJIRWJmBVZwokRZA5hGN68TgA,NYC,,,0.0,,,False
+The Daily (Trabert Ave) Regulars,The Daily (Trabert Ave),,ChIJ721mea0F9YgRprcP8IRu09U,ATL,,,0.0,,,False
+Hoseki Midtown,Hoseki,611 5th Ave,ChIJKfbxu2RZwokRZhsCZq_HYTg,NYC,,,0.0,,,False
+Gotham Burger Social Club Lower East Side,Gotham Burger Social Club,113 Franklin St,ChIJa9mUEgFZwokRp_ITmhqS8f4,NYC,,,0.0,,,False
+Little Jack's Tavern Downtown Charleston,Little Jack's Tavern,710 King Street,ChIJo_sjo1x6_ogRtUDrUtTWli8,CHS,,,0.0,,,False
+The Tippling House Cannonborough,The Tippling House (CHS),221 Coming Street,ChIJ3Smbkrx7_ogR0kLofdrh90s,CHS,,,0.0,,,False
+Davey's Ice Cream Moynihan Train Hall,Davey’s Ice Cream (Midtown),,ChIJxwZzzNdZwokRMyNu9LzW1wM,NYC,,,0.0,,,False
+Crave Fishbar Upper West Side,Crave Fishbar UWS,945 2nd Ave,ChIJqztVA4ZYwokRiLK8Lzh7_sk,NYC,,,0.0,,,False
+Emmett's SoHo,Emmett's (MacDougal),50 MacDougal St,ChIJqxBUkY1ZwokRM-YtSwwhy1E,NYC,,,0.0,,,False
+Wild Common,Wild Common,"103 Spring St, Charleston, SC 29403",ChIJzUn6Qi17_ogRX1VX24enKTE,CHS,,,0.0,,,False
+Fish Cheeks Noho,Fish Cheeks,55 Bond St,ChIJgc7fPIVZwokRQMnqTxTf_Qk,NYC,,,0.0,,,False
+Bin Bin Sake Williamsburg,Sunday Hospitality,348 Wythe Avenue,ChIJKXGbJHBZwokR2dbFNdN0FBU,NYC,,,0.0,,,False
+Bin Bin Sake Williamsburg,Bin Bin Sake,29 Norman Ave,ChIJKXGbJHBZwokR2dbFNdN0FBU,NYC,,,0.0,,,False
+Le Rock Rockefeller Center,Le Rock,45 Rockefeller Plaza,ChIJNbTIf5BZwokRjbkuTrLZVB4,NYC,,,0.0,,,False
+Raf's SoHo,Raf's,290 Elizabeth Street,ChIJJU-UWk1ZwokRklDKrZ_9EZE,NYC,,,0.0,,,False
+Tolo,Parcelle Wine Bar Group,135 Division Street,ChIJQSKt-VdbwokRRPjIjPe6XEA,NYC,,,0.0,,,False
+Tolo,Tolo,"28 Canal St, New York, NY 10002",ChIJQSKt-VdbwokRRPjIjPe6XEA,NYC,,,0.0,,,False
+8282 Lower East Side,8282,84 Stanton Street,ChIJNaUIchtZwokRHI8Pk3mEz1Y,NYC,,,0.0,,,False
+Stars Restaurant Radcliffborough,Stars Rooftop & Grill Room,495 King Street,ChIJJxlYSGp6_ogRyfL8KDjhLkg,CHS,,,0.0,,,False
+The Wooly Nolita,The Wooly,11 Barclay Street,ChIJF_I2YsVZwokRp-Q1focBJpw,NYC,,,0.0,,,False
+Jaffa Williamsburg,Jaffa Cocktail and Raw Bar,,ChIJlcUv3XVZwokRw8iLyOoROxI,NYC,,,0.0,,,False
+Alidoro The Hugh,Alidoro The Hugh,,ChIJFa7a9uFZwokR1JWN1NOyzaM,NYC,,,0.0,,,False
+Albert's Bar Murray Hill,Albert’s Bar,140 E 41st St,ChIJTUnFcYpZwokRnDeckKVR3Nw,NYC,,,0.0,,,False
+The Palm Court at The Plaza Hotel Midtown,Palm Court at The Plaza,768 5th Ave,ChIJYaVdffBYwokRCwC_C_S-tbs,NYC,,,0.0,,,False
+Banzarbar Nolita,Banzarbar,191 Chrystie Street,ChIJU74O14VZwokRQ-wPmjfTERE,NYC,,,0.0,,,False
+Maison Premiere Williamsburg,Maison Premiere,298 Bedford Ave,ChIJW_WGT2BZwokRNpvZ4k3lVcs,NYC,,,0.0,,,False
+Gelso & Grand Gelso & Grand,Gelso & Grand,186 Grand St,ChIJS3EpUohZwokReLFKxxE_zKE,NYC,,,0.0,,,False
+Bonnie's Williamsburg,Bonnie's,398 Manhattan Ave,ChIJbQc9ABZZwokRMAK6C-Ekxg4,NYC,,,0.0,,,False
+K'Far Williamsburg,K'far,,ChIJ6TIr1bdZwokRwODfMs7T90g,NYC,,,0.0,,,False
+Parcelle Chinatown,Parcelle Wine Bar,135 Division Street,ChIJI3VG1kxYwokRECoJD1lSvSY,NYC,,,0.0,,,False
+Ambra West Village,Ambra,,ChIJW0-RNpdZwokRQYkOS0HTtwM,NYC,,,0.0,,,False
+Momofuku (Noodle Bar) - Uptown,Momofuku (Noodle Bar),10 Columbus Cir,ChIJKzLt4dZZwokRbv-Ebx1hBo0,NYC,,,0.0,,,False
+Ace's Pizza Williamsburg,Ace’s Pizza Williamsburg,30 Rockefeller Plz,ChIJMTXf1ChZwokR2WKzrREy78s,NYC,,,0.0,,,False
+Bobwhite Counter Union Square,Bobwhite Counter (Union Square),,ChIJY8YwP65ZwokRH5YcEM4Ai4c,NYC,,,0.0,,,False
+Nami Nori Montclair,Nami Nori (Montclair NJ),,ChIJr4W1Xz1VwokRI-HqiIpeKRw,NYC,,,0.0,,,False
+Unregular Pizza Lower East Side,Unregular Pizza LES,135 4th Ave,ChIJlZhb1NhZwokRZ-xeod509HE,NYC,,,0.0,,,False
+Saga SAGA,SAGA,70 Pine St,ChIJZZlClEZbwokRZj-0-fE25tk,NYC,,,0.0,,,False
+Bon Banh Mi - N. Mt. Pleasant,Bon Banh Mi - N. Mt. Pleasant,"1100 Oakland Market rd, Mt. P, SC 29466",ChIJ-8xLhPVt_ogRX7YnQGJ0t8Y,CHS,,,0.0,,,False
+Llama Inn Williamsburg,Llama Inn,50 Withers Street,ChIJD6vUMlpZwokRSFeGSBW_gvU,NYC,,,0.0,,,False
+Cappone's West Village,Cappone’s Salumeria,75 9th Avenue,ChIJm2WVXL9ZwokRNwGDFzSKuH8,NYC,,,0.0,,,False
+Frankies 457 Carroll Gardens,Frankies,457 Court St,ChIJm7uvMfZawokRNR0XRCotzWY,,,,0.0,,,False
+The Bakery at Greywind Hudson Yards,The Bakery at Greywind,451 10th Ave,ChIJj6BPafxZwokRcskGmEJX2As,NYC,,,0.0,,,False
+Mishik Hudson Square,Mishik,259 Hudson Street,ChIJSx4uSy5ZwokRwqbvtErf43M,NYC,,,0.0,,,False
+Alidoro Midtown,Alidoro Moynihan Train Hall,,ChIJr5odo75ZwokR4AhVgTmpHC4,NYC,,,0.0,,,False
+Dhamaka Lower East Side,Dhamaka +,,ChIJJyPbJe1ZwokRu8dDEOqAYDc,NYC,,,0.0,,,False
+Sunday in Brooklyn Williamsburg,Sunday Hospitality,348 Wythe Avenue,ChIJkRWC9WFZwokRfa5Uzor3e-g,NYC,,,0.0,,,False
+The Stand Union Square,The Stand,116 E 16th St,ChIJgWBWFaBZwokRfOWdBPY5Y0o,NYC,,,0.0,,,False
+Beautiful South Cannonborough,Beautiful South,128 Columbus Street,ChIJrfi1NJ17_ogRVSM0K9wWC1c,CHS,,,0.0,,,False
+Farm to People Kitchen & Bar Bushwick,Farm to People Kitchen & Bar,,ChIJuUtZ-hdZwokRQw4pPJqOQbQ,NYC,,,0.0,,,False
+Local 42 Hell's Kitchen,Local 42,,ChIJA__4pVVZwokRCrAjVlE9BPE,NYC,,,0.0,,,False
+Jajaja Mexicana Williamsburg,Jajaja Williamsburg,,ChIJgV3yD_lZwokRPTi6aPfX2yo,NYC,,,0.0,,,False
+Ace's Pizza Rockefeller Center,Ace’s Pizza Rockefeller,,ChIJvcKC7PxZwokRYgo9FMn7HZ8,NYC,,,0.0,,,False
+Jajaja Mexicana Hudson Yards,Jajaja Hudson Yards,,ChIJH-d6yh5ZwokRazxWiTWTrAY,NYC,,,0.0,,,False
+Unregular Bakery Union Square,Unregular Bakery Union Square,,ChIJ52QMLUtZwokRZwW4R7FUo2M,NYC,,,0.0,,,False
+Softside Soho,Softside / Soupside,,ChIJxYuTzARZwokRKR54lIJ6qfw,NYC,,,0.0,,,False
+Lighthouse Williamsburg,Lighthouse,145 Borinquen Pl,ChIJmU4y-OFbwokRuuTUu-zsedc,NYC,,,0.0,,,False
+Freemans,Freemans,Freeman Alley,ChIJRcCC14VZwokRvJiDo29-IGM,NYC,,,0.0,,,False
+Alidoro Rockefeller Center,Alidoro Rock Center,,ChIJrYlZAHVZwokRGSjwdeMjaac,NYC,,,0.0,,,False
+Llama San Llama San,Llama San,359 Avenue of the Americas,ChIJ8youq41ZwokRqnnXghN1DIs,NYC,,,0.0,,,False
+Zillions Pizza Hell's Kitchen,Zillions Pizza,360 W 42nd St,ChIJ0fMzPqxZwokRANQQd_Ru5O0,NYC,,,0.0,,,False
+Joey Roses LES,Joey Roses,,ChIJyRRi4bpZwokR03CRX3x-RHc,NYC,,,0.0,,,False
+Jajaja Mexicana LES,Jajaja LES,,ChIJp0gKoClawokR0txqrcaEkFc,NYC,,,0.0,,,False
+Kultura Downtown,Kultura,,ChIJN1Kj-z57_ogRCzFv0tY-VRM,CHS,,,0.0,,,False
+The Daily Buckhead,The Daily (Buckhead),,ChIJ42f6OcsP9YgRKgWhS9P-xSw,ATL,,,0.0,,,False
+Emmett's West Village,Emmett's on Grove,39 Grove Street,ChIJIUmWODtZwokRc33t3aurFco,NYC,,,0.0,,,False
+Lodi Midtown,Lodi,1 Rockefeller Plaza,ChIJtY_Cr9VZwokR86t_xHCuZjc,NYC,,,0.0,,,False
+Burgerhead Greenwich Village,BURGERHEAD,,ChIJGxKmmOdZwokRzHYPmd42cdI,NYC,,,0.0,,,False
+Bobwhite Counter Long Island City,Bobwhite Counter (Long Island City),,ChIJ6d5LokpZwokRlrAwll2NArU,NYC,,,0.0,,,False
+Greenpoint Fish & Lobster Greenpoint,Greenpoint Fish & Market Restaurant,114 Nassau Ave,ChIJYVSQlUVZwokR3YMbMiZwhzE,NYC,,,0.0,,,False
+Il Buco Alimentari & Vineria NoHo,Il Buco Alimentari & Vineria,53 Great Jones St,ChIJYUQdLoVZwokRBjKzg6PAaa8,NYC,,,0.0,,,False
+Razza Jersey City,Razza,275 Grove Street,ChIJFSRtpLFQwokROP1exas0wNM,NYC,,,0.0,,,False
+Sereneco Greenpoint,Sereneco,113 Franklin St,ChIJH_-tMGlZwokRqIqHR22D-zU,NYC,,,0.0,,,False
+Barbuto West Village,Barbuto,775 Washington Street,ChIJVXheK_pZwokRDNLoQ0JK40M,NYC,,,0.0,,,False
+Loring Place Greenwich Village,Loring Place,21 W 8th St,ChIJ69NaKJdZwokR3CamunXyYig,NYC,,,0.0,,,False
+Alidoro Long Island City,Alidoro LIC,,ChIJFcjcVwBZwokRTSpYlpcfTi8,NYC,,,0.0,,,False
+Steak Frites Bistro Hell's Kitchen,Steak Frites,496 9th Ave,ChIJAwwWns9ZwokRXREEcH7Qa_U,NYC,,,0.0,,,False
+Lola Taverna South Village,Lola Taverna,210 6th Avenue,ChIJHcWG3jZZwokRqla0A1P7mU4,NYC,,,0.0,,,False
+Rule of Thirds Williamsburg,Rule of Thirds,171 Banker St,ChIJaQRXYuRZwokRHjAN5MkBizY,NYC,,,0.0,,,False
+Rule of Thirds Williamsburg,Sunday Hospitality,348 Wythe Avenue,ChIJaQRXYuRZwokRHjAN5MkBizY,NYC,,,0.0,,,False
+Rudy Royale Downtown,Rudy Royale,209 E Bay St,ChIJjXrGMwx6_ogRC9WyXPVnChQ,CHS,,,0.0,,,False
+Millers All Day Downtown,Millers All Day - Downtown,120 King St,ChIJp1j0TRB6_ogRLcupo0MkjJ0,CHS,,,0.0,,,False
+Spring Cafe Aspen Greenwich Village,Spring Cafe New York,14 West 4th Street,ChIJ9faizgBZwokRUuPiFIDFhFs,NYC,,,0.0,,,False
+Lindens SoHo,The Linden,2 Renwick St,ChIJh-oPySxZwokRBTfrxwTdRo4,NYC,,,0.0,,,False
+Asador Bastian River North,Asador Bastian,,ChIJk8Z5cdstDogRdMPc0yBZB5M,CHI,,,0.0,,,False
+Konro Konro,Konro Restaurant,424 Park Place,ChIJUyHQWG7X2IgRUiFdW4dmtFw,NYC,,,0.0,,,False
+The Press Cannonborough,The Press (CHS),,ChIJ2-G-_Kd7_ogRqsUkYpokplA,CHS,,,0.0,,,False
+Hanoi House East Village,Hanoi House,,ChIJBWyKZp1ZwokRHhnug4zTch4,NYC,,,0.0,,,False
+Raku Hanare Regulars,Raku Hanare,,ChIJcd-UAwBZwokR2dPBrKACTm8,NYC,,,0.0,,,False
+Rosemary's Stuytown,Rosemary’s Stuytown,,ChIJqfd3jX9ZwokRS1hCsvCFcE8,NYC,,,0.0,,,False
+Nami Nori West Village,Nami Nori (West Village),,ChIJcfbyqFNZwokRUoBP92II4c0,NYC,,,0.0,,,False
+The Standard Biergarten Meatpacking,The Standard Biergarten,25 Cooper Sq,ChIJN-93ZsBZwokRMe_yr5I34Ik,NYC,,,0.0,,,False
+Upside Nolita,Upside Pizza Nolita,640 Manhattan Avenue,ChIJJ4RaxFlZwokRPhaSd7t35H0,NYC,,,0.0,,,False
+Lulla Chelsea,Lulla,113 West 24th Street,ChIJvTLKIr9ZwokRIBsYYKUY2DU,NYC,,,0.0,,,False
+Raku Soho Regulars,Raku Soho,,ChIJo3cQ0GxZwokRUukfD7IRfKk,NYC,,,0.0,,,False
+Laser Wolf Williamsburg,Laser Wolf,97 Wythe Avenue,ChIJLyS5dYRZwokRlkA0g9eijjs,NYC,,,0.0,,,False
+Fairfax West Village,Fairfax,234 West 4th Street,ChIJSyYvYZRZwokR6tWSvOA2xXw,NYC,,,0.0,,,False
+Unregular Pizza Midtown,Unregular Pizza Midtown,,ChIJW2boKvdZwokRAYw2cJwEH9I,NYC,,,0.0,,,False
+Davey's Ice Cream Greenpoint,Davey’s Ice Cream (Greenpoint),,ChIJn4uvV0FZwokRXcHdLy6Og_M,NYC,,,0.0,,,False
+Panzón Greenpoint,Panzon,23 Greenpoint Avenue,ChIJUfCp3OlZwokRvRb3hBuLIuA,NYC,,,0.0,,,False
+Claro Gowanus,Claro,284 3rd Avenue,ChIJGVQqnFVawokRltzLtx5fMhM,NYC,,,0.0,,,False
+Lovely's Old Fashioned Hell's Kitchen,Lovely’s Old Fashioned,642 9th Ave,ChIJd4_SnFJZwokRBeuZ-YwGaUw,NYC,,,0.0,,,False
+Basic Kitchen Downtown Charleston,Basic Kitchen,82 Wentworth St,ChIJNz0pmhN6_ogR5laaX7NUnVs,CHS,,,0.0,,,False
+Moongate Lounge Chinatown,Moongate Lounge,,ChIJpUlYTNmBhYARE6fZdZBiKR4,SF,,,0.0,,,False
+Crave Fishbar Midtown,Crave Fishbar Midtown,,ChIJBUB1-eJYwokRwqGsIIvAPls,NYC,,,0.0,,,False
+Overstory Overstory,Overstory,70 Pine St 64th Floor,ChIJ_8dmJ0lbwokRIJHQFfXiMNo,NYC,,,0.0,,,False
+St. Tropez West Village,St. Tropez West Village,,ChIJo9tLC5VZwokR9t8kMnIACK0,NYC,,,0.0,,,False
+Leon's Oyster Shop Downtown Charleston,Leons Oyster Shop,698 King Street,ChIJ180tuFx6_ogRLrajxAiAgYQ,CHS,,,0.0,,,False
+IRIS,IRIS,1740 Broadway,ChIJMccf7SRZwokRyJJEQAXUhqM,NYC,,,0.0,,,False
+Sra. Martinez Coral Gables,Sra Martinez,,ChIJE71m6CK32YgRvzVM73VTlts,FL,,,0.0,,,False
+Sweet Rose Creamery Brentwood Country Mart,Sweet Rose Creamery - Brentwood Country Mart,,ChIJx3qVjFWjwoARvcJ3GGZ4YJQ,LA,,,0.0,,,False
+Tia Pol Chelsea,Tia Pol,,ChIJ8RjtPrhZwokRVZXEfLUKtM4,NYC,,,0.0,,,False
+Moody Tongue Sushi West Village,Moody Tongue Sushi,,ChIJGUJaVtVZwokR3VU_JU2pedg,NYC,,,0.0,,,False
+Roberta's Bushwick,Roberta's,261 Moore St,ChIJzSOyOg1dwokRfQ-5htUfsRY,NYC,,,0.0,,,False
+gertrude's Prospect Heights,Gertrude’s,605 Carlton Ave,ChIJnRyRtUBbwokR4veV9Er_PAU,NYC,,,0.0,,,False
+Nudibranch East Village,Nudibranch,125 1st Ave.,ChIJ5Qa2Xu9ZwokRIyvK1rhdwgw,NYC,,,0.0,,,False
+Renzo Hampton Park Terrace,Renzo,384 Huger Street,ChIJbT5P4Fp6_ogRM6yv6hvX3k8,CHS,,,0.0,,,False
+Nom Wah Pier 57,Nom Wah at Market 57,,ChIJeW_dJC5ZwokRaQfG-JI-bYc,NYC,,,0.0,,,False
+GupShup Gramercy,GupShup,"115 E 18th St (Between Park Ave &, Irving Pl",ChIJvYavzZ5ZwokRBQj3hhDtpfk,NYC,,,0.0,,,False
+Mino Brasserie West Village,Mino,225 W 12th St,ChIJh0Elkf1ZwokRrFXIVkSPvKU,NYC,,,0.0,,,False
+Bangkok Supper Club Messaging as a Service / VIP Handling,Bangkok Supper Club,641 Hudson St,ChIJvduhDjVZwokReg77D1pNQaQ,NYC,,,0.0,,,False
+Arthur and Sons West Village,Arthur & Sons,38 8th Avenue,ChIJw2RCuSZZwokRVt7nWZNROm0,NYC,,,0.0,,,False
+Crave Sushi Bar Midtown East,Crave Sushi Bar,947 2nd Ave,ChIJkdJZKBRZwokRwhNrDEm_t8c,NYC,,,0.0,,,False
+Mattina Mattina,Mattina,2232 Bush Street,ChIJYTzmaFiBhYARlEFG6VasHl4,SF,,,0.0,,,False
+Palette Tea House Noma,Palette Tea House,900 North Point Street,ChIJ53HCdjCBhYARI-_VU7jZI-U,SF,,,0.0,,,False
+Semma Greenwich,Semma,60 Greenwich Ave,ChIJxZmzO7hZwokRx2fls4uU4YU,NYC,,,0.0,,,False
+Diner Williamsburg,Diner,85 Broadway,ChIJvzYmKtlbwokRHye6SmfknDM,NYC,,,0.0,,,False
+Brenda's French Soul Food Tenderloin,Brenda's French Soul Food,652 Polk Street,ChIJZ9s5SJeAhYARIX3Fxl6oj6c,SF,,,0.0,,,False
+Brenda's Meat & Three NOPA,Brenda's Meat & Three,919 Divisadero Street,ChIJBZ2nB7GAhYAR1BUmlCHczaw,SF,,,0.0,,,False
+Meadowsweet Williamsburg,Meadowsweet,149 Broadway,ChIJwXUoA99bwokRU2bF-gdB25I,NYC,,,0.0,,,False
+Emily Brooklyn Clinton Hill,Emily Brooklyn,919 fulton street,ChIJYeJEs6RbwokRI9OjBP6hYG8,NYC,,,0.0,,,False
+Thyme Bar Chelsea,Thyme Bar,"20 W 23rd St, Cellar",ChIJGeLvoN9ZwokRyjK1gD08W7Q,NYC,,,0.0,,,False
+Unregular Pizza Upper East Side,UnregularPizzaUES,132 Lexington Avenue,ChIJfxzCCUBZwokR5uTiL9Gm9U4,NYC,,,0.0,,,False
+Little Maven Flatiron,Little Maven,30 West 18th Street,ChIJW3LA-dxZwokR0WAavt1PXFE,NYC,,,0.0,,,False
+Maman Upper West Side,Chez Maman,"239 Centre St New York, Ny 10013",ChIJ383_YEFZwokRJFr1iPhcJvk,NYC,,,0.0,,,False
+Blue Whale Marina,Blue Whale Restaurant,,ChIJyeXEUEyBhYARWEs70AP8J4I,SF,,,0.0,,,False
+Greywind Hudson Yards,Greywind,451 10th Avenue,ChIJRyAmqgpZwokRHjS6xvDPVfI,NYC,,,0.0,,,False
+Sushi Hakko Pacific Heights,sushihakkosf.com,,ChIJ0wnbFlaBhYARUol-xwVfXjk,SF,,,0.0,,,False
+Little Original Joe's Marina,"Little Original Joe's (Marina, SF)",2301 Chestnut Street,ChIJo_MMIdSAhYARhV9nPwTrm84,SF,,,0.0,,,False
+Holy City Brewing,Holy City Brewing,"1021 Aragon Ave, Charleston, SC 29405",ChIJXZV_WlF7_ogRy1myXw3d-ME,,,,0.0,,,False
+The Refuge Isle of Palms,The Refuge,,ChIJn5C08qlz_ogRsEyfIRdjQBg,CHS,,,0.0,,,False
+Sobre Masa Bushwick,Sobre Masa,52 Harrison Place,ChIJmeKSwPFdwokRZ--71Rq0GBY,NYC,,,0.0,,,False
+Perry's Pacific Heights,Perry's Embarcadero,1944 Union Street,ChIJy3_5ONuAhYARlKgaknpqI0k,SF,,,0.0,,,False
+Laissez Faire Financial District,Laissez Faire,10 Theatre Alley,ChIJuQ9WfihbwokR3PTLA2-HvhE,NYC,,,0.0,,,False
+BlindPig Tenderloin,BlindPig Speakeasy Lounge,1113 Polk St.,ChIJ7SlawgSBhYARbP6ZoPjNHMA,SF,,,0.0,,,False
+Dragon Horse SOMA,Dragon Horse,,ChIJc4jk1ZWBhYARkZIS5HmVER8,SF,,,0.0,,,False
+Llama Cafe,Llama Cafe,66 Hudson blvd East,ChIJw_SkbbNZwokRZewVFMxQOT8,NYC,,,0.0,,,False
+Spygold Husdon Yards,Spygold,451 10th Ave,ChIJcZp1Y2tZwokRWM2nLr5rz_4,NYC,,,0.0,,,False
+Millers All Day James Island,Millers All Day - James Island,120 King Street,ChIJEWlFjFd5_ogREoukLXlaF2I,CHS,,,0.0,,,False
+Post House Mt. Pleasant,Post House,101 Pitt St,ChIJy5sQLuJw_ogRnxFgqpnQ1SY,CHS,,,0.0,,,False
+Frances The Castro,Frances,3870 17th St,ChIJky2knBt-j4ARXAdR3-GAWM8,SF,,,0.0,,,False
+The Blue Light Pacific Heights,The Blue Light,1979 Union Street,ChIJvVG_OtuAhYARhrfEv3QiQLA,SF,,,0.0,,,False
+Toy Soldier Financial,Toy Soldier,52 Belden Place,ChIJtT_kKIqAhYAR8kotss7-lA8,SF,,,0.0,,,False
+Isshiki East Village,isshiki matcha,,ChIJsVe2QABZwokR4ewjadozGNE,NYC,,,0.0,,,False
+Isabelle's Osteria Gramercy,Isabels Family Restaurant,245 Park Ave S,ChIJV9twMKRZwokRkXW1n1miJeQ,NYC,,,0.0,,,False
+Smith & Mills Rockefeller Center,Smith & Mills,71 N Moore St,ChIJE_nbh_1ZwokRXlCky7bbD2Y,NYC,,,0.0,,,False
+Naro Rockefeller Center,NARO,1 Rockefeller Plaza,ChIJp7Ql8AZZwokRecf5nJr8RJU,NYC,,,0.0,,,False
+Jupiter Rockefeller Center,Jupiter,620 5th Avenue,ChIJyflTcS1ZwokRBWTy8tCgaDM,NYC,,,0.0,,,False
+5 Acres Rockefeller Center,5 Acres,,ChIJj0EtEZRZwokRYi9Wk-lvJUU,NYC,,,0.0,,,False
+Bodega Downtown,Bodega - Mt. Pleasant,23 Ann Street,ChIJV_qOlyJ7_ogRZUQr84eFa28,CHS,,,0.0,,,False
+Bodega (Pay),Bodega - Downtown,23 Ann Street,ChIJV_qOlyJ7_ogRZUQr84eFa28,CHS,,,0.0,,,False
+Parcelle Greenwich Village,Parcelle Wine West Village,135 Division Street,ChIJFXVNUJxZwokRDhvP51t1PFQ,NYC,,,0.0,,,False
+The Garret West,The Garret West,296 Bleecker St,ChIJkdFGdJNZwokRY_FA1UjcHGI,NYC,,,0.0,,,False
+Dashi Park Circle,Dashi,1262 Remount Rd,ChIJLQTTP69l_ogRPQLNc7SiSas,CHS,,,0.0,,,False
+Herd Provisions East Central,Herd Provisions,106 Grove Street,ChIJ93o7oNB7_ogRKt36Os-r-C8,CHS,,,0.0,,,False
+Owlbear Cafe Mt. Pleasant,Owlbear Cafe,1964 Riviera Dr J,ChIJnVMSUxVz_ogRGHD5la1rr8k,CHS,,,0.0,,,False
+Callie's Hot Little Biscuit Meeting Street,Callie's Hot Little Biscuit (King St),188 Meeting St,ChIJdz9mtA16_ogRnHxmONzNzn4,CHS,,,0.0,,,False
+Estadio Cannonborough,Estadio,,ChIJHRCMPIt7_ogRK9T7mG56Vs4,CHS,,,0.0,,,False
+Lowland French Quarter,Lowland,,ChIJTTcM5Zx7_ogRlEKsvPVFWHM,CHS,,,0.0,,,False
+Sami & Susu Lower East Side,Sami & Susu,190 Orchard Street,ChIJRbqLkqFZwokR3E6d0zDKAko,NYC,,,0.0,,,False
+Ivan Ramen Lower East Side,Ivan Ramen,25 Clinton Street,ChIJreEXi4FZwokR_ygs7wh2fTk,NYC,,,0.0,,,False
+Ristobar Marina,Ristobar,2300 Chestnut St.,ChIJZSPQINSAhYAR_o9rtGR7u0I,SF,,,0.0,,,False
+Layla Williamsburg,Layla,352 Bedford Avenue,ChIJ57ZDGMxbwokRVox0BjRGB_U,NYC,,,0.0,,,False
+Besharam Potrero Hill,Beshraham,1275 Minnesota St,ChIJpVAZ4wx_j4AR4j8Q0COpGHc,SF,,,0.0,,,False
+Kellogg's Diner Williamsburg,Kellogg's Diner CLOSED,518 Metropolitan Ave,ChIJIccpGllZwokRx0BsEyyeQg4,NYC,,,0.0,,,False
+Gjelina NY Gjelina NY,Gjelina NY,45 Bond St,ChIJv9s0scFZwokRYuWpWB7CLbw,NYC,,,0.0,,,False
+Lost Isle,Lost Isle,"3338 Maybank Hwy, Johns Island, SC 29455",ChIJlb-kF-9__ogRcmNJB2ScqhI,CHS,,,0.0,,,False
+Lowlife,Lowlife Bar,"106 E Hudson Ave, Folly Beach, SC 29439",ChIJEVkJrRrX_YgRJZhpb4ZGxKw,CHS,,,0.0,,,False
+Hoexters Upper East Side,Hoexter’s,174 East 82nd Street,ChIJJWByn_BZwokR9IC-3PtPPuk,NYC,,,0.0,,,False
+Ketchy Shuby Soho,Ketchy Shuby,406 Broome St,ChIJR4xJInZZwokRMp1wYc4fcag,NYC,,,0.0,,,False
+The Roll Pacific Heights,The Roll,,ChIJrxUh1ndZwokRYpfYMnJNe5Y,SF,,,0.0,,,False
+Porchetta Shop Cannonborough,Da Toscano Porchetta Shop,109 President Street,ChIJCUQxfgl7_ogR1xze9C_XM4Q,CHS,,,0.0,,,False
+Popi's Oysterette Marina,Popi's Oysterette.,2095 Chestnut St.,ChIJq1hymyiBhYARRMRbKOZD6F4,SF,,,0.0,,,False
+Graft Wine Bar Uptown Charleston,Graft Wine Shop,700 King St,ChIJz2rDuFx6_ogRk5EZR618YmI,CHS,,,0.0,,,False
+Chouquet's,Chouquet's,"2500 Washington Streer, SF, CA 94115",ChIJOyho5cWAhYARuJobf2VcbM0,SF,,,0.0,,,False
+Rocco's Sports & Recreation,Rocco's Sports & Recreation,1 West 3rd Street,ChIJ2fLg9KdZwokR0cET1EjEuwk,NYC,,,0.0,,,False
+Bandits Diner + Dive,Bandits Diner + Dive,44 Bedford St,ChIJO_Nbh4lZwokR1-EspAqsGLM,NYC,,,0.0,,,False
+Sukh Fort Greene,Sukh,723 Fulton St,ChIJo8ltIwBbwokRnpjtIPOzZ2Q,NYC,,,0.0,,,False
+Phat Thai Marina,Phat Thai,2380 Lombard Street,ChIJr6PUL3GBhYARzbSgNPNnsac,SF,,,0.0,,,False
+Hags East Village,HAGS,163 1st Avenue,ChIJp0ha1dFZwokRK9WxgN9HVuY,NYC,,,0.0,,,False
+Bus Stop Pacific Heights,Bus Stop,1901 Union Street,ChIJiyfOTtuAhYARdqz7WudgtMU,SF,,,0.0,,,False
+Final Final Pacific Heights,Final Final,2990 Baker Street,ChIJTx2ix9SAhYARjNIgHLlm7rI,SF,,,0.0,,,False
+Little Maven - Burger League,Little Maven,30 West 18th Street,ChIJW3LA-dxZwokR0WAavt1PXFE,NYC,,,0.0,,,False
+Ma'am Saab Downtown Charleston,Ma'am Saab - Pakistani Restaurant,251 Meeting St,ChIJXRzKDxl7_ogR-ESom4Gc2xY,CHS,,,0.0,,,False
+Malika Canteen Mt. Pleasant,Malika Canteen,1333 Theater Dr,ChIJe_xDGdlz_ogROqKNs3SQCTA,CHS,,,0.0,,,False
+Carlotto Union Square,Carlotto,100 East 19th Street,ChIJJ8hFlKFZwokRFmzhJg7Qofo,NYC,,,0.0,,,False
+Ten Bells,Ten Bells,247 Broome St,ChIJPeCaOIdZwokRXr36ali2z_k,,,,0.0,,,False
+Commodore II LES,The Commodore,,ChIJfZlRiPZZwokRNti0HrCP_pw,NYC,,,0.0,,,False
+Fossetta Fossetta,Fossetta,,ChIJ9RRDNShZwokRkVa5XZq-rxw,NYC,,,0.0,,,False
+Roberta's Midtown,Roberta's Penn District,"One Penn Plaza, Plaza 33 East,",ChIJWV3KRQBZwokRZlT-Om1I_1E,NYC,,,0.0,,,False
+R.Slice Midtown,R Slice Penn District,261 Moore Street,ChIJ65H5eABZwokRi1pVbvaiwxY,NYC,,,0.0,,,False
+Troya Pacific Heights,Troya,2125 Fillmore Street,ChIJZUcfNsaAhYARZ4b7QZiwaRc,SF,,,0.0,,,False
+Seven Hills Russian Hill,Seven Hills,1550 Hyde Street,ChIJc1RqC-yAhYARWmmWMJ-xkDs,SF,,,0.0,,,False
+Collina Russian Hill,Collina,1550 Hyde St,ChIJVVWZC-yAhYARTO9lj9HYPlQ,SF,,,0.0,,,False
+Two Hands Williamsburg Williamsburg,Two Hands Hospitality,251 Church Street,ChIJP1m519tZwokRf0B_IzX9f9s,NYC,,,0.0,,,False
+Butcher's Daughter Williamsburg,The Butcher's Daughter (Williamsburg),,ChIJ3UuR-ONZwokRrKPqaJPKbxw,NYC,,,0.0,,,False
+Butcher's Daughter Williamsburg,The Butcher's Daughter,1205 Abbot Kinney Boulevard,ChIJ3UuR-ONZwokRrKPqaJPKbxw,NYC,,,0.0,,,False
+Ariari East Village,ARIARI,119 1st Avenue,ChIJhUDJFUVZwokRkNERZsyOxWo,NYC,,,0.0,,,False
+Colonia Verde Fort Greene,Colonia Verde,219 Dekalb Ave,ChIJrXze-rlbwokRl3G4x1txJgk,NYC,,,0.0,,,False
+Raf's - Burger League,Raf's,290 Elizabeth Street,ChIJJU-UWk1ZwokRklDKrZ_9EZE,NYC,,,0.0,,,False
+The Butcher's Daughter Wburg (Breakfast Club),The Butcher's Daughter,1205 Abbot Kinney Boulevard,ChIJ3UuR-ONZwokRrKPqaJPKbxw,NYC,,,0.0,,,False
+The Butcher's Daughter Wburg (Breakfast Club),The Butcher's Daughter (Williamsburg),,ChIJ3UuR-ONZwokRrKPqaJPKbxw,NYC,,,0.0,,,False
+Gus's Cobble Hill,Gus's Chop Hous,215 Union St,ChIJTb3cUH1bwokRqVj5vctMMXs,NYC,,,0.0,,,False
+Butcher's Daughter Nolita,The Butcher's Daughter,1205 Abbot Kinney Boulevard,ChIJiYsEnohZwokR8oZK_TgmSjY,NYC,,,0.0,,,False
+Butcher's Daughter Nolita,The Butcher's Daughter (Nolita),,ChIJiYsEnohZwokR8oZK_TgmSjY,NYC,,,0.0,,,False
+Elephant Sushi Russian Hill,Elephant Sushi (Russian Hill),1916 Hyde Street,ChIJIXme1uiAhYARonEfUDgz0A4,SF,,,0.0,,,False
+Elephant Sushi Fillmore,Elephant Sushi (Hayes Valley),400 Grove St.,ChIJcVyMiSmBhYARK9hpjwu_JcQ,SF,,,0.0,,,False
+Lula Mae Fort Greene,Lula Mae,472 Myrtle Avenue,ChIJi9R8lVJbwokRtKjPyX4YvnU,NYC,,,0.0,,,False
+Inday All Day Williamsburg,Inday,658 Driggs Avenue,ChIJ-xUElXtZwokRpv0Gz1fJiuc,NYC,,,0.0,,,False
+Inday All Day Williamsburg,Inday Williamsburg,658 Driggs Avenue,ChIJ-xUElXtZwokRpv0Gz1fJiuc,NYC,,,0.0,,,False
+Maman Upper East Side,Maman- UES,,ChIJAx5HgFlZwokRcWUfz5VxS0w,NYC,,,0.0,,,False
+SPQR Pacific Heights,SPQR,1911 Fillmore Street,ChIJCUQFkseAhYARpkr3emAuxp8,SF,,,0.0,,,False
+HED 11 SOMA,HED 11,1800 Sutter Street,ChIJ8wbZfQCBhYARbBBXJyQXBZA,SF,,,0.0,,,False
+Slate Cafe Midtown,Slate Cafe - Midtown,,ChIJXWk4h4NZwokRX89_Qlwh0z0,NYC,,,0.0,,,False
+Slate Cafe Nomad - Breakfast Pass,Slate Cafe Nomad,941 2nd Ave,ChIJMznhLt9ZwokREJt8CB0FTdA,NYC,,,0.0,,,False
+Cubby's Hells Kitchen,Cubby’s,,ChIJrX0iSu5ZwokRYg6me9J5obs,NYC,,,0.0,,,False
+The Butcher's Daughter (Nolita)- Breakfast Club,The Butcher's Daughter,1205 Abbot Kinney Boulevard,ChIJiYsEnohZwokR8oZK_TgmSjY,NYC,,,0.0,,,False
+The Butcher's Daughter (Nolita)- Breakfast Club,The Butcher's Daughter (Nolita),,ChIJiYsEnohZwokR8oZK_TgmSjY,NYC,,,0.0,,,False
+Two Hands Williamsburg- Breakfast Club,Two Hands Hospitality,251 Church Street,ChIJ256pFiBawokR-JFcFPAz7Ig,NYC,,,0.0,,,False
+Chinta Thai Greenpoint,ChintaThai,157 Franklin Street,ChIJizcRni5ZwokRq-qMYfpKxB4,NYC,,,0.0,,,False
+Third Falcon Fort Greene,Third Falcon,360 Myrtle Avenue,ChIJT0Pe_qJbwokR6Ql0YY5qF8I,NYC,,,0.0,,,False
+Veselka Williamsburg,Veselka (Williamsburg),75 East 1st Street,ChIJZyqIQwBZwokR1lSPyPdTLoM,NYC,,,0.0,,,False
+Veselka Williamsburg,Veselka Restaurant,75 East 1st Street,ChIJZyqIQwBZwokR1lSPyPdTLoM,NYC,,,0.0,,,False
+Fulgurances Greenpoint,Fulgurances,132 Franklin St,ChIJcelSUXlZwokRkD8zyKGV6k4,NYC,,,0.0,,,False
+Sagaponack Flatiron,Sagaponack in Flatiron District,4 W 22nd St,ChIJuXGLjqNZwokRDEG5LwpEBzk,NYC,,,0.0,,,False
+The Brixton Marina,The Brixton,2140 Union Street,ChIJr066l9qAhYARBzcA3aD1zXM,SF,,,0.0,,,False
+Palm House Marina,Palm House,2032 Union Street,ChIJtX1s3tqAhYAR8RDMpH2eHbw,SF,,,0.0,,,False
+Torch & Crown Brewing Company SOHO,Torch & Crown Brewing Company,12 Vandam Street,ChIJFcrad0_1wokRgswE_VOwb4o,NYC,,,0.0,,,False
+Hazie's Hayes Valley,Hazie's,501 Hayes Street,ChIJn-6m802BhYARruM4u0h9-Bc,SF,,,0.0,,,False
+Maman Cobble Hill,Maman- Cobble Hill,,ChIJuedIXXtbwokROUHVzt-XCtM,NYC,,,0.0,,,False
+Maman Battery Park,Maman- Battery Park,,ChIJVxpH38xbwokRRcqSwuRVwW4,NYC,,,0.0,,,False
+Leon's,leonsnyc.com,817 Broadway,ChIJPfXBCwBZwokRI2bnWBxCQCE,NYC,,,0.0,,,False
+Indian Accent Indian Accent,,,,NYC,,,0.0,,,False
+Koloman - Breakfast Club,Koloman,16 W 29th St,ChIJUUBMchNZwokRwDOHIFhOIHA,NYC,,,0.0,,,False
+Runner Up Park Slope,Winner / Runner Up,367 7th Avenue,ChIJa7TQMZFbwokRjivvo3SFNDQ,NYC,,,0.0,,,False
+Veselka East Village,Veselka Restaurant,75 East 1st Street,ChIJlxDiXJxZwokRp4HHbeYqXXU,NYC,,,0.0,,,False
+Baguette Magic West Ashley,Baguette Magic - West Ashley,792 Folly Rd Unit A,ChIJ3fhrj2V7_ogRHJRlSVyLbGQ,CHS,,,0.0,,,False
+Baguette Magic James Island,Baguette Magic - Folly Road,792 Folly Road,ChIJcRYyVQp5_ogRzddEPU6O5fA,CHS,,,0.0,,,False
+Alcove Market Harleston Village,Easton & Porter Group,5022 Plank Road,ChIJp0iulmp7_ogRjrA23hLK_Fs,CHS,,,0.0,,,False
+Alcove Market Harleston Village,Alcove Market,320 Broad St Suite 155,ChIJp0iulmp7_ogRjrA23hLK_Fs,CHS,,,0.0,,,False
+Veselka Grand Central,Veselka (Grand Central),,ChIJVZ111KNZwokRisf1cc9jgxg,NYC,,,0.0,,,False
+Veselka Grand Central,Veselka Restaurant,75 East 1st Street,ChIJVZ111KNZwokRisf1cc9jgxg,NYC,,,0.0,,,False
+6restaurant.com,6restaurant.com,481 Court Street,ChIJDfRavFtbwokRijMBw1NobfM,NYC,,,0.0,,,False
+Dalida Mission,Dalida,101 Montgomery Street,ChIJ-0oK-amHhYARzNhyX0KQcEg,SF,,,0.0,,,False
+Okane Potrero Hill,Omakase Restaurant Group,25 Division Street,ChIJjaWT5yx-j4AR0S6cwdgnD4Q,SF,,,0.0,,,False
+Okane Potrero Hill,Okane,669 Townsend Street,ChIJjaWT5yx-j4AR0S6cwdgnD4Q,SF,,,0.0,,,False
+Dumpling Time Design District,Dumpling Time - Design District,11 Division Street,ChIJ1anaJC1-j4ARf_9BjfDowt8,SF,,,0.0,,,False
+Dumpling Time Design District,Omakase Restaurant Group,25 Division Street,ChIJ1anaJC1-j4ARf_9BjfDowt8,SF,,,0.0,,,False
+Dumpling Time Mission Bay,Dumpling Time - Mission Bay,"191 Warriors Way Suite 101, San Francisco, CA 94158",ChIJR2AhaXJ_j4ARScj6r58240E,SF,,,0.0,,,False
+Dumpling Time Mission Bay,Omakase Restaurant Group,25 Division Street,ChIJR2AhaXJ_j4ARScj6r58240E,SF,,,0.0,,,False
+Omakase  Design District,Omakase,665 Townsend Street,ChIJFYz55yx-j4ARFUpWF0lt4gw,SF,,,0.0,,,False
+Omakase  Design District,Omakase Restaurant Group,25 Division Street,ChIJFYz55yx-j4ARFUpWF0lt4gw,SF,,,0.0,,,False
+Live Sushi Bar Potrero Hill,Omakase Restaurant Group,25 Division Street,ChIJtSa-BDN-j4ARVOuKy9mDdhw,SF,,,0.0,,,False
+Live Sushi Bar Potrero Hill,Live Sushi Bar,2001 17th Street,ChIJtSa-BDN-j4ARVOuKy9mDdhw,SF,,,0.0,,,False
+The Third Floor Chinatown,The Third Floor,433 Clay Street,ChIJ5ZJ8MmCAhYARlWdcG-Y51NM,SF,,,0.0,,,False
+The Third Floor Chinatown,Omakase Restaurant Group,25 Division Street,ChIJ5ZJ8MmCAhYARlWdcG-Y51NM,SF,,,0.0,,,False
+Prelude Union Square,Prelude,650 Church Street,ChIJAQCwLWCAhYARA4NhRN-ExYs,SF,,,0.0,,,False
+Prelude Union Square,Omakase Restaurant Group,25 Division Street,ChIJAQCwLWCAhYARA4NhRN-ExYs,SF,,,0.0,,,False
+Itria Mission,Itria,3266 24th Street,ChIJg0a43A5_j4ARH8IaUaRVUCs,SF,,,0.0,,,False
+Elephant District Dumbo,Elephant District,,ChIJIQFtrv1bwokRkEaNwb8ltZQ,NYC,,,0.0,,,False
+Balzem Nolita,Balzem,202 Mott St,ChIJa128pIhZwokRnoPKJguYBCA,NYC,,,0.0,,,False
+Le Rivage Le Rivage,Le Rivage,340 W 46th St,ChIJP9968FNYwokRluXA9d7952g,NYC,,,0.0,,,False
+Gair Dumbo,Gair,41 Washington St,ChIJTZIC-AdbwokRPwk_gzcoNNs,NYC,,,0.0,,,False
+Henry & The Lions Chelsea,Henry & The Lions,,ChIJFwCwrbpZwokRaS7l5yPwQyM,NYC,,,0.0,,,False
+Tacolicious Marina,Tacolicious,2250 Chestnut Street,ChIJkbv8N9eAhYARMyu5POX9pRk,SF,,,0.0,,,False
+Arcana Mission,Arcana,2512 Mission Street,ChIJyf4Rywl_j4ARyOJZrnvV0Wc,SF,,,0.0,,,False
+Share House Downtown,Share House,,ChIJYTrmDWh7_ogRu2xztQY2jCI,CHS,,,0.0,,,False
+Uptown Social Downtown,Uptown Social,587 King St,ChIJK_IU5Gl6_ogRSRZ2slY7U48,CHS,,,0.0,,,False
+WINNER in the Park Park Slope,Winner in the Park,367 7th Avenue,ChIJg8UZJyNbwokR0-LkfR8MPJQ,NYC,,,0.0,,,False
+WINNER Butcher Park Slope,Winner Butcher,367 7th Avenue,ChIJvaJYgaVbwokR7sVs_le8J7Y,NYC,,,0.0,,,False
+Octavia Pacific Heights,Octavia,1701 Octavia Street,ChIJs32Mdr-AhYARZmI19fIPvOM,SF,,,0.0,,,False
+Mosto Mission,MOSTO,741-A Valencia St,ChIJvfcHtPR_j4ARiPrad4Watgo,SF,,,0.0,,,False
+Tacolicious Mission,Tacolicious,741 Valencia Street,ChIJfxUo-Od_j4ARz1tjyoQIPAM,SF,,,0.0,,,False
+La Noxe Chelsea,La Noxe,10 River Road #5M,ChIJpy4I5A1ZwokRkeVFxbwI2f8,NYC,,,0.0,,,False
+Tacolicious (Marina) - Bar Blackbird,Tacolicious,2250 Chestnut Street,ChIJkbv8N9eAhYARMyu5POX9pRk,SF,,,0.0,,,False
+MOSTO - Bar Blackbird,MOSTO,741-A Valencia St,ChIJvfcHtPR_j4ARiPrad4Watgo,SF,,,0.0,,,False
+Hazie's - BAR BLACKBIRD,Hazie's,501 Hayes Street,ChIJn-6m802BhYARruM4u0h9-Bc,SF,,,0.0,,,False
+The Brixton - BAR BLACKBIRD,The Brixton,2140 Union Street,ChIJr066l9qAhYARBzcA3aD1zXM,SF,,,0.0,,,False
+6 Tables Marina,6 Tables,1849 Union St.,ChIJ6zLGfVeBhYARVqQDL4-aTmg,SF,,,0.0,,,False
+Okaeri Japanese Bistro,Okaeri Japanese Bistro,"3515 20th St, ",ChIJc2x-KdV_j4ARr3s50-Q5LcE,SF,,,0.0,,,False
+Bar Madonna Williamsburg,Bar Madonna,367 Metropolitan Ave,ChIJUWhXmjpZwokRjvRZ1_vjTqI,NYC,,,0.0,,,False
+Castro Indian Restaurant & Bar The Castro,Castro Indian Restaurant & Bar,468 Castro St.,ChIJETxWCZN_j4ARf1B301i5-ys,SF,,,0.0,,,False
+Bar Iris Russian Hill,Bar Iris,2310 Polk Street,ChIJQ3FRFZ-BhYAR3Rt6OXN6hSo,SF,,,0.0,,,False
+The Mary Lane,The Mary Lane,"99 Bank St, New York, NY 10014",ChIJvfpl3GpZwokR9Doyl16Ku_w,NYC,,,0.0,,,False
+Sightsee Hampton Park Terrace,Sightsee Shop,"125½, Line St",ChIJ28KoQWN7_ogRzSP8Hzqzfhw,CHS,,,0.0,,,False
+Seamore's Brookfield Place,Seamore's,66 Water St,ChIJh2voNWlbwokRfmpK-ELePzA,NYC,,,0.0,,,False
+The Test Brewery Williamsburg,The Test Brewery,302 Metropolitan Avenue,ChIJYflFPQBZwokRLloJXYjDNEA,NYC,,,0.0,,,False
+StarChild Rooftop,Starchild Rooftop Bar & Lounge,305 W 48th St,ChIJZa0wOP5ZwokRsVyDcNLoUlg,NYC,,,0.0,,,False
+StarChild Rooftop,Carver Road Hospitality,"305 W 48th St NY NY (Billing is Rabble HK LLC, 197 E California Ave Suite #270 Las Vegas NV)",ChIJZa0wOP5ZwokRsVyDcNLoUlg,NYC,,,0.0,,,False
+Rosevale Kitchen Midtown,Rosveale Kitchen,,ChIJ_XQGaExZwokRTmvrhBoWHUY,NYC,,,0.0,,,False
+Rosevale Kitchen Midtown,Carver Road Hospitality,"305 W 48th St NY NY (Billing is Rabble HK LLC, 197 E California Ave Suite #270 Las Vegas NV)",ChIJ_XQGaExZwokRTmvrhBoWHUY,NYC,,,0.0,,,False
+Rosevale Cocktail Bar,Carver Road Hospitality,"305 W 48th St NY NY (Billing is Rabble HK LLC, 197 E California Ave Suite #270 Las Vegas NV)",ChIJ_XQGaExZwokRTmvrhBoWHUY,NYC,,,0.0,,,False
+Rosevale Cocktail Bar,Rosevale Cocktail Room,305 West 48th Street,ChIJ_XQGaExZwokRTmvrhBoWHUY,NYC,,,0.0,,,False
+Trick Dog Mission,Trick Dog,3010 20th Street,ChIJFc-4Pzd-j4ARf66cV7PRZxw,SF,,,0.0,,,False
+The Harlow James Island,The Harlow,1015 Harbor View Rd,ChIJhXhO4UR5_ogRMvd7NEEgzSY,CHS,,,0.0,,,False
+Paradiso Restaurant + Bar Park Circle,Paradiso Charleston,4401 McCarthy Street,ChIJ6cgIbrxk_ogR4K7YKh2pdv8,CHS,,,0.0,,,False
+The Archer East Central,The Archer,,ChIJPaaxZsJ7_ogRSbOGoLwL9VY,CHS,,,0.0,,,False
+Phoenix Palace Chinatown,Phoenix Palace,,ChIJQfxkBwBbwokRdqZAdAUuTFc,NYC,,,0.0,,,False
+Levantine,Levantine,"361 Graham Ave, Brooklyn, NY 11211",ChIJvTv-1VBZwokRi3Wl2t2QvVY,NYC,,,0.0,,,False
+Callie's Hot Little Biscuit King Street,Callie's Hot Little Biscuit (Meeting Street),1895 Avenue F,ChIJzwStSmp6_ogRoa1vyarpiqI,CHS,,,0.0,,,False
+Berkeley’s Hampton Park Terrace,Berkeley's,,ChIJZ8LPDn57_ogRtfAHxwB8VdI,CHS,,,0.0,,,False
+The Market at Paradiso Park Circle,Paradiso Charleston,4401 McCarthy Street,ChIJ6cgIbrxk_ogR4K7YKh2pdv8,CHS,,,0.0,,,False
+The Patio Marina,The Patio,3232 Scott Street,ChIJ8anRoNaAhYARw_7AiSXOyBI,SF,,,0.0,,,False
+Veranda Lounge,Veranda Lounge,61 State St,ChIJaZ77_iZ7_ogRkIbToV7u2Hs,CHS,,,0.0,,,False
+The Bar at The Spectator,The Bar at The Spectator,"67 State St, Charleston, SC 29401",ChIJwXiSIp97_ogR81S_Th4qiVs,CHS,,,0.0,,,False
+Bar Iris -BAR BLACKBIRD- New Deal,Bar Iris,2310 Polk Street,ChIJQ3FRFZ-BhYAR3Rt6OXN6hSo,SF,,,0.0,,,False
+The Greats of Craft Midtown East,The Greats of Craft - Midtown East,983 1st Ave.,ChIJs6AxqHdZwokRwkvw64aePmI,NYC,,,0.0,,,False
+The Greats of Craft LIC,The Greats of Craft - LIC,,ChIJL0xJb_ZZwokRfmKufMDAycE,NYC,,,0.0,,,False
+Little Charli Greenwich Village,Little Charli East Hampton,271 Bleecker St,ChIJi9KyP7JZwokRODCiGhV2_KI,LI,,,0.0,,,False
+Brooklyn Brewery Williamsburg,Brooklyn Brewery,79 North 11th Street,ChIJUaAuMl1ZwokRt0-S_ynnRtc,NYC,,,0.0,,,False
+Good Thanks Williamsburg,Good Thanks- Williamsburg,31 Orchard Street,ChIJYzGsnstZwokRkcK34hMLbV0,NYC,,,0.0,,,False
+Roberta's Williamsburg,Roberta's Domino Park,261 Moore Street,ChIJby7B1blZwokRzCBPwiaSbTY,NYC,,,0.0,,,False
+Cha Cha Tang West Village,Cha Chan Tang,257 6th Avenue,ChIJteQQa4RZwokRxrQRw-hpCqI,NYC,,,0.0,,,False
+Verde Mount Pleasant,Verde Restaurant - Mt. Pleasant,,ChIJ5bKJ9dtx_ogRC2LndtxGrNM,,,,0.0,,,False
+Verde - King Street,Verde - King St.,433 King Street,ChIJg7b6WRN6_ogRMxXw1kPkUEM,CHS,,,0.0,,,False
+Little Rascal Nolita,Little Rascal,163 Elizabeth St,ChIJL8FQnohZwokRtuZZu_mQ_xI,NYC,,,0.0,,,False
+Little Rascal Greenpoint,Little Rascal- Greenpoint,163 Elizabeth Street,ChIJ01RS_U1ZwokRYmG4U1zKxgs,NYC,,,0.0,,,False
+Brown Dog Deli Harleston Village,Brown Dog Deli,225 Calhoun St,ChIJHRq3Sw56_ogRsVgGoXhhptQ,CHS,,,0.0,,,False
+Verde MUSC Main Hospital,Verde Restaurant - MUSC Main Hospital,,ChIJv9sG_FBawokRla6TIaJSNM4,NYC,,,0.0,,,False
+Verde  Airport,Verde Restaurant - Charleston International Airport,,ChIJK_CSR6Bl_ogRvvcG30aQ4k4,CHS,,,0.0,,,False
+Verde College of Charleston,Verde Restaurant - College of Charleston,,ChIJK_CSR6Bl_ogRvvcG30aQ4k4,CHS,,,0.0,,,False
+Bar Enzo Long Island City,The Greats of Craft - Bar Enzo - LIC,,ChIJD_uCNtNZwokR8uyJSOjMuZQ,NYC,,,0.0,,,False
+Verde Avondale,Verde Restaurant - Avondale,,ChIJGXy4c8J7_ogR3zm4tOX3Bc4,NYC,,,0.0,,,False
+Verde Belle Hall,Verde Restaurant - Belle Hall,,ChIJ5bKJ9dtx_ogRC2LndtxGrNM,NYC,,,0.0,,,False
+Verde Park Circle,Verde Restaurant - Park Circle,,ChIJK_CSR6Bl_ogRvvcG30aQ4k4,CHS,,,0.0,,,False
+Verde MUSC - Ashley River Tower,Verde Restaurant - MUSC Ashley River Tower,,ChIJi2WKszl6_ogRfD7bDDJVkCs,NYC,,,0.0,,,False
+Trick Dog-BAR BLACKBIRD,Trick Dog,3010 20th Street,ChIJFc-4Pzd-j4ARf66cV7PRZxw,SF,,,0.0,,,False
+Local Roots Market57,localroots.nyc,101 Warren Street,ChIJOVrVlpJZwokRyWwXfTLLV3M,NYC,,,0.0,,,False
+Clerks Downtown,Clerks Coffee Company,181 Church St,ChIJwQPCRS17_ogRXFQ2EbBGdz4,CHS,,,0.0,,,False
+Frannie & The Fox Downtown,Frannie & The Fox,181 Church Street,ChIJOetRgzp7_ogR_eJsx6ttGls,CHS,,,0.0,,,False
+Cafe Colette,Cafe Colette,79 Berry St,ChIJBanVDl1ZwokROc3C9FpKZ78,NYC,,,0.0,,,False
+Carriage House,Carriage House,142 West 10th Street,ChIJlzm4NCRZwokRGSjvjX5yFvI,NYC,,,0.0,,,False
+Meraki Williamsburg,Meraki Greek Bistro,142 Southeast 1st Avenue,ChIJQbmcEdFZwokRR02fTE9tLhA,NYC,,,0.0,,,False
+Ruffian East Village,Ruffian,125 East 7th Street,ChIJHfvtRp1ZwokREpFE8Z1BEKs,NYC,,,0.0,,,False
+Breeze Greenpoint,Breeze,,ChIJayMXxXBZwokRq41Uj462dS0,NYC,,,0.0,,,False
+Spaghetti Incident Lower East Side,Spaghetti Incident,231 Eldridge Street,ChIJa00rEYRZwokRP-GRuN-bLTQ,NYC,,,0.0,,,False
+TALEA Beer Co. - Penn District,TALEA Beer Co.,"22 W 40th St, New York, NY 10018",ChIJnc6ISERZwokRcs56foDArOM,NYC,,,0.0,,,False
+Bar Sprezzatura Financial District,Bar Sprezzatura,"One Maritime Plaza, #100",ChIJU00uDM6BhYAR_ZOluZ0m4qA,SF,,,0.0,,,False
+Bad Roman Columbus Circle,Bad Roman,"3rd floor, 10 Columbus Cir",ChIJG0fkfuJZwokRqmAxXTpYP2I,NYC,,,0.0,,,False
+Twin Tails Columbus Circle,Twin Tails,10 Columbus Circle 3rd Floor,ChIJbxASGTNZwokR9eIMYL28EQE,NYC,,,0.0,,,False
+Alphabet City Beer Co. Lower East Side,Alphabet City Beer Co.,"6 Loisaida Ave, New York, NY 10009",ChIJWaWbwHlZwokRj1wHkvB84zE,NYC,,,0.0,,,False
+Bar Sprezzatura-BAR BLACKBIRD,Bar Sprezzatura,"One Maritime Plaza, #100",ChIJNVkbEwBZwokRcQJBrkU_Wuo,SF,,,0.0,,,False
+Zou Zou's Hudson Yards,Zou Zou's,385 9th Avenue,ChIJKVbn75VZwokRLdlBWe5rbtU,NYC,,,0.0,,,False
+MADELINE'S,MADELINE'S,"113 Franklin St FC, Brooklyn, NY 11222",ChIJzSqlSxpZwokRnXgKKOO_yWE,NYC,,,0.0,,,False
+Wine:30,Wine:30,41 E 30th St,ChIJiUAH6adZwokRfDpIF52xwuo,NYC,,,0.0,,,False
+Arthur and Sons Murray Hill,Arthur & Sons Murray Hill,145 East 39th Street,ChIJ5wRLNwBZwokRCRy7BYuPh6w,NYC,,,0.0,,,False
+Hudson Club Midtown,Hudson Club,136 w 55th st,ChIJZ49dwcNZwokRtUHt_n4BYME,NYC,,,0.0,,,False
+5ive Spice- Nolita,5ive Spice- Nolita,"227 Mulberry St, New York, NY 10012",ChIJO1_22AhZwokRm6t3InR_YCQ,NYC,,,0.0,,,False
+Wildflower Chelsea,Wildflower,505 W 23rd St,ChIJnReZJQBZwokRRwOUbuV7JzE,NYC,,,0.0,,,False
+5ive Spice- Grammercy,5ive Spice- Gramercy,"363 3rd Ave New York, NY 10016",ChIJg_hIprRZwokRG4Dms5riUOU,NYC,,,0.0,,,False
+Milos Meze,Milos Meze,3348 Steiner St.,ChIJz5elL9eAhYARHEkGT1LSNkc,SF,,,0.0,,,False
+KAIYŌ Rooftop SOMA,KAIYO ROOFTOP,"701 3rd St 12th Floor,",ChIJAS1jCN5_j4AR_KeMCaeunWw,SF,,,0.0,,,False
+Kid,Kid,,ChIJg0HWjBpawokRzYQIfpNPsSo,NYC,,,0.0,,,False
+The Greats of Craft - Midtown East- Bfast Pass,The Greats of Craft - Midtown East,983 1st Ave.,ChIJs6AxqHdZwokRwkvw64aePmI,NYC,,,0.0,,,False
+Motel Morris Chelsea,The Morris,132 7th Ave,ChIJEc5RXrxZwokR2Zud13FFqR0,NYC,,,0.0,,,False
+X-Golf Williamsburg,X Golf Brooklyn,225 South Main Street,ChIJeYgCuyJZwokR1g2Im-QCgtk,NYC,,,0.0,,,False
+KAIYO ROOFTOP - BAR BLACKBIRD-New Deal,KAIYO ROOFTOP,"701 3rd St 12th Floor,",ChIJAS1jCN5_j4AR_KeMCaeunWw,SF,,,0.0,,,False
+Tacombi - nolita,Tacombi,"267 Elizabeth St, New York, NY 10012",ChIJdfD8moVZwokRO6vxjXAtoWs,NYC,,,0.0,,,False
+Tacombi - nolita,Tacombi (Parent Company),265 Bowery,ChIJdfD8moVZwokRO6vxjXAtoWs,NYC,,,0.0,,,False
+Kaiyo Soma,KAIYO RESTAURANT,"701 3RD ST, FLOOR 1",ChIJAS1jCN5_j4AR_KeMCaeunWw,SF,,,0.0,,,False
+Midnights,Midnights,149 North 6th Street,ChIJoerR5V1ZwokRu55P9DJaNEo,NYC,,,0.0,,,False
+Midnights,X Golf Brooklyn,225 South Main Street,ChIJoerR5V1ZwokRu55P9DJaNEo,NYC,,,0.0,,,False
+Cecilia East Village,Cecilia,97 St Marks Pl,ChIJOxW7qFFZwokR-KdRrjd3o9w,NYC,,,0.0,,,False
+Hank's Seafood Restaurant Radcliffborough,Hank's Seafood Restaurant,10 Hayne St,ChIJt5BmhQ16_ogRbwSj1J64dmA,CHS,,,0.0,,,False
+Milk & Hops Chelsea,Milk & Hops,166 9th Ave,ChIJN6avE7lZwokRZrgdqFX1f6Y,NYC,,,0.0,,,False
+Twist Bar,Twist Bar,,ChIJL8iG0HNZwokR70zQBzoMKTc,NYC,,,0.0,,,False
+Little Palm Downtown,Little Palm,237 Meeting St,ChIJC4n-xyN7_ogRFpS2Bz2a7Wg,CHS,,,0.0,,,False
+The Coffee Counter French Quarter,The Coffee Counter,237 Meeting Street,ChIJU3WDczx7_ogR525G2DE5d8Q,CHS,,,0.0,,,False
+Kru,Kru,190 North 14th Street,ChIJz0Bt0ldZwokR698-eT0Dh88,NYC,,,0.0,,,False
+Kings of Kobe - Wagyu Kitchen & Bar Hell's Kitchen,Kings of Kobe,650 W 42nd St,ChIJlaUCHbxZwokRUPWZkyNQyYg,NYC,,,0.0,,,False
+Amarena Russian Hill,Amarena,2162 Larkin Street,ChIJM7I8HemAhYARjCsAkDZd_D8,SF,,,0.0,,,False
+Wabi Nori,Wabi Nori,"115 Essex St, New York, NY 10002",ChIJSU8szcZZwokRurWGO4cm_3g,NYC,,,0.0,,,False
+Fan Fan Doughnuts Clinton Hill,Fan Fan Doughnuts,448 Lafayette Avenue,ChIJ-eBifR5bwokRgXeVyNhDBFg,NYC,,,0.0,,,False
+Bar Six,Bar Six,"502 6th Ave, New York, NY 10011",ChIJ9bgCzJdZwokRvm_6RoQ8edg,NYC,,,0.0,,,False
+Wild East Brewing Co.,Wild East Brewing Co.,"623 Sackett St, Brooklyn, NY 11217",ChIJCb9dhqVbwokRRWJzMd-IdYk,NYC,,,0.0,,,False
+Due West West Village,Due West,189 W 10th St,ChIJEyUgYZRZwokRETFRosKubF8,NYC,,,0.0,,,False
+Mijo Chelsea,Mijo (Chelsea),25 West 11th Street,ChIJYz7xMA1ZwokRKF9e6rssLcA,NYC,,,0.0,,,False
+The Purple Tongue Wine Bar,Purple Tongue,"410 W 43rd St, New York, NY 10036",ChIJw4INJQBZwokRQDsl00Ujaig,NYC,,,0.0,,,False
+Ricco Mediterranean Restaurant Marina,Ricco Mediterranean Restaurant,3145 Fillmore Street,ChIJT38zVACBhYARt6kXf2xuSvs,SF,,,0.0,,,False
+Fornino Greenpoint,Fornino,849 Manhattan Ave,ChIJx1Bo1EBZwokRUZ_xdNzvcLY,NYC,,,0.0,,,False
+Falu House,Falu House,,ChIJbwTrdABZwokRJBMnW6dXFoM,NYC,,,0.0,,,False
+Amelie  Polk Gulch,Amelie San Francisco,1754 Polk Street,ChIJ88G-quuAhYAR7bj0Yhr8gwI,SF,,,0.0,,,False
+Bergerac SoMa,Bergerac,316 11th Street,ChIJ5wZMMyZ-j4ARDpT0d0kIx7A,SF,,,0.0,,,False
+Nowon - East Village East Village,Nowon East Village,507 e 6th street,ChIJjReAQKxZwokRnnraeb2WJ18,NYC,,,0.0,,,False
+Nowon Bushwick,Nowon Bushwick,436 Jefferson Street,ChIJCzyNLENbwokR-lXh5FtzU70,NYC,,,0.0,,,False
+Nowon - Bushwick Bushwick,Nowon Bushwick,436 Jefferson Street,ChIJCzyNLENbwokR-lXh5FtzU70,NYC,,,0.0,,,False
+LaRina Pastificio & Vino,LaRina Pastificio & Vino,"387 Myrtle Ave, Brooklyn, NY",ChIJweAtELhbwokRO1AexCvuRo0,NYC,,,0.0,,,False
+Threes Brewing Greenpoint,Threes Brewing Gowanus,333 Douglass Street,ChIJE6U0R0BZwokRqbil1N5FfAM,NYC,,,0.0,,,False
+Strange Delight,Strange Delight,63 Lafayette ave ,ChIJSZ__agBbwokRFqNZkOBfbsk,NYC,,,0.0,,,False
+Bar Moga SoHo,Bar Moga,128 W Houston St,ChIJRy7Z-I1ZwokRQm17a6QDJ6E,NYC,,,0.0,,,False
+Brooklyn Brewery (Craft Beer Pass),Brooklyn Brewery,79 North 11th Street,ChIJUaAuMl1ZwokRt0-S_ynnRtc,NYC,,,0.0,,,False
+Alphabet City Beer Co. - Craft Beer Pass,Alphabet City Beer Co.,"6 Loisaida Ave, New York, NY 10009",ChIJWaWbwHlZwokRj1wHkvB84zE,NYC,,,0.0,,,False
+Torch & Crown Brewing Company - Craft Beer Pass,Torch & Crown Brewing Company,12 Vandam Street,ChIJFcrad0_1wokRgswE_VOwb4o,NYC,,,0.0,,,False
+Moody Tongue Sushi - Craft Beer Pass,Moody Tongue Sushi,,ChIJGUJaVtVZwokR3VU_JU2pedg,NYC,,,0.0,,,False
+Threes Brewing Gowanus,Threes Brewing Gowanus,333 Douglass Street,ChIJ__u3R6tbwokRYMOym8O83H0,NYC,,,0.0,,,False
+Gotham Burger Social Club Greenpoint,Gotham Burger Social Club @ Threes Brewing,113 Franklin St,ChIJXZ6WJABZwokRDi2X0_3I1Mo,NYC,,,0.0,,,False
+Gotham Burger Social Club Greenpoint,Gotham Burger Social Club,113 Franklin St,ChIJXZ6WJABZwokRDi2X0_3I1Mo,NYC,,,0.0,,,False
+Moody Tongue Pizza,Moody Tongue Pizza,123 st marks pl,ChIJGSBX5MNZwokR8dULUeLZH5M,NYC,,,0.0,,,False
+Lume West Village,Lume,"259 West 4th Street, New York, NY 10014",ChIJN-YZAHNZwokRfCSd6SaZWUc,NYC,,,0.0,,,False
+Kings County Distillery,Kings County Distillery,"Kings County Distillery, 299 Sands St, Brooklyn, NY 11205",ChIJbe26PclbwokRfrb6lAnTB30,NYC,,,0.0,,,False
+Patisserie Fouet Midtown,Patisserie Fouet,15 E 13th St,ChIJE_xuhXVZwokR6efVoP5x41g,NYC,,,0.0,,,False
+Estancia Piola,Estancia Piola,,ChIJ-cemB1xbwokRUuBRPBg0opo,NYC,,,0.0,,,False
+The Ox Greenpoint,The OX Wine Bar,,ChIJW5CTpjRbwokRoyMu9xFuCKE,NYC,,,0.0,,,False
+Krupa Grocery South Slope,Krupa Grocery,231 Prospect Park W,ChIJDXCWZh5bwokROj_-7EfM3NI,NYC,,,0.0,,,False
+BRISCOLA TRATTORIA,BRISCOLA TRATTORIA,"798a Franklin Ave, Brooklyn, NY 11238, United States",ChIJD6W7CwBbwokRwO5z7BMo7-M,NYC,,,0.0,,,False
+Kokomo Greenpoint,Kokomo,65 Kent Ave,ChIJ9-EhOXlZwokRSdB_B9mYM30,NYC,,,0.0,,,False
+Oxomoco,Oxomoco,"128 Greenpoint Ave, Brooklyn, NY 11222",ChIJ__-z7kBZwokRezHqB39zBLI,New York,,,0.0,,,False
+Black Seed Bagels Nolita,Black Seed Bagels,176 1st Avenue,ChIJV1BBkp1ZwokRpjqvV01uiqg,NYC,,,0.0,,,False
+Heirloom Cafe Mission,HEIRLOOM CAFE,2500 Folsom Street,ChIJ3XEasjl-j4ARWcW8iwtlkhw,SF,,,0.0,,,False
+Park Slope Ale House Park Slope,Park Slope Ale House,"356 6th Ave, Brooklyn, NY 11215, United States",ChIJwyH4GwJbwokRO0x0jD_unvw,NYC,,,0.0,,,False
+MáLà Project -EV- New Deal,MáLà Project ,"245 E 53rd St, New York, NY 10022",ChIJM2NCGJ1ZwokRA2nCkZcz08g,New York,,,0.0,,,False
+Someday Bar NYC,Someday Bar NYC,"364 Atlantic Ave Brooklyn, NY 11217",ChIJW7hnbe5bwokRG2IHXWO1xcA,NYC,,,0.0,,,False
+Other Half Brewing - 600 5th Ave,Other Half Brewing (Parent),"600 5th Ave, New York, 10020",ChIJ56J9GJFZwokRdJwuF-USZIs,NYC,,,0.0,,,False
+Other Half Brewing - 600 5th Ave,Other Half Brewing (600 5th Ave),195 Centre Street,ChIJ56J9GJFZwokRdJwuF-USZIs,NYC,,,0.0,,,False
+Cane Pazzo,Cane Pazzo,"1276 Yeamans Hall Rd, Hanahan, SC 29410",ChIJPc3odmxj_ogRMyxZUrj4HU4,CHS,,,0.0,,,False
+Shuggie's,Shuggie's,"3349 23rd St, San Francisco, CA 94110",ChIJr5cI0LR_j4ART457wcGBDoY,SF,,,0.0,,,False
+The Morris,The Morris,"2501 Mariposa St, San Francisco, CA 94110
+",ChIJqZE4DTF-j4ARUYdqdEEgh8k,SF,,,0.0,,,False
+Elixir,Elixir,"3200 16th St, SF, CA 94103",ChIJvwAwoRh-j4AR1BKWDkmJ3-E,SF,,,0.0,,,False
+NOPALITO,Nopalito,"306 Broderick St., San Francisco, CA 94117",ChIJWdx6WK6AhYARchLwAKyG4-Y,SF,,,0.0,,,False
+Blue Plate,Blue Plate,"3218 Mission St.SF, CA 94110",ChIJ7d1kDkN-j4ARLXO5JZwg7NI,SF,,,0.0,,,False
+Tamarind Tribeca,Tamarind Tribeca,"99 Hudson St, New York, NY 10013",ChIJ6Vva1h9awokRXw_JSQ_x6y4,NYC,,,0.0,,,False
+Suprema Provisions,Suprema Provisions,"305 Bleecker St, New York, NY 10014",ChIJR4Ced5NZwokREuYXRM57BmY,NYC,,,0.0,,,False
+L'Express,L'Express,249 Park Ave S,ChIJb9HznqFZwokRHWxf3DbskaI,NYC,,,0.0,,,False
+L'Express,Chef Driven Hospitality,630 Ninth Avenue,ChIJb9HznqFZwokRHWxf3DbskaI,NYC,,,0.0,,,False
+Don Ceviche East Village,Don Ceviche East Village,"57 1st Ave New York, NY 10003",ChIJAf1O3jhZwokRRljq3vIx8ak,NYC,,,0.0,,,False
+Don Ceviche Essex,Don Ceviche Essex,"88 Essex Street #11 New York,  NY10002 ",ChIJm9uu_FpZwokR875MVLu2loI,NYC,,,0.0,,,False
+Salad Don,Salad Joon,"88 Essex Street #3 New York, NY 10002",ChIJNxi3aTJZwokR22BQhiSpRjw,New York,,,0.0,,,False
+Chambers,Chambers eat + drink,"94 Chambers St #1, New York, NY 10007",ChIJ43KaxzxbwokRVjbWT05nZ_M,New York,,,0.0,,,False
+ALL BLUES,ALL BLUES,"87 Walker St, New York, NY 10013",ChIJdROsbwBbwokRHl54aM_rAsc,NYC,,,0.0,,,False
+l’abeille,l’abeille,"412 Greenwich St, New York, NY 10013",ChIJq75Ur-tZwokRo7I_F_PhlcU,NYC,,,0.0,,,False
+l'abeille à côté,L’Abeille,"412 Greenwich StreetNew York, NY, 10013",ChIJq75Ur-tZwokRo7I_F_PhlcU,NYC,,,0.0,,,False
+Sushi Ichimura,Sushi Ichimura,"412 Greenwich Street New York, NY, 10013",ChIJU10X_TJZwokRuSfnHw4dhQE,NYC,,,0.0,,,False
+Tio Pepe,Pepes Restaurant Group,"168 West 4th Street, New York, NY 10014",ChIJ06Eo6ZNZwokR_ngr5nAD7do,NYC,,,0.0,,,False
+Tio Pepe,Tio Pepe Restaurant,168 West 4th Street,ChIJ06Eo6ZNZwokR_ngr5nAD7do,NYC,,,0.0,,,False
+Burgers and Beer NYC,Burgers and Beer,170 West 4th Street,ChIJz1tFP_9ZwokR1NewYt9iemw,NYC,,,0.0,,,False
+Burgers and Beer NYC,Pepes Restaurant Group,"168 West 4th Street, New York, NY 10014",ChIJz1tFP_9ZwokR1NewYt9iemw,NYC,,,0.0,,,False
+DACHA Kitchen & Bar,DACHA Kitchen & Bar,"1085 Sutter Street, SF, CA 94109",ChIJwzLVbKSBhYAROU9e3ep4_BU,SF,,,0.0,,,False
+25 Lusk,25 Lusk,"25 Lusk, SF, CA 94107",ChIJwzwoQNZ_j4ARtdLL7CUl4TQ,SF,,,0.0,,,False
+St. Mazie,St. Mazie Bar & Supper Club,"345 Grand St, Brooklyn, NY 11211
+",ChIJSy8Bbl9ZwokR8QnOQHNn4hk,NYC,,,0.0,,,False
+Grimm Artisanal Ales,Grimm Artisanal Ales,"990 Metropolitan Ave, Brooklyn, NY 11211",ChIJO0onUVNZwokRAuTHAAO2OA0,NYC,,,0.0,,,False
+Kalye - Rivington,Kalye,"251 Broome St, New York, NY 10002",ChIJzxi2CEFZwokRGLb3H5aeHDU,NYC,,,0.0,,,False
+Rocco's Sports & Recreation Noho,Rocco's Cafe,"1131 Folsom St, SF, CA 94103",ChIJ2fLg9KdZwokR0cET1EjEuwk,SF,,,0.0,,,False
+Kings County Brewers Collective,Kings County Brewers Collective,"381 Troutman St, Brooklyn, NY 11237",ChIJb6ZVSB1cwokRES6FZ2WAMAA,NYC,,,0.0,,,False
+Kalye - Broome St,Kalye,"251 Broome St, New York, NY 10002",ChIJj4yA4zJZwokRtQObXxWzxhc,NYC,,,0.0,,,False
+carminestreetbeers.com,carminestreetbeers.com,"52 A Carmine St, New York, NY 10014",ChIJ5fF_9ZJZwokRvdVUZVpa2_I,NYC,,,0.0,,,False
+MáLà Project -Greenpoint- New Deal,MáLà Project ,"245 E 53rd St, New York, NY 10022",ChIJM2NCGJ1ZwokRA2nCkZcz08g,New York,,,0.0,,,False
+MáLà Project -Bryant Park- New Deal,MáLà Project ,"245 E 53rd St, New York, NY 10022",ChIJuyQyqf9YwokRSlObfXst7sQ,New York,,,0.0,,,False
+MáLà Project -Midtown- New Deal,MáLà Project ,"245 E 53rd St, New York, NY 10022",ChIJuyQyqf9YwokRSlObfXst7sQ,New York,,,0.0,,,False
+Good Guys,Attaboy/Good Guys Parent,8 Mcferrin Avenue,ChIJqcXTb0NZwokRPbW9xBZwUEs,NYC,,,0.0,,,False
+Good Guys,Good Guys,134 eldridge 10002,ChIJqcXTb0NZwokRPbW9xBZwUEs,NYC,,,0.0,,,False
+Sunday to Sunday,Sunday to Sunday,"88 Orchard St, New York, NY 10002",ChIJnf5Rpv1ZwokRTzMEC8i44xE,NYC,,,0.0,,,False
+Butcher's Daughter Nolita - Market,The Butcher's Daughter,1205 Abbot Kinney Boulevard,ChIJiYsEnohZwokR8oZK_TgmSjY,NYC,,,0.0,,,False
+Butcher's Daughter Nolita - Market,The Butcher's Daughter (Nolita),,ChIJiYsEnohZwokR8oZK_TgmSjY,NYC,,,0.0,,,False
+Bodega SF,Bodega SF,"138 Mason Street, San Francisco, California 94102",ChIJh26QnF1_j4AR3B7n6vAHjHQ,SF,,,0.0,,,False
+Tempest,Tempest Charleston,"32 N Market St Suite C, Charleston, SC 29401",ChIJiUKdZs17_ogREZcxVv3eh-8,CHS,,,0.0,,,False
+Aura Bar & Kitchen - New Deal,Aura Bar & Kitchen,"111 1st Ave., New York, NY 10003",ChIJ5QOQdQtZwokRSy16jOl97Uc,NYC,,,0.0,,,False
+Park & Grove,Park & Grove,"730 Rutledge Ave, Charleston, SC 29403",ChIJl6_JCTJ7_ogRIauRHOYdIQo,CHS,,,0.0,,,False
+Taco Boy - Downtown,Taco Boy - Downtown,"217 Huger St, Charleston, SC 29403",ChIJT2PTq2B6_ogRIrWFtaGTRrU,CHS,,,0.0,,,False
+The Cactus Shop,The Cactus Shop,"231 Kent Ave, Brooklyn, NY 11249",ChIJ_dEen79ZwokRCcfpTzsSprc,NYC,,,0.0,,,False
+Padoca Bakery,Padoca Bakery,"210 E 67th St, New York, NY 10065",ChIJh9pAEuhZwokREigHqdeZ8S0,NYC,,,0.0,,,False
+El Mansour,El Mansour,"3119 Clement St, SF, CA 94121",ChIJQ-y9wqmHhYARgqK_7YRKZ3I,Sf,,,0.0,,,False
+Evil Twin Brewing (Ridgewood),Evil Twin Brewing,"43 Main St, Brooklyn, NY 11201",ChIJv4wxbJ5dwokR_StiDfSvWQc,NYC,,,0.0,,,False
+Dear Strangers,Dear Strangers,"147 W 4th St, New York, NY 10012",ChIJY9Lf7W9ZwokR9G-2TSrck04,NYC,,,0.0,,,False
+Evil Twin Brewing (Dumbo),Evil Twin Brewing,"43 Main St, Brooklyn, NY 11201",ChIJ-04l4vBbwokRHxrsv5Pf9kQ,NYC,,,0.0,,,False
+The Rutherford,Avenida,"PENN 1, 1 Pennsylvania Plaza, New York, NY 10119",ChIJ_SRPqI1ZwokRcBVTMGsnBLE,NYC,,,0.0,,,False
+The Rutherford,Rutherford,"PENN 1, 1 Pennsylvania Plaza, New York, NY 10119",ChIJ_SRPqI1ZwokRcBVTMGsnBLE,NYC,,,0.0,,,False
+Avenida,Avenida,"PENN 1, 1 Pennsylvania Plaza, New York, NY 10119",ChIJhZJ3Yq5ZwokR7_5fevZJH8E,NYC,,,0.0,,,False
+Hellbender Nighttime Cafe,Hellbender Nighttime Cafe,"68-22 Forest Ave, Queens, NY 11385",ChIJG4RMPa1dwokRBET-URZXZJU,NYC,,,0.0,,,False
+Goldie’s Tavern,Goldie’s Tavern,"3503 Ditmars Blvd, Astoria, NY 11105",ChIJ277esglZwokRaR3P6oIBXqY,NYC,,,0.0,,,False
+Rolo's,Rolo's,"853 Onderdonk Ave, Ridgewood, NY 11385",ChIJWUhoPQhdwokRYsDwo5qMnMU,NYC,,,0.0,,,False
+Good Bar,Good Bar,"98 Meserole Ave, Brooklyn, NY 11222",ChIJYaebsEZZwokRdaBnC6WMr5A,NYC,,,0.0,,,False
+Peck Slip Social- New Deal,Peck Slip Social,"36 Peck Slip, New York, NY 10038",ChIJLX5S9ZpbwokRuhbbCZkqI2Y,NYC,,,0.0,,,False
+Vineapple,Vineapple,"71 Pineapple St, Brooklyn, NY 11201",ChIJkdevwDdawokR0j_3ECiQ8rE,NYC,,,0.0,,,False
+Lillian's,Lillian's,"247 Congress Street
+Charleston, SC 29403",ChIJAzlh7I17_ogRfARqVvn4emA,CHS,,,0.0,,,False
+The Pass,The Pass,"207-A St Philip St, Charleston, SC 29403",ChIJ-a0VOdp7_ogRE9Ems6Nte18,CHS,,,0.0,,,False
+Huriyali Gardens (Downtown),Huriyali Gardens - Downtown,"401 Huger St, Charleston, SC 29403",ChIJjczF2lp6_ogRBub6Bfc8OkU,CHS,,,0.0,,,False
+Mile End Delicatessen,Mile End Delicatessen,"97 Hoyt St, Brooklyn, NY 11217",ChIJLb9vlE1awokRL4Ume5zpejQ,NYC,,,0.0,,,False
+PDA Pizza,PDA Pizza,"669 Union St, Brooklyn, NY 11215",ChIJY3JoJx1bwokRm1F_KUvbR64,NYC,,,0.0,,,False
+Ritual,Ritual,"145 Calhoun Street Unit 301, Charleston, SC",ChIJr4BTw5Z7_ogRynn84Z_BHUs,CHS,,,0.0,,,False
+Il Corallo Trattoria,II Corallo Trattoria,"176 Prince St, New York, NY 10012",ChIJZ75-yI1ZwokR82kXXJvniwo,NYC,,,0.0,,,False
+Momoya Soho- New Deal,Happy Tuna,"380 Lexington Ave, New York, NY 10168",ChIJ4Rw7sVhZwokRJuSZSI0jb4A,NYC,,,0.0,,,False
+Momoya Soho- New Deal,An | Japanese Restaurant,"427 Amsterdam Ave, New York, NY 10024",ChIJ4Rw7sVhZwokRJuSZSI0jb4A,NYC,,,0.0,,,False
+Debajo,Debajo,"44 W 29th St, New York, NY 10001",ChIJoxar_y9ZwokRIM6a4HXsuo4,NYC,,,0.0,,,False
+ZOË,ZOË Cocktail Bar & Bites,"579 Howard St., SF, CA 94105",ChIJl1L3AAqBhYARfrEds4G_pEU,SF,,,0.0,,,False
+Ferdi,Ferdi," 15 7th Ave S, New York, NY 10014",ChIJoTTiRY1ZwokRn9SpxgNIx7M,NYC,,,0.0,,,False
+Stone Park Cafe,Stone Park Cafe, 324 5TH AVENUE BROOKLYN,ChIJF6deL_5awokRh2ohKTMG2HE,NYC,,,0.0,,,False
+Huriyali Riverland,Huriyali Riverland,"2016 WAPPOO DR
+Charleston SC 29412",ChIJX3X_Fgx5_ogRclV0AGOOGtA,CHS,,,0.0,,,False
+Beer Street,Beer Street,"550 Vanderbilt Ave, Brooklyn, NY 11238",ChIJEVFkpFtbwokR5ItXs2oJnvk,NYC,,,0.0,,,False
+Hearty and Healthy,Hearty and Healthy,"103 1st Ave., New York, NY 10003",ChIJZZe0gltZwokRcGgGUjceM_4,NYC,,,0.0,,,False
+Ella Funt,Ella Funt,"78-80 E 4th St, New York, NY 10003",ChIJoVcSWWFZwokRjbNOZGOxroo,NYC,,,0.0,,,False
+Greenwood Park,Greenwood Park,555 7th Ave Brooklyn,ChIJNTec2OBawokRUv0YTg7oX-E,NYC,,,0.0,,,False
+Fred's Dog House,Fred's Dog House,"354 Grand St, Brooklyn, NY 11211",ChIJEcTXd2NZwokRgVij9B5UW0A,NYC,,,0.0,,,False
+Thief NYC,Thief NYC,"595 Union Ave, Brooklyn, NY 11211",ChIJQwVjADNZwokRaaCi0RuPzWE,NTC,,,0.0,,,False
+Randolph Beer,Randolph Beer,"82 Prospect St, Brooklyn, NY 11201",ChIJix9FO6lbwokRkZyFzr3vOeg,NYC,,,0.0,,,False
+Little Dipper,Little Dipper,"135 W 30th St, New York, NY 10001",ChIJWXeePgBZwokRjyCUzI8-NjE,NYC,,,0.0,,,False
+Spicy Moon East Village,Spicy Moon,"232 8th Ave, New York, NY 10011",ChIJ7x3Pe11ZwokRLpfe6va9dqs,NYC,,,0.0,,,False
+The Little Pig,The Little Pig,"497 Atlantic Ave, Brooklyn",ChIJF2grHfFbwokRMJul5yRY4cw,NYC,,,0.0,,,False
+Dalila's,Dalila's,"441 Meeting St Suite F, Charleston, SC 29403",ChIJNXJ234B7_ogRva6P1mgPOw0,CHS,,,0.0,,,False
+Pineapple Club,Pineapple Club,"509 E 6th St, New York, NY 10009",ChIJUwJYwU9ZwokR-c64nryhInI,NYC,,,0.0,,,False
+Alma Negra,Alma Negra,"494 4TH AVE, BROOKLYN, New York 11215
+",ChIJjzh0ftJbwokRIFioM_VxHNQ,NYC,,,0.0,,,False
+Tabaré (Williamsburg),Tabaré,"1006 Flushing Ave, Brooklyn, NY 11237",ChIJ80WOzERdwokRXjGSASkDZxk,NYC,,,0.0,,,False
+Bee's Knees & Honey Lounge,Bee's Knees & Honey,65 N 7th St,ChIJ__96vgVZwokRgkcY1cmk_VM,NYC,,,0.0,,,False
+Marseille,MARSEILLE,630 9th Ave,ChIJDf7etFNYwokR_b7pJ_D2_dM,NYC,,,0.0,,,False
+Marseille,Chef Driven Hospitality,630 Ninth Avenue,ChIJDf7etFNYwokR_b7pJ_D2_dM,NYC,,,0.0,,,False
+TALEA Beer Co. - West Village,TALEA Beer Co.,"22 W 40th St, New York, NY 10018",ChIJd5DfLnNZwokRRnTNeWXMEZ4,NYC,,,0.0,,,False
+TALEA Beer Co. - Williamsburg,TALEA Beer Co.,"22 W 40th St, New York, NY 10018",ChIJ5TvP21FZwokRLFjbliEhRUc,NYC,,,0.0,,,False
+TALEA Beer Co. - Cobble Hill,TALEA Beer Co.,"22 W 40th St, New York, NY 10018",ChIJ7Xjm5QlbwokREJkEk_skS48,NYC,,,0.0,,,False
+Kiwami,Kiwami,"141 Bridge Park Dr, Brooklyn, NY 11201",ChIJeb_vSCRbwokRVIzbficpCeQ,NYC,,,0.0,,,False
+TALEA Beer Co. - Bryant Park,TALEA Beer Co.,"22 W 40th St, New York, NY 10018",ChIJ8YhauntZwokRzw7MOoKb1-I,NYC,,,0.0,,,False
+Filé Gumbo Bar,Filé Gumbo Bar,"275 Church St, New York, NY 10013",ChIJTeT7fTxbwokRdPDRDrqWjyM,NYC,,,0.0,,,False
+Coleman Public House,Coleman Public House,"427 W Coleman Blvd, Mt Pleasant, SC 29464",ChIJ__n0Xvpw_ogRCHZKuExfVMk,CHS,,,0.0,,,False
+Bati,Bati,"1057 Fulton St, Brooklyn, NY 11238",ChIJYXEosLFbwokRZO204ZitA1Q,NYC,,,0.0,,,False
+The Liberties,The Liberties,"998 Guerrero St., SF, CA 94110",ChIJXxwyPT5-j4ARMj_hNCaaXZA,SF,,,0.0,,,False
+Tacombi - Ft Greene,Tacombi,"267 Elizabeth St, New York, NY 10012",ChIJtUqnIhpbwokRfgI3evXbj-g,NYC,,,0.0,,,False
+Tacombi - Ft Greene,Tacombi (Parent Company),265 Bowery,ChIJtUqnIhpbwokRfgI3evXbj-g,NYC,,,0.0,,,False
+Tacombi - Fulton Market,Tacombi,"267 Elizabeth St, New York, NY 10012",ChIJY3zOPy8tDogR9JpAbCOy-Es,NYC,,,0.0,,,False
+Tacombi - Fulton Market,Tacombi (Parent Company),265 Bowery,ChIJY3zOPy8tDogR9JpAbCOy-Es,NYC,,,0.0,,,False
+Tacombi - Flatiron,Tacombi,"267 Elizabeth St, New York, NY 10012",ChIJY-_fXKRZwokRx2b6VzH6su4,NYC,,,0.0,,,False
+Tacombi - Flatiron,Tacombi (Parent Company),265 Bowery,ChIJY-_fXKRZwokRx2b6VzH6su4,NYC,,,0.0,,,False
+Tacombi - Bleeker,Tacombi,"267 Elizabeth St, New York, NY 10012",ChIJe0S8sZNZwokRAdgEV5COiNE,NYC,,,0.0,,,False
+Tacombi - Bleeker,Tacombi (Parent Company),265 Bowery,ChIJe0S8sZNZwokRAdgEV5COiNE,NYC,,,0.0,,,False
+Tacombi - FiDi,Tacombi,"267 Elizabeth St, New York, NY 10012",ChIJCxsgff1bwokRt-khy5Okqpg,NYC,,,0.0,,,False
+Tacombi - FiDi,Tacombi (Parent Company),265 Bowery,ChIJCxsgff1bwokRt-khy5Okqpg,NYC,,,0.0,,,False
+Tacombi -LIC,Tacombi,"267 Elizabeth St, New York, NY 10012",ChIJp9WpPSxZwokR9e5KFVB9lWQ,NYC,,,0.0,,,False
+Tacombi -LIC,Tacombi (Parent Company),265 Bowery,ChIJp9WpPSxZwokR9e5KFVB9lWQ,NYC,,,0.0,,,False
+Tacombi - UWS,Tacombi (Parent Company),265 Bowery,ChIJS4_amZhZwokRI32P3NwpsRU,NYC,,,0.0,,,False
+Tacombi - UWS,Tacombi,"267 Elizabeth St, New York, NY 10012",ChIJS4_amZhZwokRI32P3NwpsRU,NYC,,,0.0,,,False
+Tacombi -UES,Tacombi (Parent Company),265 Bowery,ChIJRc_0nbJZwokRPKi2zXCpaaY,NYC,,,0.0,,,False
+Tacombi -UES,Tacombi,"267 Elizabeth St, New York, NY 10012",ChIJRc_0nbJZwokRPKi2zXCpaaY,NYC,,,0.0,,,False
+Tacombi - Westbury,Tacombi (Parent Company),265 Bowery,ChIJO0AoGdKHwokRhGmV5GN8o-k,NYC,,,0.0,,,False
+Tacombi - Westbury,Tacombi,"267 Elizabeth St, New York, NY 10012",ChIJO0AoGdKHwokRhGmV5GN8o-k,NYC,,,0.0,,,False
+Tacombi - ESB,Tacombi (Parent Company),265 Bowery,ChIJTQeoA6lZwokRpXP-fGPn4oU,NYC,,,0.0,,,False
+Tacombi - ESB,Tacombi,"267 Elizabeth St, New York, NY 10012",ChIJTQeoA6lZwokRpXP-fGPn4oU,NYC,,,0.0,,,False
+Tacombi - Williamsburg,Tacombi,"267 Elizabeth St, New York, NY 10012",ChIJITt5Kl5ZwokRO71zHAwXV2g,NYC,,,0.0,,,False
+Tacombi - Williamsburg,Tacombi (Parent Company),265 Bowery,ChIJITt5Kl5ZwokRO71zHAwXV2g,NYC,,,0.0,,,False
+Tacombi - Wicker Park,Tacombi (Parent Company),265 Bowery,ChIJXzk9Gw3TD4gRt_-bxIe8jdE,NYC,,,0.0,,,False
+Tacombi - Wicker Park,Tacombi,"267 Elizabeth St, New York, NY 10012",ChIJXzk9Gw3TD4gRt_-bxIe8jdE,NYC,,,0.0,,,False
+Tacombi - Forest Hills,Tacombi (Parent Company),265 Bowery,ChIJWwL9DZdfwokR2NsMW_PCDxk,NYC,,,0.0,,,False
+Tacombi - Forest Hills,Tacombi,"267 Elizabeth St, New York, NY 10012",ChIJWwL9DZdfwokR2NsMW_PCDxk,NYC,,,0.0,,,False
+Other Half Brewing - 195 Centre Street,Other Half Brewing (Parent),"600 5th Ave, New York, 10020",ChIJyXHHyfZawokRm6SBxpOHUxY,NYC,,,0.0,,,False
+Other Half Brewing - 195 Centre Street,Other Half Brewing (Centre St),195 Centre Street,ChIJyXHHyfZawokRm6SBxpOHUxY,NYC,,,0.0,,,False
+Other Half Brewing - 34 River Street,Other Half Brewing (Parent),"600 5th Ave, New York, 10020",ChIJ9bsn229ZwokR0CENMNxupqg,NYC,,,0.0,,,False
+Other Half Brewing - 34 River Street,Other Half Brewing (34 River Street),195 Centre Street,ChIJ9bsn229ZwokR0CENMNxupqg,NYC,,,0.0,,,False
+Maybank Public House,Maybank Public House,"1970 Maybank Hwy, Charleston, SC 29412",ChIJu1AjHF55_ogRJxqL6Y7C25M,CHS,,,0.0,,,False
+Padoca Bakery (Lenox Hill),Padoca Bakery,"210 E 67th St, New York, NY 10065",ChIJwc5zFsJYwokRk4HHVMtS74A,NYC,,,0.0,,,False
+Tabaré (Bushwick)- New Deal,Tabaré,"1006 Flushing Ave, Brooklyn, NY 11237",ChIJ80WOzERdwokRXjGSASkDZxk,NYC,,,0.0,,,False
+Alora (SF),Alora,"Pier 3, Hornblower landing, San Francisco, CA 94105",ChIJ20bNEACBhYARtsTcSrSPFdU,SF,,,0.0,,,False
+Emblem,Emblem BK,"187 Graham Ave, Brooklyn, NY 11206",ChIJ__-zvv1bwokRq7XrbriPQZQ,NYC,,,0.0,,,False
+Birdee,kenthg.com,316 Kent Ave. Brooklyn NY 11249,ChIJJbmnn01ZwokRRBmMCKIY8K8,NYC,,,0.0,,,False
+Birdee,Birdee,316 Kent Ave. Brooklyn NY 11249,ChIJJbmnn01ZwokRRBmMCKIY8K8,NYC,,,0.0,,,False
+Komaaaj,Komaaj,"20 29th St, San Francisco, CA 94110",ChIJVVXlLPh2hYAR20ALCmb9rC8,SF,,,0.0,,,False
+Puttery - Museum,Puttery,"446 W 14th St, New York, NY. 10014.",ChIJUxpywGVZwokRIvAIwd-hcrc,NYC,,,0.0,,,False
+Puttery Lodge,Puttery,"446 W 14th St, New York, NY. 10014.",ChIJUxpywGVZwokRIvAIwd-hcrc,NYC,,,0.0,,,False
+Pastai,Pastai,"186 9th Ave, New York, NY 10011",ChIJ81V-dblZwokRsTrQH6-BzCk,NYC,,,0.0,,,False
+Bomba Cocktail Bar,Puttery,"446 W 14th St, New York, NY. 10014.",ChIJUxpywGVZwokRIvAIwd-hcrc,NYC,,,0.0,,,False
+Rory's Rooftop,Puttery,"446 W 14th St, New York, NY. 10014.",ChIJ8cV4ZrNZwokRmXum9urdUpg,NYC,,,0.0,,,False
+Accidental Bar,Accidental Bar,"98 Loisaida Ave, New York, NY 10009",ChIJUeg8neFZwokRjTD4oCwTPGk,NYC,,,0.0,,,False
+Spicy Moon (West Village),Spicy Moon,"232 8th Ave, New York, NY 10011",ChIJZRP3DW9ZwokR6NnJ9PaMZxI,NYC,,,0.0,,,False
+Spicy Moon - Bowery,Spicy Moon,"232 8th Ave, New York, NY 10011",ChIJAb8jiJZZwokROX7aeBYf2I4,NYC,,,0.0,,,False
+Spicy Moon - Chelsea,Spicy Moon,"232 8th Ave, New York, NY 10011",ChIJJbctbLdZwokRUbBIho1wN8g,NYC,,,0.0,,,False
+Saturn Road,Saturn Road,"276 Court St, Brooklyn, NY 11231",ChIJN_uyy55bwokRzVyFQ6MUTZs,NYC,,,0.0,,,False
+Kjun,Kjun,"154 E 39th St, New York, NY 10016",ChIJ7xJ4Rw9ZwokRhQQ-WKtoJFg,NYC,,,0.0,,,False
+Bar Boulud,Bar Boulud,1900 Broadway,ChIJG8Pwm_VYwokRtPc8Rwrhdpg,NYC,,,0.0,,,False
+Le Gratin,Le Gratin,5 Beekman Street,ChIJj4fN7HBbwokRCB5xca3KF1E,NYC,,,0.0,,,False
+La Pavillon,La Pavillon,318 Park Ave s,ChIJjcAJd-tZwokRJ0GkkJ2Urp0,NYC,,,0.0,,,False
+Café Boulud,Café Boulud,100 E 63rd St,ChIJCcAxi5RYwokRdUqdw5_FHIk,NYC,,,0.0,,,False
+La Tete D'Or,La Tete D'Or,318 park ave south,ChIJsTUVzgBZwokRkUIgGFl_RJc,NYC,,,0.0,,,False
+Speedy Romeo,Speedy Romeo,"376 Classon Ave, Brooklyn, NY 11238",ChIJOTob_r1bwokRtUoNNbcmw_g,NYC,,,0.0,,,False
+Nabila's,Nabila's,"248 Court Street, Brooklyn, NY, 11201",ChIJcb-HMTlbwokRlwa32aP_wew,NYC,,,0.0,,,False
+Artesano Peruvian Cuisine,Artesano Peruvian Cuisine,"90 Chambers St, New York, NY 10007",ChIJv3vgwFZbwokRwP07bRgRYdM,NYC,,,0.0,,,False
+Thursday Kitchen,Thursday Kitchen," 424 E 9th St, New York, NY 10009",ChIJVyFicJ1ZwokR2oIygOmovWw,NYC,,,0.0,,,False
+Coffee Bar by The Refuge Isle of Palms,The Refuge,,ChIJ7TpSoTJz_ogRYDJ42AYrARo,CHS,,,0.0,,,False
+Sereneco Cafe,Sereneco,113 Franklin St,ChIJH_-tMGlZwokRqIqHR22D-zU,NYC,,,0.0,,,False
+Lillian's - Market & Cafe,Lillian's Market & Cafe,205 Main Street,ChIJMX7c-EyzwIkRdpy3dZklcbE,CHS,,,0.0,,,False
+Criollas West Village,Criollas | Baked Empanadas ,"333 6th Ave, New York, NY 10014",ChIJZ-5Z2OtZwokR5QGPIp0IJVE,NYC,,,0.0,,,False
+Criollas | Hells Kitchen,Criollas | Baked Empanadas ,"333 6th Ave, New York, NY 10014",ChIJjUWl9U9ZwokRqu0xrtIv_4M,NYC,,,0.0,,,False
+Brass,Brass,,ChIJ81FEDgBZwokR6hAwPtR8c-o,NYC,,,0.0,,,False
+The Tusk Bar,The Tusk Bar,"7 E 27th St, New York, NY 10016",ChIJybhcanBZwokRMhTRdNByp3Q,NYC,,,0.0,,,False
+Winner Bakery,Winner / Runner Up,367 7th Avenue,ChIJg8UZJyNbwokR0-LkfR8MPJQ,NYC,,,0.0,,,False
+Caffe Sport,Caffe Sport,"574 Green Street San Francisco, CA 94113",ChIJB60QZ_GAhYARnFPG-x5vDxE,SF,,,0.0,,,False
+Peasant,Peasant,"194 Elizabeth St, New York, NY 10012",ChIJ0XJEBIZZwokR3iPgClK9uEg,NYC,,,0.0,,,False
+MOKYO,MOKYO,"109 St Marks Pl, New York, NY 10009",ChIJHxQBcypZwokR7-D3oe4V6Go,NYC,,,0.0,,,False
+Tacos 1986 West Village,Tacos 1986 West Village,"164 West 4th Street New York, NY 10014",ChIJG4KjIzNZwokRoNPsES4eqaA,NYC,,,0.0,,,False
+Taco Boy - Summerville,Taco Boy - Downtown,"217 Huger St, Charleston, SC 29403",ChIJg5GbV6-L_ogR3TZ5lfdU_qw,CHS,,,0.0,,,False
+Taco Boy - Summerville,Taco Boy - Summerville,217 Huger Street,ChIJg5GbV6-L_ogR3TZ5lfdU_qw,CHS,,,0.0,,,False
+Taco Boy - Folly Beach,Taco Boy - Folly Beach,217 Huger Street,ChIJvTM9cerX_YgR6VAMsi9emZ0,CHS,,,0.0,,,False
+Taco Boy - Folly Beach,Taco Boy - Downtown,"217 Huger St, Charleston, SC 29403",ChIJvTM9cerX_YgR6VAMsi9emZ0,CHS,,,0.0,,,False
+Attaboy,Attaboy,"134 Eldridge St, New York, NY 10002",ChIJDbQMBIdZwokRVS4L8B8V5SA,NYC,,,0.0,,,False
+Little More,Little More,"111 Reade St, New York, NY 10013",ChIJdca4ZQBbwokRaxJrJc_iboE,NYC,,,0.0,,,False
+Sesame Burgers & Beer - Mt. Pleasant - Mt. Pleasant,Glowfisch Hospitality,"1055 Johnnie Dodds Blvd, Suite 100 Mount Pleasant, SC 29464",ChIJ9Y_hi1Zw_ogRtO5Kg6Py3vU,CHS,,,0.0,,,False
+Sesame Burgers & Beer - Mt. Pleasant - Mt. Pleasant,Sesame Burgers & Beer - Mt. Pleasant,"675 East Johnnie Dodds Boulevard,
+Mt Pleasant, SC 29464",ChIJ9Y_hi1Zw_ogRtO5Kg6Py3vU,CHS,,,0.0,,,False
+Five Loaves Cafe - Mt. Pleasant,Glowfisch Hospitality,"1055 Johnnie Dodds Blvd, Suite 100 Mount Pleasant, SC 29464",ChIJT0AAmVZw_ogR4jRTh9lQg7o,CHS,,,0.0,,,False
+Five Loaves Cafe - Mt. Pleasant,Five Loaves Cafe - Mt. Pleasant,1055 Johnnie Dodds Blvd #100,ChIJT0AAmVZw_ogR4jRTh9lQg7o,CHS,,,0.0,,,False
+Tutti Pizza,Tutti Pizza,"700 King St suite a, Charleston, SC 29403",ChIJm2S3LFl7_ogR-dSlRIN67EU,CHS,,,0.0,,,False
+Miznon Chelsea Market,,435 W 15th St,ChIJ8VQWXL9ZwokRvzf2OM4TNP4,NYC,,,0.0,,,False
+HaSalon,,757 10th Avenue,ChIJ-YpwVCJZwokR79IyrPpwSVA,NYC,,,0.0,,,False
+Port Sa'id,,88 King Street,ChIJtc2oTDJZwokRQiktCdsm9VE,NYC,,,0.0,,,False
+Shmone,,61 W 8th St,ChIJBdMLKZBZwokRJ0tYbQ6nfZ4,NYC,,,0.0,,,False
+Shmone Wine Bar,,65 W 8th St,ChIJ5eQtHWZZwokRHoU7Tau8axs,NYC,,,0.0,,,False
+Malka UWS,,161 W 72nd St,ChIJCyq9Xr1ZwokRtYHX1gcbJF0,NYC,,,0.0,,,False
+Malka Dumbo,,56 Adams Street,ChIJ2QOSPEZbwokR5dMpgfr3PKU,NYC,,,0.0,,,False
+Pecking House - Chinatown,Pecking House - Chinatown,"83 Henry Street
+New York, NY 10002",ChIJiUcz7kBbwokRJnrAWfLcqtk,NYC,,,0.0,,,False
+Harborview,Harborview Restaurant And Bar,"4 Embarcadero Center, San Francisco, CA 94111",ChIJZ1SMEQeBhYAR8Y0suKMr48o,SF,,,0.0,,,False
+Paper Son Coffee,Paper Son Coffee,"303 2nd St., N102, ",ChIJXVRIc9aBhYARDuJoNx2IVAg,SF,,,0.0,,,False
+Chelsea Living Room -New Deal,chelsealivingroomnyc.com,"243 W 14th St, New York, NY 10011",ChIJD0k97wBZwokRQIQ9ioXsZD8,NYC,,,0.0,,,False
+Passerine,Passerine,"36 E 20th St, New York, NY 10003",ChIJNz2NYnNZwokRmpUsT-iz-ZE,NYC,,,0.0,,,False
+Moby's,Moby's,"341 Pantigo Road East Hampton, NY 11937 ",ChIJ9V8t10i76IkRcj-Aoa-eBIg,NYC,,,0.0,,,False
+Temple Bar,Temple Bar,"332 Lafayette st NY, NY 10012",ChIJnSU3A0ZZwokR7idYNeIPu5o,nyc,,,0.0,,,False
+Momoya UWS,An | Japanese Restaurant,"427 Amsterdam Ave, New York, NY 10024",ChIJgTrKAYZYwokRrLF7JiGwdNM,NYC,,,0.0,,,False
+Mano a Mano,Mano a Mano,"2534 N Milwaukee Ave, Chicago, IL 60647",ChIJ_TpJQMnND4gR7BzXJXstAG8,CHI,,,0.0,,,False
+Decades,Decades,"690 Woodward Ave, Queens, NY 11385",ChIJy-XYyNtfwokRnFoJaxU7k0A,NYC,,,0.0,,,False
+Brooklyn Kolache,Brooklyn Kolache,"520 DeKalb Ave, Brooklyn, NY 11205",ChIJe1O4wpRbwokRu8RmeM2Xji4,NYC,,,0.0,,,False
+Brooklyn French Bakers Columbia Street,Brooklyn French Bakers - Columbia street,"273 Columbia St, Brooklyn, NY 11231",ChIJr5AmcG9bwokR4WQblfK0Nuw,NYC,,,0.0,,,False
+Earthly Delights,Earthly Delights,"5738 Myrtle Ave, Ridgewood, NY 11385",ChIJf6iSQwBdwokR_22MmWLKVQk,NYC,,,0.0,,,False
+The Ten Bells BK,The Ten Bells BK,"65 Irving Ave, Brooklyn, NY 11237",ChIJv5QvLQddwokR8sH0Q-NHt5Q,NYC,,,0.0,,,False
+Blind Tiger,Blind Tiger," 281 Bleecker St, New York, NY 10014",ChIJWW4LoZNZwokRFOD1017tTZc,NYC,,,0.0,,,False
+The Commons Chelsea,The Commons Chelsea,"128 7th Ave, New York, NY 10011",ChIJiXJVzLtZwokRbeoV2XxLOdg,NYC,,,0.0,,,False
+No. 7,No. 7 Restaurant,"627 Vanderbilt Ave, Brooklyn, NY 11238",ChIJFRTZSdNbwokRPv71NOk5GH8,NYC,,,0.0,,,False
+Idaho,Idaho,"349 E 13th St, New York, NY 10003",ChIJaeFdrtdZwokRMn3DrPKdAVc,NYC,,,0.0,,,False
+Lazy Sundaes (dumbo),Lazy Sundaes (Dumbo),"170 Front Street
+Brooklyn, NY, 11201",ChIJkWdo8pxbwokRb0yfkKXQOrI,NYC,,,0.0,,,False
+Blackwood,Blackwood,"2150 Chestnut St, San Francisco, CA 94123",ChIJkfP43NaAhYARkQtRUGeNnlY,SF,,,0.0,,,False
+Lost Cat Bar & Bites,Lost Cat Bar & Bites,"587 Post St, San Francisco, CA 94102",ChIJZTcP2_uBhYARQZBWBWXHrkE,SF,,,0.0,,,False
+Maries,Marie's,"195 Wyckoff Ave, Brooklyn, NY 11237",ChIJf0_U-V1dwokRrdkZbn2BUew,NYC,,,0.0,,,False
+Edmund's Oast Brewing Co.,Edmund's Oast Brewing Co.,"1505 King St #115, Charleston, SC 29405",ChIJGU5FivB6_ogRzmmp7eKqMtQ,CHS,,,0.0,,,False
+Pizzette,Pizzaette,"191 Graham Ave, Brooklyn, NY 11206",ChIJk9gLf75bwokRI2fQO4j603s,NYC,,,0.0,,,False
+The Sentinel,The Sentinel,"25 Maiden Ln, San Francisco, CA 94108",ChIJcTnoH4iAhYARFWB-p5hD9ek,SF,,,0.0,,,False
+Blinky's,Blinky's,"609 Grand St, Brooklyn, NY 11211
+",ChIJtxAEdHpZwokRh5_jOETnK8Q,NYC,,,0.0,,,False
+Komaaj,,,,SF,,,0.0,,,False
+Brooklyn French Bakers - Park Slope,Brooklyn French Bakers - Park Slope,"510 2nd St, Brooklyn, NY 11215",ChIJ6c4obKdbwokRQ85KP3H8zVQ,NYC,,,0.0,,,False
+Rosalind Bakery,Rosalind Bakery Cafe at Embarcadero Four,"2 Embarcadero Ctr, San Francisco, CA 94111",ChIJz3XEOo2BhYARl5bha2ABNmM,SF,,,0.0,,,False
+Little Honey - New Deal,Little Honey,"487 7th AVENUE BROOKLYN, NY 11215",,NYC,,,0.0,,,False
+Carissa's the Bakery - Amagansett,Carissa's the Bakery,,ChIJEdyFBDK76IkRbHAIKMcZYls,LI,,,0.0,,,False
+Mercantile Dining & Provision,Mercantile Dining & Provision,"1809 Blake Street, Ste. 200 Denver, CO 80202",ChIJJ3w-CsN4bIcRnjIYAv0i6MU,DEN,,,0.0,,,False
+Kachina Cantina,Kachina Cantina,"1809 Blake Street, Ste. 200 Denver, CO 80202",ChIJjxvS2tx4bIcRM0ybOLJpbKE,DEN,,,0.0,,,False
+Almond Bridgehampton,Almond,"1 Ocean Rd, Bridgehampton, NY 11932",ChIJX4bnq9i96IkRMhnW2mI-AIQ,Li,,,0.0,,,False
+The Original,The Original,"1809 Blake Street, Ste. 200 Denver, CO 80202",ChIJEeom_vp5bIcRnUF3x5pHw5s,DEN,,,0.0,,,False
+Bistro Ete,Bistro Ete,"760 Montauk Hwy, Water Mill, NY 11976",ChIJBb_d_piV6IkRzFwzWqvbZcI,NYC,,,0.0,,,False
+Indigo,Indigo,"3321 Steiner St., SF, CA 94123",ChIJR3GOKeuBhYARZLjs9-fsh_Q,SF,,,0.0,,,False
+Woodie Fisher Kitchen & Bar,Woodie Fisher Kitchen & Bar,"1809 Blake Street, Ste. 200 Denver, CO 80202",ChIJ97BI5sV5bIcRbxRz-Unx0fU,DEN,,,0.0,,,False
+Unregular Pizza Union Square,Unregular Pizza Union Square,"135 4th Ave, New York, NY 10003",ChIJY5XrfwVZwokRw3jqTvqqtSA,NYC,,,0.0,,,False
+The Corner Office Restaurant & Martini Bar,The Corner Office Restaurant & Martini Bar,"1809 Blake Street, Ste. 200 Denver, CO 80202",ChIJ59c0J9B4bIcRP7IDgFozjiw,DEN,,,0.0,,,False
+Urban Farmer Denver,Urban Farmer Denver,"1809 Blake Street, Ste. 200 Denver, CO 80202",ChIJpZERZMN4bIcRBzONa01GT7E,DEN,,,0.0,,,False
+Ambler,Ambler,"1809 Blake Street, Ste. 200 Denver, CO 80202",ChIJfQpFkDx5bIcRGnDZ-s_yQnE,DEN,,,0.0,,,False
+Call Me Pearl,Call Me Pearl,"1809 Blake Street, Ste. 200 Denver, CO 80202",ChIJnRgAtIF5bIcRGydGN3SuxAs,DEN,,,0.0,,,False
+Cruise Room,Cruise Room,"1809 Blake Street, Ste. 200 Denver, CO 80202",ChIJ6QdWCZh5bIcRzjkjBPT0rEI,DEN,,,0.0,,,False
+Toro Latin Kitchen & Lounge,Toro Latin Kitchen & Lounge,"1809 Blake Street, Ste. 200 Denver, CO 80202",ChIJxT4AIcp_bIcRL_rWb-gwyoY,DEN,,,0.0,,,False
+Catbird Kitchen,Catbird Kitchen,"1809 Blake Street, Ste. 200 Denver, CO 80202",ChIJ44EQpRN5bIcR1nMkfhBXD4s,DEN,,,0.0,,,False
+Poka Lola Social Club,Poka Lola Social Club,"1809 Blake Street, Ste. 200 Denver, CO 80202",ChIJ8c0qxtx4bIcRsrKdtC8dYsk,DEN,,,0.0,,,False
+Hart Bar,Hart Bar," 538 Hart St #1, Brooklyn, NY 11221",ChIJl66pMw9cwokRVevR2MmIqBg,NYC,,,0.0,,,False
+Spike's Coffee & Teas,Spike's Coffee & Teas,4117 19th st,ChIJIwGPyxp-j4ARaAv8glHW8q4,SF,,,0.0,,,False
+Iron Horse,The Sentinel,"25 Maiden Ln, San Francisco, CA 94108",ChIJk-_jVoiAhYARUMRNR_Aq_wU,SF,,,0.0,,,False
+House of Shields,The Sentinel,"25 Maiden Ln, San Francisco, CA 94108",ChIJP6l_oGKAhYARafMdGyI-75Q,SF,,,0.0,,,False
+Ocean Beach Cafe - SF Breakfast Club,Ocean Beach Cafe,"734 La Playa St, San Francisco, CA 94121",ChIJg4qwGKeHhYARo41FFI_aOss,SF,,,0.0,,,False
+Bar 56,bar 56,"53 Water Street, Brooklyn, NY 11201",ChIJ5SzimXpbwokRR2U_8IFONFw,NYC,,,0.0,,,False
+Nick and Toni's,Nick and Toni's,,ChIJR2qJI-S66IkRDsNCmihMqXU,Li,,,0.0,,,False
+Doubles Amagansett- New Deal,Doubles,"12 Amagansett Square, Amagansett, NY 11930",ChIJqzMtFVex6IkRInzRqRHL-Rc,LI,,,0.0,,,False
+Doubles Sag Harbor,Doubles,"12 Amagansett Square, Amagansett, NY 11930",ChIJxU5E7NG96IkR9V2_Tz5I2Bc,LI,,,0.0,,,False
+Carta Wine Bar,Carta Wine Bar," 35 Bedford St, New York, NY 10014",ChIJKzDkIQBZwokR1_OvS4ohkRg,NYC,,,0.0,,,False
+Hortus,Hortus NYC,"271 5th Ave, New York, NY 10016",ChIJyX-WBOZZwokRROjVTDdgeZE,NYC,,,0.0,,,False
+Fresno,Fresno,TBD - Ryan to fill when back from OOO,ChIJg9IYPAS76IkRfQXsnMdOWJA,LI,,,0.0,,,False
+Bon Banh Mi - S. Mt. Pleasant,Bon Banh Mi - S. Mt. Pleasant,"1440 Ben Sawyer Blvd, MT.P, SC 29464",ChIJcUCmAw1x_ogR_yzBMrmpL6o,CHS,,,0.0,,,False
+Bon Banh Mi - S. Mt. Pleasant,Bon Banh Mi,"1440 Ben Sawyer Blvd, MT.P, SC 29464",ChIJcUCmAw1x_ogR_yzBMrmpL6o,CHS,,,0.0,,,False
+Stretch Pizza,Stretch Pizza - Park Ave,"331 Park Ave S, New York, NY 10010",ChIJETw36R9ZwokRmPYazyfvpZ4,NYC,,,0.0,,,False
+Clam Bar,Clam Bar,"2025 Montauk Hwy, Amagansett, NY 11930",ChIJa9Ma4Nit6IkRZL9USMZ5EU0,LI,,,0.0,,,False
+Dive Bar Pizza,Dive Bar Pizza,466 West Lake Drive,ChIJu0_07FZV74kRhDxteFg83aU,NYC,,,0.0,,,False
+Rowdy Hall,Rowdy Hall,"177 Main St, Amagansett, NY 11930",ChIJq-pQXvy66IkR4_sosmglna4,LI,,,0.0,,,False
+La Fondita,La Fondita,"74 Montauk Highway, Amagansett, NY 11930",ChIJRem_lc-t6IkRFAsygSqVhu4,LI,,,0.0,,,False
+Townline BBQ,Townline BBQ,"3593 Montauk Hwy, Sagaponack, NY 11962",ChIJ7RE7YDq86IkRDGtyIsrUaXU,LI,,,0.0,,,False
+Cohche Comedor,Cohche Comedor,"74A Montauk Hwy, Amagansett, NY 11930",ChIJe_iMsOm76IkREotBMvZu2A4,LI,,,0.0,,,False
+Charles Pan Fried Chicken (UWS),Charles Pan Fried Chicken (UWS),"146 W 72nd St. New York, NY 10023",ChIJ7_ptNH72wokRWJ29NvzJSd0,NYC,,,0.0,,,False
+Jane on Fillmore,Jane on Larkin,2123 Fillmore st,ChIJ7ctrNsaAhYARdwAVqJAAjlQ,SF,,,0.0,,,False
+Jane on Larkin - Breakfast Club,,"925 Larkin St, San Francisco, CA 94115",,SF,,,0.0,,,False
+Jane the Bakery,Sweet Jane LLC - Parent,"1881 Geary Blvd, San Francisco, CA 94115",,SF,,,0.0,,,False
+El Porteno,El Porteno,"1 Ferry Building, #18, SF, CA 94111",ChIJuQFUy02Aj4ARoaOaNCQq7Oc,SF,,,0.0,,,False
+"El Porteno (2nd, SF)",El Porteno,"700 2nd St., SF, CA 94107",ChIJpUD6A19_j4ARhWZQu-RmZIE,SF,,,0.0,,,False
+La Newyorkina (Red Hook),La Newyorkina (HighLine),"30th Street (on the High Line) New York, NY 11001",ChIJJ4dQEWBawokRKThH6VuPK8Q,NYC,,,0.0,,,False
+La Newyorkina (Red Hook),La Newyorkina (Red Hook),"61 Commerce St,
+Brooklyn, NY 11231",ChIJJ4dQEWBawokRKThH6VuPK8Q,NYC,,,0.0,,,False
+La Newyorkina (HighLine),La Newyorkina (HighLine),"30th Street (on the High Line) New York, NY 11001",ChIJJ4dQEWBawokRKThH6VuPK8Q,NYC,,,0.0,,,False
+Mijo (High Line),Mijo (High Line),"30th Street (on the High Line), New York, NY 11001",ChIJW_9iLLdZwokR5m1CIKqPNcs,NYC,,,0.0,,,False
+Jacob's Pickles,Jacob's Pickles,"100 N Water St SL0300, Norwalk, CT 06854",ChIJu7LF_5Qf6IkRmZDNoVEEGMU,uws/ues,,,0.0,,,False
+Paper Son Coffee (3rd St),Paper Son Coffee (3rd St.),"2343 3rd St UNIT 100, San Francisco, CA 94107",ChIJR0WsBfx_j4AR1GwHWkeqeZ4,SF,,,0.0,,,False
+Tasca,Tasca,"505 Columbus Ave, New York, NY 10024",ChIJg-QDdKFZwokRumpX4_PxJuU,NYC,,,0.0,,,False
+Friend of a Farmer (UWS),Friend of A Farmer,"77 Irving Pl Ground Floor, New York, NY 10003",ChIJeQcpsdFZwokRLvcPlPKdYuc,uws/ues,,,0.0,,,False
+Rintaro,Rintaro," 82 14th St, San Francisco, CA 94103",ChIJgcIdeSZ-j4AR1BE-49mhR-E,SF,,,0.0,,,False
+Katsubo Ramen,Katsubo Ramen,"4628 Spruill Ave Suite 101, North Charleston, SC 29405",ChIJMTWHOFRl_ogRfc9Npjg4vOc,CHS,,,0.0,,,False
+Sound Booth,,"88 King Street New York, NY 10014",,NYC,,,0.0,,,False
+Meeting House,Meeting House,"4 Amagansett Square, Amagansett, NY 11930",ChIJrZkgVae66IkR2HGHO22tVys,LI,,,0.0,,,False
+Carissa's the Bakery - Bay Street Sag Harbor,Carissa's the Bakery,,ChIJMQ84NJ296IkRs9bjYEIYZK0,LI,,,0.0,,,False
+Carissa's the Bakery - Newtown East Hampton,Carissa's the Bakery,,ChIJU7y0tKO66IkRgwM_iWVfvTA,LI,,,0.0,,,False
+Bernie's - SF Breakfast Club,Bernie's," 3966 24th St, San Francisco, CA 94114",ChIJ37ticRN-j4ARnoZeLusW0bI,SF,,,0.0,,,False
+Little Grenjai - New Deal,Little Grenjai," 477 Gates Ave, Brooklyn, NY 11216",,NYC,,,0.0,,,False
+Little Grenjai - New Deal,Little Grenjai," 477 Gates Ave, Brooklyn, NY 11216",,NYC,,,0.0,,,False
+Aftermath,Aftermath,"16-80 Madison St, Ridgewood, NY 11385",ChIJWUxCcGFdwokRB1mscVCGvyo,NYC,,,0.0,,,False
+Barn Joo (UNION SQUARE),Barn Joo,"UNION SQUARE 35 Union Square W, New York, NY 10003",ChIJQ7XpyqNZwokRQpVfvGEViWM,NYC,,,0.0,,,False
+L&W Market,L&W Market,,ChIJDehzRvm96IkRvAxxNbTFqRs,LI,,,0.0,,,False
+Ilis,Ilis,"150 Green St, Brooklyn, NY 11222",ChIJHZyajD1ZwokREWLihHYSryQ,NYC,,,0.0,,,False
+Lazy Sundaes (LES),Lazy Sundaes (LES),"23 Clinton Street
+New York, NY, 10002",ChIJva8gSeVZwokR3TrD7QRjZAE,NYC,,,0.0,,,False
+Lazy Sundaes (LES),Lazy Sundae (Greenwich Village),"11 Waverly Place
+New York, NY, 10003",ChIJva8gSeVZwokR3TrD7QRjZAE,NYC,,,0.0,,,False
+Lazy Sundae (Greenwich Village),Lazy Sundae (Greenwich Village),"11 Waverly Place
+New York, NY, 10003",ChIJ7w2fUTdZwokR9-nAUi9iQVE,NYC,,,0.0,,,False
+Umbra,Umbra,"785 Hart St, Brooklyn, NY 11237",ChIJR_kku1tdwokROHIILkAiqwk,NYC,,,0.0,,,False
+Charles Pan Fried Chicken (Harlem Flagship),Charles Pan Fried Chicken (Harlem Flagship),"340 W 145th St. 
+New York, NY 10039",ChIJJ4MKaqP3wokRO-Z7EJaXyOk,NYC,,,0.0,,,False
+Mitsuru,Mitsuru,"149 W 4th St, New York, NY 10012",ChIJ53izUQBZwokRJTNgBT_Et_o,NYC,,,0.0,,,False
+Mitsuru,Parcelle Wine Bar Group,135 Division Street,ChIJ53izUQBZwokRJTNgBT_Et_o,NYC,,,0.0,,,False
+Sunns,Sunns,"139 Division St, New York, NY 10002",ChIJJbrdCQBbwokR0msB9eFOzEE,NYC,,,0.0,,,False
+Sunns,Parcelle Wine Bar Group,135 Division Street,ChIJJbrdCQBbwokR0msB9eFOzEE,NYC,,,0.0,,,False
+Amélie,Amelie,"566 Amsterdam Ave, New York, NY 10024",ChIJBV27hoNYwokR20JihLuQdUs,"NYC, DC, SF",,,0.0,,,False
+"886 (886, WenWen)",886,"26 St Marks Pl, New York, NY 10003",ChIJKbjLf5xZwokRYa6BYJg0Xns,NYC,,,0.0,,,False
+"California Kahve (Lincoln, Presidio) - New Deal",,"210 Lincoln Blvd., SF, CA 94129",,SF,,,0.0,,,False
+"California Kahve (GG Park, Kezar)",California Kahve,"The Carousel, Kezar Dr., SF, CA 94118",ChIJc7anRY6HhYARLwBiTgNYc48,SF,,,0.0,,,False
+California Kahve (JFK Promenade),California Kahve,"JFK Promenade, GG Park, SF, CA 94118",ChIJMQznWQCHhYARYJ1o3D-rn04,SF,,,0.0,,,False
+Charles Pan Fried Chicken (Harlem West Side),Charles Pan Fried Chicken (Harlem West Side),"439 W 125th St. New York, NY 10027",ChIJgZ9BHmX3wokRbTO_1t6253k,NYC,,,0.0,,,False
+WenWen,Wenwen+,"1025 Manhattan Ave, Brooklyn, NY 11222",ChIJmcr2IF9ZwokRr-u_-UTxju4,NYC,,,0.0,,,False
+Rosalind Bakery Cafe,,"450 Manor Plaza, Pacifica, CA 94044",,SF,,,0.0,,,False
+Saison Cellar & Wine Bar,Saison Cellar & Wine,"234 Townsend St., SF, CA. 94107",ChIJRRzWRNZ_j4ARc86WTVLCrYk,SF,,,0.0,,,False
+Penelope's Coffee & Tea (SM),Penelope's Coffee & Tea (SM),"1326 W. Hillsdale, Blvd., San Mateo, CA 94403
+",ChIJrR5MCMyej4AR7p9_0Zsv4RQ,SF,,,0.0,,,False
+Steuben’s (DEN),Steuben’s,523 E 17th Ave.,ChIJI8vB8Ct5bIcR40G-TvheRxE,DEN,,,0.0,,,False
+Trellis - SF Breakfast Club,Trellis,"981 Mission St, San Francisco, CA 94103",ChIJY0EnjzaBhYARVDEBQc2PdKM,SF,,,0.0,,,False
+Cafe Ornithology,Cafe Ornithology," 1037 Broadway, Brooklyn, NY 11221",ChIJJUQ7iB9dwokRbAA0O_h71C4,NYC,,,0.0,,,False
+Maison Pickle,Maison Pickle,"2315 Broadway, New York, NY 10024",ChIJrapahYZYwokRdCivYmoCbJ8,uws/ues,,,0.0,,,False
+Tiki Chick,Tiki Chick,"517 Amsterdam Ave, New York, NY 10024",ChIJh3HkKvdZwokR-8i3PwLN_mI,NYC,,,0.0,,,False
+PENELOPE'S COFFEE & TEA - (SF) New Deal,PENELOPE'S COFFEE & TEA," 121 Spear St., Suite B12, 94105",ChIJq7Ci1KWBhYARqSh4Y-NX06Q,SF,,,0.0,,,False
+Penelope's Coffee & Tea (FC),Penelope's Coffee & Tea,"Foster City, CA",ChIJrR5MCMyej4AR7p9_0Zsv4RQ,SF,,,0.0,,,False
+Bernie's - New Deal,," 3966 24th St, San Francisco, CA 94114",,SF,,,0.0,,,False
+Thief Cafe,Thief NYC,"595 Union Ave, Brooklyn, NY 11211",ChIJQwVjADNZwokRaaCi0RuPzWE,NTC,,,0.0,,,False
+Ace Eat Serve  (DEN),Ace Eat Serve,501 E 17th Ave,ChIJu-mW5St5bIcRmFpCS-fM6MA,DEN,,,0.0,,,False
+Paulie Gee's,Paulie Gee's ,"60 Greenpoint Ave, Brooklyn, NY 11222",ChIJuc8AM0BZwokRtpm2S66ltsE,NYC,,,0.0,,,False
+Shinji's,Shinji's,"37 w 20th st NY, NY 10011",ChIJiy6z0-NZwokR7WHqoTS8wSE,NYC,,,0.0,,,False
+Lunch (Lobster Roll Restaurant) - Southampton,Lunch (Lobster Roll Restaurant),"1980 Montauk Highway
+Amagansett, NY 11930",ChIJLTP91qaT6IkRKNx65swc0ks,LI,,,0.0,,,False
+Leon 1909,Leon 1909,,ChIJsZ0F8SiZ6IkRvpR9ZU0YGe4,LI,,,0.0,,,False
+Bird on the Roof,Bird on the Roof,,ChIJG3YZb5RT74kRsMwlDBs6FjQ,LI,,,0.0,,,False
+Springs Tavern and Grill,Springs Tavern and Grill,"15 Fort Pond Blvd, East Hampton, NY 11937",ChIJRykSDwql6IkRMFvSRd_h91U,LI,,,0.0,,,False
+Mother's Ruin NYC,Mother's Ruin NYC,18 Spring St,ChIJY-JJoYhZwokRF8FY6XrJo34,NYC,,,0.0,,,False
+Subject: A Cocktail Bar,Subject: A Cocktail Bar,"188 Suffolk St, New York, NY 10002",ChIJ98DPPIJZwokRLqsdDDnOPs8,NYC,,,0.0,,,False
+Shuko,Shuko,"47 E 12th St, New York, NY 10003",ChIJe8WrB5lZwokREBs3DZYJyKc,NYC,,,0.0,,,False
+BLT Prime (NYC),BLT Prime,"1032 Lexington Ave, New York, NY 10021",ChIJkWzZwb9ZwokRY7IXGGtsH0s,NYC,,,0.0,,,False
+EJ's Luncheonette,EJ Lunchonette,"1271 3rd Ave, New York, NY 10021",ChIJm8GloepYwokRKQQXHlt9X9w,uws/ues,,,0.0,,,False
+The Drunken Munkey,The Drunken Munkey,"338 E 92nd St, New York, NY",ChIJi8Yi9a9YwokRco5vySESCUk,NYC,,,0.0,,,False
+L'avion Café,L'avion Café,338 E 92nd St,ChIJU0Us8KdZwokR-MV727eIY9I,NYC,,,0.0,,,False
+L'avion Café,l'Avion/Drunken Munkey Parent,338 E 92nd St,ChIJU0Us8KdZwokR-MV727eIY9I,NYC,,,0.0,,,False
+Champagne Tiger,,"601 E Colfax Ave, Denver, CO 80203",,DEN,,,0.0,,,False
+Lunch (Lobster Roll Restaurant) - Amagansett,Lunch (Lobster Roll Restaurant),"1980 Montauk Highway
+Amagansett, NY 11930",ChIJQUcL2Tau6IkR6i135p0tVNo,LI,,,0.0,,,False
+Friend of a Farmer (Gramercy),Friend of A Farmer,"77 Irving Pl Ground Floor, New York, NY 10003",ChIJb85ryKFZwokRaCJqC07E0G0,uws/ues,,,0.0,,,False
+Montauk Project,Montauk Project,389 Broome St ,ChIJg6RN-ohZwokR46kzRvoI9zU,NYC,,,0.0,,,False
+Tha Phraya,Tha Phraya,"1553 2nd Ave, New York, NY 10028
+",ChIJXbVh8gRZwokR-uEVlFisxFE,uws/ues,,,0.0,,,False
+Sea Wolf,Sea Wolf,"19 Wyckoff Ave, Brooklyn, NY 11237
+",ChIJO_MlXh1cwokR1YDm45sn_Wo,nyc,,,0.0,,,False
+Hungry Llama Cafe,Hungry Llama Cafe,"679 Washington St, New York, NY 10014",ChIJFXK3-LdZwokR41IAIP81AvM,NYC,,,0.0,,,False
+Nick's Pizza,Nick's Pizza,"1814 2nd Ave, New York, NY 10128",ChIJPwPWh6VYwokRb4sccEaBC2w,uws/ues,,,0.0,,,False
+QUATORZE,quatorze,"1578 1st Ave, New York, NY 10028",ChIJ8XDAKr9YwokRHkja-tYpvOY,uws/ues,,,0.0,,,False
+The Green Room,The Green Room,"90 Main St, Sag Harbor, NY 11963",ChIJpWi5G_S96IkRVVn_x_Wkcpg,LI,,,0.0,,,False
+Sagaponack General Store,Sagaponack General Store,"542 Sagg Main St, Sagaponack, NY 11962",ChIJzUXvnZe_6IkRg1Csa43tgfI,LI,,,0.0,,,False
+Momofuku (Noodle Bar) - East Village,,171 1st Avenue,,NYC,,,0.0,,,False
+Sen,Sen,,ChIJ5dQtsxBZwokRbBdZUxaHzFE,LI,,,0.0,,,False
+Essential,Essential by Christophe,103 w 77th,ChIJw6JyhoxZwokR3mKl4FLg5rM,NYC,,,0.0,,,False
+KUMISO,KUMISO,,ChIJZTgx5tC76IkRbKqJVoURbJU,LI,,,0.0,,,False
+K Pasa,K Pasa,,ChIJoR5uY_y96IkRT0l4yM0uuaw,LI,,,0.0,,,False
+Smokey Buns,Smokey Buns,,ChIJO0j96AS76IkRow_V0euMNzs,LI,,,0.0,,,False
+Pil Pil,Pil Pil,"265 E 78th St, New York, NY 10075",ChIJh-ZRBb9YwokRSMkUC8lETk4,uws/ues,,,0.0,,,False
+Iggy's Place,Iggy's Place," 3519 Balboa St, San Francisco, CA 94121",ChIJ62Ob5guHhYARfQu8fH-BugE,SF,,,0.0,,,False
+Dive Bar Pizza Slice Counter,Dive Bar Pizza,466 West Lake Drive,ChIJjY4hF5JZwokRxhLZRbBeU7c,NYC,,,0.0,,,False
+Carne,Carne,"2601 Larimer St, Denver, CO 80205",ChIJ8Vb5wQp5bIcRRcMRMAEzqbI,DEN,,,0.0,,,False
+Sushi of Gari UWS,Sushi of Gari UWS,"370 Columbus Ave, New York, NY 10024",ChIJRf0k0Y5YwokR7hh2IBTl3LY,uws/ues,,,0.0,,,False
+Fish N Beer,Fish N Beer,"3510 Larimer St, Denver, CO 80205",ChIJf4b8dxp5bIcRSiXR0HEQ7xU,DEN,,,0.0,,,False
+Pappardella,Pappardella,"316 COLUMBUS AVENUE, NEW YORK, New York 10023",ChIJN2DMVolYwokRZ3RY3IbatuA,NYC,,,0.0,,,False
+Pizzeria Alberico,,"1730 Pearl St, Boulder, CO 80302",,Den,,,0.0,,,False
+Sunday Vinyl,,"1803 16th St Mall, Denver, CO 80202",,Den,,,0.0,,,False
+Frasca Food and Wine,,"1738 Boulder Street, Boulder CO 80302",,DEN,,,0.0,,,False
+Tavernetta,,"1889 16th St Mall, Denver, CO 80202",ChIJ5fIM0MN4bIcRb-fymS7_krs,Den,,,0.0,,,False
+Osteria Alberico,,"3455 S University Blvd, Englewood, CO 80113",,Den,,,0.0,,,False
+Sabai Thai,Sabai Thai,"432 PARK AVE NEW YORK, New York 10022 New York County",ChIJ83Nr8qdZwokRlQ9NQpIpcw4,NYC,,,0.0,,,False
+Sushi of Gari 46,Sushi of Gari 46,"347 W 46th St, New York, NY 10036",ChIJxbq5_FNYwokRwWVy7B9Kwrc,uws/ues,,,0.0,,,False
+Sushi of Gari (UES),Sushi of Gari (UES),"402 E 78th St, New York, NY 10075",ChIJs9JDurhYwokRSjnRF8h3US8,ues/uws,,,0.0,,,False
+Amen Street Fish & Raw Bar,Amen Street Fish & Raw Bar,"205 E Bay St, Charleston, SC 29401",ChIJZ21LMAx6_ogRO1cje2Ji56c,CHS,,,0.0,,,False
+Little Line Kitchen & Provisions,Little Line Kitchen & Provisions,"176 Line St, Charleston, SC 29403",ChIJZ2iqqt17_ogRLP5T9taXWxU,CHS,,,0.0,,,False
+Wild Taco  (Berkeley-DEN) - New Deal,Wild Taco,"4499 W 38th Ave., Denver, CO 80212",ChIJDXN_xtGHa4cRO1YlWuG53qY,DEN,,,0.0,,,False
+Yingtao,Yingtao,"805 9th Ave, New York, NY 10019",ChIJkYkkoh1ZwokRE01ymVZhhpg,NYC,,,0.0,,,False
+The Lost Draft,The Lost Draft,"398 Broome St, New York, NY 10013",ChIJHcFFXH9ZwokR_QKedPacLiQ,NYC,,,0.0,,,False
+Maison May,Maison May,"246 DeKalb Ave, Brooklyn, NY 11205",ChIJ544uiblbwokR96qXy6668_I,NYC,,,0.0,,,False
+Place des Fêtes,Place des Fêtes,"212 Greene Ave, Brooklyn, NY 11238",ChIJtx7ymGVbwokRzDZBJ8NVJz0,NYC,,,0.0,,,False
+Deux Luxe,Deux Luxe,"384 Broome St, New York, NY 10012",ChIJHfEjK2NZwokRf4WuY_AYrdw,NYC,,,0.0,,,False
+Heavy Woods,Heavy Woods," 50 Wyckoff Ave, Brooklyn, NY 11237",ChIJpwu_dB1cwokRB_7Vq9WZDh0,NYC,,,0.0,,,False
+Mecha Noodle Bar  (Denver),Mecha Noodle Bar," 2801 Walnut St, Denver, CO 80205",ChIJeb6mea15bIcRznDZJqRTKJM,DEN,,,0.0,,,False
+Work & Class,Work & Class,"2500 Larimer St., Denver, CO 80205",ChIJS7FA8d94bIcR0Yx7VLagdMo,DEN,,,0.0,,,False
+Sandro's,Sandro's,"322 East 86th St, New York, NY 10028
+",ChIJj9dKtb5YwokRHtC1_HyFZG0,UWS/UES,,,0.0,,,False
+Friedmans Chelsea - New Deal,Friedmans Chelsea,"75 9th Ave, NY NY 10011",,NYC,,,0.0,,,False
+Cafe Mado,Cafe Mado,"791 Washington Ave, Brooklyn, NY 11238",ChIJrwTqaQBbwokRaK-iQfAWdG4,NYC,,,0.0,,,False
+Upstate Stock Cafe,Upstate Stock Cafe,,ChIJuc3ZQENZwokRZcX6QOJdqVA,NYC,,,0.0,,,False
+E&O Kitchen and Bar,E&O Kitchen and Bar,"314 Sutter St, San Francisco, CA 94108",ChIJGXWXQYmAhYAR-Nr_OyKvI2o,SF,,,0.0,,,False
+QUICK ETERNITY,QUICK ETERNITY NYC,"22 Peck Slip, New York, NY 10038",ChIJm6bGIFZbwokRFj_nvTLlvZc,nyc,,,0.0,,,False
+Monte's At the Manor Cafe,Monte's At the Manor,"236 Edgemere St Montauk, NY 11954",ChIJm8KDZEpV74kRl1hPl-aWoNc,LI,,,0.0,,,False
+Tacos Tequila Whiskey,Tacos Tequila Whiskey,"3300 W 32nd Ave.,",ChIJG5tJJZ14bIcRACrcxGNDuJg,DEN,,,0.0,,,False
+Lilia,Lilia,"567 Union Ave, Brooklyn, NY 11211",ChIJJXCD6ltZwokRJ_cwjKQH63c,NYC,,,0.0,,,False
+Misi,Misi,"329 Kent Ave, Brooklyn, NY 11249",ChIJw7SsU_pZwokREyGSSulF53U,NYC,,,0.0,,,False
+Bella Luna,Bella Luna,"74 Columbus Ave, New York, NY 10024",ChIJkf3PqpxYwokRZlk0ie5vk2c,UWS/UES,,,0.0,,,False
+Phil’s,Phil’s,"695 Knickerbocker Ave, Brooklyn, NY 11221
+",ChIJbffRPkdcwokR2__qmTHZHVs,NYC,,,0.0,,,False
+Maloya,Maloya,"983 Flushing Ave, Brooklyn, NY 11206",ChIJma2fX15dwokR4N39k_xbPIY,NYC,,,0.0,,,False
+Le Farfalle,Le Farfalle,"15 Beaufain St, Charleston, SC 29401",ChIJC5AVwxN6_ogR9QnofBlebTg,CHS,,,0.0,,,False
+Aquarelle,Aquarelle,,ChIJsSGRfXhZwokROD3euzl_76s,NYC,,,0.0,,,False
+Evelina,Evelina," 211 DeKalb Ave, Brooklyn, NY 11205",ChIJzae3_LlbwokR6ts6PCZ3agM,NYC,,,0.0,,,False
+The Bronze Owl,The Bronze Owl,"52 W 33rd St, New York, NY 10001",ChIJYZdXSABZwokRozRIvQvhL-s,NYC,,,0.0,,,False
+Radio Kwara - New Deal,radio kwara,"291 Greene Avenue, Brooklyn, NY 11238",ChIJDyXcTupbwokRQtYLqQrV3ZI,NYC,,,0.0,,,False
+Fish Cheeks Williamsburg,Fish Cheeks Williamsburg,"661 Driggs Ave Brooklyn, NY 11211",ChIJz-1-n9lZwokROnxtPfYbkHk,NYC,,,0.0,,,False
+Bāng Bar,Bāng Bar,"10 Columbus Circle Suite 300, New York, NY 10013",ChIJG-0gOVNZwokRVLu7o8Shq_Q,NYC,,,0.0,,,False
+Bāng Bar,Momofuku,104 West 27th Street,ChIJG-0gOVNZwokRVLu7o8Shq_Q,NYC,,,0.0,,,False
+Maison Sun,Maison Sun,"200-3 Schermerhorn St, Brooklyn, NY 11201",ChIJVdRVFvZbwokRvTMvHpvu0PE,NYC,,,0.0,,,False
+Diwali Indian Cuisine - New Deal,Diwali Indian Cuisine,"1499 Valencia St, San Francisco, CA 94110",,sf,,,0.0,,,False
+Do Not Feed Alligators,Do Not Feed Alligators WV,"337 Bleecker St. 10014 New York, NY",ChIJx3Lned1ZwokRHpVK3qlZZMA,NYC,,,0.0,,,False
+Cart Driver,Cart Driver,"2239 W 30th Ave., Denver, CA 80211",ChIJNbOe0ll5bIcRy71yQ4mqEvQ,DEN,,,0.0,,,False
+The MOUTH Bar + Restaurant,The MOUTH Bar + Restaurant,"20 Marcy Ave, Brooklyn, NY 11211
+",ChIJteoD3TJZwokR2RQYq59OS60,nyc,,,0.0,,,False
+The Dutch,,"131 Sullivan Street, New York, NY 10012",,NYC,,,0.0,,,False
+Lafayette,,"380 Lafayette Street, New York, NY 10003",,NYC,,,0.0,,,False
+Bar Primi NoHo,,"325 Bowery, New York, NY 10003",ChIJSW8U34RZwokR-UhuJkjLDvk,NYC,,,0.0,,,False
+Rosticceria Evelina,Rosticceria Evelina,"455 MYRTLE AVE, BROOKLYN, NY 11205",ChIJ6dTbB5BbwokRQyM4pOUH76I,NYC,,,0.0,,,False
+Za-Ya,Za-Ya,"321 Starr St Suite D, Brooklyn, NY 11237",ChIJA5X-O_NfwokRuYuGvy82R_I,nyc,,,0.0,,,False
+Formosa Dumplings,Formosa Dumplings,"formosadumplings@gmail.com
+",ChIJ7etbil9dwokRYKe_oQSHsdY,NYC,,,0.0,,,False
+Jax Fish House & Oyster Bar LoDo,Big Red F Restaurants,"946 Pearl St, Boulder, CO 80302",ChIJJ7tBzybsa4cRVBV3QVaLJ84,DEN,,,0.0,,,False
+Golden Diner,Golden Diner,"123 Madison St, New York, NY 10002",ChIJ1-mW-LhbwokR7Ryv5ha-gzc,NYC,,,0.0,,,False
+Golden HOF,Golden HOF,"16 W 48th St, New York, NY 10036",ChIJc6vecABZwokRBHqMFj4UsbY,NYC,,,0.0,,,False
+Bar Dough,The Culinary Creative Group,"1350 40th Street, Denver, CO 80205",,DEN,,,0.0,,,False
+Mister Oso RiNo,The Culinary Creative Group,"1350 40th Street, Denver, CO 80205",,DEN,,,0.0,,,False
+Mister Oso Boulder,The Culinary Creative Group,"1350 40th Street, Denver, CO 80205",ChIJ_2q1cg55bIcRKhYP9PxOiV4,DEN,,,0.0,,,False
+Senor Bear,The Culinary Creative Group,"1350 40th Street, Denver, CO 80205",,DEN,,,0.0,,,False
+Ash Kara,The Culinary Creative Group,"1350 40th Street, Denver, CO 80205",,DEN,,,0.0,,,False
+Fox and the Hen,The Culinary Creative Group,"1350 40th Street, Denver, CO 80205",,DEN,,,0.0,,,False
+Kothai Republic,Kothai Republic,"1398 9th Ave, San Francisco, CA 94122",ChIJBXYmaSKHhYAR2D4hlotI7TA,SF,,,0.0,,,False
+EVO Craft Bakery,EVO Craft Bakery,"1075 E Montague Ave, North Charleston, SC 29405",ChIJs2HQ9ehk_ogR8j4Fa-8ARFA,CHS,,,0.0,,,False
+EVO Pizzeria,EVO Pizzeria,"1075 E Montague Ave, North Charleston, SC 29405",ChIJS79_9uhk_ogRXzmiDtLKcjo,CHS,,,0.0,,,False
+Ornithology Jazz Club,Ornithology Jazz Club,"6 Suydam St, Brooklyn, NY 11221
+",ChIJ8SrMcWVdwokRAqKQSZARpE0,nyc,,,0.0,,,False
+Designer's Collab (Coffee shop),Designers Collab,"96 N 5th St, Brooklyn, NY 11249
+",ChIJ3y1LyTFZwokRMC-XUpi7Nxw,nyc,,,0.0,,,False
+Super Mega Bien,Super Mega Bien,"1260 25th St., ",ChIJE6HJ3ml5bIcRhwzwllks4ug,DEN,,,0.0,,,False
+Bar Francis - New Deal,Bar Francis,"810 Fulton St, Brooklyn, NY 11238",,NYC,,,0.0,,,False
+Sorry Gorgeous,The Culinary Creative Group,"1350 40th Street, Denver, CO 80205",,DEN,,,0.0,,,False
+Kraam,Kraam,"254 5th Ave, New York, NY 10001",ChIJX6wpqwdZwokRa3aTRWulWkA,NYC,,,0.0,,,False
+Kilo Bravo  - New Deal,Bravo Bar Party ,"180 N 10th St, Brooklyn, NY 11211
+",,NYC,,,0.0,,,False
+Kilo Bravo  - New Deal,Kilo Bravo,"180 N 10th St, Brooklyn, NY 11211
+",,NYC,,,0.0,,,False
+Palenque,Palenque,"298 Graham Ave, Brooklyn, NY 11211",ChIJ3_Ose-dZwokRkZMz4AVTIKs,nyc,,,0.0,,,False
+Le Pistol,Le Pistol,"780 Washington Ave, Brooklyn, NY 11238",ChIJFYeUIABbwokRRRiaj82mZAQ,NYC,,,0.0,,,False
+The Homestead - New Deal,The Homestead,"2301 Folsom St, San Francisco, CA 94110",,SF,,,0.0,,,False
+The Shakespeare,The Shakespeare,"24 E 39th St, New York, NY 10016",ChIJI7jw2ABZwokR_N3wkrCRL0A,NYC,,,0.0,,,False
+The Hunterian,The Hunterian,"413 E 70th St, New York, NY 10021",ChIJiVD59uZZwokRUwIDtSPgKX0,NYC,,,0.0,,,False
+The Hamilton,The Hamilton,"998 Amsterdam Ave, New York, NY 10025",ChIJcQDwuzz2wokR1N2euVBPAjM,NYC,,,0.0,,,False
+BierWax,BierWax,"556 Vanderbilt Ave, Brooklyn, NY 11238",ChIJk9RJNaRbwokRtMPbGlZp3uc,NYC,,,0.0,,,False
+"Tacolicious (24th, SF)","Tacolicious (24th, SF)","4063 24th St, San Francisco, CA",ChIJFRv3RAB_j4ARSgzEVFHvhGY,SF,,,0.0,,,False
+Asano Cafe - New Deal,Asano Cafe,"322 East 86th St, New York, NY 10028",,nyc,,,0.0,,,False
+Tonchin BK- New Deal,Tonchin,"5665 Melrose Ave, Los Angeles, CA 90038
+",,NYC,,,0.0,,,False
+Echo Bravo - New Deal,Echo Bravo,"445 Troutman St, Brooklyn, NY 1123",,NYC,,,0.0,,,False
+South Edison,South Edison,"17 S Edison St, Montauk, NY 11954",ChIJN2EK2VdT74kRZ4a000eEozU,NYC,,,0.0,,,False
+Bar Sprezzatura,,"251 W 48th St, New York, NY 10036",ChIJNVkbEwBZwokRcQJBrkU_Wuo,NYC,,,0.0,,,False
+Menya Kanemaru - Golden Ramen,Menya Kanemaru,"174 Valencia St, San Francisco, CA 94103",,SF,,,0.0,,,False
+AQUA NYC,Aqua New York,"902 Broadway, New York, NY 10010",ChIJHQFj19tZwokRZLUlxxZmz2Q,NYC,,,0.0,,,False
+Mixteca - New Deal,Mixteca,1 Cornelia Street,,NYC,,,0.0,,,False
+Judy Z’s Sports Tavern & Kitchen - New Deal,Judy Z’s Sports Tavern & Kitchen,"1 7th Ave S, New York, NY 10014",,NYC,,,0.0,,,False
