@@ -1,0 +1,33 @@
+2025-08-28 13:41:10,297 - INFO - API queries_quota: 60
+2025-08-28 13:41:25,786 - ERROR - Error in main: 1
+Traceback (most recent call last):
+  File "/Users/maddieweber/.pyenv/versions/3.11.7/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 3812, in get_loc
+    return self._engine.get_loc(casted_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 2606, in pandas._libs.hashtable.Int64HashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 2630, in pandas._libs.hashtable.Int64HashTable.get_item
+KeyError: 1
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/maddieweber/Documents/Code/Triaging Data/datatriage.py", line 1358, in main
+    processed_hubspot, processed_database = agent.process_datasets(
+                                            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maddieweber/Documents/Code/Triaging Data/datatriage.py", line 1062, in process_datasets
+    record.google_places_id = hubspot_df.at[idx, 'google_places_id']
+                              ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maddieweber/.pyenv/versions/3.11.7/lib/python3.11/site-packages/pandas/core/indexing.py", line 2575, in __getitem__
+    return super().__getitem__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maddieweber/.pyenv/versions/3.11.7/lib/python3.11/site-packages/pandas/core/indexing.py", line 2527, in __getitem__
+    return self.obj._get_value(*key, takeable=self._takeable)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maddieweber/.pyenv/versions/3.11.7/lib/python3.11/site-packages/pandas/core/frame.py", line 4226, in _get_value
+    row = self.index.get_loc(index)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maddieweber/.pyenv/versions/3.11.7/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 3819, in get_loc
+    raise KeyError(key) from err
+KeyError: 1

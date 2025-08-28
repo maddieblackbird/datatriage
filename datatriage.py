@@ -982,9 +982,9 @@ class EnhancedDataTriageAgent:
             database_df = database_df.sort_values('restaurant_name', na_position='last').copy()
             print(f"  🗄️ Database sorted by restaurant_name")
             
-            # Take first 30 from each sorted dataset
-            hubspot_df = hubspot_df.head(30).copy()
-            database_df = database_df.head(30).copy()
+            # Take first 30 from each sorted dataset and reset index
+            hubspot_df = hubspot_df.head(30).copy().reset_index(drop=True)
+            database_df = database_df.head(30).copy().reset_index(drop=True)
             
             print(f"  📋 Limited to first 30 HubSpot records (alphabetically)")
             print(f"  🗄️ Limited to first 30 Database records (alphabetically)")
@@ -1290,7 +1290,7 @@ class EnhancedDataTriageAgent:
         
         try:
             response = self.claude.messages.create(
-                model="claude-sonnet-4-20250514",
+                model="claude-3-5-sonnet-latest",
                 max_tokens=300,
                 temperature=0,
                 messages=[{"role": "user", "content": prompt}]
