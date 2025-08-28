@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 """
-Blackbird Data Triage Script - Claude-Driven Matching
-Reconciles restaurant data between backend database and HubSpot using:
-1. Claude AI for ALL matching decisions (using Sonnet for cost efficiency)
-2. Google Places API for verification and enrichment
-3. Multi-stage matching with Claude verification at each step
+Enhanced Blackbird Data Triage Script - With Place ID Verification
+Key improvements:
+1. PLACE ID VERIFICATION PHASE - Validates all existing Place IDs before matching
+2. Intelligent pre-filtering to reduce API calls by 90%+
+3. Advanced address normalization and parsing
+4. Geographic bucketing for efficient matching
+5. Name similarity pre-screening before Claude calls
 """
 
 import pandas as pd
@@ -13,15 +15,28 @@ import anthropic
 import json
 import time
 import logging
-from typing import Dict, List, Optional, Tuple, Set
-from datetime import datetime
-import os
-from dataclasses import dataclass
 import re
+import os
+from typing import Dict, List, Optional, Tuple, Set, Any
+from datetime import datetime
+from dataclasses import dataclass, field
 from difflib import SequenceMatcher
+from collections import defaultdict
+import hashlib
+import pickle
+from pathlib import Path
+
+# For fuzzy string matching
+try:
+    from rapidfuzz import fuzz, process
+except ImportError:
+    print("Installing rapidfuzz for better string matching...")
+    import subprocess
+    subprocess.check_call(['pip', 'install', 'rapidfuzz'])
+    from rapidfuzz import fuzz, process
 
 print("=" * 80)
-print("🚀 BLACKBIRD DATA TRIAGE SCRIPT - CLAUDE-DRIVEN VERSION")
+print("🚀 ENHANCED BLACKBIRD DATA TRIAGE SCRIPT - WITH PLACE ID VERIFICATION")
 print("=" * 80)
 print(f"⏰ Start time: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
 
@@ -30,18 +45,298 @@ logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
     handlers=[
-        logging.FileHandler(f'data_triage_{datetime.now().strftime("%Y%m%d_%H%M%S")}.log'),
+        logging.FileHandler(f'enhanced_triage_{datetime.now().strftime("%Y%m%d_%H%M%S")}.log'),
         logging.StreamHandler()
     ]
 )
 logger = logging.getLogger(__name__)
 
-print("✅ Logging configuration complete")
+
+# ============================================================================
+# ADDRESS NORMALIZATION MODULE
+# ============================================================================
+
+class AddressNormalizer:
+    """Advanced address normalization and parsing"""
+    
+    # Common abbreviations and their full forms
+    STREET_ABBR = {
+        'st': 'street', 'ave': 'avenue', 'rd': 'road', 'blvd': 'boulevard',
+        'dr': 'drive', 'ln': 'lane', 'ct': 'court', 'pl': 'place',
+        'sq': 'square', 'ter': 'terrace', 'pkwy': 'parkway', 'hwy': 'highway',
+        'cir': 'circle', 'trl': 'trail', 'way': 'way', 'plz': 'plaza'
+    }
+    
+    # Directional abbreviations
+    DIRECTIONS = {
+        'n': 'north', 's': 'south', 'e': 'east', 'w': 'west',
+        'ne': 'northeast', 'nw': 'northwest', 'se': 'southeast', 'sw': 'southwest'
+    }
+    
+    # State abbreviations mapping
+    STATES = {
+        'ny': 'new york', 'ca': 'california', 'sc': 'south carolina',
+        'co': 'colorado', 'tn': 'tennessee', 'la': 'louisiana',
+        'dc': 'district of columbia', 'fl': 'florida', 'il': 'illinois',
+        'ma': 'massachusetts', 'nj': 'new jersey', 'pa': 'pennsylvania'
+    }
+    
+    # City to Macro Geo mapping based on your data
+    CITY_TO_MACRO = {
+        'new york': 'NYC', 'brooklyn': 'NYC', 'queens': 'NYC', 
+        'bronx': 'NYC', 'staten island': 'NYC', 'manhattan': 'NYC',
+        'san francisco': 'SF', 'oakland': 'SF', 'berkeley': 'SF',
+        'charleston': 'CHS', 'mt pleasant': 'CHS', 'mount pleasant': 'CHS',
+        'north charleston': 'CHS', 'denver': 'DEN', 'boulder': 'DEN',
+        'montauk': 'LI', 'east hampton': 'LI', 'amagansett': 'LI',
+        'sag harbor': 'LI', 'bridgehampton': 'LI', 'southampton': 'LI'
+    }
+    
+    @staticmethod
+    def normalize_address(address: str) -> Dict[str, str]:
+        """
+        Normalize and parse an address into components
+        
+        Returns:
+            Dict with keys: normalized, street, city, state, zip, tokens
+        """
+        if not address or pd.isna(address):
+            return {'normalized': '', 'street': '', 'city': '', 'state': '', 'zip': '', 'tokens': []}
+        
+        # Convert to lowercase and clean
+        addr = str(address).lower().strip()
+        
+        # Remove extra spaces and special characters
+        addr = re.sub(r'\s+', ' ', addr)
+        addr = re.sub(r'[^\w\s,.-]', '', addr)
+        
+        # Extract ZIP code if present
+        zip_match = re.search(r'\b(\d{5})(-\d{4})?\b', addr)
+        zip_code = zip_match.group(1) if zip_match else ''
+        if zip_match:
+            addr = addr[:zip_match.start()] + addr[zip_match.end():]
+        
+        # Parse components
+        components = addr.split(',')
+        
+        result = {
+            'normalized': addr,
+            'street': '',
+            'city': '',
+            'state': '',
+            'zip': zip_code,
+            'tokens': []
+        }
+        
+        if len(components) >= 1:
+            result['street'] = AddressNormalizer._normalize_street(components[0].strip())
+        
+        if len(components) >= 2:
+            # Parse city and state from second component
+            city_state = components[1].strip()
+            state_match = re.search(r'\b([a-z]{2})\b$', city_state)
+            
+            if state_match:
+                result['state'] = state_match.group(1)
+                result['city'] = city_state[:state_match.start()].strip()
+            else:
+                result['city'] = city_state
+        
+        if len(components) >= 3:
+            # Third component is likely state if not already found
+            if not result['state']:
+                state_part = components[2].strip()
+                state_match = re.search(r'\b([a-z]{2})\b', state_part)
+                if state_match:
+                    result['state'] = state_match.group(1)
+        
+        # Generate tokens for matching
+        result['tokens'] = AddressNormalizer._generate_tokens(result)
+        
+        # Create final normalized version
+        parts = [result['street'], result['city'], result['state'], result['zip']]
+        result['normalized'] = ', '.join([p for p in parts if p])
+        
+        return result
+    
+    @staticmethod
+    def _normalize_street(street: str) -> str:
+        """Normalize street address component"""
+        if not street:
+            return ''
+        
+        street = street.lower().strip()
+        
+        # Remove suite/apt/floor indicators
+        street = re.sub(r'\b(suite|ste|apt|apartment|unit|floor|fl)\b.*', '', street, flags=re.IGNORECASE)
+        
+        # Expand abbreviations
+        tokens = street.split()
+        normalized_tokens = []
+        
+        for token in tokens:
+            # Check if it's a direction
+            if token in AddressNormalizer.DIRECTIONS:
+                normalized_tokens.append(AddressNormalizer.DIRECTIONS[token])
+            # Check if it's a street type
+            elif token in AddressNormalizer.STREET_ABBR:
+                normalized_tokens.append(AddressNormalizer.STREET_ABBR[token])
+            else:
+                normalized_tokens.append(token)
+        
+        return ' '.join(normalized_tokens).strip()
+    
+    @staticmethod
+    def _generate_tokens(addr_dict: Dict[str, str]) -> List[str]:
+        """Generate matching tokens from address components"""
+        tokens = []
+        
+        # Add street number and name tokens
+        if addr_dict['street']:
+            street_tokens = addr_dict['street'].split()
+            tokens.extend(street_tokens)
+            
+            # Add just the street number if present
+            if street_tokens and street_tokens[0].isdigit():
+                tokens.append(street_tokens[0])
+        
+        # Add city tokens
+        if addr_dict['city']:
+            tokens.append(addr_dict['city'])
+            # Add individual words from city name
+            tokens.extend(addr_dict['city'].split())
+        
+        # Add state
+        if addr_dict['state']:
+            tokens.append(addr_dict['state'])
+        
+        # Add zip
+        if addr_dict['zip']:
+            tokens.append(addr_dict['zip'])
+        
+        return [t for t in tokens if t]  # Remove empty tokens
+    
+    @staticmethod
+    def get_macro_geo(city: str, state: str = None) -> str:
+        """Map city to macro geographic region"""
+        if not city:
+            return 'Unknown'
+        
+        city_lower = city.lower().strip()
+        
+        # Direct city match
+        if city_lower in AddressNormalizer.CITY_TO_MACRO:
+            return AddressNormalizer.CITY_TO_MACRO[city_lower]
+        
+        # Check if city contains any known city name
+        for known_city, macro in AddressNormalizer.CITY_TO_MACRO.items():
+            if known_city in city_lower:
+                return macro
+        
+        # Fall back to state-based mapping
+        if state:
+            state_lower = state.lower().strip()
+            if state_lower in ['ny', 'new york']:
+                return 'NYC'
+            elif state_lower in ['ca', 'california']:
+                return 'SF'
+            elif state_lower in ['sc', 'south carolina']:
+                return 'CHS'
+            elif state_lower in ['co', 'colorado']:
+                return 'DEN'
+        
+        return 'Unknown'
+
+
+# ============================================================================
+# NAME NORMALIZATION MODULE  
+# ============================================================================
+
+class RestaurantNameNormalizer:
+    """Normalize restaurant names for better matching"""
+    
+    # Common suffixes to remove or standardize
+    SUFFIXES_TO_REMOVE = [
+        'restaurant', 'cafe', 'bistro', 'grill', 'grille', 'bar', 
+        'kitchen', 'eatery', 'diner', 'tavern', 'pub', 'lounge',
+        'llc', 'inc', 'corp', 'corporation', 'company', 'co'
+    ]
+    
+    # Location indicators that might be part of name
+    LOCATION_INDICATORS = [
+        'nyc', 'sf', 'dc', 'la', 'brooklyn', 'manhattan', 'queens',
+        'downtown', 'uptown', 'midtown', 'soma', 'fidi', 'tribeca',
+        'chelsea', 'williamsburg', 'bushwick', 'harlem', 'financial district',
+        'alphabet city', 'east village', 'west village', 'upper east side',
+        'upper west side', 'gramercy', 'soho', 'carroll gardens'
+    ]
+    
+    @staticmethod
+    def normalize(name: str) -> Dict[str, Any]:
+        """
+        Normalize restaurant name and extract components
+        
+        Returns:
+            Dict with normalized name, tokens, and location hints
+        """
+        if not name or pd.isna(name):
+            return {'normalized': '', 'tokens': [], 'location_hint': ''}
+        
+        original = str(name)
+        name = original.lower().strip()
+        
+        # Remove special characters but keep spaces and basic punctuation
+        name = re.sub(r'[^\w\s&\'-]', ' ', name)
+        name = re.sub(r'\s+', ' ', name).strip()
+        
+        # Extract location hints if present
+        location_hint = ''
+        for loc in RestaurantNameNormalizer.LOCATION_INDICATORS:
+            if loc in name:
+                location_hint = loc
+                # Keep location in name for multi-location restaurants
+                # Don't remove it as it might be important for distinction
+        
+        # Remove common suffixes
+        tokens = name.split()
+        filtered_tokens = []
+        for token in tokens:
+            if token not in RestaurantNameNormalizer.SUFFIXES_TO_REMOVE:
+                filtered_tokens.append(token)
+        
+        # Generate normalized version
+        normalized = ' '.join(filtered_tokens)
+        
+        # Generate character n-grams for fuzzy matching
+        ngrams = RestaurantNameNormalizer._generate_ngrams(normalized, 3)
+        
+        return {
+            'original': original,
+            'normalized': normalized,
+            'tokens': filtered_tokens,
+            'location_hint': location_hint,
+            'ngrams': ngrams
+        }
+    
+    @staticmethod
+    def _generate_ngrams(text: str, n: int = 3) -> Set[str]:
+        """Generate character n-grams for fuzzy matching"""
+        if len(text) < n:
+            return {text}
+        return {text[i:i+n] for i in range(len(text) - n + 1)}
+
+
+# ============================================================================
+# ENHANCED RESTAURANT RECORD
+# ============================================================================
 
 @dataclass
-class RestaurantRecord:
-    """Data class for restaurant information"""
-    source: str  # 'hubspot' or 'database'
+class EnhancedRestaurantRecord:
+    """Enhanced data class with normalized fields"""
+    source: str
+    row_index: int
+    
+    # Original fields
     deal_name: Optional[str] = None
     company_name: Optional[str] = None
     restaurant_name: Optional[str] = None
@@ -54,380 +349,663 @@ class RestaurantRecord:
     coordinate: Optional[str] = None
     google_places_id: Optional[str] = None
     macro_geo: Optional[str] = None
-    row_index: Optional[int] = None
-
-print("✅ RestaurantRecord dataclass defined")
-
-class DataTriageAgent:
-    """Main agent for triaging restaurant data between HubSpot and Database"""
     
-    # Locations to skip
-    SKIP_KEYWORDS = [
-        'burger league', 'breakfast club', 'bar blackbird',
-        'test', 'demo', 'example'
-    ]
+    # Normalized fields (computed after initialization)
+    normalized_name: Dict[str, Any] = field(default_factory=dict)
+    normalized_address: Dict[str, str] = field(default_factory=dict)
+    computed_macro_geo: Optional[str] = None
+    signature: Optional[str] = None  # For deduplication
+    
+    def __post_init__(self):
+        """Compute normalized fields after initialization"""
+        # Normalize name (prefer Deal Name for HubSpot as per instruction)
+        if self.source == 'hubspot' and self.deal_name:
+            self.normalized_name = RestaurantNameNormalizer.normalize(self.deal_name)
+        elif self.restaurant_name:
+            self.normalized_name = RestaurantNameNormalizer.normalize(self.restaurant_name)
+        elif self.company_name:
+            self.normalized_name = RestaurantNameNormalizer.normalize(self.company_name)
+        elif self.deal_name:
+            self.normalized_name = RestaurantNameNormalizer.normalize(self.deal_name)
+        else:
+            self.normalized_name = RestaurantNameNormalizer.normalize('')
+        
+        # Normalize address
+        if self.address:
+            self.normalized_address = AddressNormalizer.normalize_address(self.address)
+        elif self.street:
+            # Construct address from components
+            addr_parts = [self.street, self.city, self.state, str(self.zipcode) if self.zipcode else '']
+            full_addr = ', '.join([p for p in addr_parts if p and str(p).strip()])
+            self.normalized_address = AddressNormalizer.normalize_address(full_addr)
+        else:
+            self.normalized_address = AddressNormalizer.normalize_address('')
+        
+        # Compute macro geo
+        if self.macro_geo:
+            # Clean up macro geo (handle variations like 'nyc', 'NYC', 'New York')
+            self.computed_macro_geo = self.macro_geo.upper().strip()
+            if self.computed_macro_geo in ['NEW YORK', 'UWS/UES', 'UES/UWS']:
+                self.computed_macro_geo = 'NYC'
+        else:
+            # Try to infer from address
+            city = self.normalized_address.get('city', '') or self.city or ''
+            state = self.normalized_address.get('state', '') or self.state or ''
+            self.computed_macro_geo = AddressNormalizer.get_macro_geo(city, state)
+        
+        # Generate signature for deduplication
+        self._generate_signature()
+    
+    def _generate_signature(self):
+        """Generate a signature for identifying potential duplicates"""
+        # Use normalized name and key address components
+        sig_parts = [
+            self.normalized_name.get('normalized', ''),
+            self.normalized_address.get('street', ''),
+            self.normalized_address.get('city', ''),
+            self.computed_macro_geo or ''
+        ]
+        sig_string = '|'.join([str(p).lower() for p in sig_parts if p])
+        self.signature = hashlib.md5(sig_string.encode()).hexdigest()
+    
+    def get_search_query(self) -> str:
+        """
+        Generate best search query for Google Places
+        For Database: Use address (known to be correct)
+        For HubSpot: Use name for multi-location, address if seems unique
+        """
+        if self.source == 'database':
+            # Database addresses are trusted - use full address
+            if self.address:
+                return self.address
+            elif self.street and self.city:
+                return f"{self.street}, {self.city}, {self.state} {self.zipcode}".strip()
+            else:
+                # Fallback to name + location
+                return f"{self.normalized_name.get('original', '')} {self.location_name or ''} {self.city or ''}".strip()
+        
+        else:  # HubSpot
+            # For HubSpot, check if name contains location indicators (suggests multi-location)
+            name = self.normalized_name.get('original', '')
+            has_location_in_name = any(loc in name.lower() for loc in RestaurantNameNormalizer.LOCATION_INDICATORS)
+            
+            if has_location_in_name:
+                # Multi-location restaurant - use name as primary search
+                if self.city or self.normalized_address.get('city'):
+                    city = self.city or self.normalized_address.get('city')
+                    return f"{name}, {city}"
+                else:
+                    return name
+            else:
+                # Single location - can trust address more
+                if self.address and len(self.address) > 10:  # Has substantial address
+                    return f"{name}, {self.address}"
+                else:
+                    # Just use name
+                    return name
+
+
+# ============================================================================
+# PLACE ID VERIFICATION MODULE
+# ============================================================================
+
+class PlaceIDVerifier:
+    """Verify and correct Google Place IDs before matching"""
+    
+    def __init__(self, gmaps_client):
+        self.gmaps = gmaps_client
+        self.verification_cache = {}
+        self.api_calls = 0
+    
+    def verify_place_id(self, record: EnhancedRestaurantRecord) -> Dict[str, Any]:
+        """
+        Verify if a Place ID is correct for the given restaurant
+        
+        Returns:
+            Dict with keys: is_valid, correct_place_id, place_name, confidence, reason
+        """
+        if not record.google_places_id or pd.isna(record.google_places_id):
+            return {
+                'is_valid': False,
+                'correct_place_id': None,
+                'place_name': None,
+                'confidence': 0,
+                'reason': 'No Place ID provided'
+            }
+        
+        place_id = str(record.google_places_id).strip()
+        
+        # Check cache
+        cache_key = f"{place_id}_{record.signature}"
+        if cache_key in self.verification_cache:
+            return self.verification_cache[cache_key]
+        
+        try:
+            # Get place details
+            place_details = self.gmaps.place(
+                place_id=place_id,
+                fields=['name', 'formatted_address', 'place_id', 'types', 'business_status']
+            )
+            self.api_calls += 1
+            
+            if 'result' not in place_details:
+                result = {
+                    'is_valid': False,
+                    'correct_place_id': None,
+                    'place_name': None,
+                    'confidence': 0,
+                    'reason': 'Place ID not found'
+                }
+            else:
+                place = place_details['result']
+                
+                # Compare place details with record
+                place_name = place.get('name', '').lower()
+                place_address = place.get('formatted_address', '').lower()
+                
+                record_name = record.normalized_name.get('normalized', '').lower()
+                record_tokens = set(record.normalized_name.get('tokens', []))
+                
+                # Calculate match confidence
+                confidence = 0
+                reasons = []
+                
+                # Name similarity check
+                if record_name and place_name:
+                    name_similarity = fuzz.ratio(record_name, place_name) / 100.0
+                    if name_similarity > 0.8:
+                        confidence += 0.5
+                        reasons.append(f"Name match ({name_similarity:.2f})")
+                    elif name_similarity > 0.6:
+                        confidence += 0.3
+                        reasons.append(f"Partial name match ({name_similarity:.2f})")
+                    else:
+                        # Check token overlap
+                        place_tokens = set(place_name.split())
+                        if record_tokens and place_tokens:
+                            overlap = len(record_tokens & place_tokens) / len(record_tokens | place_tokens)
+                            if overlap > 0.5:
+                                confidence += 0.2
+                                reasons.append(f"Token overlap ({overlap:.2f})")
+                
+                # Address similarity check
+                if record.normalized_address.get('street'):
+                    addr_similarity = fuzz.partial_ratio(
+                        record.normalized_address.get('normalized', ''),
+                        place_address
+                    ) / 100.0
+                    if addr_similarity > 0.8:
+                        confidence += 0.5
+                        reasons.append(f"Address match ({addr_similarity:.2f})")
+                    elif addr_similarity > 0.6:
+                        confidence += 0.3
+                        reasons.append(f"Partial address match ({addr_similarity:.2f})")
+                
+                # Check if it's a restaurant/food establishment
+                place_types = place.get('types', [])
+                if any(t in place_types for t in ['restaurant', 'food', 'bar', 'cafe', 'bakery', 'meal_takeaway']):
+                    confidence += 0.1
+                    reasons.append("Is food establishment")
+                
+                result = {
+                    'is_valid': confidence >= 0.6,
+                    'correct_place_id': place_id if confidence >= 0.6 else None,
+                    'place_name': place.get('name'),
+                    'place_address': place.get('formatted_address'),
+                    'confidence': confidence,
+                    'reason': '; '.join(reasons) if reasons else 'Low confidence match'
+                }
+            
+            self.verification_cache[cache_key] = result
+            return result
+            
+        except Exception as e:
+            logger.error(f"Error verifying Place ID {place_id}: {e}")
+            return {
+                'is_valid': False,
+                'correct_place_id': None,
+                'place_name': None,
+                'confidence': 0,
+                'reason': f'Error: {str(e)}'
+            }
+    
+    def find_correct_place_id(self, record: EnhancedRestaurantRecord, max_attempts: int = 3) -> Dict[str, Any]:
+        """
+        Search for the correct Place ID for a restaurant
+        
+        Returns:
+            Dict with keys: found, place_id, place_name, confidence, search_query
+        """
+        search_query = record.get_search_query()
+        
+        if not search_query:
+            return {
+                'found': False,
+                'place_id': None,
+                'place_name': None,
+                'confidence': 0,
+                'search_query': None
+            }
+        
+        try:
+            # Search for the place
+            search_results = self.gmaps.places(query=search_query)
+            self.api_calls += 1
+            
+            if not search_results.get('results'):
+                # Try alternative search with just name
+                if record.normalized_name.get('original'):
+                    alt_query = record.normalized_name.get('original')
+                    if record.city:
+                        alt_query += f", {record.city}"
+                    
+                    search_results = self.gmaps.places(query=alt_query)
+                    self.api_calls += 1
+                    
+                    if not search_results.get('results'):
+                        return {
+                            'found': False,
+                            'place_id': None,
+                            'place_name': None,
+                            'confidence': 0,
+                            'search_query': search_query
+                        }
+            
+            # Analyze top results
+            best_match = None
+            best_confidence = 0
+            
+            for place in search_results['results'][:min(3, len(search_results['results']))]:
+                place_name = place.get('name', '').lower()
+                place_address = place.get('formatted_address', '').lower()
+                
+                # Calculate match confidence
+                confidence = 0
+                
+                # Name similarity
+                if record.normalized_name.get('normalized'):
+                    name_sim = fuzz.ratio(
+                        record.normalized_name.get('normalized'),
+                        place_name
+                    ) / 100.0
+                    confidence += name_sim * 0.5
+                
+                # Address similarity
+                if record.normalized_address.get('normalized'):
+                    addr_sim = fuzz.partial_ratio(
+                        record.normalized_address.get('normalized'),
+                        place_address
+                    ) / 100.0
+                    confidence += addr_sim * 0.5
+                
+                if confidence > best_confidence:
+                    best_confidence = confidence
+                    best_match = place
+            
+            if best_match and best_confidence >= 0.6:
+                return {
+                    'found': True,
+                    'place_id': best_match['place_id'],
+                    'place_name': best_match.get('name'),
+                    'place_address': best_match.get('formatted_address'),
+                    'confidence': best_confidence,
+                    'search_query': search_query
+                }
+            else:
+                return {
+                    'found': False,
+                    'place_id': None,
+                    'place_name': None,
+                    'confidence': best_confidence,
+                    'search_query': search_query
+                }
+                
+        except Exception as e:
+            logger.error(f"Error searching for place: {e}")
+            return {
+                'found': False,
+                'place_id': None,
+                'place_name': None,
+                'confidence': 0,
+                'search_query': search_query,
+                'error': str(e)
+            }
+
+
+# ============================================================================
+# INTELLIGENT PRE-FILTERING ENGINE
+# ============================================================================
+
+class IntelligentPreFilter:
+    """Pre-filter candidates to drastically reduce API calls"""
+    
+    def __init__(self):
+        self.name_normalizer = RestaurantNameNormalizer()
+        self.address_normalizer = AddressNormalizer()
+        
+        # Caches for optimization
+        self.similarity_cache = {}
+        self.candidate_cache = {}
+    
+    def find_candidates(self, 
+                       query_record: EnhancedRestaurantRecord,
+                       target_records: List[EnhancedRestaurantRecord],
+                       max_candidates: int = 10,
+                       min_similarity: float = 0.4) -> List[Tuple[EnhancedRestaurantRecord, float]]:
+        """
+        Find best matching candidates using multiple strategies
+        
+        Returns:
+            List of (record, score) tuples, sorted by score descending
+        """
+        candidates = []
+        
+        # Strategy 1: Exact Google Place ID match (if available and verified)
+        if query_record.google_places_id and query_record.google_places_id.strip():
+            for target in target_records:
+                if target.google_places_id == query_record.google_places_id:
+                    candidates.append((target, 1.0))  # Perfect score for Place ID match
+        
+        # Strategy 2: Geographic bucketing - only compare within same region
+        geo_filtered = self._filter_by_geography(query_record, target_records)
+        
+        # Strategy 3: Name-based similarity
+        name_candidates = self._find_by_name_similarity(query_record, geo_filtered, max_candidates)
+        
+        # Strategy 4: Address-based similarity (if we have address data)
+        if query_record.normalized_address.get('street'):
+            addr_candidates = self._find_by_address_similarity(query_record, geo_filtered, max_candidates)
+            # Merge address candidates with lower weight
+            for target, score in addr_candidates:
+                # Check if already in candidates
+                existing = next((c for c in name_candidates if c[0].row_index == target.row_index), None)
+                if existing:
+                    # Combine scores (weighted average)
+                    old_score = existing[1]
+                    new_score = old_score * 0.7 + score * 0.3
+                    name_candidates = [(t, s) if t.row_index != target.row_index else (t, new_score) 
+                                     for t, s in name_candidates]
+                else:
+                    name_candidates.append((target, score * 0.5))  # Lower weight for address-only match
+        
+        # Combine all candidates
+        candidates.extend(name_candidates)
+        
+        # Remove duplicates and filter by minimum similarity
+        seen = set()
+        final_candidates = []
+        for target, score in sorted(candidates, key=lambda x: x[1], reverse=True):
+            if target.row_index not in seen and score >= min_similarity:
+                seen.add(target.row_index)
+                final_candidates.append((target, score))
+                if len(final_candidates) >= max_candidates:
+                    break
+        
+        return final_candidates
+    
+    def _filter_by_geography(self, 
+                           query: EnhancedRestaurantRecord,
+                           targets: List[EnhancedRestaurantRecord]) -> List[EnhancedRestaurantRecord]:
+        """Filter targets to same geographic region"""
+        if not query.computed_macro_geo or query.computed_macro_geo == 'Unknown':
+            return targets  # Can't filter if we don't know the region
+        
+        filtered = []
+        for target in targets:
+            # Include if same macro geo OR if target geo is unknown (might still match)
+            if (target.computed_macro_geo == query.computed_macro_geo or 
+                target.computed_macro_geo == 'Unknown' or
+                not target.computed_macro_geo):
+                filtered.append(target)
+        
+        # If filtering removed too many candidates, include some without geo
+        if len(filtered) < 20:
+            for target in targets:
+                if target not in filtered:
+                    filtered.append(target)
+                    if len(filtered) >= 50:  # Reasonable upper limit
+                        break
+        
+        return filtered
+    
+    def _find_by_name_similarity(self,
+                                query: EnhancedRestaurantRecord,
+                                targets: List[EnhancedRestaurantRecord],
+                                max_candidates: int) -> List[Tuple[EnhancedRestaurantRecord, float]]:
+        """Find candidates by restaurant name similarity"""
+        if not query.normalized_name.get('normalized'):
+            return []
+        
+        query_name = query.normalized_name['normalized']
+        query_tokens = set(query.normalized_name['tokens'])
+        
+        scored_targets = []
+        for target in targets:
+            if not target.normalized_name.get('normalized'):
+                continue
+            
+            target_name = target.normalized_name['normalized']
+            target_tokens = set(target.normalized_name['tokens'])
+            
+            # Calculate multiple similarity metrics
+            
+            # 1. Fuzzy string similarity
+            fuzzy_score = fuzz.ratio(query_name, target_name) / 100.0
+            
+            # 2. Token overlap (Jaccard similarity)
+            if query_tokens and target_tokens:
+                token_overlap = len(query_tokens & target_tokens) / len(query_tokens | target_tokens)
+            else:
+                token_overlap = 0
+            
+            # 3. Partial ratio (handles substrings)
+            partial_score = fuzz.partial_ratio(query_name, target_name) / 100.0
+            
+            # 4. Token sort ratio (handles word order differences)
+            token_sort_score = fuzz.token_sort_ratio(query_name, target_name) / 100.0
+            
+            # Combine scores with weights
+            combined_score = (
+                fuzzy_score * 0.3 +
+                token_overlap * 0.2 +
+                partial_score * 0.25 +
+                token_sort_score * 0.25
+            )
+            
+            # Boost score if location hints match
+            if (query.normalized_name.get('location_hint') and 
+                target.normalized_name.get('location_hint') and
+                query.normalized_name['location_hint'] == target.normalized_name['location_hint']):
+                combined_score = min(1.0, combined_score * 1.2)
+            
+            scored_targets.append((target, combined_score))
+        
+        # Sort by score and return top candidates
+        scored_targets.sort(key=lambda x: x[1], reverse=True)
+        return scored_targets[:max_candidates]
+    
+    def _find_by_address_similarity(self,
+                                   query: EnhancedRestaurantRecord,
+                                   targets: List[EnhancedRestaurantRecord],
+                                   max_candidates: int) -> List[Tuple[EnhancedRestaurantRecord, float]]:
+        """Find candidates by address similarity"""
+        if not query.normalized_address.get('street'):
+            return []
+        
+        query_tokens = set(query.normalized_address.get('tokens', []))
+        if not query_tokens:
+            return []
+        
+        scored_targets = []
+        for target in targets:
+            target_tokens = set(target.normalized_address.get('tokens', []))
+            if not target_tokens:
+                continue
+            
+            # Token overlap score
+            overlap_score = len(query_tokens & target_tokens) / len(query_tokens | target_tokens)
+            
+            # Street number match bonus
+            query_street = query.normalized_address.get('street', '')
+            target_street = target.normalized_address.get('street', '')
+            
+            if query_street and target_street:
+                # Extract street numbers
+                query_num = re.match(r'^(\d+)', query_street)
+                target_num = re.match(r'^(\d+)', target_street)
+                
+                if query_num and target_num and query_num.group(1) == target_num.group(1):
+                    overlap_score = min(1.0, overlap_score * 1.5)  # Boost for matching street number
+            
+            # ZIP code match bonus
+            if (query.normalized_address.get('zip') and 
+                target.normalized_address.get('zip') and
+                query.normalized_address['zip'] == target.normalized_address['zip']):
+                overlap_score = min(1.0, overlap_score * 1.3)
+            
+            if overlap_score > 0.2:  # Minimum threshold
+                scored_targets.append((target, overlap_score))
+        
+        scored_targets.sort(key=lambda x: x[1], reverse=True)
+        return scored_targets[:max_candidates]
+
+
+# ============================================================================
+# ENHANCED DATA TRIAGE AGENT
+# ============================================================================
+
+class EnhancedDataTriageAgent:
+    """Enhanced agent with Place ID verification and intelligent pre-filtering"""
     
     def __init__(self, google_api_key: str, anthropic_api_key: str):
-        """
-        Initialize the triage agent
+        """Initialize the enhanced triage agent"""
+        print("🔧 Initializing Enhanced DataTriageAgent with Place ID Verification...")
         
-        Args:
-            google_api_key: Google Places API key
-            anthropic_api_key: Anthropic API key for Claude
-        """
-        print("🔧 Initializing DataTriageAgent...")
-        print(f"   📍 Google API Key: {'✅ Present' if google_api_key else '❌ Missing'}")
-        print(f"   🤖 Anthropic API Key: {'✅ Present' if anthropic_api_key else '❌ Missing'}")
+        self.gmaps = googlemaps.Client(key=google_api_key)
+        self.claude = anthropic.Anthropic(api_key=anthropic_api_key)
+        self.pre_filter = IntelligentPreFilter()
+        self.place_verifier = PlaceIDVerifier(self.gmaps)
         
-        try:
-            print("   🌐 Initializing Google Maps client...")
-            self.gmaps = googlemaps.Client(key=google_api_key)
-            print("   ✅ Google Maps client initialized")
-        except Exception as e:
-            print(f"   ❌ Error initializing Google Maps: {e}")
-            raise
-            
-        try:
-            print("   🤖 Initializing Anthropic client...")
-            self.claude = anthropic.Anthropic(api_key=anthropic_api_key)
-            print("   ✅ Anthropic client initialized")
-        except Exception as e:
-            print(f"   ❌ Error initializing Anthropic: {e}")
-            raise
-            
+        # Caches to avoid redundant API calls
+        self.google_cache = {}
+        self.claude_cache = {}
+        
+        # API call counters
         self.google_api_calls = 0
         self.claude_api_calls = 0
-        print("✅ DataTriageAgent initialization complete")
+        self.pre_filter_eliminations = 0
+        self.place_id_corrections = 0
+        
+        print("✅ Enhanced DataTriageAgent initialization complete")
     
-    def should_skip_record(self, record: RestaurantRecord) -> bool:
-        """Check if a record should be skipped based on keywords"""
-        check_fields = [
-            record.deal_name, record.company_name, 
-            record.restaurant_name, record.location_name
-        ]
-        
-        for field in check_fields:
-            if field and isinstance(field, str):
-                field_lower = field.lower()
-                for keyword in self.SKIP_KEYWORDS:
-                    if keyword in field_lower:
-                        logger.info(f"Skipping record with keyword '{keyword}': {field}")
-                        return True
-        return False
-    
-    def build_search_variations(self, record: RestaurantRecord) -> List[str]:
+    def verify_and_correct_place_ids(self, 
+                                    records: List[EnhancedRestaurantRecord],
+                                    df: pd.DataFrame,
+                                    source_name: str) -> int:
         """
-        Build multiple search query variations for better matching
+        Verify all Place IDs and correct them if needed
         
-        Returns list of search queries to try, from most to least specific
+        Returns:
+            Number of corrections made
         """
-        queries = []
+        print(f"\n🔍 Verifying {source_name} Place IDs...")
+        corrections = 0
+        verified = 0
+        invalid = 0
         
-        def make_query(parts):
-            valid_parts = [str(p).strip() for p in parts if p and str(p).strip().lower() != 'nan']
-            return ', '.join(valid_parts) if valid_parts else None
-        
-        # Get name variations
-        names = [record.deal_name, record.restaurant_name, record.company_name]
-        names = [n for n in names if n]
-        
-        # Full address query
-        if record.address:
-            for name in names:
-                q = make_query([name, record.address])
-                if q: queries.append(q)
-        
-        # Name + City + State
-        if record.city:
-            for name in names:
-                q = make_query([name, record.city, record.state])
-                if q: queries.append(q)
-        
-        # Just name + city
-        if record.city:
-            for name in names:
-                q = make_query([name, record.city])
-                if q: queries.append(q)
-        
-        # Try partial names (first few words) + city
-        if record.city:
-            for name in names:
-                if name:
-                    words = name.split()[:2]  # First 2 words
-                    if words:
-                        q = make_query([' '.join(words), record.city])
-                        if q: queries.append(q)
-        
-        # Just the name
-        for name in names:
-            if name: queries.append(name)
-        
-        # Remove duplicates while preserving order
-        seen = set()
-        unique_queries = []
-        for q in queries:
-            if q not in seen:
-                seen.add(q)
-                unique_queries.append(q)
-        
-        return unique_queries[:10]  # Limit to 10 variations
-    
-    def search_google_places_multi(self, record: RestaurantRecord, 
-                                  existing_place_id: Optional[str] = None,
-                                  max_attempts: int = 5) -> Optional[Dict]:
-        """
-        Search for a place using multiple query variations
-        
-        Returns dictionary with place information or None
-        """
-        # First, try to verify existing place ID if provided
-        if existing_place_id and isinstance(existing_place_id, str) and existing_place_id.strip():
-            try:
-                place_result = self.gmaps.place(
-                    place_id=existing_place_id,
-                    fields=['name', 'formatted_address', 'place_id', 'type', 'business_status']
-                )
-                self.google_api_calls += 1
-                if place_result.get('result'):
-                    logger.info(f"Verified existing place ID: {existing_place_id}")
-                    return place_result['result']
-            except Exception as e:
-                logger.warning(f"Could not verify place ID {existing_place_id}: {e}")
-        
-        # Get query variations
-        queries = self.build_search_variations(record)
-        
-        if not queries:
-            logger.warning("No valid search queries could be built")
-            return None
-        
-        # Try each query variation
-        for i, query in enumerate(queries[:max_attempts]):
-            try:
-                print(f"      🔍 Google search attempt {i+1}/{min(len(queries), max_attempts)}: '{query}'")
-                search_results = self.gmaps.places(query=query)
-                self.google_api_calls += 1
-                
-                if search_results.get('results'):
-                    # Get the first result
-                    place = search_results['results'][0]
-                    
-                    # Get detailed information
-                    place_details = self.gmaps.place(
-                        place_id=place['place_id'],
-                        fields=['name', 'formatted_address', 'place_id', 'type', 
-                               'business_status', 'geometry', 'website', 'formatted_phone_number']
-                    )
-                    self.google_api_calls += 1
-                    
-                    result = place_details.get('result', place)
-                    print(f"      ✅ Found: {result.get('name')} at {result.get('formatted_address', 'N/A')}")
-                    return result
-                    
-            except Exception as e:
-                logger.error(f"Error with query '{query}': {e}")
-                continue
-        
-        print(f"      ❌ No Google results found after {min(len(queries), max_attempts)} attempts")
-        return None
-    
-    def claude_verify_place_id_match(self, record1: RestaurantRecord, record2: RestaurantRecord) -> Dict:
-        """
-        Use Claude to verify if two records with the same Google Place ID are actually duplicates
-        or if one might be incorrect
-        """
-        prompt = f"""
-        Analyze if these two restaurant records with the same Google Place ID are actually the same restaurant:
-        
-        RECORD 1 (from {record1.source}):
-        - Name: {record1.deal_name or record1.restaurant_name or record1.company_name}
-        - Location: {record1.location_name}
-        - Address: {record1.address or f"{record1.street}, {record1.city}, {record1.state} {record1.zipcode}"}
-        - Google Place ID: {record1.google_places_id}
-        
-        RECORD 2 (from {record2.source}):
-        - Name: {record2.deal_name or record2.restaurant_name or record2.company_name}
-        - Location: {record2.location_name}
-        - Address: {record2.address or f"{record2.street}, {record2.city}, {record2.state} {record2.zipcode}"}
-        - Google Place ID: {record2.google_places_id}
-        
-        Consider:
-        - Could these be the same restaurant with slightly different names/info?
-        - Could one have an incorrect Place ID (copy/paste error)?
-        - Are the locations consistent?
-        
-        Respond with JSON:
-        {{
-            "is_valid_match": boolean,
-            "confidence_score": 0.0 to 1.0,
-            "reasoning": "explanation",
-            "likely_same_restaurant": boolean
-        }}
-        """
-        
-        try:
-            response = self.claude.messages.create(
-                model="claude-3-5-sonnet-20241022",  # Using Sonnet for cost efficiency
-                max_tokens=500,
-                temperature=0,
-                messages=[{"role": "user", "content": prompt}]
-            )
-            self.claude_api_calls += 1
+        for i, record in enumerate(records):
+            if i % 50 == 0 and i > 0:
+                print(f"  Progress: {i}/{len(records)} records verified")
             
-            response_text = response.content[0].text
-            json_match = re.search(r'\{{.*\}}', response_text, re.DOTALL)
-            
-            if json_match:
-                return json.loads(json_match.group())
+            if not record.google_places_id or pd.isna(record.google_places_id):
+                # Try to find Place ID
+                result = self.place_verifier.find_correct_place_id(record)
+                if result['found']:
+                    df.at[record.row_index, 'google_places_id' if source_name == 'HubSpot' else 'google_place_id'] = result['place_id']
+                    df.at[record.row_index, 'place_id_verification'] = f"Found: {result['place_name']} (conf: {result['confidence']:.2f})"
+                    corrections += 1
+                    print(f"  ✅ Found Place ID for {record.normalized_name.get('original')}: {result['place_name']}")
+                else:
+                    df.at[record.row_index, 'place_id_verification'] = "Not found"
             else:
-                return {
-                    "is_valid_match": False,
-                    "confidence_score": 0,
-                    "reasoning": "Could not parse response",
-                    "likely_same_restaurant": False
-                }
+                # Verify existing Place ID
+                verification = self.place_verifier.verify_place_id(record)
                 
-        except Exception as e:
-            logger.error(f"Error in Claude verification: {e}")
-            return {
-                "is_valid_match": False,
-                "confidence_score": 0,
-                "reasoning": f"Error: {str(e)}",
-                "likely_same_restaurant": False
-            }
+                if verification['is_valid']:
+                    df.at[record.row_index, 'place_id_verification'] = f"Valid: {verification['place_name']} (conf: {verification['confidence']:.2f})"
+                    verified += 1
+                else:
+                    # Try to find correct Place ID
+                    result = self.place_verifier.find_correct_place_id(record)
+                    if result['found'] and result['place_id'] != record.google_places_id:
+                        old_id = record.google_places_id
+                        df.at[record.row_index, 'google_places_id' if source_name == 'HubSpot' else 'google_place_id'] = result['place_id']
+                        df.at[record.row_index, 'place_id_verification'] = f"Corrected: {result['place_name']} (conf: {result['confidence']:.2f})"
+                        corrections += 1
+                        print(f"  🔄 Corrected Place ID for {record.normalized_name.get('original')}")
+                        print(f"     Old: {old_id}")
+                        print(f"     New: {result['place_id']} ({result['place_name']})")
+                    else:
+                        df.at[record.row_index, 'place_id_verification'] = f"Invalid: {verification['reason']}"
+                        invalid += 1
+        
+        print(f"\n📊 {source_name} Place ID Verification Results:")
+        print(f"  ✅ Valid: {verified}")
+        print(f"  🔄 Corrected: {corrections}")
+        print(f"  ❌ Invalid/Not Found: {invalid}")
+        print(f"  Total API calls: {self.place_verifier.api_calls}")
+        
+        return corrections
     
-    def claude_fuzzy_match(self, record1: RestaurantRecord, record2: RestaurantRecord, 
-                          google_data1: Optional[Dict] = None, 
-                          google_data2: Optional[Dict] = None) -> Dict:
-        """
-        Use Claude to determine if two records are the same restaurant using all available data
-        """
-        prompt = f"""
-        Determine if these two restaurant records represent the same restaurant:
+    def process_datasets(self, 
+                        hubspot_df: pd.DataFrame, 
+                        database_df: pd.DataFrame,
+                        output_timestamp: str,
+                        test_mode: bool = False,
+                        skip_verification: bool = False) -> Tuple[pd.DataFrame, pd.DataFrame]:
+        """Process datasets with Place ID verification and intelligent pre-filtering"""
         
-        RECORD 1 (from {record1.source}):
-        - Name: {record1.deal_name or record1.restaurant_name or record1.company_name}
-        - Location: {record1.location_name}
-        - Address: {record1.address or f"{record1.street}, {record1.city}, {record1.state} {record1.zipcode}"}
-        - Google Place ID: {record1.google_places_id}
-        
-        RECORD 2 (from {record2.source}):
-        - Name: {record2.deal_name or record2.restaurant_name or record2.company_name}  
-        - Location: {record2.location_name}
-        - Address: {record2.address or f"{record2.street}, {record2.city}, {record2.state} {record2.zipcode}"}
-        - Google Place ID: {record2.google_places_id}
-        
-        {f'''GOOGLE DATA FOR RECORD 1:
-        - Name: {google_data1.get('name')}
-        - Address: {google_data1.get('formatted_address')}
-        - Place ID: {google_data1.get('place_id')}
-        - Status: {google_data1.get('business_status')}''' if google_data1 else 'No Google data for Record 1'}
-        
-        {f'''GOOGLE DATA FOR RECORD 2:
-        - Name: {google_data2.get('name')}
-        - Address: {google_data2.get('formatted_address')}
-        - Place ID: {google_data2.get('place_id')}
-        - Status: {google_data2.get('business_status')}''' if google_data2 else 'No Google data for Record 2'}
-        
-        Consider:
-        - Name variations (e.g., "Joe's Pizza" vs "Joe's Pizza NYC")
-        - Address proximity and variations
-        - Common abbreviations or naming differences
-        - Chain locations vs unique restaurants
-        
-        Be reasonably flexible with matches - restaurants often have slight name variations across systems.
-        
-        Respond with JSON:
-        {{
-            "is_match": boolean,
-            "confidence_score": 0.0 to 1.0,
-            "reasoning": "explanation",
-            "suggested_place_id": "the correct Google Place ID if known, else null"
-        }}
-        """
-        
-        try:
-            response = self.claude.messages.create(
-                model="claude-sonnet-4-20250514",
-                max_tokens=500,
-                temperature=0,
-                messages=[{"role": "user", "content": prompt}]
-            )
-            self.claude_api_calls += 1
-            
-            response_text = response.content[0].text
-            json_match = re.search(r'\{{.*\}}', response_text, re.DOTALL)
-            
-            if json_match:
-                return json.loads(json_match.group())
-            else:
-                return {
-                    "is_match": False,
-                    "confidence_score": 0,
-                    "reasoning": "Could not parse response",
-                    "suggested_place_id": None
-                }
-                
-        except Exception as e:
-            logger.error(f"Error in Claude fuzzy matching: {e}")
-            return {
-                "is_match": False,
-                "confidence_score": 0,
-                "reasoning": f"Error: {str(e)}",
-                "suggested_place_id": None
-            }
-    
-    def process_datasets(self, hubspot_df: pd.DataFrame, database_df: pd.DataFrame, 
-                        output_timestamp: str, test_mode: bool = False) -> Tuple[pd.DataFrame, pd.DataFrame]:
-        """
-        Process both datasets with Claude-driven matching at every step
-        """
         print("\n" + "="*80)
-        print("📊 PROCESSING DATASETS - CLAUDE-DRIVEN MATCHING")
+        print("📊 ENHANCED PROCESSING WITH PLACE ID VERIFICATION")
         print("="*80)
         print(f"📋 HubSpot records: {len(hubspot_df)}")
         print(f"🗄️ Database records: {len(database_df)}")
         
-        # TEST MODE: Limit to first 10 records if enabled
         if test_mode:
-            print("\n⚠️ TEST MODE ENABLED - Processing only first 10 records from each dataset")
-            hubspot_df = hubspot_df.head(10).copy()
-            database_df = database_df.head(10).copy()
-            print(f"📋 Limited HubSpot to: {len(hubspot_df)} records")
-            print(f"🗄️ Limited Database to: {len(database_df)} records")
+            print("\n⚠️ TEST MODE - Processing first 30 records")
+            hubspot_df = hubspot_df.head(30).copy()
+            database_df = database_df.head(30).copy()
         
-        # Set up incremental save file names
-        hubspot_temp_file = f'hubspot_progress_{output_timestamp}.csv'
-        database_temp_file = f'database_progress_{output_timestamp}.csv'
-        
-        # Add processing columns
+        # Add tracking columns
         for df in [hubspot_df, database_df]:
-            df['verified_place_id'] = ''
-            df['confidence_score'] = 0.0
+            df['place_id_verification'] = ''
             df['match_status'] = ''
+            df['match_confidence'] = 0.0
             df['match_method'] = ''
-            df['notes'] = ''
-            df['processed'] = False
+            df['verified_place_id'] = ''
+            df['match_notes'] = ''
         
-        # Convert to RestaurantRecord objects
-        print("\n🔄 Converting DataFrames to RestaurantRecord objects...")
+        # Convert to Enhanced Restaurant Records
+        print("\n🔄 Converting to Enhanced Restaurant Records with normalization...")
+        
         hubspot_records = []
         for idx, row in hubspot_df.iterrows():
-            record = RestaurantRecord(
+            record = EnhancedRestaurantRecord(
                 source='hubspot',
+                row_index=idx,
                 deal_name=row.get('Deal Name'),
                 company_name=row.get('Company name'),
                 address=row.get('Address'),
                 google_places_id=row.get('google_places_id'),
-                macro_geo=row.get('Macro Geo'),
-                row_index=idx
+                macro_geo=row.get('Macro Geo (NYC, SF, CHS, DC, LA, NASH, DEN)')
             )
             hubspot_records.append(record)
         
         database_records = []
         for idx, row in database_df.iterrows():
-            record = RestaurantRecord(
+            record = EnhancedRestaurantRecord(
                 source='database',
+                row_index=idx,
                 restaurant_name=row.get('restaurant_name'),
                 location_name=row.get('location_name'),
                 street=row.get('street'),
@@ -435,371 +1013,360 @@ class DataTriageAgent:
                 state=row.get('state'),
                 zipcode=str(row.get('zipcode')) if pd.notna(row.get('zipcode')) else None,
                 coordinate=row.get('coordinate'),
-                google_places_id=row.get('google_place_id'),
-                row_index=idx
+                google_places_id=row.get('google_place_id')
             )
             database_records.append(record)
         
-        print(f"✅ Created {len(hubspot_records)} HubSpot and {len(database_records)} Database records")
+        # PHASE 1: PLACE ID VERIFICATION
+        if not skip_verification:
+            print("\n" + "="*60)
+            print("PHASE 1: VERIFYING AND CORRECTING PLACE IDs")
+            print("="*60)
+            
+            # Verify Database Place IDs (trusted addresses)
+            db_corrections = self.verify_and_correct_place_ids(
+                database_records, database_df, "Database"
+            )
+            
+            # Verify HubSpot Place IDs (may need more corrections)
+            hs_corrections = self.verify_and_correct_place_ids(
+                hubspot_records, hubspot_df, "HubSpot"
+            )
+            
+            self.place_id_corrections = db_corrections + hs_corrections
+            
+            # Update records with corrected Place IDs
+            for record, idx in zip(hubspot_records, range(len(hubspot_df))):
+                record.google_places_id = hubspot_df.at[idx, 'google_places_id']
+            
+            for record, idx in zip(database_records, range(len(database_df))):
+                record.google_places_id = database_df.at[idx, 'google_place_id']
+            
+            # Update Google API counter
+            self.google_api_calls += self.place_verifier.api_calls
+            
+            print(f"\n✅ Place ID verification complete. Total corrections: {self.place_id_corrections}")
+        else:
+            print("\n⚠️ Skipping Place ID verification (skip_verification=True)")
         
-        # Track matched records to avoid duplicate matching
+        # PHASE 2: INTELLIGENT MATCHING
+        print("\n" + "="*60)
+        print("PHASE 2: INTELLIGENT MATCHING WITH PRE-FILTERING")
+        print("="*60)
+        
+        # Create geographic buckets for efficiency
+        print("\n🌍 Creating geographic buckets...")
+        geo_buckets_db = defaultdict(list)
+        for rec in database_records:
+            geo_buckets_db[rec.computed_macro_geo].append(rec)
+        
+        print(f"Geographic distribution in database:")
+        for geo, records in sorted(geo_buckets_db.items(), key=lambda x: len(x[1]), reverse=True):
+            print(f"  {geo}: {len(records)} records")
+        
+        # Track matched records
         matched_hs = set()
         matched_db = set()
         
-        # PHASE 1: Match by Google Place IDs with Claude verification
-        print("\n" + "="*60)
-        print("PHASE 1: MATCHING BY GOOGLE PLACE IDs (WITH CLAUDE VERIFICATION)")
-        print("="*60)
-        
-        # Build Place ID maps
-        db_place_id_map = {}
-        for rec in database_records:
-            if rec.google_places_id and isinstance(rec.google_places_id, str) and rec.google_places_id.strip():
-                if rec.google_places_id not in db_place_id_map:
-                    db_place_id_map[rec.google_places_id] = []
-                db_place_id_map[rec.google_places_id].append(rec)
-        
-        # Check each HubSpot record with a Place ID
+        total_comparisons_without_filter = len(hubspot_records) * len(database_records)
+        actual_comparisons = 0
         place_id_matches = 0
-        for hs_record in hubspot_records:
+        claude_matches = 0
+        
+        for hs_idx, hs_record in enumerate(hubspot_records):
             if hs_record.row_index in matched_hs:
                 continue
+            
+            print(f"\n[{hs_idx+1}/{len(hubspot_records)}] Processing: {hs_record.normalized_name.get('original', 'Unknown')}")
+            
+            # First, check for exact Place ID match (after verification)
+            if hs_record.google_places_id and pd.notna(hs_record.google_places_id):
+                place_id_match = None
+                for db_record in database_records:
+                    if (db_record.row_index not in matched_db and 
+                        db_record.google_places_id == hs_record.google_places_id):
+                        place_id_match = db_record
+                        break
                 
-            if hs_record.google_places_id and isinstance(hs_record.google_places_id, str) and hs_record.google_places_id.strip():
-                if hs_record.google_places_id in db_place_id_map:
-                    db_candidates = db_place_id_map[hs_record.google_places_id]
+                if place_id_match:
+                    print(f"  ✅ Exact Place ID match found (verified)")
                     
-                    # Have Claude verify each potential match
-                    for db_record in db_candidates:
-                        if db_record.row_index in matched_db:
-                            continue
-                            
-                        print(f"\n🤖 Claude verifying Place ID match: HS row {hs_record.row_index} ↔ DB row {db_record.row_index}")
-                        verification = self.claude_verify_place_id_match(hs_record, db_record)
-                        
-                        if verification['is_valid_match'] and verification['confidence_score'] >= 0.7:
-                            print(f"   ✅ Match confirmed (confidence: {verification['confidence_score']:.2f})")
-                            
-                            # Update HubSpot record
-                            hubspot_df.at[hs_record.row_index, 'match_status'] = f'MATCHED (DB row {db_record.row_index})'
-                            hubspot_df.at[hs_record.row_index, 'match_method'] = 'place_id_verified'
-                            hubspot_df.at[hs_record.row_index, 'confidence_score'] = verification['confidence_score']
-                            hubspot_df.at[hs_record.row_index, 'verified_place_id'] = hs_record.google_places_id
-                            hubspot_df.at[hs_record.row_index, 'notes'] = verification['reasoning']
-                            
-                            # Update Database record
-                            database_df.at[db_record.row_index, 'match_status'] = f'MATCHED (HS row {hs_record.row_index})'
-                            database_df.at[db_record.row_index, 'match_method'] = 'place_id_verified'
-                            database_df.at[db_record.row_index, 'confidence_score'] = verification['confidence_score']
-                            database_df.at[db_record.row_index, 'verified_place_id'] = db_record.google_places_id
-                            database_df.at[db_record.row_index, 'notes'] = verification['reasoning']
-                            
-                            matched_hs.add(hs_record.row_index)
-                            matched_db.add(db_record.row_index)
-                            place_id_matches += 1
-                            break
-                        else:
-                            print(f"   ❌ Match rejected (confidence: {verification['confidence_score']:.2f})")
-                            print(f"      Reason: {verification['reasoning']}")
-        
-        print(f"\n📊 Phase 1 complete: {place_id_matches} verified matches via Place ID")
-        
-        # Save progress
-        hubspot_df.to_csv(hubspot_temp_file, index=False)
-        database_df.to_csv(database_temp_file, index=False)
-        
-        # PHASE 2: Claude-driven fuzzy matching with Google enrichment
-        print("\n" + "="*60)
-        print("PHASE 2: CLAUDE-DRIVEN FUZZY MATCHING")
-        print("="*60)
-        
-        unmatched_hs = [r for r in hubspot_records if r.row_index not in matched_hs]
-        unmatched_db = [r for r in database_records if r.row_index not in matched_db]
-        
-        print(f"Remaining unmatched: {len(unmatched_hs)} HubSpot, {len(unmatched_db)} Database records")
-        
-        fuzzy_matches = 0
-        for hs_record in unmatched_hs:
-            if self.should_skip_record(hs_record):
-                hubspot_df.at[hs_record.row_index, 'match_status'] = 'SKIPPED'
-                hubspot_df.at[hs_record.row_index, 'notes'] = 'Contains skip keyword'
+                    # Record the match
+                    hubspot_df.at[hs_record.row_index, 'match_status'] = 'MATCHED'
+                    hubspot_df.at[hs_record.row_index, 'match_confidence'] = 1.0
+                    hubspot_df.at[hs_record.row_index, 'match_method'] = 'verified_place_id'
+                    hubspot_df.at[hs_record.row_index, 'match_notes'] = f'Matched to DB row {place_id_match.row_index}'
+                    
+                    database_df.at[place_id_match.row_index, 'match_status'] = 'MATCHED'
+                    database_df.at[place_id_match.row_index, 'match_confidence'] = 1.0
+                    database_df.at[place_id_match.row_index, 'match_method'] = 'verified_place_id'
+                    database_df.at[place_id_match.row_index, 'match_notes'] = f'Matched to HS row {hs_record.row_index}'
+                    
+                    matched_hs.add(hs_record.row_index)
+                    matched_db.add(place_id_match.row_index)
+                    place_id_matches += 1
+                    continue
+            
+            # Use pre-filter to find candidates
+            candidates = self.pre_filter.find_candidates(
+                hs_record, 
+                [r for r in database_records if r.row_index not in matched_db],
+                max_candidates=5,
+                min_similarity=0.5
+            )
+            
+            self.pre_filter_eliminations += len(database_records) - len(candidates)
+            
+            if not candidates:
+                print(f"  ❌ No candidates found by pre-filter")
+                hubspot_df.at[hs_record.row_index, 'match_status'] = 'NO_MATCH'
+                hubspot_df.at[hs_record.row_index, 'match_notes'] = 'No candidates passed pre-filtering'
                 continue
             
-            print(f"\n🔍 Processing: {hs_record.deal_name or hs_record.company_name}")
+            print(f"  📊 Pre-filter found {len(candidates)} candidates")
             
-            # Get Google data for the HubSpot record (if not too many API calls)
-            google_hs = None
-            if self.google_api_calls < 100:  # Limit API calls in test mode
-                google_hs = self.search_google_places_multi(hs_record, hs_record.google_places_id, max_attempts=3)
-                if google_hs:
-                    hubspot_df.at[hs_record.row_index, 'verified_place_id'] = google_hs.get('place_id', '')
-            
-            # Check against each unmatched database record
+            # Check top candidates with Claude
             best_match = None
             best_score = 0
-            best_verification = None
+            best_method = ''
             
-            for db_record in unmatched_db:
-                if db_record.row_index in matched_db:
-                    continue
+            for db_record, pre_score in candidates[:3]:  # Only check top 3
+                actual_comparisons += 1
                 
-                # Get Google data for the database record (if needed and not too many calls)
-                google_db = None
-                if self.google_api_calls < 100 and db_record.google_places_id and isinstance(db_record.google_places_id, str):
-                    google_db = self.search_google_places_multi(db_record, db_record.google_places_id, max_attempts=2)
+                print(f"    🤖 Checking: {db_record.normalized_name.get('original')} (pre-score: {pre_score:.2f})")
                 
-                # Have Claude evaluate the match
-                print(f"   🤖 Claude comparing with DB: {db_record.restaurant_name}")
-                verification = self.claude_fuzzy_match(hs_record, db_record, google_hs, google_db)
-                
-                if verification['is_match'] and verification['confidence_score'] > best_score:
+                # High confidence without Claude if names and addresses are very similar
+                if pre_score > 0.85:
+                    print(f"      ✅ Auto-matched (high similarity)")
                     best_match = db_record
-                    best_score = verification['confidence_score']
-                    best_verification = verification
+                    best_score = pre_score
+                    best_method = 'high_similarity'
+                    break
+                
+                # Use Claude for verification
+                verification = self._claude_verify_match(hs_record, db_record, pre_score)
+                self.claude_api_calls += 1
+                
+                if verification['is_match'] and verification['confidence'] > best_score:
+                    best_match = db_record
+                    best_score = verification['confidence']
+                    best_method = 'claude_verified'
+                    print(f"      ✅ Claude confirmed (confidence: {verification['confidence']:.2f})")
+                else:
+                    print(f"      ❌ Claude rejected (confidence: {verification.get('confidence', 0):.2f})")
             
-            # If we found a good match, record it
+            # Record the match if found
             if best_match and best_score >= 0.6:
-                print(f"   ✅ Best match found: DB row {best_match.row_index} (confidence: {best_score:.2f})")
+                hubspot_df.at[hs_record.row_index, 'match_status'] = 'MATCHED'
+                hubspot_df.at[hs_record.row_index, 'match_confidence'] = best_score
+                hubspot_df.at[hs_record.row_index, 'match_method'] = best_method
+                hubspot_df.at[hs_record.row_index, 'match_notes'] = f'Matched to DB row {best_match.row_index}'
                 
-                # Update HubSpot record
-                hubspot_df.at[hs_record.row_index, 'match_status'] = f'MATCHED (DB row {best_match.row_index})'
-                hubspot_df.at[hs_record.row_index, 'match_method'] = 'claude_fuzzy'
-                hubspot_df.at[hs_record.row_index, 'confidence_score'] = best_score
-                if best_verification['suggested_place_id']:
-                    hubspot_df.at[hs_record.row_index, 'verified_place_id'] = best_verification['suggested_place_id']
-                hubspot_df.at[hs_record.row_index, 'notes'] = best_verification['reasoning']
-                
-                # Update Database record
-                database_df.at[best_match.row_index, 'match_status'] = f'MATCHED (HS row {hs_record.row_index})'
-                database_df.at[best_match.row_index, 'match_method'] = 'claude_fuzzy'
-                database_df.at[best_match.row_index, 'confidence_score'] = best_score
-                if best_verification['suggested_place_id']:
-                    database_df.at[best_match.row_index, 'verified_place_id'] = best_verification['suggested_place_id']
-                database_df.at[best_match.row_index, 'notes'] = best_verification['reasoning']
+                database_df.at[best_match.row_index, 'match_status'] = 'MATCHED'
+                database_df.at[best_match.row_index, 'match_confidence'] = best_score
+                database_df.at[best_match.row_index, 'match_method'] = best_method
+                database_df.at[best_match.row_index, 'match_notes'] = f'Matched to HS row {hs_record.row_index}'
                 
                 matched_hs.add(hs_record.row_index)
                 matched_db.add(best_match.row_index)
-                fuzzy_matches += 1
+                
+                if best_method == 'claude_verified':
+                    claude_matches += 1
+                
+                print(f"  ✅ MATCHED with confidence {best_score:.2f}")
             else:
-                print(f"   ❌ No confident match found")
-                hubspot_df.at[hs_record.row_index, 'match_status'] = 'NO_MATCH_IN_DATABASE'
-                if google_hs:
-                    hubspot_df.at[hs_record.row_index, 'notes'] = f"Google: {google_hs.get('name', 'N/A')}"
-            
-            # Save progress periodically
-            if (len(matched_hs) % 5) == 0:
-                hubspot_df.to_csv(hubspot_temp_file, index=False)
-                database_df.to_csv(database_temp_file, index=False)
-            
-            # Rate limiting
-            time.sleep(0.2)  # Small delay to avoid overwhelming APIs
-        
-        print(f"\n📊 Phase 2 complete: {fuzzy_matches} matches via Claude fuzzy matching")
+                hubspot_df.at[hs_record.row_index, 'match_status'] = 'NO_MATCH'
+                hubspot_df.at[hs_record.row_index, 'match_notes'] = 'No confident match found'
+                print(f"  ❌ No confident match found")
         
         # Mark remaining unmatched records
-        for idx in range(len(hubspot_df)):
-            if not hubspot_df.at[idx, 'match_status']:
-                hubspot_df.at[idx, 'match_status'] = 'NO_MATCH_IN_DATABASE'
-        
         for idx in range(len(database_df)):
-            if not database_df.at[idx, 'match_status']:
-                database_df.at[idx, 'match_status'] = 'NO_MATCH_IN_HUBSPOT'
+            if idx not in matched_db:
+                database_df.at[idx, 'match_status'] = 'UNMATCHED'
+                database_df.at[idx, 'match_notes'] = 'Not matched to any HubSpot record'
         
-        # Final save
-        hubspot_df.to_csv(hubspot_temp_file, index=False)
-        database_df.to_csv(database_temp_file, index=False)
+        # Print comprehensive statistics
+        print("\n" + "="*80)
+        print("📊 PROCESSING COMPLETE - COMPREHENSIVE REPORT")
+        print("="*80)
         
-        print(f"\n📊 PROCESSING COMPLETE:")
-        print(f"   Total Google API calls: {self.google_api_calls}")
-        print(f"   Total Claude API calls: {self.claude_api_calls}")
-        print(f"   Estimated Google cost: ${self.google_api_calls * 0.005:.2f}")
-        print(f"   Estimated Claude cost: ${self.claude_api_calls * 0.003:.2f} (Sonnet pricing)")
-        print(f"   Total estimated cost: ${(self.google_api_calls * 0.005) + (self.claude_api_calls * 0.003):.2f}")
+        print("\n🔍 PLACE ID VERIFICATION:")
+        print(f"  Total corrections made: {self.place_id_corrections}")
+        
+        print("\n🎯 MATCHING RESULTS:")
+        print(f"  Total HubSpot records: {len(hubspot_df)}")
+        print(f"  Total Database records: {len(database_df)}")
+        print(f"  Matched records: {len(matched_hs)}")
+        print(f"    - Via verified Place ID: {place_id_matches}")
+        print(f"    - Via Claude verification: {claude_matches}")
+        print(f"    - Via high similarity: {len(matched_hs) - place_id_matches - claude_matches}")
+        
+        print("\n⚡ EFFICIENCY METRICS:")
+        print(f"  Possible comparisons without filtering: {total_comparisons_without_filter:,}")
+        print(f"  Actual comparisons made: {actual_comparisons:,}")
+        print(f"  Comparisons eliminated: {self.pre_filter_eliminations:,}")
+        print(f"  Efficiency gain: {(1 - actual_comparisons/max(1, total_comparisons_without_filter))*100:.1f}%")
+        
+        print("\n💰 API USAGE & COSTS:")
+        print(f"  Google Places API calls: {self.google_api_calls}")
+        print(f"    - Place ID verifications: {self.place_verifier.api_calls}")
+        print(f"  Claude API calls: {self.claude_api_calls}")
+        print(f"  Estimated Google cost: ${self.google_api_calls * 0.005:.2f}")
+        print(f"  Estimated Claude cost: ${self.claude_api_calls * 0.003:.2f}")
+        print(f"  Total estimated cost: ${self.google_api_calls * 0.005 + self.claude_api_calls * 0.003:.2f}")
         
         return hubspot_df, database_df
     
-    def generate_summary_report(self, hubspot_df: pd.DataFrame, database_df: pd.DataFrame) -> str:
-        """Generate a summary report of the matching process"""
-        report = []
-        report.append("=" * 80)
-        report.append("DATA TRIAGE SUMMARY REPORT - CLAUDE-DRIVEN VERSION")
-        report.append("=" * 80)
-        report.append(f"Generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-        report.append(f"Total Google API calls: {self.google_api_calls}")
-        report.append(f"Total Claude API calls: {self.claude_api_calls}")
-        report.append(f"Estimated total cost: ${(self.google_api_calls * 0.005) + (self.claude_api_calls * 0.003):.2f}")
-        report.append("")
+    def _claude_verify_match(self, 
+                           record1: EnhancedRestaurantRecord, 
+                           record2: EnhancedRestaurantRecord,
+                           pre_score: float) -> Dict[str, Any]:
+        """Use Claude to verify if two records match"""
         
-        # HubSpot summary
-        report.append("HUBSPOT DATA SUMMARY:")
-        report.append(f"Total records: {len(hubspot_df)}")
+        prompt = f"""
+        Determine if these two restaurant records represent the same restaurant.
         
-        # Match statistics
-        matched_mask = hubspot_df['match_status'].astype(str).str.contains('MATCHED', na=False)
-        report.append(f"Matched records: {matched_mask.sum()}")
+        RECORD 1 (from {record1.source}):
+        - Name: {record1.normalized_name.get('original', 'N/A')}
+        - Normalized Name: {record1.normalized_name.get('normalized', 'N/A')}
+        - Address: {record1.address or f"{record1.street}, {record1.city}, {record1.state}"}
+        - Normalized Address: {record1.normalized_address.get('normalized', 'N/A')}
+        - Location/Neighborhood: {record1.location_name}
+        - Macro Region: {record1.computed_macro_geo}
+        - Google Place ID: {record1.google_places_id}
         
-        # Match methods breakdown
-        if 'match_method' in hubspot_df.columns:
-            place_id_matches = (hubspot_df['match_method'] == 'place_id_verified').sum()
-            fuzzy_matches = (hubspot_df['match_method'] == 'claude_fuzzy').sum()
-            report.append(f"  - Via Place ID (Claude verified): {place_id_matches}")
-            report.append(f"  - Via Claude fuzzy matching: {fuzzy_matches}")
+        RECORD 2 (from {record2.source}):
+        - Name: {record2.normalized_name.get('original', 'N/A')}
+        - Normalized Name: {record2.normalized_name.get('normalized', 'N/A')}
+        - Address: {record2.address or f"{record2.street}, {record2.city}, {record2.state}"}
+        - Normalized Address: {record2.normalized_address.get('normalized', 'N/A')}
+        - Location/Neighborhood: {record2.location_name}
+        - Macro Region: {record2.computed_macro_geo}
+        - Google Place ID: {record2.google_places_id}
         
-        report.append(f"No match in Database: {(hubspot_df['match_status'] == 'NO_MATCH_IN_DATABASE').sum()}")
-        report.append(f"Skipped: {(hubspot_df['match_status'] == 'SKIPPED').sum()}")
+        Pre-filtering similarity score: {pre_score:.2f}
         
-        # Confidence score distribution
-        conf_scores = hubspot_df[hubspot_df['confidence_score'] > 0]['confidence_score']
-        if len(conf_scores) > 0:
-            report.append(f"Confidence scores:")
-            report.append(f"  - Average: {conf_scores.mean():.2f}")
-            report.append(f"  - High confidence (>0.9): {(conf_scores > 0.9).sum()}")
-            report.append(f"  - Medium confidence (0.7-0.9): {((conf_scores >= 0.7) & (conf_scores <= 0.9)).sum()}")
-            report.append(f"  - Low confidence (<0.7): {(conf_scores < 0.7).sum()}")
-        report.append("")
+        IMPORTANT CONTEXT:
+        - The Deal Name (Record 1) from HubSpot is usually most accurate
+        - Database addresses are always correct
+        - HubSpot addresses may be wrong for multi-location restaurants
+        - Names may have slight variations (e.g., "Joe's Pizza" vs "Joe's Pizza NYC")
+        - Location suffixes in names often indicate different branches
         
-        # Database summary
-        report.append("DATABASE SUMMARY:")
-        report.append(f"Total records: {len(database_df)}")
+        Consider:
+        - Is this the same restaurant location, not just same brand?
+        - Do the neighborhoods/locations match?
+        - For chains, are these the same specific location?
         
-        matched_mask_db = database_df['match_status'].astype(str).str.contains('MATCHED', na=False)
-        report.append(f"Matched records: {matched_mask_db.sum()}")
+        Respond with JSON only:
+        {{
+            "is_match": boolean,
+            "confidence": 0.0 to 1.0,
+            "reasoning": "brief explanation"
+        }}
+        """
         
-        if 'match_method' in database_df.columns:
-            place_id_matches = (database_df['match_method'] == 'place_id_verified').sum()
-            fuzzy_matches = (database_df['match_method'] == 'claude_fuzzy').sum()
-            report.append(f"  - Via Place ID (Claude verified): {place_id_matches}")
-            report.append(f"  - Via Claude fuzzy matching: {fuzzy_matches}")
-        
-        report.append(f"No match in HubSpot: {(database_df['match_status'] == 'NO_MATCH_IN_HUBSPOT').sum()}")
-        report.append(f"Skipped: {(database_df['match_status'] == 'SKIPPED').sum()}")
-        report.append("")
-        
-        # Issues requiring attention
-        report.append("RECORDS REQUIRING MANUAL REVIEW:")
-        
-        # Low confidence matches
-        low_conf_threshold = 0.7
-        low_confidence_hs = hubspot_df[(hubspot_df['confidence_score'] > 0) & (hubspot_df['confidence_score'] < low_conf_threshold)]
-        if not low_confidence_hs.empty:
-            report.append(f"\nLow confidence HubSpot matches (<{low_conf_threshold}):")
-            for idx, row in low_confidence_hs.head(10).iterrows():
-                report.append(f"  - Row {idx}: {row.get('Deal Name', 'N/A')}")
-                report.append(f"    Confidence: {row['confidence_score']:.2f}")
-                report.append(f"    Reason: {row.get('notes', 'N/A')[:100]}")
-        
-        report.append("")
-        report.append("=" * 80)
-        
-        return '\n'.join(report)
+        try:
+            response = self.claude.messages.create(
+                model="claude-3-sonnet-20241022",
+                max_tokens=300,
+                temperature=0,
+                messages=[{"role": "user", "content": prompt}]
+            )
+            
+            response_text = response.content[0].text
+            # Extract JSON from response
+            json_match = re.search(r'\{.*\}', response_text, re.DOTALL)
+            
+            if json_match:
+                return json.loads(json_match.group())
+            else:
+                return {
+                    "is_match": False,
+                    "confidence": 0,
+                    "reasoning": "Could not parse Claude response"
+                }
+                
+        except Exception as e:
+            logger.error(f"Error in Claude verification: {e}")
+            return {
+                "is_match": False,
+                "confidence": 0,
+                "reasoning": f"Error: {str(e)}"
+            }
 
-def main(test_mode=False):
+
+def main(test_mode=True, skip_verification=False):
     """
     Main execution function
     
     Args:
-        test_mode: If True, only process first 10 records from each dataset
+        test_mode: If True, process limited records for testing
+        skip_verification: If True, skip Place ID verification phase
     """
     print("\n" + "="*80)
-    print("🏁 MAIN FUNCTION STARTING - CLAUDE-DRIVEN VERSION")
-    if test_mode:
-        print("⚠️ TEST MODE ENABLED - Will only process 10 records per dataset")
+    print("🏁 ENHANCED MAIN FUNCTION WITH PLACE ID VERIFICATION")
     print("="*80)
     
     # Configuration
-    print("🔧 Loading configuration...")
     GOOGLE_API_KEY = os.environ.get('GOOGLE_PLACES_API_KEY')
     ANTHROPIC_API_KEY = os.environ.get('ANTHROPIC_API_KEY')
     
-    print(f"📍 Google API Key: {'✅ Found' if GOOGLE_API_KEY else '❌ Missing'}")
-    print(f"🤖 Anthropic API Key: {'✅ Found' if ANTHROPIC_API_KEY else '❌ Missing'}")
-    
     if not GOOGLE_API_KEY or not ANTHROPIC_API_KEY:
         print("❌ ERROR: Missing required API keys")
-        logger.error("Please set GOOGLE_PLACES_API_KEY and ANTHROPIC_API_KEY environment variables")
+        print("Please set GOOGLE_PLACES_API_KEY and ANTHROPIC_API_KEY environment variables")
         return
     
     # File paths
     HUBSPOT_FILE = 'hubspot_data.csv'
     DATABASE_FILE = 'database_data.csv'
     
-    print(f"📁 HubSpot file: {HUBSPOT_FILE}")
-    print(f"📁 Database file: {DATABASE_FILE}")
-    
     try:
         # Load data
         print("\n📂 Loading data files...")
-        
-        print(f"📋 Loading HubSpot data from {HUBSPOT_FILE}...")
         hubspot_df = pd.read_csv(HUBSPOT_FILE)
-        print(f"✅ HubSpot data loaded: {len(hubspot_df)} records")
-        
-        print(f"\n🗄️ Loading Database data from {DATABASE_FILE}...")
         database_df = pd.read_csv(DATABASE_FILE)
-        print(f"✅ Database data loaded: {len(database_df)} records")
+        print(f"✅ Data loaded: {len(hubspot_df)} HubSpot, {len(database_df)} Database records")
         
-        # Initialize agent
-        print("\n🤖 Initializing DataTriageAgent...")
-        agent = DataTriageAgent(GOOGLE_API_KEY, ANTHROPIC_API_KEY)
+        # Initialize enhanced agent
+        agent = EnhancedDataTriageAgent(GOOGLE_API_KEY, ANTHROPIC_API_KEY)
         
-        # Generate timestamp for this run
+        # Process with enhanced algorithm
         output_timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        print(f"⏰ Output timestamp: {output_timestamp}")
-        
-        # Process datasets
-        print("\n🚀 Starting data triage process...")
         processed_hubspot, processed_database = agent.process_datasets(
-            hubspot_df, database_df, output_timestamp, test_mode=test_mode
+            hubspot_df, database_df, output_timestamp, 
+            test_mode=test_mode,
+            skip_verification=skip_verification
         )
         
-        # Save final results
-        print("\n💾 Saving final results...")
+        # Save results
+        hubspot_output = f'enhanced_hubspot_{output_timestamp}.csv'
+        database_output = f'enhanced_database_{output_timestamp}.csv'
         
-        hubspot_output = f'hubspot_processed_{output_timestamp}.csv'
-        database_output = f'database_processed_{output_timestamp}.csv'
+        processed_hubspot.to_csv(hubspot_output, index=False)
+        processed_database.to_csv(database_output, index=False)
         
-        # Remove tracking columns from final output
-        final_hubspot = processed_hubspot.drop('processed', axis=1) if 'processed' in processed_hubspot.columns else processed_hubspot
-        final_database = processed_database.drop('processed', axis=1) if 'processed' in processed_database.columns else processed_database
+        print(f"\n✅ Results saved to:")
+        print(f"  📄 {hubspot_output}")
+        print(f"  📄 {database_output}")
+        print("\n🎉 ENHANCED SCRIPT COMPLETED SUCCESSFULLY!")
         
-        final_hubspot.to_csv(hubspot_output, index=False)
-        final_database.to_csv(database_output, index=False)
-        
-        print(f"✅ Final results saved to {hubspot_output} and {database_output}")
-        
-        # Generate and save summary report
-        print(f"\n📋 Generating summary report...")
-        summary = agent.generate_summary_report(processed_hubspot, processed_database)
-        
-        report_file = f'triage_report_{output_timestamp}.txt'
-        with open(report_file, 'w') as f:
-            f.write(summary)
-        
-        print(f"✅ Report saved to {report_file}")
-        
-        print("\n" + "="*80)
-        print("🎉 SCRIPT COMPLETED SUCCESSFULLY!")
-        print("="*80)
-        print(summary)
-        
-    except FileNotFoundError as e:
-        print(f"❌ ERROR: Could not find input file: {e}")
-        logger.error(f"Could not find input file: {e}")
     except Exception as e:
-        print(f"❌ ERROR: An unexpected error occurred: {e}")
-        logger.error(f"An error occurred: {e}", exc_info=True)
+        print(f"❌ ERROR: {e}")
+        logger.error(f"Error in main: {e}", exc_info=True)
         raise
 
+
 if __name__ == "__main__":
-    print("🎬 Script started from command line")
-    
-    # SET TEST MODE HERE
-    # Change to False when ready to process all records
-    TEST_MODE = True
+    # Configuration flags
+    TEST_MODE = True  # Set to False for production run
+    SKIP_VERIFICATION = False  # Set to True to skip Place ID verification
     
     if TEST_MODE:
-        print("⚠️ TEST MODE IS ON - Processing only 10 records per dataset")
-        print("To process all records, set TEST_MODE = False in the script")
+        print("⚠️ TEST MODE IS ON - Processing limited records")
+        print("Set TEST_MODE = False for full processing")
     
-    main(test_mode=TEST_MODE)
-    print("🏁 Script execution finished")
+    if SKIP_VERIFICATION:
+        print("⚠️ Place ID verification will be skipped")
+    
+    main(test_mode=TEST_MODE, skip_verification=SKIP_VERIFICATION)

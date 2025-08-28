@@ -1,0 +1,11 @@
+Deal Name,Company name,Address,google_places_id,"Macro Geo (NYC, SF, CHS, DC, LA, NASH, DEN)",Error?,verified_place_id,confidence_score,match_status,match_method,notes,processed
+82 Queen French Quarter,82 Queen,82 Queen St,ChIJDZ7DvBF6_ogRhOZ4IH9ehhE,CHS,,ChIJDZ7DvBF6_ogRhOZ4IH9ehhE,0.0,NO_MATCH_IN_DATABASE,,Google: 82 Queen,False
+Crown Shy Financial District,Crown Shy,70 Pine Street Ground Floor,ChIJ__9LNBZawokREnkOiVx7ydc,NYC,,ChIJ__9LNBZawokREnkOiVx7ydc,0.0,NO_MATCH_IN_DATABASE,,Google: Crown Shy,False
+Falansai Bushwick,Falansai,112 Harrison Place,ChIJc11gFQJcwokRcOejfRbBPpo,NYC,,ChIJc11gFQJcwokRcOejfRbBPpo,0.0,NO_MATCH_IN_DATABASE,,Google: Falansai,False
+Bobwhite Counter Alphabet City,Bobwhite Counter (East Village),124 E 14th St,ChIJhb1Sx3lZwokR7-zaifOkCwo,NYC,,ChIJhb1Sx3lZwokR7-zaifOkCwo,0.0,NO_MATCH_IN_DATABASE,,Google: Bobwhite Counter,False
+Blanca Bushwick,Blanca,261 Moore St,ChIJrSjk6QBcwokRJ12Xetu0rX4,NYC,,ChIJrSjk6QBcwokRJ12Xetu0rX4,0.0,NO_MATCH_IN_DATABASE,,Google: Blanca,False
+White Horse Tavern West Village,White Horse Tavern,567 Hudson Street,ChIJGfAs0ZRZwokR584EB4uBkyU,NYC,,ChIJGfAs0ZRZwokR584EB4uBkyU,0.0,NO_MATCH_IN_DATABASE,,Google: White Horse Tavern,False
+Davey's Ice Cream East Village,Davey’s Ice Cream (EV),74 Meserole Ave,ChIJBxhQcdtZwokRZZDSUen2K1w,NYC,,ChIJBxhQcdtZwokRZZDSUen2K1w,0.0,NO_MATCH_IN_DATABASE,,Google: Davey's Ice Cream,False
+Madame Vo East Village,Madame Vo,212 E 10th St,ChIJqRaETJxZwokRik6wrAXTOd4,NYC,,ChIJqRaETJxZwokRik6wrAXTOd4,0.0,NO_MATCH_IN_DATABASE,,Google: Madame Vo,False
+Benjamin Prime Midtown East,Benjamin Prime,23 E 40th St,ChIJOdx0HQFZwokRzHFDS_GXQxk,NYC,,ChIJOdx0HQFZwokRzHFDS_GXQxk,0.0,NO_MATCH_IN_DATABASE,,Google: Benjamin Steakhouse Prime,False
+Empellón Taqueria & Bar Greenwich Village,Empellon Taqueria West Village,,ChIJS3YtZJRZwokR15ezAH-2Sec,NYC,,ChIJS3YtZJRZwokR15ezAH-2Sec,0.0,NO_MATCH_IN_DATABASE,,Google: Empellon Taqueria & Bar,False
