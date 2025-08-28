@@ -972,9 +972,31 @@ class EnhancedDataTriageAgent:
         print(f"🗄️ Database records: {len(database_df)}")
         
         if test_mode:
-            print("\n⚠️ TEST MODE - Processing first 30 records")
+            print("\n⚠️ TEST MODE - Sorting alphabetically and taking top 30 for better overlap")
+            
+            # Sort HubSpot by Deal Name
+            hubspot_df = hubspot_df.sort_values('Deal Name', na_position='last').copy()
+            print(f"  📋 HubSpot sorted by Deal Name")
+            
+            # Sort Database by restaurant_name
+            database_df = database_df.sort_values('restaurant_name', na_position='last').copy()
+            print(f"  🗄️ Database sorted by restaurant_name")
+            
+            # Take first 30 from each sorted dataset
             hubspot_df = hubspot_df.head(30).copy()
             database_df = database_df.head(30).copy()
+            
+            print(f"  📋 Limited to first 30 HubSpot records (alphabetically)")
+            print(f"  🗄️ Limited to first 30 Database records (alphabetically)")
+            
+            # Show what we're working with
+            print("\n  Sample of HubSpot records:")
+            for i in range(min(5, len(hubspot_df))):
+                print(f"    {i+1}. {hubspot_df.iloc[i]['Deal Name']}")
+            
+            print("\n  Sample of Database records:")
+            for i in range(min(5, len(database_df))):
+                print(f"    {i+1}. {database_df.iloc[i]['restaurant_name']}")
         
         # Add tracking columns
         for df in [hubspot_df, database_df]:
@@ -1268,7 +1290,7 @@ class EnhancedDataTriageAgent:
         
         try:
             response = self.claude.messages.create(
-                model="claude-3-sonnet-20241022",
+                model="claude-sonnet-4-20250514",
                 max_tokens=300,
                 temperature=0,
                 messages=[{"role": "user", "content": prompt}]
@@ -1359,11 +1381,11 @@ def main(test_mode=True, skip_verification=False):
 
 if __name__ == "__main__":
     # Configuration flags
-    TEST_MODE = True  # Set to False for production run
+    TEST_MODE = True  # KEEPING TEST MODE ON AS REQUESTED
     SKIP_VERIFICATION = False  # Set to True to skip Place ID verification
     
     if TEST_MODE:
-        print("⚠️ TEST MODE IS ON - Processing limited records")
+        print("⚠️ TEST MODE IS ON - Processing alphabetically sorted top 30 records")
         print("Set TEST_MODE = False for full processing")
     
     if SKIP_VERIFICATION:

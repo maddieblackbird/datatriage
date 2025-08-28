@@ -1,0 +1,31 @@
+Deal Name,Company name,Address,google_places_id,"Macro Geo (NYC, SF, CHS, DC, LA, NASH, DEN)",Error?,place_id_verification,match_status,match_confidence,match_method,verified_place_id,match_notes
+82 Queen French Quarter,82 Queen,82 Queen St,ChIJDZ7DvBF6_ogRhOZ4IH9ehhE,CHS,,Invalid: Address match (0.85),MATCHED,1.0,verified_place_id,,Matched to DB row 6
+Crown Shy Financial District,Crown Shy,70 Pine Street Ground Floor,ChIJ__9LNBZawokREnkOiVx7ydc,NYC,,Invalid: Address match (0.89),NO_MATCH,0.0,,,No candidates passed pre-filtering
+Falansai Bushwick,Falansai,112 Harrison Place,ChIJc11gFQJcwokRcOejfRbBPpo,NYC,,Valid: Falansai (conf: 0.80),NO_MATCH,0.0,,,No candidates passed pre-filtering
+Bobwhite Counter Alphabet City,Bobwhite Counter (East Village),124 E 14th St,ChIJhb1Sx3lZwokR7-zaifOkCwo,NYC,,Invalid: Partial name match (0.70),NO_MATCH,0.0,,,No confident match found
+Blanca Bushwick,Blanca,261 Moore St,ChIJrSjk6QBcwokRJ12Xetu0rX4,NYC,,Invalid: Address match (0.86),NO_MATCH,0.0,,,No candidates passed pre-filtering
+White Horse Tavern West Village,White Horse Tavern,567 Hudson Street,ChIJGfAs0ZRZwokR584EB4uBkyU,NYC,,Valid: White Horse Tavern (conf: 0.80),NO_MATCH,0.0,,,No candidates passed pre-filtering
+Davey's Ice Cream East Village,Davey’s Ice Cream (EV),74 Meserole Ave,ChIJBxhQcdtZwokRZZDSUen2K1w,NYC,,Invalid: Partial name match (0.72),NO_MATCH,0.0,,,No candidates passed pre-filtering
+Madame Vo East Village,Madame Vo,212 E 10th St,ChIJqRaETJxZwokRik6wrAXTOd4,NYC,,Invalid: Partial address match (0.79),NO_MATCH,0.0,,,No candidates passed pre-filtering
+Benjamin Prime Midtown East,Benjamin Prime,23 E 40th St,ChIJOdx0HQFZwokRzHFDS_GXQxk,NYC,,Invalid: Partial address match (0.78),NO_MATCH,0.0,,,No candidates passed pre-filtering
+Empellón Taqueria & Bar Greenwich Village,Empellon Taqueria West Village,,ChIJS3YtZJRZwokR15ezAH-2Sec,NYC,,Invalid: Partial name match (0.67),NO_MATCH,0.0,,,No candidates passed pre-filtering
+KYU  Noho,KYU NYC,251 Northwest 25th Street,ChIJRUXf9uBZwokR9WS3NBhSjYk,NYC,,Invalid: Partial name match (0.67),NO_MATCH,0.0,,,No candidates passed pre-filtering
+Nom Wah Nolita,Nom Wah Nolita,10 Kenmare St,ChIJLxEbJoZZwokRBgg1pE4COTo,NYC,,Valid: Nom Wah Nolita (conf: 1.00),NO_MATCH,0.0,,,No candidates passed pre-filtering
+Andros Taverna North Side,Andros Taverna,2542 North Milwaukee Avenue,ChIJWfaiPh_ND4gRaRT5k6Wp24g,NYC,,Valid: Andros Taverna (conf: 0.80),NO_MATCH,0.0,,,No candidates passed pre-filtering
+Foul Witch Alphabet City,Foul Witch,15 Avenue A,ChIJq6oPsoNZwokR1hGiiD3wy8g,NYC,,Invalid: Address match (1.00),NO_MATCH,0.0,,,No confident match found
+Mah-Ze-Dahr Battery Park City,Mah Ze Dahr Brookfield Place,,ChIJU7XySD9bwokRzxnhM1S8uWw,NYC,,Invalid: Low confidence match,NO_MATCH,0.0,,,No candidates passed pre-filtering
+Please Don't Tell East Village,PDT,113 St Marks Pl,ChIJb67-ZZ1ZwokRRxBYr3GlFp0,NYC,,Valid: Please Don't Tell (conf: 0.80),NO_MATCH,0.0,,,No candidates passed pre-filtering
+Crif Dogs East Village,Crif Dogs,113 St Marks Pl,ChIJd4cu_9RZwokROtuVsYCgPAE,NYC,,Invalid: Address match (0.81),NO_MATCH,0.0,,,No candidates passed pre-filtering
+Nami Nori Williamsburg,Nami Nori (Williamsburg),33 Carmine Street,ChIJS9NJoSBZwokRW6254XR11Uo,NYC,,Invalid: Name match (1.00),NO_MATCH,0.0,,,No candidates passed pre-filtering
+Kubeh Greenwich Village,Kubeh,464 6th Ave,ChIJ5fW8U5ZZwokRlk_uZ6uLlgg,NYC,,Invalid: Address match (0.88),NO_MATCH,0.0,,,No candidates passed pre-filtering
+F&F Pizzeria Carroll Gardens,F&F Pizzeria,459 Court Street,ChIJO32xszpbwokRVr_g36taCbI,NYC,,Invalid: Address match (0.86),NO_MATCH,0.0,,,No candidates passed pre-filtering
+Romeos East Village,Romeo’s,118 Saint Marks Pl,ChIJ5dKgkl1ZwokRVaLe0VlqPXg,NYC,,Invalid: Address match (0.83),NO_MATCH,0.0,,,No candidates passed pre-filtering
+Unregular Bakery Punchcard,Unregular Bakery Union Square,,ChIJ52QMLUtZwokRZwW4R7FUo2M,NYC,,Invalid: Partial name match (0.76),NO_MATCH,0.0,,,No candidates passed pre-filtering
+Bobwhite Counter Jersey City,Bobwhite Counter (Jersey City),,ChIJN5aJDSdRwokRYvp9FA96GX4,NYC,,Invalid: Partial name match (0.73),NO_MATCH,0.0,,,No candidates passed pre-filtering
+Anton's West Village,Anton’s,570 Hudson St,ChIJvdgj3uVZwokRDFVNZGAg43U,NYC,,Invalid: Address match (0.87),NO_MATCH,0.0,,,No candidates passed pre-filtering
+Jajaja Mexicana West Village,Jajaja West Village,162 E Broadway,ChIJh-s4YNNZwokRKuwXrP5FHqY,NYC,,Invalid: Partial name match (0.70),NO_MATCH,0.0,,,No candidates passed pre-filtering
+Raku East Village Regulars,Sanraku - Japanese Sushi Restaurant,342 East 6th Street,ChIJ8eEu0JxZwokRNFpDI_HBFmc,NYC,,Invalid: Partial address match (0.77),NO_MATCH,0.0,,,No candidates passed pre-filtering
+Rosemary's West Village,Rosemary's West,350 1st Ave.,ChIJCW5gj5ZZwokRtfK4UZxkcr4,NYC,,Invalid: Partial name match (0.61),NO_MATCH,0.0,,,No candidates passed pre-filtering
+Rancho Lewis NoMo,Rancho Lewis,1503 King St,ChIJhRZB6_B6_ogRzcrTCfdU3aA,CHS,,Valid: Rancho Lewis (conf: 1.00),NO_MATCH,0.0,,,No candidates passed pre-filtering
+Uncork Wraggborough,Uncork Charleston,476 King St,ChIJBUxFNWp6_ogRbCCh69ktiXo,CHS,,Invalid: Address match (0.85),NO_MATCH,0.0,,,No candidates passed pre-filtering
+Naks East Village,NAKS,201 1st Ave.,ChIJQfYrEfNZwokRFPKHZM6aH4w,NYC,,Invalid: Address match (0.96),NO_MATCH,0.0,,,No candidates passed pre-filtering
