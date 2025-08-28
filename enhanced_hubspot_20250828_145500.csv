@@ -1,0 +1,934 @@
+Deal Name,Company name,Address,google_places_id,"Macro Geo (NYC, SF, CHS, DC, LA, NASH, DEN)",Error?,place_id_verification,match_status,match_confidence,match_method,verified_place_id,match_notes
+82 Queen French Quarter,82 Queen,82 Queen St,ChIJDZ7DvBF6_ogRhOZ4IH9ehhE,CHS,,Invalid: Address match (0.85),MATCHED,1.0,verified_place_id,,Matched to DB row 6
+Crown Shy Financial District,Crown Shy,70 Pine Street Ground Floor,ChIJ__9LNBZawokREnkOiVx7ydc,NYC,,Invalid: Address match (0.89),MATCHED,1.0,verified_place_id,,Matched to DB row 168
+Falansai Bushwick,Falansai,112 Harrison Place,ChIJc11gFQJcwokRcOejfRbBPpo,NYC,,Valid: Falansai (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 218
+Bobwhite Counter Alphabet City,Bobwhite Counter (East Village),124 E 14th St,ChIJhb1Sx3lZwokR7-zaifOkCwo,NYC,,Invalid: Partial name match (0.70),MATCHED,1.0,verified_place_id,,Matched to DB row 92
+Blanca Bushwick,Blanca,261 Moore St,ChIJrSjk6QBcwokRJ12Xetu0rX4,NYC,,Invalid: Address match (0.86),NO_MATCH,0.0,,,No confident match found
+White Horse Tavern West Village,White Horse Tavern,567 Hudson Street,ChIJGfAs0ZRZwokR584EB4uBkyU,NYC,,Valid: White Horse Tavern (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 794
+Davey's Ice Cream East Village,Davey’s Ice Cream (EV),74 Meserole Ave,ChIJBxhQcdtZwokRZZDSUen2K1w,NYC,,Invalid: Partial name match (0.72),MATCHED,1.0,verified_place_id,,Matched to DB row 175
+Madame Vo East Village,Madame Vo,212 E 10th St,ChIJqRaETJxZwokRik6wrAXTOd4,NYC,,Invalid: Partial address match (0.79),MATCHED,1.0,verified_place_id,,Matched to DB row 416
+Benjamin Prime Midtown East,Benjamin Prime,23 E 40th St,ChIJOdx0HQFZwokRzHFDS_GXQxk,NYC,,Invalid: Partial address match (0.78),MATCHED,1.0,verified_place_id,,Matched to DB row 70
+Empellón Taqueria & Bar Greenwich Village,Empellon Taqueria West Village,,ChIJS3YtZJRZwokR15ezAH-2Sec,NYC,,Invalid: Partial name match (0.67),MATCHED,1.0,verified_place_id,,Matched to DB row 208
+KYU  Noho,KYU NYC,251 Northwest 25th Street,ChIJRUXf9uBZwokR9WS3NBhSjYk,NYC,,Invalid: Partial name match (0.67),MATCHED,1.0,verified_place_id,,Matched to DB row 346
+Nom Wah Nolita,Nom Wah Nolita,10 Kenmare St,ChIJLxEbJoZZwokRBgg1pE4COTo,NYC,,Valid: Nom Wah Nolita (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 484
+Andros Taverna North Side,Andros Taverna,2542 North Milwaukee Avenue,ChIJWfaiPh_ND4gRaRT5k6Wp24g,NYC,,Valid: Andros Taverna (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 31
+Foul Witch Alphabet City,Foul Witch,15 Avenue A,ChIJq6oPsoNZwokR1hGiiD3wy8g,NYC,,Invalid: Address match (1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 239
+Mah-Ze-Dahr Battery Park City,Mah Ze Dahr Brookfield Place,,ChIJU7XySD9bwokRzxnhM1S8uWw,NYC,,Invalid: Low confidence match,MATCHED,1.0,verified_place_id,,Matched to DB row 418
+Please Don't Tell East Village,PDT,113 St Marks Pl,ChIJb67-ZZ1ZwokRRxBYr3GlFp0,NYC,,Valid: Please Don't Tell (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 534
+Crif Dogs East Village,Crif Dogs,113 St Marks Pl,ChIJd4cu_9RZwokROtuVsYCgPAE,NYC,,Invalid: Address match (0.81),MATCHED,1.0,verified_place_id,,Matched to DB row 165
+Nami Nori Williamsburg,Nami Nori (Williamsburg),33 Carmine Street,ChIJS9NJoSBZwokRW6254XR11Uo,NYC,,Invalid: Name match (1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 479
+Kubeh Greenwich Village,Kubeh,464 6th Ave,ChIJ5fW8U5ZZwokRlk_uZ6uLlgg,NYC,,Invalid: Address match (0.88),MATCHED,1.0,verified_place_id,,Matched to DB row 342
+F&F Pizzeria Carroll Gardens,F&F Pizzeria,459 Court Street,ChIJO32xszpbwokRVr_g36taCbI,NYC,,Invalid: Address match (0.86),MATCHED,1.0,verified_place_id,,Matched to DB row 224
+Romeos East Village,Romeo’s,118 Saint Marks Pl,ChIJ5dKgkl1ZwokRVaLe0VlqPXg,NYC,,Invalid: Address match (0.83),MATCHED,1.0,verified_place_id,,Matched to DB row 565
+Unregular Bakery Punchcard,Unregular Bakery Union Square,,ChIJ52QMLUtZwokRZwW4R7FUo2M,NYC,,Invalid: Partial name match (0.76),MATCHED,1.0,verified_place_id,,Matched to DB row 769
+Bobwhite Counter Jersey City,Bobwhite Counter (Jersey City),,ChIJN5aJDSdRwokRYvp9FA96GX4,NYC,,Invalid: Partial name match (0.73),MATCHED,1.0,verified_place_id,,Matched to DB row 93
+Anton's West Village,Anton’s,570 Hudson St,ChIJvdgj3uVZwokRDFVNZGAg43U,NYC,,Invalid: Address match (0.87),MATCHED,1.0,verified_place_id,,Matched to DB row 32
+Jajaja Mexicana West Village,Jajaja West Village,162 E Broadway,ChIJh-s4YNNZwokRKuwXrP5FHqY,NYC,,Invalid: Partial name match (0.70),MATCHED,1.0,verified_place_id,,Matched to DB row 311
+Raku East Village Regulars,Sanraku - Japanese Sushi Restaurant,342 East 6th Street,ChIJ8eEu0JxZwokRNFpDI_HBFmc,NYC,,Invalid: Partial address match (0.77),MATCHED,1.0,verified_place_id,,Matched to DB row 549
+Rosemary's West Village,Rosemary's West,350 1st Ave.,ChIJCW5gj5ZZwokRtfK4UZxkcr4,NYC,,Invalid: Partial name match (0.61),MATCHED,1.0,verified_place_id,,Matched to DB row 570
+Rancho Lewis NoMo,Rancho Lewis,1503 King St,ChIJhRZB6_B6_ogRzcrTCfdU3aA,CHS,,Valid: Rancho Lewis (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 552
+Uncork Wraggborough,Uncork Charleston,476 King St,ChIJBUxFNWp6_ogRbCCh69ktiXo,CHS,,Invalid: Address match (0.85),MATCHED,1.0,verified_place_id,,Matched to DB row 768
+Naks East Village,NAKS,201 1st Ave.,ChIJQfYrEfNZwokRFPKHZM6aH4w,NYC,,Invalid: Address match (0.96),MATCHED,1.0,verified_place_id,,Matched to DB row 476
+Kwei Fei Riverland Terrace,Beautiful South by Kwei Fei,1977 Maybank Hwy,ChIJ2Y6RTt55_ogR01tw5zmzHJc,CHS,,Invalid: Address match (0.89),MATCHED,1.0,verified_place_id,,Matched to DB row 345
+Sea Fire Grill Regulars,Sea Fire Grill,"158 E 48th St, Between 3rd and, Lexington Ave",ChIJpYNIR_1YwokRNMXI4Qk1lwQ,NYC,,Valid: Sea Fire Grill (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 733
+Insa Gowanus,Insa,328 Douglass Street,ChIJo-EvNqtbwokRjZnXUY-cyCk,NYC,,Invalid: Address match (0.88),MATCHED,1.0,verified_place_id,,Matched to DB row 301
+Lewis Barbecue NoMo,Lewis Barbecue,464 North Nassau Street,ChIJS1r2V196_ogRcfkNioUMYJo,NYC,,Valid: Lewis Barbecue Charleston (conf: 0.60),MATCHED,1.0,verified_place_id,,Matched to DB row 376
+Melfi's Downtown Charleston,Melfi’s,,ChIJ1-7uvCx7_ogRk997qqBzibY,CHS,,Invalid: Low confidence match,MATCHED,1.0,verified_place_id,,Matched to DB row 442
+Virginia's East Village,Virginia’s,647 East 11th Street,ChIJVZXlLHdZwokR9Vd3zCwFaqQ,NYC,,Invalid: Partial name match (0.61),MATCHED,1.0,verified_place_id,,Matched to DB row 791
+Sip & Guzzle,Sip & Guzzle,"29 Cornelia St, New York, NY",ChIJ49KsB19ZwokR8VwrMbECQr8,NYC,,Valid: Sip&Guzzle (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 605
+The Musket Room,Musket Room,265 Elizabeth St,ChIJ3TJ4moVZwokRkyy0hZnv_RA,NYC,,Valid: The Musket Room (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 721
+Little Prince South Village,Little Prince,199 Prince St,ChIJ5c-evI1ZwokRhHh6FjhuLH8,NYC,,Valid: Little Prince (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 392
+Benjamin Steakhouse Midtown East,Benjamin Steakhouse,,ChIJ3TH9CwFZwokRIvNO1SP0WLg,NYC,,Invalid: Partial name match (0.75),MATCHED,1.0,verified_place_id,,Matched to DB row 71
+Alidoro Bryant Park,Alidoro Bryant park,601 Lexington Ave,ChIJFa7a9uFZwokR1JWN1NOyzaM,NYC,,Corrected: ALIDORO (conf: 0.73),MATCHED,1.0,verified_place_id,,Matched to DB row 19
+The Alderman Midtown,Alderman,,ChIJFfDd9lVYwokRHprgDkRnHh4,NYC,,Invalid: Partial name match (0.75),MATCHED,1.0,verified_place_id,,Matched to DB row 682
+The Daily Inman Park,The Daily (Inman Park),652 B King St,ChIJDdSww0J6_ogRvvj8m1N0UbY,CHS,,Corrected: The Daily Cafe - King St (conf: 0.73),MATCHED,1.0,verified_place_id,,Matched to DB row 700
+The Daily (Charleston - King St) Regulars,The Daily (Charleston - King St),,ChIJDdSww0J6_ogRvvj8m1N0UbY,CHS,,Invalid: Partial name match (0.73),NO_MATCH,0.0,,,No confident match found
+Ensenada Williamsburg,Ensenada,168 Borinquen Pl,ChIJVQhDBhxbwokRLwobz9lb_qk,NYC,,Invalid: Address match (0.91),MATCHED,1.0,verified_place_id,,Matched to DB row 209
+Altair Midtown,Altair,351 W 38th St,ChIJIRWJmBVZwokRZA5hGN68TgA,NYC,,Invalid: Partial address match (0.79),MATCHED,1.0,verified_place_id,,Matched to DB row 25
+The Daily (Trabert Ave) Regulars,The Daily (Trabert Ave),,ChIJ721mea0F9YgRprcP8IRu09U,ATL,,Invalid: Low confidence match,MATCHED,1.0,verified_place_id,,Matched to DB row 702
+Hoseki Midtown,Hoseki,611 5th Ave,ChIJKfbxu2RZwokRZhsCZq_HYTg,NYC,,Invalid: Address match (0.88),MATCHED,1.0,verified_place_id,,Matched to DB row 288
+Gotham Burger Social Club Lower East Side,Gotham Burger Social Club,113 Franklin St,ChIJXZ6WJABZwokRDi2X0_3I1Mo,NYC,,Corrected: Gotham Burger Social Club - Greenpoint (conf: 0.81),MATCHED,1.0,verified_place_id,,Matched to DB row 261
+Little Jack's Tavern Downtown Charleston,Little Jack's Tavern,710 King Street,ChIJo_sjo1x6_ogRtUDrUtTWli8,CHS,,Valid: Little Jack's Tavern (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 386
+The Tippling House Cannonborough,The Tippling House (CHS),221 Coming Street,ChIJ3Smbkrx7_ogR0kLofdrh90s,CHS,,Valid: The Tippling House (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 741
+Davey's Ice Cream Moynihan Train Hall,Davey’s Ice Cream (Midtown),,ChIJxwZzzNdZwokRMyNu9LzW1wM,NYC,,Invalid: Partial name match (0.63),MATCHED,1.0,verified_place_id,,Matched to DB row 177
+Crave Fishbar Upper West Side,Crave Fishbar UWS,945 2nd Ave,ChIJqztVA4ZYwokRiLK8Lzh7_sk,NYC,,Invalid: Partial name match (0.65),MATCHED,0.95,claude_verified,,Matched to DB row 162
+Emmett's SoHo,Emmett's (MacDougal),50 MacDougal St,ChIJqxBUkY1ZwokRM-YtSwwhy1E,NYC,,Valid: Emmett's (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 206
+Wild Common,Wild Common,"103 Spring St, Charleston, SC 29403",ChIJzUn6Qi17_ogRX1VX24enKTE,CHS,,Valid: Wild Common (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 795
+Fish Cheeks Noho,Fish Cheeks,55 Bond St,ChIJgc7fPIVZwokRQMnqTxTf_Qk,NYC,,Valid: Fish Cheeks (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 229
+Bin Bin Sake Williamsburg,Sunday Hospitality,348 Wythe Avenue,ChIJKXGbJHBZwokR2dbFNdN0FBU,NYC,,Invalid: Partial name match (0.65),MATCHED,1.0,verified_place_id,,Matched to DB row 77
+Bin Bin Sake Williamsburg,Bin Bin Sake,29 Norman Ave,ChIJKXGbJHBZwokR2dbFNdN0FBU,NYC,,Valid: Bin Bin Sake (conf: 0.80),NO_MATCH,0.0,,,No confident match found
+Le Rock Rockefeller Center,Le Rock,45 Rockefeller Plaza,ChIJNbTIf5BZwokRjbkuTrLZVB4,NYC,,Invalid: Address match (1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 373
+Raf's SoHo,Raf's,290 Elizabeth Street,ChIJJU-UWk1ZwokRklDKrZ_9EZE,NYC,,Valid: Raf's (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 548
+Tolo,Parcelle Wine Bar Group,135 Division Street,ChIJQSKt-VdbwokRRPjIjPe6XEA,NYC,,Invalid: Name match (1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 753
+Tolo,Tolo,"28 Canal St, New York, NY 10002",ChIJQSKt-VdbwokRRPjIjPe6XEA,NYC,,Valid: Tolo (conf: 1.00),NO_MATCH,0.0,,,No confident match found
+8282 Lower East Side,8282,84 Stanton Street,ChIJNaUIchtZwokRHI8Pk3mEz1Y,NYC,,Invalid: Address match (0.87),MATCHED,1.0,verified_place_id,,Matched to DB row 5
+Stars Restaurant Radcliffborough,Stars Rooftop & Grill Room,495 King Street,ChIJJxlYSGp6_ogRyfL8KDjhLkg,CHS,,Invalid: Address match (0.85),MATCHED,1.0,verified_place_id,,Matched to DB row 627
+The Wooly Nolita,The Wooly,11 Barclay Street,ChIJF_I2YsVZwokRp-Q1focBJpw,NYC,,Invalid: Partial name match (0.72),MATCHED,1.0,verified_place_id,,Matched to DB row 743
+Jaffa Williamsburg,Jaffa Cocktail and Raw Bar,,ChIJlcUv3XVZwokRw8iLyOoROxI,NYC,,Invalid: Low confidence match,MATCHED,1.0,verified_place_id,,Matched to DB row 309
+Alidoro The Hugh,Alidoro The Hugh,,ChIJFa7a9uFZwokR1JWN1NOyzaM,NYC,,Invalid: Partial name match (0.61),NO_MATCH,0.0,,,No confident match found
+Albert's Bar Murray Hill,Albert’s Bar,140 E 41st St,ChIJTUnFcYpZwokRnDeckKVR3Nw,NYC,,Invalid: Partial address match (0.79),MATCHED,1.0,verified_place_id,,Matched to DB row 13
+The Palm Court at The Plaza Hotel Midtown,Palm Court at The Plaza,768 5th Ave,ChIJYaVdffBYwokRCwC_C_S-tbs,NYC,,Invalid: Address match (0.88),MATCHED,0.95,claude_verified,,Matched to DB row 725
+Banzarbar Nolita,Banzarbar,191 Chrystie Street,ChIJU74O14VZwokRQ-wPmjfTERE,NYC,,Invalid: Partial name match (0.72),MATCHED,1.0,verified_place_id,,Matched to DB row 49
+Maison Premiere Williamsburg,Maison Premiere,298 Bedford Ave,ChIJW_WGT2BZwokRNpvZ4k3lVcs,NYC,,Valid: Maison Premiere (conf: 0.80),NO_MATCH,0.0,,,No confident match found
+Gelso & Grand Gelso & Grand,Gelso & Grand,186 Grand St,ChIJS3EpUohZwokReLFKxxE_zKE,NYC,,Valid: Gelso & Grand (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 253
+Bonnie's Williamsburg,Bonnie's,398 Manhattan Ave,ChIJbQc9ABZZwokRMAK6C-Ekxg4,NYC,,Invalid: Address match (0.92),MATCHED,1.0,verified_place_id,,Matched to DB row 102
+K'Far Williamsburg,K'far,,ChIJ6TIr1bdZwokRwODfMs7T90g,NYC,,Invalid: Low confidence match,MATCHED,1.0,verified_place_id,,Matched to DB row 327
+Parcelle Chinatown,Parcelle Wine Bar,135 Division Street,ChIJI3VG1kxYwokRECoJD1lSvSY,NYC,,Valid: Parcelle Chinatown (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 513
+Ambra West Village,Ambra,,ChIJW0-RNpdZwokRQYkOS0HTtwM,NYC,,Invalid: Low confidence match,MATCHED,1.0,verified_place_id,,Matched to DB row 27
+Momofuku (Noodle Bar) - Uptown,Momofuku (Noodle Bar),10 Columbus Cir,ChIJKzLt4dZZwokRbv-Ebx1hBo0,NYC,,Valid: Momofuku Noodle Bar Uptown (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 463
+Ace's Pizza Williamsburg,Ace’s Pizza Williamsburg,30 Rockefeller Plz,ChIJMTXf1ChZwokR2WKzrREy78s,NYC,,Invalid: Partial name match (0.63),MATCHED,1.0,verified_place_id,,Matched to DB row 11
+Bobwhite Counter Union Square,Bobwhite Counter (Union Square),,ChIJY8YwP65ZwokRH5YcEM4Ai4c,NYC,,Invalid: Partial name match (0.71),MATCHED,1.0,verified_place_id,,Matched to DB row 95
+Nami Nori Montclair,Nami Nori (Montclair NJ),,ChIJr4W1Xz1VwokRI-HqiIpeKRw,NYC,,Invalid: Name match (1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 477
+Unregular Pizza Lower East Side,Unregular Pizza LES,135 4th Ave,ChIJlZhb1NhZwokRZ-xeod509HE,NYC,,Invalid: Partial name match (0.65),MATCHED,1.0,verified_place_id,,Matched to DB row 770
+Saga SAGA,SAGA,70 Pine St,ChIJZZlClEZbwokRZj-0-fE25tk,NYC,,Valid: SAGA (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 581
+Bon Banh Mi - N. Mt. Pleasant,Bon Banh Mi - N. Mt. Pleasant,"1100 Oakland Market rd, Mt. P, SC 29466",ChIJ-8xLhPVt_ogRX7YnQGJ0t8Y,CHS,,Valid: BON BANH MI Southeast Asian Kitchen (conf: 0.80),MATCHED,0.95,claude_verified,,Matched to DB row 100
+Llama Inn Williamsburg,Llama Inn,50 Withers Street,ChIJD6vUMlpZwokRSFeGSBW_gvU,NYC,,Valid: Llama Inn (conf: 0.70),MATCHED,1.0,verified_place_id,,Matched to DB row 396
+Cappone's West Village,Cappone’s Salumeria,75 9th Avenue,ChIJm2WVXL9ZwokRNwGDFzSKuH8,NYC,,Invalid: Low confidence match,MATCHED,0.8511627906976744,high_similarity,,Matched to DB row 167
+Frankies 457 Carroll Gardens,Frankies,457 Court St,ChIJm7uvMfZawokRNR0XRCotzWY,,,Invalid: Address match (0.86),MATCHED,1.0,verified_place_id,,Matched to DB row 242
+The Bakery at Greywind Hudson Yards,The Bakery at Greywind,451 10th Ave,ChIJj6BPafxZwokRcskGmEJX2As,NYC,,Valid: The Bakery at Greywind (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 684
+Mishik Hudson Square,Mishik,259 Hudson Street,ChIJSx4uSy5ZwokRwqbvtErf43M,NYC,,Invalid: Address match (0.84),MATCHED,1.0,verified_place_id,,Matched to DB row 454
+Alidoro Midtown,Alidoro Moynihan Train Hall,,ChIJr5odo75ZwokR4AhVgTmpHC4,NYC,,Invalid: Partial name match (0.64),MATCHED,1.0,verified_place_id,,Matched to DB row 17
+Dhamaka Lower East Side,Dhamaka +,,ChIJJyPbJe1ZwokRu8dDEOqAYDc,NYC,,Invalid: Low confidence match,MATCHED,1.0,verified_place_id,,Matched to DB row 183
+Sunday in Brooklyn Williamsburg,Sunday Hospitality,348 Wythe Avenue,ChIJkRWC9WFZwokRfa5Uzor3e-g,NYC,,Valid: Sunday In Brooklyn (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 636
+The Stand Union Square,The Stand,116 E 16th St,ChIJgWBWFaBZwokRfOWdBPY5Y0o,NYC,,Invalid: Partial address match (0.79),MATCHED,1.0,verified_place_id,,Matched to DB row 737
+Beautiful South Cannonborough,Beautiful South,128 Columbus Street,ChIJrfi1NJ17_ogRVSM0K9wWC1c,CHS,,Valid: Beautiful South by Kwei Fei (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 66
+Farm to People Kitchen & Bar Bushwick,Farm to People Kitchen & Bar,,ChIJuUtZ-hdZwokRQw4pPJqOQbQ,NYC,,Invalid: Partial name match (0.72),MATCHED,1.0,verified_place_id,,Matched to DB row 221
+Local 42 Hell's Kitchen,Local 42,,ChIJA__4pVVZwokRCrAjVlE9BPE,NYC,,Invalid: Partial name match (0.67),MATCHED,1.0,verified_place_id,,Matched to DB row 401
+Jajaja Mexicana Williamsburg,Jajaja Williamsburg,,ChIJgV3yD_lZwokRPTi6aPfX2yo,NYC,,Invalid: Partial name match (0.70),MATCHED,1.0,verified_place_id,,Matched to DB row 312
+Ace's Pizza Rockefeller Center,Ace’s Pizza Rockefeller,,ChIJvcKC7PxZwokRYgo9FMn7HZ8,NYC,,Invalid: Low confidence match,MATCHED,1.0,verified_place_id,,Matched to DB row 10
+Jajaja Mexicana Hudson Yards,Jajaja Hudson Yards,,ChIJH-d6yh5ZwokRazxWiTWTrAY,NYC,,Invalid: Partial name match (0.70),NO_MATCH,0.0,,,No confident match found
+Unregular Bakery Union Square,Unregular Bakery Union Square,,ChIJ52QMLUtZwokRZwW4R7FUo2M,NYC,,Invalid: Partial name match (0.71),NO_MATCH,0.0,,,No confident match found
+Softside Soho,Softside / Soupside,,ChIJxYuTzARZwokRKR54lIJ6qfw,NYC,,Invalid: Partial name match (0.76),NO_MATCH,0.0,,,No confident match found
+Lighthouse Williamsburg,Lighthouse,145 Borinquen Pl,ChIJmU4y-OFbwokRuuTUu-zsedc,NYC,,Valid: Lighthouse BK (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 378
+Freemans,Freemans,Freeman Alley,ChIJRcCC14VZwokRvJiDo29-IGM,NYC,,Valid: Freemans (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 246
+Alidoro Rockefeller Center,Alidoro Rock Center,,ChIJrYlZAHVZwokRGSjwdeMjaac,NYC,,Invalid: Low confidence match,MATCHED,1.0,verified_place_id,,Matched to DB row 18
+Llama San Llama San,Llama San,359 Avenue of the Americas,ChIJ8youq41ZwokRqnnXghN1DIs,NYC,,Invalid: Partial name match (0.64),MATCHED,1.0,verified_place_id,,Matched to DB row 397
+Zillions Pizza Hell's Kitchen,Zillions Pizza,360 W 42nd St,ChIJ0fMzPqxZwokRANQQd_Ru5O0,NYC,,Valid: Zillions Pizza (conf: 0.60),MATCHED,1.0,verified_place_id,,Matched to DB row 808
+Joey Roses LES,Joey Roses,,ChIJyRRi4bpZwokR03CRX3x-RHc,NYC,,Invalid: Name match (0.83),MATCHED,1.0,verified_place_id,,Matched to DB row 317
+Jajaja Mexicana LES,Jajaja LES,,ChIJp0gKoClawokR0txqrcaEkFc,NYC,,Invalid: Name match (0.88),MATCHED,1.0,verified_place_id,,Matched to DB row 310
+Kultura Downtown,Kultura,,ChIJN1Kj-z57_ogRCzFv0tY-VRM,CHS,,Invalid: Partial name match (0.65),MATCHED,1.0,verified_place_id,,Matched to DB row 343
+The Daily Buckhead,The Daily (Buckhead),,ChIJ42f6OcsP9YgRKgWhS9P-xSw,ATL,,Invalid: Name match (0.84),MATCHED,1.0,verified_place_id,,Matched to DB row 699
+Emmett's West Village,Emmett's on Grove,39 Grove Street,ChIJIUmWODtZwokRc33t3aurFco,NYC,,Valid: Emmett's on Grove (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 207
+Lodi Midtown,Lodi,1 Rockefeller Plaza,ChIJtY_Cr9VZwokR86t_xHCuZjc,NYC,,Invalid: Address match (1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 403
+Burgerhead Greenwich Village,BURGERHEAD,,ChIJGxKmmOdZwokRzHYPmd42cdI,NYC,,Invalid: Low confidence match,NO_MATCH,0.0,,,No candidates passed pre-filtering
+Bobwhite Counter Long Island City,Bobwhite Counter (Long Island City),,ChIJ6d5LokpZwokRlrAwll2NArU,NYC,,Invalid: Partial name match (0.65),MATCHED,1.0,verified_place_id,,Matched to DB row 94
+Greenpoint Fish & Lobster Greenpoint,Greenpoint Fish & Market Restaurant,114 Nassau Ave,ChIJYVSQlUVZwokR3YMbMiZwhzE,NYC,,Valid: Greenpoint Fish & Lobster Co. (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 264
+Il Buco Alimentari & Vineria NoHo,Il Buco Alimentari & Vineria,53 Great Jones St,ChIJYUQdLoVZwokRBjKzg6PAaa8,NYC,,Valid: Il Buco Alimentari & Vineria (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 295
+Razza Jersey City,Razza,275 Grove Street,ChIJFSRtpLFQwokROP1exas0wNM,NYC,,Invalid: Address match (0.86),MATCHED,1.0,verified_place_id,,Matched to DB row 554
+Sereneco Greenpoint,Sereneco,113 Franklin St,ChIJH_-tMGlZwokRqIqHR22D-zU,NYC,,Invalid: Address match (0.88),MATCHED,1.0,verified_place_id,,Matched to DB row 594
+Barbuto West Village,Barbuto,775 Washington Street,ChIJVXheK_pZwokRDNLoQ0JK40M,NYC,,Invalid: Low confidence match,MATCHED,1.0,verified_place_id,,Matched to DB row 51
+Loring Place Greenwich Village,Loring Place,21 W 8th St,ChIJ69NaKJdZwokR3CamunXyYig,NYC,,Invalid: Partial address match (0.76),MATCHED,1.0,verified_place_id,,Matched to DB row 404
+Alidoro Long Island City,Alidoro LIC,,ChIJFcjcVwBZwokRTSpYlpcfTi8,NYC,,Invalid: Low confidence match,MATCHED,1.0,verified_place_id,,Matched to DB row 16
+Steak Frites Bistro Hell's Kitchen,Steak Frites,496 9th Ave,ChIJAwwWns9ZwokRXREEcH7Qa_U,NYC,,Valid: Steak Frites Bistro (conf: 0.80),NO_MATCH,0.0,,,No confident match found
+Lola Taverna South Village,Lola Taverna,210 6th Avenue,ChIJHcWG3jZZwokRqla0A1P7mU4,NYC,,Valid: Lola Taverna (conf: 0.80),NO_MATCH,0.0,,,No confident match found
+Rule of Thirds Williamsburg,Rule of Thirds,171 Banker St,ChIJaQRXYuRZwokRHjAN5MkBizY,NYC,,Valid: Rule of Thirds (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 578
+Rule of Thirds Williamsburg,Sunday Hospitality,348 Wythe Avenue,ChIJaQRXYuRZwokRHjAN5MkBizY,NYC,,Invalid: Partial name match (0.68),NO_MATCH,0.0,,,No confident match found
+Rudy Royale Downtown,Rudy Royale,209 E Bay St,ChIJjXrGMwx6_ogRC9WyXPVnChQ,CHS,,Valid: Rudy Royale (conf: 0.60),MATCHED,1.0,verified_place_id,,Matched to DB row 576
+Millers All Day Downtown,Millers All Day - Downtown,120 King St,ChIJp1j0TRB6_ogRLcupo0MkjJ0,CHS,,Valid: Millers All Day (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 450
+Spring Cafe Aspen Greenwich Village,Spring Cafe New York,14 West 4th Street,ChIJ9faizgBZwokRUuPiFIDFhFs,NYC,,Invalid: Partial address match (0.76),MATCHED,1.0,verified_place_id,,Matched to DB row 622
+Lindens SoHo,The Linden,2 Renwick St,ChIJh-oPySxZwokRBTfrxwTdRo4,NYC,,Valid: Lindens (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 382
+Asador Bastian River North,Asador Bastian,,ChIJk8Z5cdstDogRdMPc0yBZB5M,CHI,,Invalid: Partial name match (0.70),MATCHED,1.0,verified_place_id,,Matched to DB row 40
+Konro Konro,Konro Restaurant,424 Park Place,ChIJUyHQWG7X2IgRUiFdW4dmtFw,NYC,,Valid: KONRO (conf: 0.80),NO_MATCH,0.0,,,No confident match found
+The Press Cannonborough,The Press (CHS),,ChIJ2-G-_Kd7_ogRqsUkYpokplA,CHS,,Invalid: Token overlap (0.67),MATCHED,1.0,verified_place_id,,Matched to DB row 728
+Hanoi House East Village,Hanoi House,,ChIJBWyKZp1ZwokRHhnug4zTch4,NYC,,Invalid: Partial name match (0.63),MATCHED,1.0,verified_place_id,,Matched to DB row 272
+Raku Hanare Regulars,Raku Hanare,,ChIJcd-UAwBZwokR2dPBrKACTm8,NYC,,Invalid: Low confidence match,MATCHED,1.0,verified_place_id,,Matched to DB row 550
+Rosemary's Stuytown,Rosemary’s Stuytown,,ChIJqfd3jX9ZwokRS1hCsvCFcE8,NYC,,Invalid: Partial name match (0.76),MATCHED,1.0,verified_place_id,,Matched to DB row 569
+Nami Nori West Village,Nami Nori (West Village),,ChIJcfbyqFNZwokRUoBP92II4c0,NYC,,Invalid: Name match (1.00),NO_MATCH,0.0,,,No confident match found
+The Standard Biergarten Meatpacking,The Standard Biergarten,25 Cooper Sq,ChIJN-93ZsBZwokRMe_yr5I34Ik,NYC,,Invalid: Partial name match (0.79),MATCHED,0.95,claude_verified,,Matched to DB row 736
+Upside Nolita,Upside Pizza Nolita,640 Manhattan Avenue,ChIJH1lZ6mhZwokRwXWuR8nTAZ8,NYC,,Corrected: Upside Pizza (conf: 0.82),NO_MATCH,0.0,,,No confident match found
+Lulla Chelsea,Lulla,113 West 24th Street,ChIJvTLKIr9ZwokRIBsYYKUY2DU,NYC,,Valid: Lulla NYC (conf: 0.60),MATCHED,1.0,verified_place_id,,Matched to DB row 412
+Raku Soho Regulars,Raku Soho,,ChIJo3cQ0GxZwokRUukfD7IRfKk,NYC,,Invalid: Low confidence match,MATCHED,1.0,verified_place_id,,Matched to DB row 551
+Laser Wolf Williamsburg,Laser Wolf,97 Wythe Avenue,ChIJLyS5dYRZwokRlkA0g9eijjs,NYC,,Valid: Laser Wolf Brooklyn (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 356
+Fairfax West Village,Fairfax,234 West 4th Street,ChIJSyYvYZRZwokR6tWSvOA2xXw,NYC,,Invalid: Partial address match (0.77),NO_MATCH,0.0,,,No confident match found
+Unregular Pizza Midtown,Unregular Pizza Midtown,,ChIJW2boKvdZwokRAYw2cJwEH9I,NYC,,Invalid: Partial name match (0.79),MATCHED,1.0,verified_place_id,,Matched to DB row 771
+Davey's Ice Cream Greenpoint,Davey’s Ice Cream (Greenpoint),,ChIJn4uvV0FZwokRXcHdLy6Og_M,NYC,,Invalid: Partial name match (0.76),MATCHED,1.0,verified_place_id,,Matched to DB row 176
+Panzón Greenpoint,Panzon,23 Greenpoint Avenue,ChIJUfCp3OlZwokRvRb3hBuLIuA,NYC,,Invalid: Address match (0.92),MATCHED,1.0,verified_place_id,,Matched to DB row 509
+Claro Gowanus,Claro,284 3rd Avenue,ChIJGVQqnFVawokRltzLtx5fMhM,NYC,,Invalid: Address match (0.88),MATCHED,1.0,verified_place_id,,Matched to DB row 154
+Lovely's Old Fashioned Hell's Kitchen,Lovely’s Old Fashioned,642 9th Ave,ChIJd4_SnFJZwokRBeuZ-YwGaUw,NYC,,Valid: Lovely's Old Fashioned (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 407
+Basic Kitchen Downtown Charleston,Basic Kitchen,82 Wentworth St,ChIJNz0pmhN6_ogR5laaX7NUnVs,CHS,,Invalid: Address match (0.88),MATCHED,1.0,verified_place_id,,Matched to DB row 64
+Moongate Lounge Chinatown,Moongate Lounge,,ChIJpUlYTNmBhYARE6fZdZBiKR4,SF,,Invalid: Partial name match (0.67),MATCHED,1.0,verified_place_id,,Matched to DB row 472
+Crave Fishbar Midtown,Crave Fishbar Midtown,,ChIJBUB1-eJYwokRwqGsIIvAPls,NYC,,Invalid: Partial name match (0.76),NO_MATCH,0.0,,,No confident match found
+Overstory Overstory,Overstory,70 Pine St 64th Floor,ChIJ_8dmJ0lbwokRIJHQFfXiMNo,NYC,,Valid: Overstory (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 501
+St. Tropez West Village,St. Tropez West Village,,ChIJo9tLC5VZwokR9t8kMnIACK0,NYC,,Invalid: Name match (1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 633
+Leon's Oyster Shop Downtown Charleston,Leons Oyster Shop,698 King Street,ChIJ180tuFx6_ogRLrajxAiAgYQ,CHS,,Invalid: Address match (0.85),MATCHED,0.95,claude_verified,,Matched to DB row 369
+IRIS,IRIS,1740 Broadway,ChIJMccf7SRZwokRyJJEQAXUhqM,NYC,,Valid: IRIS (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 302
+Sra. Martinez Coral Gables,Sra Martinez,,ChIJE71m6CK32YgRvzVM73VTlts,FL,,Invalid: Partial name match (0.63),MATCHED,1.0,verified_place_id,,Matched to DB row 625
+Sweet Rose Creamery Brentwood Country Mart,Sweet Rose Creamery - Brentwood Country Mart,,ChIJx3qVjFWjwoARvcJ3GGZ4YJQ,LA,,Invalid: Partial name match (0.62),MATCHED,1.0,verified_place_id,,Matched to DB row 647
+Tia Pol Chelsea,Tia Pol,,ChIJ8RjtPrhZwokRVZXEfLUKtM4,NYC,,Invalid: Low confidence match,MATCHED,1.0,verified_place_id,,Matched to DB row 750
+Moody Tongue Sushi West Village,Moody Tongue Sushi,,ChIJGUJaVtVZwokR3VU_JU2pedg,NYC,,Invalid: Partial name match (0.73),MATCHED,1.0,verified_place_id,,Matched to DB row 471
+Roberta's Bushwick,Roberta's,261 Moore St,ChIJzSOyOg1dwokRfQ-5htUfsRY,NYC,,Valid: Roberta's (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 559
+gertrude's Prospect Heights,Gertrude’s,605 Carlton Ave,ChIJnRyRtUBbwokR4veV9Er_PAU,NYC,,Invalid: Address match (0.91),MATCHED,1.0,verified_place_id,,Matched to DB row 254
+Nudibranch East Village,Nudibranch,125 1st Ave.,ChIJ5Qa2Xu9ZwokRIyvK1rhdwgw,NYC,,Valid: Nudibranch (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 490
+Renzo Hampton Park Terrace,Renzo,384 Huger Street,ChIJbT5P4Fp6_ogRM6yv6hvX3k8,CHS,,Invalid: Address match (0.86),MATCHED,1.0,verified_place_id,,Matched to DB row 555
+Nom Wah Pier 57,Nom Wah at Market 57,,ChIJeW_dJC5ZwokRaQfG-JI-bYc,NYC,,Invalid: Partial name match (0.69),MATCHED,1.0,verified_place_id,,Matched to DB row 485
+GupShup Gramercy,GupShup,"115 E 18th St (Between Park Ave &, Irving Pl",ChIJvYavzZ5ZwokRBQj3hhDtpfk,NYC,,Valid: GupShup (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 268
+Mino Brasserie West Village,Mino,225 W 12th St,ChIJh0Elkf1ZwokRrFXIVkSPvKU,NYC,,Valid: Mino Brasserie (conf: 0.60),MATCHED,1.0,verified_place_id,,Matched to DB row 453
+Bangkok Supper Club Messaging as a Service / VIP Handling,Bangkok Supper Club,641 Hudson St,ChIJvduhDjVZwokReg77D1pNQaQ,NYC,,Invalid: Address match (0.87),MATCHED,1.0,verified_place_id,,Matched to DB row 48
+Arthur and Sons West Village,Arthur & Sons,38 8th Avenue,ChIJw2RCuSZZwokRVt7nWZNROm0,NYC,,Valid: Arthur and Sons NY Italian (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 39
+Crave Sushi Bar Midtown East,Crave Sushi Bar,947 2nd Ave,ChIJkdJZKBRZwokRwhNrDEm_t8c,NYC,,Valid: Crave Sushi Bar (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 164
+Mattina Mattina,Mattina,2232 Bush Street,ChIJYTzmaFiBhYARlEFG6VasHl4,SF,,Valid: MATTINA Restaurant (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 437
+Palette Tea House Noma,Palette Tea House,900 North Point Street,ChIJ53HCdjCBhYARI-_VU7jZI-U,SF,,Valid: Palette Tea House (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 507
+Semma Greenwich,Semma,60 Greenwich Ave,ChIJxZmzO7hZwokRx2fls4uU4YU,NYC,,Invalid: Address match (0.91),MATCHED,1.0,verified_place_id,,Matched to DB row 591
+Diner Williamsburg,Diner,85 Broadway,ChIJvzYmKtlbwokRHye6SmfknDM,NYC,,Invalid: Address match (1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 184
+Brenda's French Soul Food Tenderloin,Brenda's French Soul Food,652 Polk Street,ChIJZ9s5SJeAhYARIX3Fxl6oj6c,SF,,Valid: Brenda's French Soul Food (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 105
+Brenda's Meat & Three NOPA,Brenda's Meat & Three,919 Divisadero Street,ChIJBZ2nB7GAhYAR1BUmlCHczaw,SF,,Valid: Brenda's Meat & Three (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 106
+Meadowsweet Williamsburg,Meadowsweet,149 Broadway,ChIJwXUoA99bwokRU2bF-gdB25I,NYC,,Valid: Meadowsweet (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 439
+Emily Brooklyn Clinton Hill,Emily Brooklyn,919 fulton street,ChIJYeJEs6RbwokRI9OjBP6hYG8,NYC,,Invalid: Address match (0.87),MATCHED,1.0,verified_place_id,,Matched to DB row 205
+Thyme Bar Chelsea,Thyme Bar,"20 W 23rd St, Cellar",ChIJGeLvoN9ZwokRyjK1gD08W7Q,NYC,,Valid: Thyme Bar (conf: 0.60),MATCHED,1.0,verified_place_id,,Matched to DB row 749
+Unregular Pizza Upper East Side,UnregularPizzaUES,132 Lexington Avenue,ChIJfxzCCUBZwokR5uTiL9Gm9U4,NYC,,Valid: Unregular Pizza (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 773
+Little Maven Flatiron,Little Maven,30 West 18th Street,ChIJW3LA-dxZwokR0WAavt1PXFE,NYC,,Valid: Little Maven (conf: 0.60),MATCHED,1.0,verified_place_id,,Matched to DB row 388
+Maman Upper West Side,Chez Maman,"239 Centre St New York, Ny 10013",ChIJ383_YEFZwokRJFr1iPhcJvk,NYC,,Invalid: Partial address match (0.67),NO_MATCH,0.0,,,No confident match found
+Blue Whale Marina,Blue Whale Restaurant,,ChIJyeXEUEyBhYARWEs70AP8J4I,SF,,Invalid: Low confidence match,MATCHED,1.0,verified_place_id,,Matched to DB row 91
+Greywind Hudson Yards,Greywind,451 10th Avenue,ChIJRyAmqgpZwokRHjS6xvDPVfI,NYC,,Invalid: Address match (0.89),MATCHED,1.0,verified_place_id,,Matched to DB row 266
+Sushi Hakko Pacific Heights,sushihakkosf.com,,ChIJ0wnbFlaBhYARUol-xwVfXjk,SF,,Invalid: Low confidence match,MATCHED,1.0,verified_place_id,,Matched to DB row 642
+Little Original Joe's Marina,"Little Original Joe's (Marina, SF)",2301 Chestnut Street,ChIJo_MMIdSAhYARhV9nPwTrm84,SF,,Valid: Little Original Joe's (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 390
+Holy City Brewing,Holy City Brewing,"1021 Aragon Ave, Charleston, SC 29405",ChIJXZV_WlF7_ogRy1myXw3d-ME,,,Valid: Holy City Brewing (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 285
+The Refuge Isle of Palms,The Refuge,,ChIJn5C08qlz_ogRsEyfIRdjQBg,CHS,,Invalid: Low confidence match,MATCHED,1.0,verified_place_id,,Matched to DB row 731
+Sobre Masa Bushwick,Sobre Masa,52 Harrison Place,ChIJmeKSwPFdwokRZ--71Rq0GBY,NYC,,Valid: Sobre Masa (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 608
+Perry's Pacific Heights,Perry's Embarcadero,1944 Union Street,ChIJy3_5ONuAhYARlKgaknpqI0k,SF,,Invalid: Address match (0.87),MATCHED,1.0,verified_place_id,,Matched to DB row 524
+Laissez Faire Financial District,Laissez Faire,10 Theatre Alley,ChIJuQ9WfihbwokR3PTLA2-HvhE,NYC,,Invalid: Address match (1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 351
+BlindPig Tenderloin,BlindPig Speakeasy Lounge,1113 Polk St.,ChIJ7SlawgSBhYARbP6ZoPjNHMA,SF,,Valid: BlindPig Speakeasy Lounge (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 87
+Dragon Horse SOMA,Dragon Horse,,ChIJc4jk1ZWBhYARkZIS5HmVER8,SF,,Invalid: Name match (0.83),MATCHED,1.0,verified_place_id,,Matched to DB row 190
+Llama Cafe,Llama Cafe,66 Hudson blvd East,ChIJw_SkbbNZwokRZewVFMxQOT8,NYC,,Invalid: Partial address match (0.80),MATCHED,0.95,claude_verified,,Matched to DB row 121
+Spygold Husdon Yards,Spygold,451 10th Ave,ChIJcZp1Y2tZwokRWM2nLr5rz_4,NYC,,Invalid: Address match (0.89),MATCHED,1.0,verified_place_id,,Matched to DB row 624
+Millers All Day James Island,Millers All Day - James Island,120 King Street,ChIJEWlFjFd5_ogREoukLXlaF2I,CHS,,Invalid: Name match (0.97),MATCHED,1.0,verified_place_id,,Matched to DB row 451
+Post House Mt. Pleasant,Post House,101 Pitt St,ChIJy5sQLuJw_ogRnxFgqpnQ1SY,CHS,,Valid: Post House (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 540
+Frances The Castro,Frances,3870 17th St,ChIJky2knBt-j4ARXAdR3-GAWM8,SF,,Invalid: Address match (0.86),MATCHED,1.0,verified_place_id,,Matched to DB row 241
+The Blue Light Pacific Heights,The Blue Light,1979 Union Street,ChIJvVG_OtuAhYARhrfEv3QiQLA,SF,,Valid: The Blue Light (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 692
+Toy Soldier Financial,Toy Soldier,52 Belden Place,ChIJtT_kKIqAhYAR8kotss7-lA8,SF,,Valid: Toy Soldier (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 759
+Isshiki East Village,isshiki matcha,,ChIJsVe2QABZwokR4ewjadozGNE,NYC,,Invalid: Partial name match (0.65),MATCHED,1.0,verified_place_id,,Matched to DB row 305
+Isabelle's Osteria Gramercy,Isabels Family Restaurant,245 Park Ave S,ChIJV9twMKRZwokRkXW1n1miJeQ,NYC,,Valid: Isabelle's Osteria (conf: 0.60),MATCHED,1.0,verified_place_id,,Matched to DB row 304
+Smith & Mills Rockefeller Center,Smith & Mills,71 N Moore St,ChIJe-B7YGlZwokRF1qMLUO16Yw,NYC,,Corrected: Smith & Mills (conf: 0.67),MATCHED,1.0,verified_place_id,,Matched to DB row 606
+Naro Rockefeller Center,NARO,1 Rockefeller Plaza,ChIJp7Ql8AZZwokRecf5nJr8RJU,NYC,,Invalid: Low confidence match,MATCHED,1.0,verified_place_id,,Matched to DB row 480
+Jupiter Rockefeller Center,Jupiter,620 5th Avenue,ChIJyflTcS1ZwokRBWTy8tCgaDM,NYC,,Invalid: Low confidence match,MATCHED,1.0,verified_place_id,,Matched to DB row 319
+5 Acres Rockefeller Center,5 Acres,,ChIJj0EtEZRZwokRYi9Wk-lvJUU,NYC,,Invalid: Low confidence match,MATCHED,1.0,verified_place_id,,Matched to DB row 1
+Bodega Downtown,Bodega - Mt. Pleasant,23 Ann Street,ChIJV_qOlyJ7_ogRZUQr84eFa28,CHS,,Invalid: Address match (0.82),MATCHED,1.0,verified_place_id,,Matched to DB row 96
+Bodega (Pay),Bodega - Downtown,23 Ann Street,ChIJV_qOlyJ7_ogRZUQr84eFa28,CHS,,Valid: Bodega CHS (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 98
+Parcelle Greenwich Village,Parcelle Wine West Village,135 Division Street,ChIJFXVNUJxZwokRDhvP51t1PFQ,NYC,,Invalid: Name match (1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 514
+The Garret West,The Garret West,296 Bleecker St,ChIJkdFGdJNZwokRY_FA1UjcHGI,NYC,,Valid: The Garret (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 705
+Dashi Park Circle,Dashi,1262 Remount Rd,ChIJLQTTP69l_ogRPQLNc7SiSas,CHS,,Invalid: Address match (0.94),MATCHED,1.0,verified_place_id,,Matched to DB row 174
+Herd Provisions East Central,Herd Provisions,106 Grove Street,ChIJ93o7oNB7_ogRKt36Os-r-C8,CHS,,Valid: Herd Provisions (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 283
+Owlbear Cafe Mt. Pleasant,Owlbear Cafe,1964 Riviera Dr J,ChIJnVMSUxVz_ogRGHD5la1rr8k,CHS,,Invalid: Address match (0.92),MATCHED,1.0,verified_place_id,,Matched to DB row 502
+Callie's Hot Little Biscuit Meeting Street,Callie's Hot Little Biscuit (King St),188 Meeting St,ChIJdz9mtA16_ogRnHxmONzNzn4,CHS,,Valid: Callie's Hot Little Biscuit (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 127
+Estadio Cannonborough,Estadio,,ChIJHRCMPIt7_ogRK9T7mG56Vs4,CHS,,Invalid: Low confidence match,MATCHED,1.0,verified_place_id,,Matched to DB row 212
+Lowland French Quarter,Lowland,,ChIJTTcM5Zx7_ogRlEKsvPVFWHM,CHS,,Invalid: Low confidence match,MATCHED,1.0,verified_place_id,,Matched to DB row 408
+Sami & Susu Lower East Side,Sami & Susu,190 Orchard Street,ChIJRbqLkqFZwokR3E6d0zDKAko,NYC,,Invalid: Address match (0.88),MATCHED,1.0,verified_place_id,,Matched to DB row 586
+Ivan Ramen Lower East Side,Ivan Ramen,25 Clinton Street,ChIJreEXi4FZwokR_ygs7wh2fTk,NYC,,Invalid: Address match (0.87),MATCHED,1.0,verified_place_id,,Matched to DB row 307
+Ristobar Marina,Ristobar,2300 Chestnut St.,ChIJZSPQINSAhYAR_o9rtGR7u0I,SF,,Valid: Ristobar (conf: 0.80),NO_MATCH,0.0,,,No candidates passed pre-filtering
+Layla Williamsburg,Layla,352 Bedford Avenue,ChIJ57ZDGMxbwokRVox0BjRGB_U,NYC,,Invalid: Address match (0.91),MATCHED,1.0,verified_place_id,,Matched to DB row 359
+Besharam Potrero Hill,Beshraham,1275 Minnesota St,ChIJpVAZ4wx_j4AR4j8Q0COpGHc,SF,,Invalid: Address match (0.89),MATCHED,0.95,claude_verified,,Matched to DB row 75
+Kellogg's Diner Williamsburg,Kellogg's Diner CLOSED,518 Metropolitan Ave,ChIJIccpGllZwokRx0BsEyyeQg4,NYC,,Invalid: Address match (0.93),NO_MATCH,0.0,,,No confident match found
+Gjelina NY Gjelina NY,Gjelina NY,45 Bond St,ChIJv9s0scFZwokRYuWpWB7CLbw,NYC,,Invalid: Address match (0.83),MATCHED,1.0,verified_place_id,,Matched to DB row 255
+Lost Isle,Lost Isle,"3338 Maybank Hwy, Johns Island, SC 29455",ChIJlb-kF-9__ogRcmNJB2ScqhI,CHS,,Valid: Lost Isle (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 406
+Lowlife,Lowlife Bar,"106 E Hudson Ave, Folly Beach, SC 29439",ChIJEVkJrRrX_YgRJZhpb4ZGxKw,CHS,,Valid: Lowlife Bar (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 409
+Hoexters Upper East Side,Hoexter’s,174 East 82nd Street,ChIJJWByn_BZwokR9IC-3PtPPuk,NYC,,Invalid: Partial address match (0.79),MATCHED,1.0,verified_place_id,,Matched to DB row 284
+Ketchy Shuby Soho,Ketchy Shuby,406 Broome St,ChIJR4xJInZZwokRMp1wYc4fcag,NYC,,Valid: Ketchy Shuby (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 326
+The Roll Pacific Heights,The Roll,,ChIJrxUh1ndZwokRYpfYMnJNe5Y,SF,,Invalid: Low confidence match,MATCHED,0.95,claude_verified,,Matched to DB row 732
+Porchetta Shop Cannonborough,Da Toscano Porchetta Shop,109 President Street,ChIJCUQxfgl7_ogR1xze9C_XM4Q,CHS,,Valid: Porchetta Shop (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 537
+Popi's Oysterette Marina,Popi's Oysterette.,2095 Chestnut St.,ChIJq1hymyiBhYARRMRbKOZD6F4,SF,,Valid: Popi's Oysterette (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 536
+Graft Wine Bar Uptown Charleston,Graft Wine Shop,700 King St,ChIJz2rDuFx6_ogRk5EZR618YmI,CHS,,Valid: Graft Wine Shop & Wine Bar (conf: 0.80),MATCHED,0.95,claude_verified,,Matched to DB row 263
+Chouquet's,Chouquet's,"2500 Washington Streer, SF, CA 94115",ChIJOyho5cWAhYARuJobf2VcbM0,SF,,Valid: Chouquet's (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 152
+Rocco's Sports & Recreation,Rocco's Sports & Recreation,1 West 3rd Street,ChIJ2fLg9KdZwokR0cET1EjEuwk,NYC,,Valid: Rocco's Sports & Rec (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 563
+Bandits Diner + Dive,Bandits Diner + Dive,44 Bedford St,ChIJO_Nbh4lZwokR1-EspAqsGLM,NYC,,Valid: Bandits Burger + Dive (conf: 0.80),NO_MATCH,0.0,,,No candidates passed pre-filtering
+Sukh Fort Greene,Sukh,723 Fulton St,ChIJo8ltIwBbwokRnpjtIPOzZ2Q,NYC,,Invalid: Address match (0.87),MATCHED,1.0,verified_place_id,,Matched to DB row 635
+Phat Thai Marina,Phat Thai,2380 Lombard Street,ChIJr6PUL3GBhYARzbSgNPNnsac,SF,,Valid: Phat Thai (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 525
+Hags East Village,HAGS,163 1st Avenue,ChIJp0ha1dFZwokRK9WxgN9HVuY,NYC,,Invalid: Address match (0.88),MATCHED,1.0,verified_place_id,,Matched to DB row 270
+Bus Stop Pacific Heights,Bus Stop,1901 Union Street,ChIJiyfOTtuAhYARdqz7WudgtMU,SF,,Invalid: Address match (0.87),MATCHED,1.0,verified_place_id,,Matched to DB row 114
+Final Final Pacific Heights,Final Final,2990 Baker Street,ChIJTx2ix9SAhYARjNIgHLlm7rI,SF,,Invalid: Address match (0.87),MATCHED,1.0,verified_place_id,,Matched to DB row 228
+Little Maven - Burger League,Little Maven,30 West 18th Street,ChIJW3LA-dxZwokR0WAavt1PXFE,NYC,,Invalid: Partial address match (0.77),NO_MATCH,0.0,,,No confident match found
+Ma'am Saab Downtown Charleston,Ma'am Saab - Pakistani Restaurant,251 Meeting St,ChIJXRzKDxl7_ogR-ESom4Gc2xY,CHS,,Invalid: Address match (0.88),MATCHED,1.0,verified_place_id,,Matched to DB row 415
+Malika Canteen Mt. Pleasant,Malika Canteen,1333 Theater Dr,ChIJe_xDGdlz_ogROqKNs3SQCTA,CHS,,Valid: Malika Canteen (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 426
+Carlotto Union Square,Carlotto,100 East 19th Street,ChIJJ8hFlKFZwokRFmzhJg7Qofo,NYC,,Invalid: Partial address match (0.79),MATCHED,1.0,verified_place_id,,Matched to DB row 134
+Ten Bells,Ten Bells,247 Broome St,ChIJPeCaOIdZwokRXr36ali2z_k,,,Valid: The Ten Bells (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 738
+Commodore II LES,The Commodore,,ChIJfZlRiPZZwokRNti0HrCP_pw,NYC,,Invalid: Name match (0.86),MATCHED,1.0,verified_place_id,,Matched to DB row 161
+Fossetta Fossetta,Fossetta,,ChIJ9RRDNShZwokRkVa5XZq-rxw,NYC,,Invalid: Partial name match (0.64),MATCHED,1.0,verified_place_id,,Matched to DB row 238
+Roberta's Midtown,Roberta's Penn District,"One Penn Plaza, Plaza 33 East,",ChIJWV3KRQBZwokRZlT-Om1I_1E,NYC,,Valid: Roberta’s (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 560
+R.Slice Midtown,R Slice Penn District,261 Moore Street,ChIJ65H5eABZwokRi1pVbvaiwxY,NYC,,Invalid: Partial name match (0.64),MATCHED,1.0,verified_place_id,,Matched to DB row 574
+Troya Pacific Heights,Troya,2125 Fillmore Street,ChIJZUcfNsaAhYARZ4b7QZiwaRc,SF,,Invalid: Address match (0.89),MATCHED,1.0,verified_place_id,,Matched to DB row 762
+Seven Hills Russian Hill,Seven Hills,1550 Hyde Street,ChIJc1RqC-yAhYARWmmWMJ-xkDs,SF,,Valid: Seven Hills (conf: 0.60),MATCHED,1.0,verified_place_id,,Matched to DB row 597
+Collina Russian Hill,Collina,1550 Hyde St,ChIJVVWZC-yAhYARTO9lj9HYPlQ,SF,,Invalid: Address match (0.86),MATCHED,1.0,verified_place_id,,Matched to DB row 159
+Two Hands Williamsburg Williamsburg,Two Hands Hospitality,251 Church Street,ChIJP1m519tZwokRf0B_IzX9f9s,NYC,,Invalid: Token overlap (0.67),MATCHED,1.0,high_similarity,,Matched to DB row 766
+Butcher's Daughter Williamsburg,The Butcher's Daughter (Williamsburg),,ChIJ3UuR-ONZwokRrKPqaJPKbxw,NYC,,Invalid: Partial name match (0.68),MATCHED,1.0,verified_place_id,,Matched to DB row 117
+Butcher's Daughter Williamsburg,The Butcher's Daughter,1205 Abbot Kinney Boulevard,ChIJ3UuR-ONZwokRrKPqaJPKbxw,NYC,,Invalid: Partial name match (0.68),NO_MATCH,0.0,,,No confident match found
+Ariari East Village,ARIARI,119 1st Avenue,ChIJhUDJFUVZwokRkNERZsyOxWo,NYC,,Invalid: Address match (0.88),MATCHED,1.0,verified_place_id,,Matched to DB row 36
+Colonia Verde Fort Greene,Colonia Verde,219 Dekalb Ave,ChIJrXze-rlbwokRl3G4x1txJgk,NYC,,Valid: Colonia Verde (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 160
+Raf's - Burger League,Raf's,290 Elizabeth Street,ChIJJU-UWk1ZwokRklDKrZ_9EZE,NYC,,Invalid: Address match (0.89),NO_MATCH,0.0,,,No candidates passed pre-filtering
+The Butcher's Daughter Wburg (Breakfast Club),The Butcher's Daughter,1205 Abbot Kinney Boulevard,ChIJ3UuR-ONZwokRrKPqaJPKbxw,NYC,,Invalid: Partial name match (0.68),NO_MATCH,0.0,,,No confident match found
+The Butcher's Daughter Wburg (Breakfast Club),The Butcher's Daughter (Williamsburg),,ChIJ3UuR-ONZwokRrKPqaJPKbxw,NYC,,Invalid: Partial name match (0.68),NO_MATCH,0.0,,,No confident match found
+Gus's Cobble Hill,Gus's Chop Hous,215 Union St,ChIJTb3cUH1bwokRqVj5vctMMXs,NYC,,Invalid: Address match (0.86),MATCHED,1.0,verified_place_id,,Matched to DB row 269
+Butcher's Daughter Nolita,The Butcher's Daughter,1205 Abbot Kinney Boulevard,ChIJb03pTce6woAR3xX6dxF_KR4,NYC,,Corrected: The Butcher's Daughter (conf: 0.83),MATCHED,0.95,claude_verified,,Matched to DB row 115
+Butcher's Daughter Nolita,The Butcher's Daughter (Nolita),,ChIJiYsEnohZwokR8oZK_TgmSjY,NYC,,Invalid: Partial name match (0.77),MATCHED,1.0,verified_place_id,,Matched to DB row 116
+Elephant Sushi Russian Hill,Elephant Sushi (Russian Hill),1916 Hyde Street,ChIJIXme1uiAhYARonEfUDgz0A4,SF,,Valid: Elephant Sushi (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 199
+Elephant Sushi Fillmore,Elephant Sushi (Hayes Valley),400 Grove St.,ChIJcVyMiSmBhYARK9hpjwu_JcQ,SF,,Valid: Elephant Sushi (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 198
+Lula Mae Fort Greene,Lula Mae,472 Myrtle Avenue,ChIJi9R8lVJbwokRtKjPyX4YvnU,NYC,,Invalid: Address match (0.90),MATCHED,1.0,verified_place_id,,Matched to DB row 411
+Inday All Day Williamsburg,Inday,658 Driggs Avenue,ChIJ-xUElXtZwokRpv0Gz1fJiuc,NYC,,Valid: INDAY All Day (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 298
+Inday All Day Williamsburg,Inday Williamsburg,658 Driggs Avenue,ChIJ-xUElXtZwokRpv0Gz1fJiuc,NYC,,Valid: INDAY All Day (conf: 0.80),NO_MATCH,0.0,,,No confident match found
+Maman Upper East Side,Maman- UES,,ChIJAx5HgFlZwokRcWUfz5VxS0w,NYC,,Invalid: Low confidence match,MATCHED,1.0,verified_place_id,,Matched to DB row 432
+SPQR Pacific Heights,SPQR,1911 Fillmore Street,ChIJCUQFkseAhYARpkr3emAuxp8,SF,,Invalid: Address match (0.89),MATCHED,1.0,verified_place_id,,Matched to DB row 621
+HED 11 SOMA,HED 11,1800 Sutter Street,ChIJ8wbZfQCBhYARbBBXJyQXBZA,SF,,Valid: Hed 11 (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 279
+Slate Cafe Midtown,Slate Cafe - Midtown,,ChIJXWk4h4NZwokRX89_Qlwh0z0,NYC,,Invalid: Name match (0.84),NO_MATCH,0.0,,,No confident match found
+Slate Cafe Nomad - Breakfast Pass,Slate Cafe Nomad,941 2nd Ave,ChIJMznhLt9ZwokREJt8CB0FTdA,NYC,,Invalid: Low confidence match,NO_MATCH,0.0,,,No candidates passed pre-filtering
+Cubby's Hells Kitchen,Cubby’s,,ChIJrX0iSu5ZwokRYg6me9J5obs,NYC,,Invalid: Partial name match (0.70),MATCHED,1.0,verified_place_id,,Matched to DB row 170
+The Butcher's Daughter (Nolita)- Breakfast Club,The Butcher's Daughter,1205 Abbot Kinney Boulevard,ChIJb03pTce6woAR3xX6dxF_KR4,NYC,,Corrected: The Butcher's Daughter (conf: 0.77),NO_MATCH,0.0,,,No candidates passed pre-filtering
+The Butcher's Daughter (Nolita)- Breakfast Club,The Butcher's Daughter (Nolita),,ChIJiYsEnohZwokR8oZK_TgmSjY,NYC,,Invalid: Partial name match (0.65),NO_MATCH,0.0,,,No candidates passed pre-filtering
+Two Hands Williamsburg- Breakfast Club,Two Hands Hospitality,251 Church Street,ChIJ256pFiBawokR-JFcFPAz7Ig,NYC,,Invalid: Address match (0.87),NO_MATCH,0.0,,,No confident match found
+Chinta Thai Greenpoint,ChintaThai,157 Franklin Street,ChIJizcRni5ZwokRq-qMYfpKxB4,NYC,,Valid: Chinta Thai (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 151
+Third Falcon Fort Greene,Third Falcon,360 Myrtle Avenue,ChIJT0Pe_qJbwokR6Ql0YY5qF8I,NYC,,Valid: Third Falcon (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 745
+Veselka Williamsburg,Veselka (Williamsburg),75 East 1st Street,ChIJZyqIQwBZwokR1lSPyPdTLoM,NYC,,Invalid: Name match (1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 789
+Veselka Williamsburg,Veselka Restaurant,75 East 1st Street,ChIJZyqIQwBZwokR1lSPyPdTLoM,NYC,,Invalid: Name match (1.00),NO_MATCH,0.0,,,No confident match found
+Fulgurances Greenpoint,Fulgurances,132 Franklin St,ChIJcelSUXlZwokRkD8zyKGV6k4,NYC,,Valid: Fulgurances (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 251
+Sagaponack Flatiron,Sagaponack in Flatiron District,4 W 22nd St,ChIJuXGLjqNZwokRDEG5LwpEBzk,NYC,,Valid: Sagaponack (conf: 0.60),MATCHED,1.0,verified_place_id,,Matched to DB row 582
+The Brixton Marina,The Brixton,2140 Union Street,ChIJr066l9qAhYARBzcA3aD1zXM,SF,,Valid: The Brixton (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 693
+Palm House Marina,Palm House,2032 Union Street,ChIJtX1s3tqAhYAR8RDMpH2eHbw,SF,,Valid: Palm House (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 508
+Torch & Crown Brewing Company SOHO,Torch & Crown Brewing Company,12 Vandam Street,ChIJFcrad0_1wokRgswE_VOwb4o,NYC,,Valid: Torch & Crown Brewing Company (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 755
+Hazie's Hayes Valley,Hazie's,501 Hayes Street,ChIJn-6m802BhYARruM4u0h9-Bc,SF,,Invalid: Address match (0.86),MATCHED,1.0,verified_place_id,,Matched to DB row 276
+Maman Cobble Hill,Maman- Cobble Hill,,ChIJuedIXXtbwokROUHVzt-XCtM,NYC,,Invalid: Low confidence match,MATCHED,1.0,verified_place_id,,Matched to DB row 431
+Maman Battery Park,Maman- Battery Park,,ChIJVxpH38xbwokRRcqSwuRVwW4,NYC,,Invalid: Low confidence match,MATCHED,1.0,verified_place_id,,Matched to DB row 430
+Leon's,leonsnyc.com,817 Broadway,ChIJPfXBCwBZwokRI2bnWBxCQCE,NYC,,Valid: Leon's (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 368
+Indian Accent Indian Accent,,,,NYC,,Not found,MATCHED,1.0,verified_place_id,,Matched to DB row 368
+Koloman - Breakfast Club,Koloman,16 W 29th St,ChIJUUBMchNZwokRwDOHIFhOIHA,NYC,,Invalid: Partial address match (0.77),MATCHED,1.0,verified_place_id,,Matched to DB row 334
+Runner Up Park Slope,Winner / Runner Up,367 7th Avenue,ChIJa7TQMZFbwokRjivvo3SFNDQ,NYC,,Valid: Runner Up (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 579
+Veselka East Village,Veselka Restaurant,75 East 1st Street,ChIJlxDiXJxZwokRp4HHbeYqXXU,NYC,,Invalid: Low confidence match,MATCHED,1.0,verified_place_id,,Matched to DB row 787
+Baguette Magic West Ashley,Baguette Magic - West Ashley,792 Folly Rd Unit A,ChIJcRYyVQp5_ogRzddEPU6O5fA,CHS,,Corrected: Baguette Magic Folly Rd (conf: 0.81),MATCHED,1.0,verified_place_id,,Matched to DB row 46
+Baguette Magic James Island,Baguette Magic - Folly Road,792 Folly Road,ChIJcRYyVQp5_ogRzddEPU6O5fA,CHS,,Valid: Baguette Magic Folly Rd (conf: 0.80),NO_MATCH,0.0,,,No confident match found
+Alcove Market Harleston Village,Easton & Porter Group,5022 Plank Road,ChIJp0iulmp7_ogRjrA23hLK_Fs,CHS,,Invalid: Low confidence match,MATCHED,1.0,verified_place_id,,Matched to DB row 14
+Alcove Market Harleston Village,Alcove Market,320 Broad St Suite 155,ChIJp0iulmp7_ogRjrA23hLK_Fs,CHS,,Invalid: Address match (0.86),NO_MATCH,0.0,,,No candidates passed pre-filtering
+Veselka Grand Central,Veselka (Grand Central),,ChIJVZ111KNZwokRisf1cc9jgxg,NYC,,Invalid: Name match (0.82),MATCHED,1.0,verified_place_id,,Matched to DB row 788
+Veselka Grand Central,Veselka Restaurant,75 East 1st Street,ChIJVZ111KNZwokRisf1cc9jgxg,NYC,,Invalid: Name match (0.82),NO_MATCH,0.0,,,No candidates passed pre-filtering
+6restaurant.com,6restaurant.com,481 Court Street,ChIJDfRavFtbwokRijMBw1NobfM,NYC,,Valid: 6 Restaurant - NYC (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 4
+Dalida Mission,Dalida,101 Montgomery Street,ChIJ-0oK-amHhYARzNhyX0KQcEg,SF,,Invalid: Address match (0.89),MATCHED,1.0,verified_place_id,,Matched to DB row 172
+Okane Potrero Hill,Omakase Restaurant Group,25 Division Street,ChIJjaWT5yx-j4AR0S6cwdgnD4Q,SF,,Invalid: Low confidence match,MATCHED,1.0,verified_place_id,,Matched to DB row 494
+Okane Potrero Hill,Okane,669 Townsend Street,ChIJjaWT5yx-j4AR0S6cwdgnD4Q,SF,,Invalid: Address match (0.88),NO_MATCH,0.0,,,No candidates passed pre-filtering
+Dumpling Time Design District,Dumpling Time - Design District,11 Division Street,ChIJ1anaJC1-j4ARf_9BjfDowt8,SF,,Valid: Dumpling Time Design District (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 192
+Dumpling Time Design District,Omakase Restaurant Group,25 Division Street,ChIJ1anaJC1-j4ARf_9BjfDowt8,SF,,Valid: Dumpling Time Design District (conf: 0.80),NO_MATCH,0.0,,,No confident match found
+Dumpling Time Mission Bay,Dumpling Time - Mission Bay,"191 Warriors Way Suite 101, San Francisco, CA 94158",ChIJR2AhaXJ_j4ARScj6r58240E,SF,,Valid: Dumpling Time (conf: 0.60),MATCHED,1.0,verified_place_id,,Matched to DB row 193
+Dumpling Time Mission Bay,Omakase Restaurant Group,25 Division Street,ChIJ1anaJC1-j4ARf_9BjfDowt8,SF,,Corrected: Dumpling Time Design District (conf: 0.71),NO_MATCH,0.0,,,No candidates passed pre-filtering
+Omakase  Design District,Omakase,665 Townsend Street,ChIJFYz55yx-j4ARFUpWF0lt4gw,SF,,Invalid: Address match (0.88),MATCHED,1.0,verified_place_id,,Matched to DB row 495
+Omakase  Design District,Omakase Restaurant Group,25 Division Street,ChIJFYz55yx-j4ARFUpWF0lt4gw,SF,,Invalid: Low confidence match,NO_MATCH,0.0,,,No candidates passed pre-filtering
+Live Sushi Bar Potrero Hill,Omakase Restaurant Group,25 Division Street,ChIJtSa-BDN-j4ARVOuKy9mDdhw,SF,,Invalid: Partial name match (0.65),MATCHED,1.0,verified_place_id,,Matched to DB row 395
+Live Sushi Bar Potrero Hill,Live Sushi Bar,2001 17th Street,ChIJtSa-BDN-j4ARVOuKy9mDdhw,SF,,Valid: Live Sushi Bar (conf: 0.80),NO_MATCH,0.0,,,No candidates passed pre-filtering
+The Third Floor Chinatown,The Third Floor,433 Clay Street,ChIJ5ZJ8MmCAhYARlWdcG-Y51NM,SF,,Valid: The Third Floor (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 740
+The Third Floor Chinatown,Omakase Restaurant Group,25 Division Street,ChIJ2ymtQCZawokR3TqprhVK8E4,SF,,Corrected: San Kiang Charitable Association (conf: 0.63),NO_MATCH,0.0,,,No candidates passed pre-filtering
+Prelude Union Square,Prelude,650 Church Street,ChIJAQCwLWCAhYARA4NhRN-ExYs,SF,,Invalid: Low confidence match,MATCHED,1.0,verified_place_id,,Matched to DB row 541
+Prelude Union Square,Omakase Restaurant Group,25 Division Street,ChIJAQCwLWCAhYARA4NhRN-ExYs,SF,,Invalid: Low confidence match,NO_MATCH,0.0,,,No candidates passed pre-filtering
+Itria Mission,Itria,3266 24th Street,ChIJg0a43A5_j4ARH8IaUaRVUCs,SF,,Invalid: Address match (0.86),MATCHED,1.0,verified_place_id,,Matched to DB row 306
+Elephant District Dumbo,Elephant District,,ChIJIQFtrv1bwokRkEaNwb8ltZQ,NYC,,Invalid: Name match (0.85),MATCHED,1.0,verified_place_id,,Matched to DB row 197
+Balzem Nolita,Balzem,202 Mott St,ChIJa128pIhZwokRnoPKJguYBCA,NYC,,Valid: Balzem (conf: 0.80),NO_MATCH,0.0,,,No candidates passed pre-filtering
+Le Rivage Le Rivage,Le Rivage,340 W 46th St,ChIJP9968FNYwokRluXA9d7952g,NYC,,Valid: Le Rivage (conf: 0.60),MATCHED,1.0,verified_place_id,,Matched to DB row 372
+Gair Dumbo,Gair,41 Washington St,ChIJTZIC-AdbwokRPwk_gzcoNNs,NYC,,Invalid: Address match (0.89),MATCHED,1.0,verified_place_id,,Matched to DB row 252
+Henry & The Lions Chelsea,Henry & The Lions,,ChIJFwCwrbpZwokRaS7l5yPwQyM,NYC,,Invalid: Name match (0.81),MATCHED,1.0,verified_place_id,,Matched to DB row 282
+Tacolicious Marina,Tacolicious,2250 Chestnut Street,ChIJkbv8N9eAhYARMyu5POX9pRk,SF,,Valid: Tacolicious (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 653
+Arcana Mission,Arcana,2512 Mission Street,ChIJyf4Rywl_j4ARyOJZrnvV0Wc,SF,,Invalid: Address match (0.88),MATCHED,1.0,verified_place_id,,Matched to DB row 35
+Share House Downtown,Share House,,ChIJYTrmDWh7_ogRu2xztQY2jCI,CHS,,Invalid: Partial name match (0.71),MATCHED,1.0,verified_place_id,,Matched to DB row 598
+Uptown Social Downtown,Uptown Social,587 King St,ChIJK_IU5Gl6_ogRSRZ2slY7U48,CHS,,Valid: Uptown Social (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 776
+WINNER in the Park Park Slope,Winner in the Park,367 7th Avenue,ChIJg8UZJyNbwokR0-LkfR8MPJQ,NYC,,Invalid: Address match (0.88),MATCHED,1.0,verified_place_id,,Matched to DB row 800
+WINNER Butcher Park Slope,Winner Butcher,367 7th Avenue,ChIJg8UZJyNbwokR0-LkfR8MPJQ,NYC,,Corrected: WINNER (conf: 0.63),NO_MATCH,0.0,,,No confident match found
+Octavia Pacific Heights,Octavia,1701 Octavia Street,ChIJs32Mdr-AhYARZmI19fIPvOM,SF,,Invalid: Address match (0.88),MATCHED,0.95,claude_verified,,Matched to DB row 492
+Mosto Mission,MOSTO,741-A Valencia St,ChIJvfcHtPR_j4ARiPrad4Watgo,SF,,Invalid: Address match (0.86),MATCHED,1.0,verified_place_id,,Matched to DB row 473
+Tacolicious Mission,Tacolicious,741 Valencia Street,ChIJfxUo-Od_j4ARz1tjyoQIPAM,SF,,Valid: Tacolicious (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 654
+La Noxe Chelsea,La Noxe,10 River Road #5M,ChIJpy4I5A1ZwokRkeVFxbwI2f8,NYC,,Invalid: Partial name match (0.64),MATCHED,1.0,verified_place_id,,Matched to DB row 354
+Tacolicious (Marina) - Bar Blackbird,Tacolicious,2250 Chestnut Street,ChIJkbv8N9eAhYARMyu5POX9pRk,SF,,Invalid: Address match (0.89),NO_MATCH,0.0,,,No candidates passed pre-filtering
+MOSTO - Bar Blackbird,MOSTO,741-A Valencia St,ChIJvfcHtPR_j4ARiPrad4Watgo,SF,,Invalid: Address match (0.86),NO_MATCH,0.0,,,No confident match found
+Hazie's - BAR BLACKBIRD,Hazie's,501 Hayes Street,ChIJn-6m802BhYARruM4u0h9-Bc,SF,,Invalid: Address match (0.86),NO_MATCH,0.0,,,No candidates passed pre-filtering
+The Brixton - BAR BLACKBIRD,The Brixton,2140 Union Street,ChIJr066l9qAhYARBzcA3aD1zXM,SF,,Valid: The Brixton (conf: 0.80),NO_MATCH,0.0,,,No candidates passed pre-filtering
+6 Tables Marina,6 Tables,1849 Union St.,ChIJ6zLGfVeBhYARVqQDL4-aTmg,SF,,Valid: 6 Tables (conf: 0.80),NO_MATCH,0.0,,,No candidates passed pre-filtering
+Okaeri Japanese Bistro,Okaeri Japanese Bistro,"3515 20th St, ",ChIJc2x-KdV_j4ARr3s50-Q5LcE,SF,,Valid: Okaeri Japanese Bistro (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 493
+Bar Madonna Williamsburg,Bar Madonna,367 Metropolitan Ave,ChIJUWhXmjpZwokRjvRZ1_vjTqI,NYC,,Invalid: Address match (0.93),MATCHED,1.0,verified_place_id,,Matched to DB row 56
+Castro Indian Restaurant & Bar The Castro,Castro Indian Restaurant & Bar,468 Castro St.,ChIJETxWCZN_j4ARf1B301i5-ys,SF,,Valid: Castro Indian Restaurant & Bar (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 140
+Bar Iris Russian Hill,Bar Iris,2310 Polk Street,ChIJQ3FRFZ-BhYAR3Rt6OXN6hSo,SF,,Invalid: Address match (0.86),MATCHED,1.0,verified_place_id,,Matched to DB row 55
+The Mary Lane,The Mary Lane,"99 Bank St, New York, NY 10014",ChIJvfpl3GpZwokR9Doyl16Ku_w,NYC,,Valid: The Mary Lane (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 718
+Sightsee Hampton Park Terrace,Sightsee Shop,"125½, Line St",ChIJ28KoQWN7_ogRzSP8Hzqzfhw,CHS,,Invalid: Low confidence match,MATCHED,1.0,verified_place_id,,Matched to DB row 604
+Seamore's Brookfield Place,Seamore's,66 Water St,ChIJh2voNWlbwokRfmpK-ELePzA,NYC,,Invalid: Name match (1.00),MATCHED,0.95,claude_verified,,Matched to DB row 589
+The Test Brewery Williamsburg,The Test Brewery,302 Metropolitan Avenue,ChIJYflFPQBZwokRLloJXYjDNEA,NYC,,Valid: The Test Brewery (conf: 0.80),NO_MATCH,0.0,,,No candidates passed pre-filtering
+StarChild Rooftop,Starchild Rooftop Bar & Lounge,305 W 48th St,ChIJZa0wOP5ZwokRsVyDcNLoUlg,NYC,,Valid: Starchild Rooftop Bar & Lounge (conf: 0.60),MATCHED,1.0,verified_place_id,,Matched to DB row 626
+StarChild Rooftop,Carver Road Hospitality,"305 W 48th St NY NY (Billing is Rabble HK LLC, 197 E California Ave Suite #270 Las Vegas NV)",ChIJZa0wOP5ZwokRsVyDcNLoUlg,NYC,,Valid: Starchild Rooftop Bar & Lounge (conf: 0.60),NO_MATCH,0.0,,,No candidates passed pre-filtering
+Rosevale Kitchen Midtown,Rosveale Kitchen,,ChIJ_XQGaExZwokRTmvrhBoWHUY,NYC,,Invalid: Low confidence match,MATCHED,1.0,verified_place_id,,Matched to DB row 571
+Rosevale Kitchen Midtown,Carver Road Hospitality,"305 W 48th St NY NY (Billing is Rabble HK LLC, 197 E California Ave Suite #270 Las Vegas NV)",ChIJrWLMUSRZwokRw4YGLeGNJbU,NYC,,Corrected: Rosevale Kitchen (conf: 0.63),NO_MATCH,0.0,,,No candidates passed pre-filtering
+Rosevale Cocktail Bar,Carver Road Hospitality,"305 W 48th St NY NY (Billing is Rabble HK LLC, 197 E California Ave Suite #270 Las Vegas NV)",ChIJ_XQGaExZwokRTmvrhBoWHUY,NYC,,Invalid: Name match (0.87),NO_MATCH,0.0,,,No confident match found
+Rosevale Cocktail Bar,Rosevale Cocktail Room,305 West 48th Street,ChIJ_XQGaExZwokRTmvrhBoWHUY,NYC,,Valid: Rosevale Cocktail Room (conf: 0.80),NO_MATCH,0.0,,,No confident match found
+Trick Dog Mission,Trick Dog,3010 20th Street,ChIJFc-4Pzd-j4ARf66cV7PRZxw,SF,,Valid: Trick Dog (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 761
+The Harlow James Island,The Harlow,1015 Harbor View Rd,ChIJhXhO4UR5_ogRMvd7NEEgzSY,CHS,,Valid: The Harlow (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 710
+Paradiso Restaurant + Bar Park Circle,Paradiso Charleston,4401 McCarthy Street,ChIJ6cgIbrxk_ogR4K7YKh2pdv8,CHS,,Valid: Paradiso Charleston (conf: 0.80),MATCHED,0.95,claude_verified,,Matched to DB row 512
+The Archer East Central,The Archer,,ChIJPaaxZsJ7_ogRSbOGoLwL9VY,CHS,,Invalid: Partial name match (0.61),MATCHED,1.0,verified_place_id,,Matched to DB row 683
+Phoenix Palace Chinatown,Phoenix Palace,,ChIJQfxkBwBbwokRdqZAdAUuTFc,NYC,,Invalid: Partial name match (0.74),MATCHED,1.0,verified_place_id,,Matched to DB row 527
+Levantine,Levantine,"361 Graham Ave, Brooklyn, NY 11211",ChIJvTv-1VBZwokRi3Wl2t2QvVY,NYC,,Invalid: Address match (0.94),MATCHED,1.0,verified_place_id,,Matched to DB row 374
+Callie's Hot Little Biscuit King Street,Callie's Hot Little Biscuit (Meeting Street),1895 Avenue F,ChIJl-zNdUzIq6URnekNUyTyGog,CHS,,Corrected: Callie's Hot Little Biscuit Catering (conf: 0.85),NO_MATCH,0.0,,,No confident match found
+Berkeley’s Hampton Park Terrace,Berkeley's,,ChIJZ8LPDn57_ogRtfAHxwB8VdI,CHS,,Invalid: Low confidence match,MATCHED,1.0,verified_place_id,,Matched to DB row 73
+The Market at Paradiso Park Circle,Paradiso Charleston,4401 McCarthy Street,ChIJN5ZDFQJl_ogRgxo2x_fmfiY,CHS,,Corrected: The Market @ Paradiso (conf: 0.79),MATCHED,1.0,verified_place_id,,Matched to DB row 717
+The Patio Marina,The Patio,3232 Scott Street,ChIJ8anRoNaAhYARw_7AiSXOyBI,SF,,Valid: The Patio (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 727
+Veranda Lounge,Veranda Lounge,61 State St,ChIJaZ77_iZ7_ogRkIbToV7u2Hs,CHS,,Valid: Veranda Lounge (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 778
+The Bar at The Spectator,The Bar at The Spectator,"67 State St, Charleston, SC 29401",ChIJwXiSIp97_ogR81S_Th4qiVs,CHS,,Valid: The Bar at The Spectator (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 685
+Bar Iris -BAR BLACKBIRD- New Deal,Bar Iris,2310 Polk Street,ChIJQ3FRFZ-BhYAR3Rt6OXN6hSo,SF,,Invalid: Address match (0.86),NO_MATCH,0.0,,,No candidates passed pre-filtering
+The Greats of Craft Midtown East,The Greats of Craft - Midtown East,983 1st Ave.,ChIJs6AxqHdZwokRwkvw64aePmI,NYC,,Valid: The Greats of Craft (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 707
+The Greats of Craft LIC,The Greats of Craft - LIC,,ChIJL0xJb_ZZwokRfmKufMDAycE,NYC,,Invalid: Name match (1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 706
+Little Charli Greenwich Village,Little Charli East Hampton,271 Bleecker St,ChIJi9KyP7JZwokRODCiGhV2_KI,LI,,Invalid: Address match (0.88),MATCHED,1.0,verified_place_id,,Matched to DB row 383
+Brooklyn Brewery Williamsburg,Brooklyn Brewery,79 North 11th Street,ChIJUaAuMl1ZwokRt0-S_ynnRtc,NYC,,Valid: Brooklyn Brewery (conf: 0.60),MATCHED,1.0,verified_place_id,,Matched to DB row 108
+Good Thanks Williamsburg,Good Thanks- Williamsburg,31 Orchard Street,ChIJYzGsnstZwokRkcK34hMLbV0,NYC,,Invalid: Partial name match (0.63),MATCHED,1.0,verified_place_id,,Matched to DB row 260
+Roberta's Williamsburg,Roberta's Domino Park,261 Moore Street,ChIJby7B1blZwokRzCBPwiaSbTY,NYC,,Invalid: Low confidence match,MATCHED,1.0,verified_place_id,,Matched to DB row 561
+Cha Cha Tang West Village,Cha Chan Tang,257 6th Avenue,ChIJteQQa4RZwokRxrQRw-hpCqI,NYC,,Valid: Cha Cha Tang (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 143
+Verde Mount Pleasant,Verde Restaurant - Mt. Pleasant,,ChIJ5bKJ9dtx_ogRC2LndtxGrNM,,,Invalid: Low confidence match,MATCHED,1.0,verified_place_id,,Matched to DB row 780
+Verde - King Street,Verde - King St.,433 King Street,ChIJg7b6WRN6_ogRMxXw1kPkUEM,CHS,,Invalid: Address match (0.85),MATCHED,1.0,verified_place_id,,Matched to DB row 782
+Little Rascal Nolita,Little Rascal,163 Elizabeth St,ChIJL8FQnohZwokRtuZZu_mQ_xI,NYC,,Valid: Little Rascal (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 394
+Little Rascal Greenpoint,Little Rascal- Greenpoint,163 Elizabeth Street,ChIJL8FQnohZwokRtuZZu_mQ_xI,NYC,,Corrected: Little Rascal (conf: 0.80),NO_MATCH,0.0,,,No confident match found
+Brown Dog Deli Harleston Village,Brown Dog Deli,225 Calhoun St,ChIJHRq3Sw56_ogRsVgGoXhhptQ,CHS,,Valid: Brown Dog Deli (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 112
+Verde MUSC Main Hospital,Verde Restaurant - MUSC Main Hospital,,ChIJv9sG_FBawokRla6TIaJSNM4,NYC,,Invalid: Low confidence match,NO_MATCH,0.0,,,No candidates passed pre-filtering
+Verde  Airport,Verde Restaurant - Charleston International Airport,,ChIJK_CSR6Bl_ogRvvcG30aQ4k4,CHS,,Invalid: Low confidence match,MATCHED,1.0,verified_place_id,,Matched to DB row 781
+Verde College of Charleston,Verde Restaurant - College of Charleston,,ChIJK_CSR6Bl_ogRvvcG30aQ4k4,CHS,,Invalid: Low confidence match,MATCHED,1.0,verified_place_id,,Matched to DB row 786
+Bar Enzo Long Island City,The Greats of Craft - Bar Enzo - LIC,,ChIJD_uCNtNZwokR8uyJSOjMuZQ,NYC,,Invalid: Low confidence match,MATCHED,1.0,verified_place_id,,Matched to DB row 53
+Verde Avondale,Verde Restaurant - Avondale,,ChIJGXy4c8J7_ogR3zm4tOX3Bc4,NYC,,Invalid: Low confidence match,MATCHED,1.0,verified_place_id,,Matched to DB row 779
+Verde Belle Hall,Verde Restaurant - Belle Hall,,ChIJ5bKJ9dtx_ogRC2LndtxGrNM,NYC,,Invalid: Low confidence match,NO_MATCH,0.0,,,No candidates passed pre-filtering
+Verde Park Circle,Verde Restaurant - Park Circle,,ChIJK_CSR6Bl_ogRvvcG30aQ4k4,CHS,,Invalid: Low confidence match,NO_MATCH,0.0,,,No confident match found
+Verde MUSC - Ashley River Tower,Verde Restaurant - MUSC Ashley River Tower,,ChIJi2WKszl6_ogRfD7bDDJVkCs,NYC,,Invalid: Partial name match (0.72),NO_MATCH,0.0,,,No candidates passed pre-filtering
+Trick Dog-BAR BLACKBIRD,Trick Dog,3010 20th Street,ChIJFc-4Pzd-j4ARf66cV7PRZxw,SF,,Invalid: Address match (0.86),NO_MATCH,0.0,,,No candidates passed pre-filtering
+Local Roots Market57,localroots.nyc,101 Warren Street,ChIJOVrVlpJZwokRyWwXfTLLV3M,NYC,,Invalid: Partial name match (0.67),MATCHED,1.0,verified_place_id,,Matched to DB row 402
+Clerks Downtown,Clerks Coffee Company,181 Church St,ChIJwQPCRS17_ogRXFQ2EbBGdz4,CHS,,Invalid: Address match (0.87),NO_MATCH,0.0,,,No confident match found
+Frannie & The Fox Downtown,Frannie & The Fox,181 Church Street,ChIJOetRgzp7_ogR_eJsx6ttGls,CHS,,Valid: Frannie & The Fox (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 243
+Cafe Colette,Cafe Colette,79 Berry St,ChIJBanVDl1ZwokROc3C9FpKZ78,NYC,,Valid: Cafe Colette (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 120
+Carriage House,Carriage House,142 West 10th Street,ChIJlzm4NCRZwokRGSjvjX5yFvI,NYC,,Valid: Carriage House NYC (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 137
+Meraki Williamsburg,Meraki Greek Bistro,142 Southeast 1st Avenue,ChIJQbmcEdFZwokRR02fTE9tLhA,NYC,,Invalid: Partial name match (0.75),NO_MATCH,0.0,,,No candidates passed pre-filtering
+Ruffian East Village,Ruffian,125 East 7th Street,ChIJHfvtRp1ZwokREpFE8Z1BEKs,NYC,,Invalid: Partial address match (0.77),MATCHED,1.0,verified_place_id,,Matched to DB row 577
+Breeze Greenpoint,Breeze,,ChIJayMXxXBZwokRq41Uj462dS0,NYC,,Invalid: Low confidence match,MATCHED,1.0,verified_place_id,,Matched to DB row 104
+Spaghetti Incident Lower East Side,Spaghetti Incident,231 Eldridge Street,ChIJa00rEYRZwokRP-GRuN-bLTQ,NYC,,Valid: Spaghetti Incident (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 614
+TALEA Beer Co. - Penn District,TALEA Beer Co.,"22 W 40th St, New York, NY 10018",ChIJnc6ISERZwokRcs56foDArOM,NYC,,Valid: TALEA Beer Penn District (conf: 0.80),MATCHED,0.95,claude_verified,,Matched to DB row 671
+Bar Sprezzatura Financial District,Bar Sprezzatura,"One Maritime Plaza, #100",ChIJU00uDM6BhYAR_ZOluZ0m4qA,SF,,Invalid: Address match (0.96),MATCHED,0.95,claude_verified,,Matched to DB row 63
+Bad Roman Columbus Circle,Bad Roman,"3rd floor, 10 Columbus Cir",ChIJG0fkfuJZwokRqmAxXTpYP2I,NYC,,Invalid: Address match (0.90),MATCHED,1.0,verified_place_id,,Matched to DB row 45
+Twin Tails Columbus Circle,Twin Tails,10 Columbus Circle 3rd Floor,ChIJbxASGTNZwokR9eIMYL28EQE,NYC,,Invalid: Address match (0.93),MATCHED,1.0,verified_place_id,,Matched to DB row 764
+Alphabet City Beer Co. Lower East Side,Alphabet City Beer Co.,"6 Loisaida Ave, New York, NY 10009",ChIJWaWbwHlZwokRj1wHkvB84zE,NYC,,Valid: Alphabet City Beer Co. (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 24
+Bar Sprezzatura-BAR BLACKBIRD,Bar Sprezzatura,"One Maritime Plaza, #100",ChIJNVkbEwBZwokRcQJBrkU_Wuo,SF,,Invalid: Low confidence match,MATCHED,1.0,verified_place_id,,Matched to DB row 62
+Zou Zou's Hudson Yards,Zou Zou's,385 9th Avenue,ChIJKVbn75VZwokRLdlBWe5rbtU,NYC,,Invalid: Address match (0.88),MATCHED,1.0,verified_place_id,,Matched to DB row 810
+MADELINE'S,MADELINE'S,"113 Franklin St FC, Brooklyn, NY 11222",ChIJzSqlSxpZwokRnXgKKOO_yWE,NYC,,Valid: Madeline's (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 417
+Wine:30,Wine:30,41 E 30th St,ChIJiUAH6adZwokRfDpIF52xwuo,NYC,,Valid: Wine:30 (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 799
+Arthur and Sons Murray Hill,Arthur & Sons Murray Hill,145 East 39th Street,ChIJ5wRLNwBZwokRCRy7BYuPh6w,NYC,,Valid: Arthur & Sons NY Italian Murray Hill (conf: 0.60),MATCHED,0.95,claude_verified,,Matched to DB row 38
+Hudson Club Midtown,Hudson Club,136 w 55th st,ChIJZ49dwcNZwokRtUHt_n4BYME,NYC,,Valid: Hudson Club (conf: 0.60),MATCHED,1.0,verified_place_id,,Matched to DB row 289
+5ive Spice- Nolita,5ive Spice- Nolita,"227 Mulberry St, New York, NY 10012",ChIJO1_22AhZwokRm6t3InR_YCQ,NYC,,Valid: 5ive Spice Taco & Banh Mi (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 3
+Wildflower Chelsea,Wildflower,505 W 23rd St,ChIJnReZJQBZwokRRwOUbuV7JzE,NYC,,Valid: Wildflower (conf: 0.60),MATCHED,1.0,verified_place_id,,Matched to DB row 797
+5ive Spice- Grammercy,5ive Spice- Gramercy,"363 3rd Ave New York, NY 10016",ChIJg_hIprRZwokRG4Dms5riUOU,NYC,,Valid: 5ive Spice (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 2
+Milos Meze,Milos Meze,3348 Steiner St.,ChIJz5elL9eAhYARHEkGT1LSNkc,SF,,Valid: Milos Meze (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 452
+KAIYŌ Rooftop SOMA,KAIYO ROOFTOP,"701 3rd St 12th Floor,",ChIJAS1jCN5_j4AR_KeMCaeunWw,SF,,Valid: KAIYO ROOFTOP (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 321
+Kid,Kid,,ChIJg0HWjBpawokRzYQIfpNPsSo,NYC,,Invalid: Low confidence match,MATCHED,1.0,high_similarity,,Matched to DB row 328
+The Greats of Craft - Midtown East- Bfast Pass,The Greats of Craft - Midtown East,983 1st Ave.,ChIJs6AxqHdZwokRwkvw64aePmI,NYC,,Invalid: Address match (0.96),NO_MATCH,0.0,,,No candidates passed pre-filtering
+Motel Morris Chelsea,The Morris,132 7th Ave,ChIJEc5RXrxZwokR2Zud13FFqR0,NYC,,Valid: Motel Morris (conf: 0.80),NO_MATCH,0.0,,,No confident match found
+X-Golf Williamsburg,X Golf Brooklyn,225 South Main Street,ChIJeYgCuyJZwokR1g2Im-QCgtk,NYC,,Invalid: Low confidence match,MATCHED,1.0,verified_place_id,,Matched to DB row 805
+KAIYO ROOFTOP - BAR BLACKBIRD-New Deal,KAIYO ROOFTOP,"701 3rd St 12th Floor,",ChIJAS1jCN5_j4AR_KeMCaeunWw,SF,,Invalid: Address match (0.88),MATCHED,1.0,verified_place_id,,Matched to DB row 322
+Tacombi - nolita,Tacombi,"267 Elizabeth St, New York, NY 10012",ChIJdfD8moVZwokRO6vxjXAtoWs,NYC,,Valid: Tacombi (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 662
+Tacombi - nolita,Tacombi (Parent Company),265 Bowery,ChIJdfD8moVZwokRO6vxjXAtoWs,NYC,,Invalid: Partial name match (0.61),NO_MATCH,0.0,,,No confident match found
+Kaiyo Soma,KAIYO RESTAURANT,"701 3RD ST, FLOOR 1",ChIJAS1jCN5_j4AR_KeMCaeunWw,SF,,Valid: KAIYO ROOFTOP (conf: 0.60),NO_MATCH,0.0,,,No candidates passed pre-filtering
+Midnights,Midnights,149 North 6th Street,ChIJoerR5V1ZwokRu55P9DJaNEo,NYC,,Valid: MIDNIGHTS (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 445
+Midnights,X Golf Brooklyn,225 South Main Street,ChIJoerR5V1ZwokRu55P9DJaNEo,NYC,,Invalid: Name match (1.00),NO_MATCH,0.0,,,No candidates passed pre-filtering
+Cecilia East Village,Cecilia,97 St Marks Pl,ChIJOxW7qFFZwokR-KdRrjd3o9w,NYC,,Invalid: Partial address match (0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 142
+Hank's Seafood Restaurant Radcliffborough,Hank's Seafood Restaurant,10 Hayne St,ChIJt5BmhQ16_ogRbwSj1J64dmA,CHS,,Valid: Hank's Seafood Restaurant (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 271
+Milk & Hops Chelsea,Milk & Hops,166 9th Ave,ChIJN6avE7lZwokRZrgdqFX1f6Y,NYC,,Valid: Milk & Hops (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 449
+Twist Bar,Twist Bar,,ChIJL8iG0HNZwokR70zQBzoMKTc,NYC,,Invalid: Partial name match (0.71),MATCHED,1.0,verified_place_id,,Matched to DB row 765
+Little Palm Downtown,Little Palm,237 Meeting St,ChIJC4n-xyN7_ogRFpS2Bz2a7Wg,CHS,,Valid: Little Palm (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 391
+The Coffee Counter French Quarter,The Coffee Counter,237 Meeting Street,ChIJU3WDczx7_ogR525G2DE5d8Q,CHS,,Valid: The Coffee Counter at The Ryder (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 696
+Kru,Kru,190 North 14th Street,ChIJz0Bt0ldZwokR698-eT0Dh88,NYC,,Invalid: Partial address match (0.76),MATCHED,1.0,verified_place_id,,Matched to DB row 340
+Kings of Kobe - Wagyu Kitchen & Bar Hell's Kitchen,Kings of Kobe,650 W 42nd St,ChIJlaUCHbxZwokRUPWZkyNQyYg,NYC,,Valid: Kings of Kobe - Wagyu Kitchen & Bar (conf: 0.60),MATCHED,1.0,verified_place_id,,Matched to DB row 332
+Amarena Russian Hill,Amarena,2162 Larkin Street,ChIJM7I8HemAhYARjCsAkDZd_D8,SF,,Invalid: Address match (0.88),NO_MATCH,0.0,,,No candidates passed pre-filtering
+Wabi Nori,Wabi Nori,"115 Essex St, New York, NY 10002",ChIJSU8szcZZwokRurWGO4cm_3g,NYC,,Invalid: Address match (0.93),MATCHED,1.0,verified_place_id,,Matched to DB row 792
+Fan Fan Doughnuts Clinton Hill,Fan Fan Doughnuts,448 Lafayette Avenue,ChIJ-eBifR5bwokRgXeVyNhDBFg,NYC,,Valid: Fan Fan Doughnuts (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 220
+Bar Six,Bar Six,"502 6th Ave, New York, NY 10011",ChIJ9bgCzJdZwokRvm_6RoQ8edg,NYC,,Invalid: Address match (0.94),MATCHED,1.0,verified_place_id,,Matched to DB row 61
+Wild East Brewing Co.,Wild East Brewing Co.,"623 Sackett St, Brooklyn, NY 11217",ChIJCb9dhqVbwokRRWJzMd-IdYk,NYC,,Valid: Wild East Brewing Co. (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 796
+Due West West Village,Due West,189 W 10th St,ChIJEyUgYZRZwokRETFRosKubF8,NYC,,Invalid: Token overlap (0.67); Partial address match (0.79),MATCHED,1.0,verified_place_id,,Matched to DB row 191
+Mijo Chelsea,Mijo (Chelsea),25 West 11th Street,ChIJYz7xMA1ZwokRKF9e6rssLcA,NYC,,Invalid: Low confidence match,MATCHED,1.0,verified_place_id,,Matched to DB row 446
+The Purple Tongue Wine Bar,Purple Tongue,"410 W 43rd St, New York, NY 10036",ChIJw4INJQBZwokRQDsl00Ujaig,NYC,,Valid: The Purple Tongue Wine Bar (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 729
+Ricco Mediterranean Restaurant Marina,Ricco Mediterranean Restaurant,3145 Fillmore Street,ChIJT38zVACBhYARt6kXf2xuSvs,SF,,Valid: Ricco Mediterranean (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 556
+Fornino Greenpoint,Fornino,849 Manhattan Ave,ChIJx1Bo1EBZwokRUZ_xdNzvcLY,NYC,,Invalid: Address match (0.92),MATCHED,1.0,verified_place_id,,Matched to DB row 237
+Falu House,Falu House,,ChIJbwTrdABZwokRJBMnW6dXFoM,NYC,,Invalid: Name match (1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 219
+Amelie  Polk Gulch,Amelie San Francisco,1754 Polk Street,ChIJ88G-quuAhYAR7bj0Yhr8gwI,SF,,Invalid: Address match (0.86),MATCHED,1.0,verified_place_id,,Matched to DB row 28
+Bergerac SoMa,Bergerac,316 11th Street,ChIJ5wZMMyZ-j4ARDpT0d0kIx7A,SF,,Valid: Bergerac (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 72
+Nowon - East Village East Village,Nowon East Village,507 e 6th street,ChIJjReAQKxZwokRnnraeb2WJ18,NYC,,Valid: Nowon East Village (conf: 0.60),MATCHED,1.0,verified_place_id,,Matched to DB row 489
+Nowon Bushwick,Nowon Bushwick,436 Jefferson Street,ChIJCzyNLENbwokR-lXh5FtzU70,NYC,,Valid: Nowon Bushwick (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 488
+Nowon - Bushwick Bushwick,Nowon Bushwick,436 Jefferson Street,ChIJCzyNLENbwokR-lXh5FtzU70,NYC,,Valid: Nowon Bushwick (conf: 0.80),NO_MATCH,0.0,,,No candidates passed pre-filtering
+LaRina Pastificio & Vino,LaRina Pastificio & Vino,"387 Myrtle Ave, Brooklyn, NY",ChIJweAtELhbwokRO1AexCvuRo0,NYC,,Valid: LaRina Pastificio & Vino (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 355
+Threes Brewing Greenpoint,Threes Brewing Gowanus,333 Douglass Street,ChIJ__u3R6tbwokRYMOym8O83H0,NYC,,Corrected: Threes Brewing (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 746
+Strange Delight,Strange Delight,63 Lafayette ave ,ChIJSZ__agBbwokRFqNZkOBfbsk,NYC,,Valid: Strange Delight (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 631
+Bar Moga SoHo,Bar Moga,128 W Houston St,ChIJRy7Z-I1ZwokRQm17a6QDJ6E,NYC,,Invalid: Address match (0.82),MATCHED,1.0,verified_place_id,,Matched to DB row 57
+Brooklyn Brewery (Craft Beer Pass),Brooklyn Brewery,79 North 11th Street,ChIJUaAuMl1ZwokRt0-S_ynnRtc,NYC,,Valid: Brooklyn Brewery (conf: 0.60),NO_MATCH,0.0,,,No confident match found
+Alphabet City Beer Co. - Craft Beer Pass,Alphabet City Beer Co.,"6 Loisaida Ave, New York, NY 10009",ChIJWaWbwHlZwokRj1wHkvB84zE,NYC,,Valid: Alphabet City Beer Co. (conf: 0.80),NO_MATCH,0.0,,,No confident match found
+Torch & Crown Brewing Company - Craft Beer Pass,Torch & Crown Brewing Company,12 Vandam Street,ChIJFcrad0_1wokRgswE_VOwb4o,NYC,,Valid: Torch & Crown Brewing Company (conf: 0.80),NO_MATCH,0.0,,,No candidates passed pre-filtering
+Moody Tongue Sushi - Craft Beer Pass,Moody Tongue Sushi,,ChIJGUJaVtVZwokR3VU_JU2pedg,NYC,,Invalid: Partial name match (0.67),NO_MATCH,0.0,,,No confident match found
+Threes Brewing Gowanus,Threes Brewing Gowanus,333 Douglass Street,ChIJ__u3R6tbwokRYMOym8O83H0,NYC,,Valid: Threes Brewing (conf: 0.80),NO_MATCH,0.0,,,No confident match found
+Gotham Burger Social Club Greenpoint,Gotham Burger Social Club @ Threes Brewing,113 Franklin St,ChIJXZ6WJABZwokRDi2X0_3I1Mo,NYC,,Valid: Gotham Burger Social Club - Greenpoint (conf: 1.00),MATCHED,0.8608196721311475,high_similarity,,Matched to DB row 262
+Gotham Burger Social Club Greenpoint,Gotham Burger Social Club,113 Franklin St,ChIJXZ6WJABZwokRDi2X0_3I1Mo,NYC,,Valid: Gotham Burger Social Club - Greenpoint (conf: 1.00),NO_MATCH,0.0,,,No candidates passed pre-filtering
+Moody Tongue Pizza,Moody Tongue Pizza,123 st marks pl,ChIJGSBX5MNZwokR8dULUeLZH5M,NYC,,Valid: Moody Tongue Pizza (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 470
+Lume West Village,Lume,"259 West 4th Street, New York, NY 10014",ChIJN-YZAHNZwokRfCSd6SaZWUc,NYC,,Valid: Lume West Village (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 413
+Kings County Distillery,Kings County Distillery,"Kings County Distillery, 299 Sands St, Brooklyn, NY 11205",ChIJbe26PclbwokRfrb6lAnTB30,NYC,,Valid: Kings County Distillery (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 331
+Patisserie Fouet Midtown,Patisserie Fouet,15 E 13th St,ChIJE_xuhXVZwokR6efVoP5x41g,NYC,,Valid: Patisserie Fouet (conf: 0.60),NO_MATCH,0.0,,,No confident match found
+Estancia Piola,Estancia Piola,,ChIJ-cemB1xbwokRUuBRPBg0opo,NYC,,Invalid: Name match (1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 213
+The Ox Greenpoint,The OX Wine Bar,,ChIJW5CTpjRbwokRoyMu9xFuCKE,NYC,,Invalid: Low confidence match,NO_MATCH,0.0,,,No confident match found
+Krupa Grocery South Slope,Krupa Grocery,231 Prospect Park W,ChIJDXCWZh5bwokROj_-7EfM3NI,NYC,,Valid: Krupa Grocery (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 341
+BRISCOLA TRATTORIA,BRISCOLA TRATTORIA,"798a Franklin Ave, Brooklyn, NY 11238, United States",ChIJD6W7CwBbwokRwO5z7BMo7-M,NYC,,Valid: Briscola Trattoria (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 107
+Kokomo Greenpoint,Kokomo,65 Kent Ave,ChIJ9-EhOXlZwokRSdB_B9mYM30,NYC,,Invalid: Address match (0.88),NO_MATCH,0.0,,,No candidates passed pre-filtering
+Oxomoco,Oxomoco,"128 Greenpoint Ave, Brooklyn, NY 11222",ChIJ__-z7kBZwokRezHqB39zBLI,New York,,Valid: Oxomoco (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 503
+Black Seed Bagels Nolita,Black Seed Bagels,176 1st Avenue,ChIJV1BBkp1ZwokRpjqvV01uiqg,NYC,,Invalid: Name match (0.83),MATCHED,1.0,verified_place_id,,Matched to DB row 85
+Heirloom Cafe Mission,HEIRLOOM CAFE,2500 Folsom Street,ChIJ3XEasjl-j4ARWcW8iwtlkhw,SF,,Valid: Heirloom Café (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 280
+Park Slope Ale House Park Slope,Park Slope Ale House,"356 6th Ave, Brooklyn, NY 11215, United States",ChIJwyH4GwJbwokRO0x0jD_unvw,NYC,,Valid: Park Slope Ale House (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 516
+MáLà Project -EV- New Deal,MáLà Project ,"245 E 53rd St, New York, NY 10022",ChIJM2NCGJ1ZwokRA2nCkZcz08g,New York,,Valid: MáLà Project (conf: 0.60),MATCHED,1.0,verified_place_id,,Matched to DB row 423
+Someday Bar NYC,Someday Bar NYC,"364 Atlantic Ave Brooklyn, NY 11217",ChIJW7hnbe5bwokRG2IHXWO1xcA,NYC,,Valid: Someday Bar NYC (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 610
+Other Half Brewing - 600 5th Ave,Other Half Brewing (Parent),"600 5th Ave, New York, 10020",ChIJ56J9GJFZwokRdJwuF-USZIs,NYC,,Valid: Other Half Brewing - Rockefeller Center Taproom (conf: 0.80),MATCHED,0.95,claude_verified,,Matched to DB row 499
+Other Half Brewing - 600 5th Ave,Other Half Brewing (600 5th Ave),195 Centre Street,ChIJ56J9GJFZwokRdJwuF-USZIs,NYC,,Invalid: Partial name match (0.63),NO_MATCH,0.0,,,No confident match found
+Cane Pazzo,Cane Pazzo,"1276 Yeamans Hall Rd, Hanahan, SC 29410",ChIJPc3odmxj_ogRMyxZUrj4HU4,CHS,,Valid: Cane Pazzo (conf: 1.00),MATCHED,1.0,high_similarity,,Matched to DB row 129
+Shuggie's,Shuggie's,"3349 23rd St, San Francisco, CA 94110",ChIJr5cI0LR_j4ART457wcGBDoY,SF,,Valid: Shuggie’s (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 602
+The Morris,The Morris,"2501 Mariposa St, San Francisco, CA 94110
+",ChIJqZE4DTF-j4ARUYdqdEEgh8k,SF,,Valid: The Morris (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 719
+Elixir,Elixir,"3200 16th St, SF, CA 94103",ChIJvwAwoRh-j4AR1BKWDkmJ3-E,SF,,Valid: Elixir (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 200
+NOPALITO,Nopalito,"306 Broderick St., San Francisco, CA 94117",ChIJWdx6WK6AhYARchLwAKyG4-Y,SF,,Valid: Nopalito (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 486
+Blue Plate,Blue Plate,"3218 Mission St.SF, CA 94110",ChIJ7d1kDkN-j4ARLXO5JZwg7NI,SF,,Valid: Blue Plate (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 90
+Tamarind Tribeca,Tamarind Tribeca,"99 Hudson St, New York, NY 10013",ChIJ6Vva1h9awokRXw_JSQ_x6y4,NYC,,Valid: Tamarind Tribeca (conf: 1.00),NO_MATCH,0.0,,,No candidates passed pre-filtering
+Suprema Provisions,Suprema Provisions,"305 Bleecker St, New York, NY 10014",ChIJR4Ced5NZwokREuYXRM57BmY,NYC,,Valid: Suprema Provisions (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 641
+L'Express,L'Express,249 Park Ave S,ChIJb9HznqFZwokRHWxf3DbskaI,NYC,,Valid: L’Express (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 377
+L'Express,Chef Driven Hospitality,630 Ninth Avenue,ChIJb9HznqFZwokRHWxf3DbskaI,NYC,,Invalid: Name match (0.89),NO_MATCH,0.0,,,No candidates passed pre-filtering
+Don Ceviche East Village,Don Ceviche East Village,"57 1st Ave New York, NY 10003",ChIJAf1O3jhZwokRRljq3vIx8ak,NYC,,Valid: Don Ceviche (conf: 0.80),NO_MATCH,0.0,,,No candidates passed pre-filtering
+Don Ceviche Essex,Don Ceviche Essex,"88 Essex Street #11 New York,  NY10002 ",ChIJm9uu_FpZwokR875MVLu2loI,NYC,,Valid: Don Ceviche (Market) (conf: 0.80),NO_MATCH,0.0,,,No candidates passed pre-filtering
+Salad Don,Salad Joon,"88 Essex Street #3 New York, NY 10002",ChIJNxi3aTJZwokR22BQhiSpRjw,New York,,Valid: Salad Joon (conf: 0.80),NO_MATCH,0.0,,,No confident match found
+Chambers,Chambers eat + drink,"94 Chambers St #1, New York, NY 10007",ChIJ43KaxzxbwokRVjbWT05nZ_M,New York,,Valid: Chambers (conf: 1.00),MATCHED,1.0,high_similarity,,Matched to DB row 144
+ALL BLUES,ALL BLUES,"87 Walker St, New York, NY 10013",ChIJdROsbwBbwokRHl54aM_rAsc,NYC,,Valid: All Blues (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 20
+l’abeille,l’abeille,"412 Greenwich St, New York, NY 10013",ChIJq75Ur-tZwokRo7I_F_PhlcU,NYC,,Valid: l’abeille (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 347
+l'abeille à côté,L’Abeille,"412 Greenwich StreetNew York, NY, 10013",ChIJq75Ur-tZwokRo7I_F_PhlcU,NYC,,Valid: l’abeille (conf: 0.80),MATCHED,1.0,high_similarity,,Matched to DB row 348
+Sushi Ichimura,Sushi Ichimura,"412 Greenwich Street New York, NY, 10013",ChIJU10X_TJZwokRuSfnHw4dhQE,NYC,,Valid: Sushi Ichimura (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 643
+Tio Pepe,Pepes Restaurant Group,"168 West 4th Street, New York, NY 10014",ChIJ06Eo6ZNZwokR_ngr5nAD7do,NYC,,Valid: Tio Pepe (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 752
+Tio Pepe,Tio Pepe Restaurant,168 West 4th Street,ChIJ06Eo6ZNZwokR_ngr5nAD7do,NYC,,Valid: Tio Pepe (conf: 0.80),NO_MATCH,0.0,,,No candidates passed pre-filtering
+Burgers and Beer NYC,Burgers and Beer,170 West 4th Street,ChIJz1tFP_9ZwokR1NewYt9iemw,NYC,,Valid: Burgers & Beer (conf: 0.60),MATCHED,1.0,verified_place_id,,Matched to DB row 113
+Burgers and Beer NYC,Pepes Restaurant Group,"168 West 4th Street, New York, NY 10014",ChIJz1tFP_9ZwokR1NewYt9iemw,NYC,,Valid: Burgers & Beer (conf: 0.60),NO_MATCH,0.0,,,No candidates passed pre-filtering
+DACHA Kitchen & Bar,DACHA Kitchen & Bar,"1085 Sutter Street, SF, CA 94109",ChIJwzLVbKSBhYAROU9e3ep4_BU,SF,,Invalid: Partial address match (0.74),MATCHED,1.0,verified_place_id,,Matched to DB row 171
+25 Lusk,25 Lusk,"25 Lusk, SF, CA 94107",ChIJwzwoQNZ_j4ARtdLL7CUl4TQ,SF,,Valid: 25 Lusk St (conf: 0.80),MATCHED,0.895,high_similarity,,Matched to DB row 0
+St. Mazie,St. Mazie Bar & Supper Club,"345 Grand St, Brooklyn, NY 11211
+",ChIJSy8Bbl9ZwokR8QnOQHNn4hk,NYC,,Invalid: Address match (0.93),MATCHED,1.0,verified_place_id,,Matched to DB row 629
+Grimm Artisanal Ales,Grimm Artisanal Ales,"990 Metropolitan Ave, Brooklyn, NY 11211",ChIJO0onUVNZwokRAuTHAAO2OA0,NYC,,Valid: Grimm Artisanal Ales (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 267
+Kalye - Rivington,Kalye,"251 Broome St, New York, NY 10002",ChIJj4yA4zJZwokRtQObXxWzxhc,NYC,,Corrected: Kalye Broome ( Now on 111 Rivington st) (conf: 0.75),MATCHED,1.0,verified_place_id,,Matched to DB row 323
+Rocco's Sports & Recreation Noho,Rocco's Cafe,"1131 Folsom St, SF, CA 94103",ChIJ2fLg9KdZwokR0cET1EjEuwk,SF,,Invalid: Partial name match (0.77),NO_MATCH,0.0,,,No confident match found
+Kings County Brewers Collective,Kings County Brewers Collective,"381 Troutman St, Brooklyn, NY 11237",ChIJb6ZVSB1cwokRES6FZ2WAMAA,NYC,,Valid: Kings County Brewers Collective (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 330
+Kalye - Broome St,Kalye,"251 Broome St, New York, NY 10002",ChIJj4yA4zJZwokRtQObXxWzxhc,NYC,,Invalid: Address match (0.93),MATCHED,1.0,verified_place_id,,Matched to DB row 324
+carminestreetbeers.com,carminestreetbeers.com,"52 A Carmine St, New York, NY 10014",ChIJ5fF_9ZJZwokRvdVUZVpa2_I,NYC,,Valid: Carmine Street Beers (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 135
+MáLà Project -Greenpoint- New Deal,MáLà Project ,"245 E 53rd St, New York, NY 10022",ChIJc4JAM8hZwokRMyWkNxrTDN8,New York,,Corrected: MáLà Project 53rd St (conf: 0.72),MATCHED,1.0,verified_place_id,,Matched to DB row 425
+MáLà Project -Bryant Park- New Deal,MáLà Project ,"245 E 53rd St, New York, NY 10022",ChIJuyQyqf9YwokRSlObfXst7sQ,New York,,Valid: MáLà Project Bryant Park (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 422
+MáLà Project -Midtown- New Deal,MáLà Project ,"245 E 53rd St, New York, NY 10022",ChIJc4JAM8hZwokRMyWkNxrTDN8,New York,,Corrected: MáLà Project 53rd St (conf: 0.74),NO_MATCH,0.0,,,No confident match found
+Good Guys,Attaboy/Good Guys Parent,8 Mcferrin Avenue,ChIJqcXTb0NZwokRPbW9xBZwUEs,NYC,,Invalid: Name match (0.95),MATCHED,1.0,verified_place_id,,Matched to DB row 259
+Good Guys,Good Guys,134 eldridge 10002,ChIJqcXTb0NZwokRPbW9xBZwUEs,NYC,,Valid: Good Guy's (conf: 1.00),NO_MATCH,0.0,,,No confident match found
+Sunday to Sunday,Sunday to Sunday,"88 Orchard St, New York, NY 10002",ChIJnf5Rpv1ZwokRTzMEC8i44xE,NYC,,Valid: Sunday to Sunday (conf: 1.00),MATCHED,1.0,high_similarity,,Matched to DB row 637
+Butcher's Daughter Nolita - Market,The Butcher's Daughter,1205 Abbot Kinney Boulevard,ChIJb03pTce6woAR3xX6dxF_KR4,NYC,,Corrected: The Butcher's Daughter (conf: 0.77),NO_MATCH,0.0,,,No candidates passed pre-filtering
+Butcher's Daughter Nolita - Market,The Butcher's Daughter (Nolita),,ChIJiYsEnohZwokR8oZK_TgmSjY,NYC,,Invalid: Partial name match (0.64),NO_MATCH,0.0,,,No candidates passed pre-filtering
+Bodega SF,Bodega SF,"138 Mason Street, San Francisco, California 94102",ChIJh26QnF1_j4AR3B7n6vAHjHQ,SF,,Valid: Bodega SF (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 99
+Tempest,Tempest Charleston,"32 N Market St Suite C, Charleston, SC 29401",ChIJiUKdZs17_ogREZcxVv3eh-8,CHS,,Invalid: Address match (0.83),MATCHED,1.0,verified_place_id,,Matched to DB row 678
+Aura Bar & Kitchen - New Deal,Aura Bar & Kitchen,"111 1st Ave., New York, NY 10003",ChIJ5QOQdQtZwokRSy16jOl97Uc,NYC,,Invalid: Address match (0.97),MATCHED,1.0,verified_place_id,,Matched to DB row 44
+Park & Grove,Park & Grove,"730 Rutledge Ave, Charleston, SC 29403",ChIJl6_JCTJ7_ogRIauRHOYdIQo,CHS,,Valid: Park & Grove (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 515
+Taco Boy - Downtown,Taco Boy - Downtown,"217 Huger St, Charleston, SC 29403",ChIJT2PTq2B6_ogRIrWFtaGTRrU,CHS,,Valid: Taco Boy Charleston (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 650
+The Cactus Shop,The Cactus Shop,"231 Kent Ave, Brooklyn, NY 11249",ChIJ_dEen79ZwokRCcfpTzsSprc,NYC,,Valid: The Cactus Shop (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 695
+Padoca Bakery,Padoca Bakery,"210 E 67th St, New York, NY 10065",ChIJh9pAEuhZwokREigHqdeZ8S0,NYC,,Valid: Padoca Bakery (conf: 0.80),MATCHED,0.8679032258064516,high_similarity,,Matched to DB row 504
+El Mansour,El Mansour,"3119 Clement St, SF, CA 94121",ChIJQ-y9wqmHhYARgqK_7YRKZ3I,Sf,,Valid: El Mansour Restaurant (conf: 0.60),MATCHED,1.0,verified_place_id,,Matched to DB row 202
+Evil Twin Brewing (Ridgewood),Evil Twin Brewing,"43 Main St, Brooklyn, NY 11201",ChIJ-04l4vBbwokRHxrsv5Pf9kQ,NYC,,Corrected: Evil Twin Brewing NYC - DUMBO (conf: 0.82),MATCHED,1.0,verified_place_id,,Matched to DB row 214
+Dear Strangers,Dear Strangers,"147 W 4th St, New York, NY 10012",ChIJY9Lf7W9ZwokR9G-2TSrck04,NYC,,Valid: Dear Strangers (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 178
+Evil Twin Brewing (Dumbo),Evil Twin Brewing,"43 Main St, Brooklyn, NY 11201",ChIJ-04l4vBbwokRHxrsv5Pf9kQ,NYC,,Valid: Evil Twin Brewing NYC - DUMBO (conf: 1.00),MATCHED,0.8675,high_similarity,,Matched to DB row 215
+The Rutherford,Avenida,"PENN 1, 1 Pennsylvania Plaza, New York, NY 10119",ChIJ_SRPqI1ZwokRcBVTMGsnBLE,NYC,,Invalid: Name match (1.00),NO_MATCH,0.0,,,No confident match found
+The Rutherford,Rutherford,"PENN 1, 1 Pennsylvania Plaza, New York, NY 10119",ChIJ_SRPqI1ZwokRcBVTMGsnBLE,NYC,,Invalid: Name match (1.00),NO_MATCH,0.0,,,No confident match found
+Avenida,Avenida,"PENN 1, 1 Pennsylvania Plaza, New York, NY 10119",ChIJM8DJ2k1ZwokRcmw3Vm5HuiU,NYC,,Corrected: Avenida (conf: 0.89),NO_MATCH,0.0,,,No candidates passed pre-filtering
+Hellbender Nighttime Cafe,Hellbender Nighttime Cafe,"68-22 Forest Ave, Queens, NY 11385",ChIJG4RMPa1dwokRBET-URZXZJU,NYC,,Valid: Hellbender (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 281
+Goldie’s Tavern,Goldie’s Tavern,"3503 Ditmars Blvd, Astoria, NY 11105",ChIJN4XOxR9fwokRwc1yIqFQdT8,NYC,,Corrected: BLVD Astoria (conf: 0.62),NO_MATCH,0.0,,,No confident match found
+Rolo's,Rolo's,"853 Onderdonk Ave, Ridgewood, NY 11385",ChIJWUhoPQhdwokRYsDwo5qMnMU,NYC,,Valid: Rolo’s (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 564
+Good Bar,Good Bar,"98 Meserole Ave, Brooklyn, NY 11222",ChIJYaebsEZZwokRdaBnC6WMr5A,NYC,,Valid: Good Room (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 258
+Peck Slip Social- New Deal,Peck Slip Social,"36 Peck Slip, New York, NY 10038",ChIJLX5S9ZpbwokRuhbbCZkqI2Y,NYC,,Valid: Peck Slip Social (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 522
+Vineapple,Vineapple,"71 Pineapple St, Brooklyn, NY 11201",ChIJkdevwDdawokR0j_3ECiQ8rE,NYC,,Valid: Vineapple (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 790
+Lillian's,Lillian's,"247 Congress Street
+Charleston, SC 29403",ChIJAzlh7I17_ogRfARqVvn4emA,CHS,,Invalid: Address match (0.92),MATCHED,1.0,verified_place_id,,Matched to DB row 380
+The Pass,The Pass,"207-A St Philip St, Charleston, SC 29403",ChIJ-a0VOdp7_ogRE9Ems6Nte18,CHS,,Valid: The Pass (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 726
+Huriyali Gardens (Downtown),Huriyali Gardens - Downtown,"401 Huger St, Charleston, SC 29403",ChIJjczF2lp6_ogRBub6Bfc8OkU,CHS,,Valid: Huriyali Gardens (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 291
+Mile End Delicatessen,Mile End Delicatessen,"97 Hoyt St, Brooklyn, NY 11217",ChIJLb9vlE1awokRL4Ume5zpejQ,NYC,,Valid: Mile End Delicatessen (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 448
+PDA Pizza,PDA Pizza,"669 Union St, Brooklyn, NY 11215",ChIJY3JoJx1bwokRm1F_KUvbR64,NYC,,Invalid: Address match (0.93),MATCHED,1.0,verified_place_id,,Matched to DB row 543
+Ritual,Ritual,"145 Calhoun Street Unit 301, Charleston, SC",ChIJvYvaPpx7_ogRkQiTHeW2cBE,CHS,,Corrected: Ritual Nightclub (conf: 0.66),MATCHED,1.0,high_similarity,,Matched to DB row 558
+Il Corallo Trattoria,II Corallo Trattoria,"176 Prince St, New York, NY 10012",ChIJZ75-yI1ZwokR82kXXJvniwo,NYC,,Valid: Il Corallo Trattoria (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 296
+Momoya Soho- New Deal,Happy Tuna,"380 Lexington Ave, New York, NY 10168",ChIJ4Rw7sVhZwokRJuSZSI0jb4A,NYC,,Valid: Momoya SoHo (conf: 0.60),MATCHED,1.0,verified_place_id,,Matched to DB row 465
+Momoya Soho- New Deal,An | Japanese Restaurant,"427 Amsterdam Ave, New York, NY 10024",ChIJ4Rw7sVhZwokRJuSZSI0jb4A,NYC,,Valid: Momoya SoHo (conf: 0.60),MATCHED,0.95,claude_verified,,Matched to DB row 466
+Debajo,Debajo,"44 W 29th St, New York, NY 10001",ChIJoxar_y9ZwokRIM6a4HXsuo4,NYC,,Valid: Debajo (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 179
+ZOË,ZOË Cocktail Bar & Bites,"579 Howard St., SF, CA 94105",ChIJl1L3AAqBhYARfrEds4G_pEU,SF,,Invalid: Partial address match (0.78),MATCHED,1.0,verified_place_id,,Matched to DB row 809
+Ferdi,Ferdi," 15 7th Ave S, New York, NY 10014",ChIJoTTiRY1ZwokRn9SpxgNIx7M,NYC,,Valid: Ferdi (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 222
+Stone Park Cafe,Stone Park Cafe, 324 5TH AVENUE BROOKLYN,ChIJF6deL_5awokRh2ohKTMG2HE,NYC,,Valid: Stone Park Cafe (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 630
+Huriyali Riverland,Huriyali Riverland,"2016 WAPPOO DR
+Charleston SC 29412",ChIJX3X_Fgx5_ogRclV0AGOOGtA,CHS,,Valid: Huriyali Riverland (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 292
+Beer Street,Beer Street,"550 Vanderbilt Ave, Brooklyn, NY 11238",ChIJEVFkpFtbwokR5ItXs2oJnvk,NYC,,Valid: Beer Street South (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 67
+Hearty and Healthy,Hearty and Healthy,"103 1st Ave., New York, NY 10003",ChIJZZe0gltZwokRcGgGUjceM_4,NYC,,Valid: Hearty & Healthy (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 277
+Ella Funt,Ella Funt,"78-80 E 4th St, New York, NY 10003",ChIJoVcSWWFZwokRjbNOZGOxroo,NYC,,Valid: Ella Funt (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 201
+Greenwood Park,Greenwood Park,555 7th Ave Brooklyn,ChIJNTec2OBawokRUv0YTg7oX-E,NYC,,Valid: Greenwood Park (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 265
+Fred's Dog House,Fred's Dog House,"354 Grand St, Brooklyn, NY 11211",ChIJEcTXd2NZwokRgVij9B5UW0A,NYC,,Valid: Fred's Dog House (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 245
+Thief NYC,Thief NYC,"595 Union Ave, Brooklyn, NY 11211",ChIJQwVjADNZwokRaaCi0RuPzWE,NTC,,Valid: Thief (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 744
+Randolph Beer,Randolph Beer,"82 Prospect St, Brooklyn, NY 11201",ChIJix9FO6lbwokRkZyFzr3vOeg,NYC,,Valid: Randolph Beer (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 553
+Little Dipper,Little Dipper,"135 W 30th St, New York, NY 10001",ChIJWXeePgBZwokRjyCUzI8-NjE,NYC,,Valid: Little Dipper (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 384
+Spicy Moon East Village,Spicy Moon,"232 8th Ave, New York, NY 10011",ChIJ7x3Pe11ZwokRLpfe6va9dqs,NYC,,Valid: Spicy Moon East Village (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 617
+The Little Pig,The Little Pig,"497 Atlantic Ave, Brooklyn",ChIJF2grHfFbwokRMJul5yRY4cw,NYC,,Valid: The Little Pig (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 715
+Dalila's,Dalila's,"441 Meeting St Suite F, Charleston, SC 29403",ChIJNXJ234B7_ogRva6P1mgPOw0,CHS,,Valid: Dalila's (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 173
+Pineapple Club,Pineapple Club,"509 E 6th St, New York, NY 10009",ChIJUwJYwU9ZwokR-c64nryhInI,NYC,,Valid: Pineapple Club (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 530
+Alma Negra,Alma Negra,"494 4TH AVE, BROOKLYN, New York 11215
+",ChIJjzh0ftJbwokRIFioM_VxHNQ,NYC,,Valid: Alma Negra (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 21
+Tabaré (Williamsburg),Tabaré,"1006 Flushing Ave, Brooklyn, NY 11237",ChIJ_Xt15F9ZwokRUWuI3cz_VHM,NYC,,Corrected: Tabare Williamsburg (conf: 0.78),MATCHED,1.0,verified_place_id,,Matched to DB row 649
+Bee's Knees & Honey Lounge,Bee's Knees & Honey,65 N 7th St,ChIJ__96vgVZwokRgkcY1cmk_VM,NYC,,Valid: Bee's Knees & Honey Lounge (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 68
+Marseille,MARSEILLE,630 9th Ave,ChIJDf7etFNYwokR_b7pJ_D2_dM,NYC,,Valid: Marseille (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 436
+Marseille,Chef Driven Hospitality,630 Ninth Avenue,ChIJDf7etFNYwokR_b7pJ_D2_dM,NYC,,Valid: Marseille (conf: 0.80),NO_MATCH,0.0,,,No confident match found
+TALEA Beer Co. - West Village,TALEA Beer Co.,"22 W 40th St, New York, NY 10018",ChIJd5DfLnNZwokRRnTNeWXMEZ4,NYC,,Valid: Talea Beer Co. West Village (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 674
+TALEA Beer Co. - Williamsburg,TALEA Beer Co.,"22 W 40th St, New York, NY 10018",ChIJ5TvP21FZwokRLFjbliEhRUc,NYC,,Invalid: Name match (0.94),MATCHED,1.0,verified_place_id,,Matched to DB row 675
+TALEA Beer Co. - Cobble Hill,TALEA Beer Co.,"22 W 40th St, New York, NY 10018",ChIJ8YhauntZwokRzw7MOoKb1-I,NYC,,Corrected: Talea Beer Co. Bryant Park (conf: 0.74),MATCHED,1.0,verified_place_id,,Matched to DB row 673
+Kiwami,Kiwami,"141 Bridge Park Dr, Brooklyn, NY 11201",ChIJeb_vSCRbwokRVIzbficpCeQ,NYC,,Valid: Kiwami (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 333
+TALEA Beer Co. - Bryant Park,TALEA Beer Co.,"22 W 40th St, New York, NY 10018",ChIJ8YhauntZwokRzw7MOoKb1-I,NYC,,Valid: Talea Beer Co. Bryant Park (conf: 0.80),NO_MATCH,0.0,,,No candidates passed pre-filtering
+Filé Gumbo Bar,Filé Gumbo Bar,"275 Church St, New York, NY 10013",ChIJTeT7fTxbwokRdPDRDrqWjyM,NYC,,Valid: Filé Gumbo Bar (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 226
+Coleman Public House,Coleman Public House,"427 W Coleman Blvd, Mt Pleasant, SC 29464",ChIJ__n0Xvpw_ogRCHZKuExfVMk,CHS,,Valid: Coleman Public House (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 158
+Bati,Bati,"1057 Fulton St, Brooklyn, NY 11238",ChIJYXEosLFbwokRZO204ZitA1Q,NYC,,Invalid: Address match (0.93),MATCHED,1.0,verified_place_id,,Matched to DB row 65
+The Liberties,The Liberties,"998 Guerrero St., SF, CA 94110",ChIJXxwyPT5-j4ARMj_hNCaaXZA,SF,,Valid: The Liberties (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 714
+Tacombi - Ft Greene,Tacombi,"267 Elizabeth St, New York, NY 10012",ChIJdfD8moVZwokRO6vxjXAtoWs,NYC,,Corrected: Tacombi (conf: 0.74),NO_MATCH,0.0,,,No confident match found
+Tacombi - Ft Greene,Tacombi (Parent Company),265 Bowery,ChIJtUqnIhpbwokRfgI3evXbj-g,NYC,,Invalid: Low confidence match,MATCHED,1.0,verified_place_id,,Matched to DB row 658
+Tacombi - Fulton Market,Tacombi,"267 Elizabeth St, New York, NY 10012",ChIJdfD8moVZwokRO6vxjXAtoWs,NYC,,Corrected: Tacombi (conf: 0.70),NO_MATCH,0.0,,,No confident match found
+Tacombi - Fulton Market,Tacombi (Parent Company),265 Bowery,ChIJY3zOPy8tDogR9JpAbCOy-Es,NYC,,Invalid: Low confidence match,MATCHED,1.0,verified_place_id,,Matched to DB row 666
+Tacombi - Flatiron,Tacombi,"267 Elizabeth St, New York, NY 10012",ChIJY-_fXKRZwokRx2b6VzH6su4,NYC,,Invalid: Partial address match (0.70),MATCHED,1.0,verified_place_id,,Matched to DB row 656
+Tacombi - Flatiron,Tacombi (Parent Company),265 Bowery,ChIJY-_fXKRZwokRx2b6VzH6su4,NYC,,Invalid: Low confidence match,NO_MATCH,0.0,,,No confident match found
+Tacombi - Bleeker,Tacombi,"267 Elizabeth St, New York, NY 10012",ChIJdfD8moVZwokRO6vxjXAtoWs,NYC,,Corrected: Tacombi (conf: 0.76),NO_MATCH,0.0,,,No confident match found
+Tacombi - Bleeker,Tacombi (Parent Company),265 Bowery,ChIJe0S8sZNZwokRAdgEV5COiNE,NYC,,Invalid: Low confidence match,MATCHED,1.0,verified_place_id,,Matched to DB row 659
+Tacombi - FiDi,Tacombi,"267 Elizabeth St, New York, NY 10012",ChIJCxsgff1bwokRt-khy5Okqpg,NYC,,Valid: Tacombi (conf: 0.60),MATCHED,1.0,verified_place_id,,Matched to DB row 655
+Tacombi - FiDi,Tacombi (Parent Company),265 Bowery,ChIJCxsgff1bwokRt-khy5Okqpg,NYC,,Invalid: Partial name match (0.67),NO_MATCH,0.0,,,No confident match found
+Tacombi -LIC,Tacombi,"267 Elizabeth St, New York, NY 10012",ChIJdfD8moVZwokRO6vxjXAtoWs,NYC,,Corrected: Tacombi (conf: 0.84),NO_MATCH,0.0,,,No confident match found
+Tacombi -LIC,Tacombi (Parent Company),265 Bowery,ChIJe0S8sZNZwokRAdgEV5COiNE,NYC,,Corrected: Tacombi (conf: 0.66),NO_MATCH,0.0,,,No confident match found
+Tacombi - UWS,Tacombi (Parent Company),265 Bowery,ChIJS4_amZhZwokRI32P3NwpsRU,NYC,,Invalid: Partial name match (0.70),MATCHED,1.0,verified_place_id,,Matched to DB row 664
+Tacombi - UWS,Tacombi,"267 Elizabeth St, New York, NY 10012",ChIJS4_amZhZwokRI32P3NwpsRU,NYC,,Valid: Tacombi (conf: 0.60),NO_MATCH,0.0,,,No confident match found
+Tacombi -UES,Tacombi (Parent Company),265 Bowery,ChIJe0S8sZNZwokRAdgEV5COiNE,NYC,,Corrected: Tacombi (conf: 0.66),NO_MATCH,0.0,,,No confident match found
+Tacombi -UES,Tacombi,"267 Elizabeth St, New York, NY 10012",ChIJRc_0nbJZwokRPKi2zXCpaaY,NYC,,Valid: Tacombi (conf: 0.60),MATCHED,1.0,verified_place_id,,Matched to DB row 663
+Tacombi - Westbury,Tacombi (Parent Company),265 Bowery,ChIJO0AoGdKHwokRhGmV5GN8o-k,NYC,,Invalid: Low confidence match,MATCHED,1.0,verified_place_id,,Matched to DB row 665
+Tacombi - Westbury,Tacombi,"267 Elizabeth St, New York, NY 10012",ChIJdfD8moVZwokRO6vxjXAtoWs,NYC,,Corrected: Tacombi (conf: 0.75),NO_MATCH,0.0,,,No confident match found
+Tacombi - ESB,Tacombi (Parent Company),265 Bowery,ChIJTQeoA6lZwokRpXP-fGPn4oU,NYC,,Invalid: Partial name match (0.70),MATCHED,1.0,verified_place_id,,Matched to DB row 661
+Tacombi - ESB,Tacombi,"267 Elizabeth St, New York, NY 10012",ChIJTQeoA6lZwokRpXP-fGPn4oU,NYC,,Valid: Tacombi (conf: 0.60),NO_MATCH,0.0,,,No confident match found
+Tacombi - Williamsburg,Tacombi,"267 Elizabeth St, New York, NY 10012",ChIJITt5Kl5ZwokRO71zHAwXV2g,NYC,,Invalid: Low confidence match,MATCHED,1.0,verified_place_id,,Matched to DB row 668
+Tacombi - Williamsburg,Tacombi (Parent Company),265 Bowery,ChIJITt5Kl5ZwokRO71zHAwXV2g,NYC,,Invalid: Low confidence match,NO_MATCH,0.0,,,No confident match found
+Tacombi - Wicker Park,Tacombi (Parent Company),265 Bowery,ChIJXzk9Gw3TD4gRt_-bxIe8jdE,NYC,,Invalid: Low confidence match,MATCHED,1.0,verified_place_id,,Matched to DB row 667
+Tacombi - Wicker Park,Tacombi,"267 Elizabeth St, New York, NY 10012",ChIJdfD8moVZwokRO6vxjXAtoWs,NYC,,Corrected: Tacombi (conf: 0.72),NO_MATCH,0.0,,,No confident match found
+Tacombi - Forest Hills,Tacombi (Parent Company),265 Bowery,ChIJWwL9DZdfwokR2NsMW_PCDxk,NYC,,Invalid: Low confidence match,MATCHED,1.0,verified_place_id,,Matched to DB row 657
+Tacombi - Forest Hills,Tacombi,"267 Elizabeth St, New York, NY 10012",ChIJdfD8moVZwokRO6vxjXAtoWs,NYC,,Corrected: Tacombi (conf: 0.71),NO_MATCH,0.0,,,No confident match found
+Other Half Brewing - 195 Centre Street,Other Half Brewing (Parent),"600 5th Ave, New York, 10020",ChIJ56J9GJFZwokRdJwuF-USZIs,NYC,,Corrected: Other Half Brewing - Rockefeller Center Taproom (conf: 0.76),NO_MATCH,0.0,,,No confident match found
+Other Half Brewing - 195 Centre Street,Other Half Brewing (Centre St),195 Centre Street,ChIJyXHHyfZawokRm6SBxpOHUxY,NYC,,Valid: Other Half Brewing Company (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 498
+Other Half Brewing - 34 River Street,Other Half Brewing (Parent),"600 5th Ave, New York, 10020",ChIJ56J9GJFZwokRdJwuF-USZIs,NYC,,Corrected: Other Half Brewing - Rockefeller Center Taproom (conf: 0.74),NO_MATCH,0.0,,,No confident match found
+Other Half Brewing - 34 River Street,Other Half Brewing (34 River Street),195 Centre Street,ChIJyXHHyfZawokRm6SBxpOHUxY,NYC,,Corrected: Other Half Brewing Company (conf: 0.74),NO_MATCH,0.0,,,No confident match found
+Maybank Public House,Maybank Public House,"1970 Maybank Hwy, Charleston, SC 29412",ChIJu1AjHF55_ogRJxqL6Y7C25M,CHS,,Valid: Maybank Public House (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 438
+Padoca Bakery (Lenox Hill),Padoca Bakery,"210 E 67th St, New York, NY 10065",ChIJwc5zFsJYwokRk4HHVMtS74A,NYC,,Valid: Padoca Bakery + Cakes (conf: 0.60),MATCHED,1.0,verified_place_id,,Matched to DB row 505
+Tabaré (Bushwick)- New Deal,Tabaré,"1006 Flushing Ave, Brooklyn, NY 11237",ChIJ80WOzERdwokRXjGSASkDZxk,NYC,,Valid: Tabaré Bushwick (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 648
+Alora (SF),Alora,"Pier 3, Hornblower landing, San Francisco, CA 94105",ChIJ20bNEACBhYARtsTcSrSPFdU,SF,,Invalid: Address match (0.92),MATCHED,1.0,verified_place_id,,Matched to DB row 23
+Emblem,Emblem BK,"187 Graham Ave, Brooklyn, NY 11206",ChIJ__-zvv1bwokRq7XrbriPQZQ,NYC,,Valid: Emblem (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 204
+Birdee,kenthg.com,316 Kent Ave. Brooklyn NY 11249,ChIJJbmnn01ZwokRRBmMCKIY8K8,NYC,,Valid: Birdee (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 79
+Birdee,Birdee,316 Kent Ave. Brooklyn NY 11249,ChIJJbmnn01ZwokRRBmMCKIY8K8,NYC,,Valid: Birdee (conf: 1.00),NO_MATCH,0.0,,,No candidates passed pre-filtering
+Komaaaj,Komaaj,"20 29th St, San Francisco, CA 94110",ChIJVVXlLPh2hYAR20ALCmb9rC8,SF,,Invalid: Address match (0.91),MATCHED,1.0,verified_place_id,,Matched to DB row 335
+Puttery - Museum,Puttery,"446 W 14th St, New York, NY. 10014.",ChIJUxpywGVZwokRIvAIwd-hcrc,NYC,,Valid: Puttery (conf: 0.60),MATCHED,1.0,verified_place_id,,Matched to DB row 730
+Puttery Lodge,Puttery,"446 W 14th St, New York, NY. 10014.",ChIJUxpywGVZwokRIvAIwd-hcrc,NYC,,Valid: Puttery (conf: 0.60),NO_MATCH,0.0,,,No candidates passed pre-filtering
+Pastai,Pastai,"186 9th Ave, New York, NY 10011",ChIJ81V-dblZwokRsTrQH6-BzCk,NYC,,Invalid: Address match (0.94),MATCHED,1.0,high_similarity,,Matched to DB row 518
+Bomba Cocktail Bar,Puttery,"446 W 14th St, New York, NY. 10014.",ChIJ5eA3-JNZwokRm6MvNct6Hjw,NYC,,Corrected: Bomba (conf: 0.71),NO_MATCH,0.0,,,No confident match found
+Rory's Rooftop,Puttery,"446 W 14th St, New York, NY. 10014.",ChIJ8cV4ZrNZwokRmXum9urdUpg,NYC,,Valid: Rory's Rooftop (conf: 0.80),NO_MATCH,0.0,,,No candidates passed pre-filtering
+Accidental Bar,Accidental Bar,"98 Loisaida Ave, New York, NY 10009",ChIJUeg8neFZwokRjTD4oCwTPGk,NYC,,Valid: Accidental Bar (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 8
+Spicy Moon (West Village),Spicy Moon,"232 8th Ave, New York, NY 10011",ChIJZRP3DW9ZwokR6NnJ9PaMZxI,NYC,,Valid: Spicy Moon West Village (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 618
+Spicy Moon - Bowery,Spicy Moon,"232 8th Ave, New York, NY 10011",ChIJAb8jiJZZwokROX7aeBYf2I4,NYC,,Valid: Spicy Moon Bowery (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 619
+Spicy Moon - Chelsea,Spicy Moon,"232 8th Ave, New York, NY 10011",ChIJJbctbLdZwokRUbBIho1wN8g,NYC,,Valid: Spicy Moon Chelsea (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 616
+Saturn Road,Saturn Road,"276 Court St, Brooklyn, NY 11231",ChIJN_uyy55bwokRzVyFQ6MUTZs,NYC,,Valid: Saturn Road (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 588
+Kjun,Kjun,"154 E 39th St, New York, NY 10016",ChIJ7xJ4Rw9ZwokRhQQ-WKtoJFg,NYC,,Valid: KJUN (conf: 0.80),NO_MATCH,0.0,,,No confident match found
+Bar Boulud,Bar Boulud,1900 Broadway,ChIJG8Pwm_VYwokRtPc8Rwrhdpg,NYC,,Valid: Bar Boulud (conf: 0.80),MATCHED,1.0,high_similarity,,Matched to DB row 119
+Le Gratin,Le Gratin,5 Beekman Street,ChIJj4fN7HBbwokRCB5xca3KF1E,NYC,,Valid: Le Gratin (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 366
+La Pavillon,La Pavillon,318 Park Ave s,ChIJjcAJd-tZwokRJ0GkkJ2Urp0,NYC,,Invalid: Name match (0.91),MATCHED,1.0,verified_place_id,,Matched to DB row 370
+Café Boulud,Café Boulud,100 E 63rd St,ChIJCcAxi5RYwokRdUqdw5_FHIk,NYC,,Valid: Café Boulud (conf: 0.80),NO_MATCH,0.0,,,No candidates passed pre-filtering
+La Tete D'Or,La Tete D'Or,318 park ave south,ChIJsTUVzgBZwokRkUIgGFl_RJc,NYC,,Valid: La Tête d'Or by Daniel (conf: 0.60),MATCHED,1.0,verified_place_id,,Matched to DB row 357
+Speedy Romeo,Speedy Romeo,"376 Classon Ave, Brooklyn, NY 11238",ChIJOTob_r1bwokRtUoNNbcmw_g,NYC,,Valid: Speedy Romeo (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 615
+Nabila's,Nabila's,"248 Court Street, Brooklyn, NY, 11201",ChIJcb-HMTlbwokRlwa32aP_wew,NYC,,Valid: Nabila's (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 475
+Artesano Peruvian Cuisine,Artesano Peruvian Cuisine,"90 Chambers St, New York, NY 10007",ChIJv3vgwFZbwokRwP07bRgRYdM,NYC,,Invalid: Address match (0.85),MATCHED,1.0,verified_place_id,,Matched to DB row 37
+Thursday Kitchen,Thursday Kitchen," 424 E 9th St, New York, NY 10009",ChIJVyFicJ1ZwokR2oIygOmovWw,NYC,,Valid: Thursday Kitchen (conf: 0.60),MATCHED,1.0,verified_place_id,,Matched to DB row 748
+Coffee Bar by The Refuge Isle of Palms,The Refuge,,ChIJ7TpSoTJz_ogRYDJ42AYrARo,CHS,,Invalid: Low confidence match,MATCHED,1.0,verified_place_id,,Matched to DB row 157
+Sereneco Cafe,Sereneco,113 Franklin St,ChIJH_-tMGlZwokRqIqHR22D-zU,NYC,,Valid: Sereneco (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 595
+Lillian's - Market & Cafe,Lillian's Market & Cafe,205 Main Street,ChIJMX7c-EyzwIkRdpy3dZklcbE,CHS,,Invalid: Name match (0.89),NO_MATCH,0.0,,,No confident match found
+Criollas West Village,Criollas | Baked Empanadas ,"333 6th Ave, New York, NY 10014",ChIJZ-5Z2OtZwokR5QGPIp0IJVE,NYC,,Valid: Criollas | Baked Empanadas - West Village (conf: 0.80),NO_MATCH,0.0,,,No confident match found
+Criollas | Hells Kitchen,Criollas | Baked Empanadas ,"333 6th Ave, New York, NY 10014",ChIJjUWl9U9ZwokRqu0xrtIv_4M,NYC,,Invalid: Partial address match (0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 166
+Brass,Brass,,ChIJ81FEDgBZwokR6hAwPtR8c-o,NYC,,Invalid: Name match (1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 103
+The Tusk Bar,The Tusk Bar,"7 E 27th St, New York, NY 10016",ChIJybhcanBZwokRMhTRdNByp3Q,NYC,,Valid: The Tusk Bar (conf: 0.80),MATCHED,1.0,high_similarity,,Matched to DB row 742
+Winner Bakery,Winner / Runner Up,367 7th Avenue,ChIJg8UZJyNbwokR0-LkfR8MPJQ,NYC,,Valid: WINNER (conf: 0.80),NO_MATCH,0.0,,,No confident match found
+Caffe Sport,Caffe Sport,"574 Green Street San Francisco, CA 94113",ChIJB60QZ_GAhYARnFPG-x5vDxE,SF,,Valid: Caffé Sport (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 124
+Peasant,Peasant,"194 Elizabeth St, New York, NY 10012",ChIJ0XJEBIZZwokR3iPgClK9uEg,NYC,,Valid: Peasant (conf: 1.00),NO_MATCH,0.0,,,No confident match found
+MOKYO,MOKYO,"109 St Marks Pl, New York, NY 10009",ChIJHxQBcypZwokR7-D3oe4V6Go,NYC,,Valid: Mokyo (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 462
+Tacos 1986 West Village,Tacos 1986 West Village,"164 West 4th Street New York, NY 10014",ChIJG4KjIzNZwokRoNPsES4eqaA,NYC,,Valid: Tacos 1986 West Village (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 459
+Taco Boy - Summerville,Taco Boy - Downtown,"217 Huger St, Charleston, SC 29403",ChIJT2PTq2B6_ogRIrWFtaGTRrU,CHS,,Corrected: Taco Boy Charleston (conf: 0.76),NO_MATCH,0.0,,,No confident match found
+Taco Boy - Summerville,Taco Boy - Summerville,217 Huger Street,ChIJT2PTq2B6_ogRIrWFtaGTRrU,CHS,,Corrected: Taco Boy Charleston (conf: 0.72),NO_MATCH,0.0,,,No confident match found
+Taco Boy - Folly Beach,Taco Boy - Folly Beach,217 Huger Street,ChIJvTM9cerX_YgR6VAMsi9emZ0,CHS,,Invalid: Name match (0.95),MATCHED,1.0,verified_place_id,,Matched to DB row 651
+Taco Boy - Folly Beach,Taco Boy - Downtown,"217 Huger St, Charleston, SC 29403",ChIJvTM9cerX_YgR6VAMsi9emZ0,CHS,,Invalid: Name match (0.95),NO_MATCH,0.0,,,No confident match found
+Attaboy,Attaboy,"134 Eldridge St, New York, NY 10002",ChIJDbQMBIdZwokRVS4L8B8V5SA,NYC,,Valid: Attaboy (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 43
+Little More,Little More,"111 Reade St, New York, NY 10013",ChIJdca4ZQBbwokRaxJrJc_iboE,NYC,,Valid: Little More (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 389
+Sesame Burgers & Beer - Mt. Pleasant - Mt. Pleasant,Glowfisch Hospitality,"1055 Johnnie Dodds Blvd, Suite 100 Mount Pleasant, SC 29464",ChIJ9Y_hi1Zw_ogRtO5Kg6Py3vU,CHS,,Invalid: Token overlap (0.57); Partial address match (0.64),MATCHED,1.0,verified_place_id,,Matched to DB row 596
+Sesame Burgers & Beer - Mt. Pleasant - Mt. Pleasant,Sesame Burgers & Beer - Mt. Pleasant,"675 East Johnnie Dodds Boulevard,
+Mt Pleasant, SC 29464",ChIJ9Y_hi1Zw_ogRtO5Kg6Py3vU,CHS,,Valid: Sesame Burgers & Beer (conf: 0.70),NO_MATCH,0.0,,,No candidates passed pre-filtering
+Five Loaves Cafe - Mt. Pleasant,Glowfisch Hospitality,"1055 Johnnie Dodds Blvd, Suite 100 Mount Pleasant, SC 29464",ChIJT0AAmVZw_ogR4jRTh9lQg7o,CHS,,Valid: Five Loaves Cafe (conf: 0.60),MATCHED,1.0,verified_place_id,,Matched to DB row 232
+Five Loaves Cafe - Mt. Pleasant,Five Loaves Cafe - Mt. Pleasant,1055 Johnnie Dodds Blvd #100,ChIJT0AAmVZw_ogR4jRTh9lQg7o,CHS,,Valid: Five Loaves Cafe (conf: 0.80),NO_MATCH,0.0,,,No candidates passed pre-filtering
+Tutti Pizza,Tutti Pizza,"700 King St suite a, Charleston, SC 29403",ChIJm2S3LFl7_ogR-dSlRIN67EU,CHS,,Valid: Tutti Pizza (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 763
+Miznon Chelsea Market,,435 W 15th St,ChIJ8VQWXL9ZwokRvzf2OM4TNP4,NYC,,Invalid: Partial address match (0.79),MATCHED,1.0,verified_place_id,,Matched to DB row 460
+HaSalon,,757 10th Avenue,ChIJ-YpwVCJZwokR79IyrPpwSVA,NYC,,Valid: HaSalon (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 275
+Port Sa'id,,88 King Street,ChIJtc2oTDJZwokRQiktCdsm9VE,NYC,,Valid: Port Sa’id (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 538
+Shmone,,61 W 8th St,ChIJBdMLKZBZwokRJ0tYbQ6nfZ4,NYC,,Valid: SHMONÉ (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 600
+Shmone Wine Bar,,65 W 8th St,ChIJ5eQtHWZZwokRHoU7Tau8axs,NYC,,Valid: Shmoné Wine (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 601
+Malka UWS,,161 W 72nd St,ChIJCyq9Xr1ZwokRtYHX1gcbJF0,NYC,,Valid: Malka (conf: 0.60),MATCHED,1.0,verified_place_id,,Matched to DB row 428
+Malka Dumbo,,56 Adams Street,ChIJ2QOSPEZbwokR5dMpgfr3PKU,NYC,,Valid: Malka (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 427
+Pecking House - Chinatown,Pecking House - Chinatown,"83 Henry Street
+New York, NY 10002",ChIJiUcz7kBbwokRJnrAWfLcqtk,NYC,,Valid: Pecking House Chinatown (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 521
+Harborview,Harborview Restaurant And Bar,"4 Embarcadero Center, San Francisco, CA 94111",ChIJZ1SMEQeBhYAR8Y0suKMr48o,SF,,Invalid: Partial address match (0.73),MATCHED,1.0,verified_place_id,,Matched to DB row 273
+Paper Son Coffee,Paper Son Coffee,"303 2nd St., N102, ",ChIJXVRIc9aBhYARDuJoNx2IVAg,SF,,Valid: Paper Son Coffee - FiDi (conf: 1.00),MATCHED,0.95,claude_verified,,Matched to DB row 510
+Chelsea Living Room -New Deal,chelsealivingroomnyc.com,"243 W 14th St, New York, NY 10011",ChIJD0k97wBZwokRQIQ9ioXsZD8,NYC,,Valid: Chelsea Living Room (conf: 0.60),MATCHED,1.0,verified_place_id,,Matched to DB row 150
+Passerine,Passerine,"36 E 20th St, New York, NY 10003",ChIJNz2NYnNZwokRmpUsT-iz-ZE,NYC,,Valid: Passerine (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 517
+Moby's,Moby's,"341 Pantigo Road East Hampton, NY 11937 ",ChIJ9V8t10i76IkRcj-Aoa-eBIg,NYC,,Valid: Moby's (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 461
+Temple Bar,Temple Bar,"332 Lafayette st NY, NY 10012",ChIJnSU3A0ZZwokR7idYNeIPu5o,nyc,,Valid: Temple Bar (conf: 0.60),MATCHED,1.0,verified_place_id,,Matched to DB row 679
+Momoya UWS,An | Japanese Restaurant,"427 Amsterdam Ave, New York, NY 10024",ChIJgTrKAYZYwokRrLF7JiGwdNM,NYC,,Valid: Momoya Upper West (conf: 0.80),NO_MATCH,0.0,,,No confident match found
+Mano a Mano,Mano a Mano,"2534 N Milwaukee Ave, Chicago, IL 60647",ChIJ_TpJQMnND4gR7BzXJXstAG8,CHI,,Valid: Mano a Mano (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 434
+Decades,Decades,"690 Woodward Ave, Queens, NY 11385",ChIJy-XYyNtfwokRnFoJaxU7k0A,NYC,,Invalid: Partial address match (0.76),MATCHED,1.0,verified_place_id,,Matched to DB row 180
+Brooklyn Kolache,Brooklyn Kolache,"520 DeKalb Ave, Brooklyn, NY 11205",ChIJe1O4wpRbwokRu8RmeM2Xji4,NYC,,Valid: Brooklyn Kolache (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 111
+Brooklyn French Bakers Columbia Street,Brooklyn French Bakers - Columbia street,"273 Columbia St, Brooklyn, NY 11231",ChIJr5AmcG9bwokR4WQblfK0Nuw,NYC,,Valid: Brooklyn French Bakers (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 109
+Earthly Delights,Earthly Delights,"5738 Myrtle Ave, Ridgewood, NY 11385",ChIJf6iSQwBdwokR_22MmWLKVQk,NYC,,Valid: Earthly Delights (conf: 1.00),NO_MATCH,0.0,,,No candidates passed pre-filtering
+The Ten Bells BK,The Ten Bells BK,"65 Irving Ave, Brooklyn, NY 11237",ChIJv5QvLQddwokR8sH0Q-NHt5Q,NYC,,Valid: The Ten Bells Brooklyn (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 739
+Blind Tiger,Blind Tiger," 281 Bleecker St, New York, NY 10014",ChIJWW4LoZNZwokRFOD1017tTZc,NYC,,Valid: Blind Tiger (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 88
+The Commons Chelsea,The Commons Chelsea,"128 7th Ave, New York, NY 10011",ChIJiXJVzLtZwokRbeoV2XxLOdg,NYC,,Valid: The Commons Chelsea (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 697
+No. 7,No. 7 Restaurant,"627 Vanderbilt Ave, Brooklyn, NY 11238",ChIJFRTZSdNbwokRPv71NOk5GH8,NYC,,Invalid: Address match (0.95),MATCHED,1.0,verified_place_id,,Matched to DB row 483
+Idaho,Idaho,"349 E 13th St, New York, NY 10003",ChIJaeFdrtdZwokRMn3DrPKdAVc,NYC,,Valid: Idaho (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 293
+Lazy Sundaes (dumbo),Lazy Sundaes (Dumbo),"170 Front Street
+Brooklyn, NY, 11201",ChIJkWdo8pxbwokRb0yfkKXQOrI,NYC,,Valid: Lazy Sundaes (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 360
+Blackwood,Blackwood,"2150 Chestnut St, San Francisco, CA 94123",ChIJkfP43NaAhYARkQtRUGeNnlY,SF,,Valid: Blackwood (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 86
+Lost Cat Bar & Bites,Lost Cat Bar & Bites,"587 Post St, San Francisco, CA 94102",ChIJZTcP2_uBhYARQZBWBWXHrkE,SF,,Valid: Lost Cat Bar & Bites (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 405
+Maries,Marie's,"195 Wyckoff Ave, Brooklyn, NY 11237",ChIJf0_U-V1dwokRrdkZbn2BUew,NYC,,Valid: Marie’s (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 435
+Edmund's Oast Brewing Co.,Edmund's Oast Brewing Co.,"1505 King St #115, Charleston, SC 29405",ChIJGU5FivB6_ogRzmmp7eKqMtQ,CHS,,Valid: Edmund's Oast Brewing Co. (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 195
+Pizzette,Pizzaette,"191 Graham Ave, Brooklyn, NY 11206",ChIJk9gLf75bwokRI2fQO4j603s,NYC,,Valid: Pizzette (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 532
+The Sentinel,The Sentinel,"25 Maiden Ln, San Francisco, CA 94108",ChIJcTnoH4iAhYARFWB-p5hD9ek,SF,,Valid: The Sentinel (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 734
+Blinky's,Blinky's,"609 Grand St, Brooklyn, NY 11211
+",ChIJtxAEdHpZwokRh5_jOETnK8Q,NYC,,Valid: Blinky's (conf: 1.00),NO_MATCH,0.0,,,No candidates passed pre-filtering
+Komaaj,,,,SF,,Not found,NO_MATCH,0.0,,,No candidates passed pre-filtering
+Brooklyn French Bakers - Park Slope,Brooklyn French Bakers - Park Slope,"510 2nd St, Brooklyn, NY 11215",ChIJ6c4obKdbwokRQ85KP3H8zVQ,NYC,,Valid: Brooklyn French Bakers (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 110
+Rosalind Bakery,Rosalind Bakery Cafe at Embarcadero Four,"2 Embarcadero Ctr, San Francisco, CA 94111",ChIJz3XEOo2BhYARl5bha2ABNmM,SF,,Invalid: Address match (0.86),MATCHED,0.9729999999999999,high_similarity,,Matched to DB row 568
+Little Honey - New Deal,Little Honey,"487 7th AVENUE BROOKLYN, NY 11215",ChIJWylCagBbwokRxneNVeB7mVY,NYC,,Found: Little Honey (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 385
+Carissa's the Bakery - Amagansett,Carissa's the Bakery,,ChIJEdyFBDK76IkRbHAIKMcZYls,LI,,Invalid: Name match (1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 131
+Mercantile Dining & Provision,Mercantile Dining & Provision,"1809 Blake Street, Ste. 200 Denver, CO 80202",ChIJJ3w-CsN4bIcRnjIYAv0i6MU,DEN,,Invalid: Low confidence match,MATCHED,1.0,verified_place_id,,Matched to DB row 444
+Kachina Cantina,Kachina Cantina,"1809 Blake Street, Ste. 200 Denver, CO 80202",ChIJjxvS2tx4bIcRM0ybOLJpbKE,DEN,,Valid: Kachina Cantina (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 320
+Almond Bridgehampton,Almond,"1 Ocean Rd, Bridgehampton, NY 11932",ChIJX4bnq9i96IkRMhnW2mI-AIQ,Li,,Invalid: Address match (0.96),MATCHED,1.0,verified_place_id,,Matched to DB row 22
+The Original,The Original,"1809 Blake Street, Ste. 200 Denver, CO 80202",ChIJEeom_vp5bIcRnUF3x5pHw5s,DEN,,Valid: The Center Origin (conf: 0.60),NO_MATCH,0.0,,,No confident match found
+Bistro Ete,Bistro Ete,"760 Montauk Hwy, Water Mill, NY 11976",ChIJBb_d_piV6IkRzFwzWqvbZcI,NYC,,Invalid: Address match (0.94),MATCHED,1.0,verified_place_id,,Matched to DB row 81
+Indigo,Indigo,"3321 Steiner St., SF, CA 94123",ChIJR3GOKeuBhYARZLjs9-fsh_Q,SF,,Valid: Indigo (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 300
+Woodie Fisher Kitchen & Bar,Woodie Fisher Kitchen & Bar,"1809 Blake Street, Ste. 200 Denver, CO 80202",ChIJ97BI5sV5bIcRbxRz-Unx0fU,DEN,,Valid: Woodie Fisher Kitchen & Bar (conf: 0.60),MATCHED,1.0,verified_place_id,,Matched to DB row 803
+Unregular Pizza Union Square,Unregular Pizza Union Square,"135 4th Ave, New York, NY 10003",ChIJY5XrfwVZwokRw3jqTvqqtSA,NYC,,Valid: Unregular Pizza (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 772
+The Corner Office Restaurant & Martini Bar,The Corner Office Restaurant & Martini Bar,"1809 Blake Street, Ste. 200 Denver, CO 80202",ChIJ59c0J9B4bIcRP7IDgFozjiw,DEN,,Valid: The Corner Office Restaurant + Martini Bar (conf: 0.60),MATCHED,1.0,verified_place_id,,Matched to DB row 698
+Urban Farmer Denver,Urban Farmer Denver,"1809 Blake Street, Ste. 200 Denver, CO 80202",ChIJpZERZMN4bIcRBzONa01GT7E,DEN,,Valid: Urban Farmer Denver (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 777
+Ambler,Ambler,"1809 Blake Street, Ste. 200 Denver, CO 80202",ChIJfQpFkDx5bIcRGnDZ-s_yQnE,DEN,,Valid: Ambler (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 26
+Call Me Pearl,Call Me Pearl,"1809 Blake Street, Ste. 200 Denver, CO 80202",ChIJnRgAtIF5bIcRGydGN3SuxAs,DEN,,Valid: Call Me Pearl (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 128
+Cruise Room,Cruise Room,"1809 Blake Street, Ste. 200 Denver, CO 80202",ChIJ6QdWCZh5bIcRzjkjBPT0rEI,DEN,,Valid: Cruise Room (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 169
+Toro Latin Kitchen & Lounge,Toro Latin Kitchen & Lounge,"1809 Blake Street, Ste. 200 Denver, CO 80202",ChIJxT4AIcp_bIcRL_rWb-gwyoY,DEN,,Invalid: Partial address match (0.61),MATCHED,1.0,verified_place_id,,Matched to DB row 756
+Catbird Kitchen,Catbird Kitchen,"1809 Blake Street, Ste. 200 Denver, CO 80202",ChIJ44EQpRN5bIcR1nMkfhBXD4s,DEN,,Valid: Catbird Hotel (conf: 0.60),MATCHED,1.0,high_similarity,,Matched to DB row 141
+Poka Lola Social Club,Poka Lola Social Club,"1809 Blake Street, Ste. 200 Denver, CO 80202",ChIJ8c0qxtx4bIcRsrKdtC8dYsk,DEN,,Valid: Poka Lola Social Club (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 535
+Hart Bar,Hart Bar," 538 Hart St #1, Brooklyn, NY 11221",ChIJl66pMw9cwokRVevR2MmIqBg,NYC,,Valid: Hart Bar (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 274
+Spike's Coffee & Teas,Spike's Coffee & Teas,4117 19th st,ChIJIwGPyxp-j4ARaAv8glHW8q4,SF,,Valid: Spike's Coffees and Teas (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 620
+Iron Horse,The Sentinel,"25 Maiden Ln, San Francisco, CA 94108",ChIJk-_jVoiAhYARUMRNR_Aq_wU,SF,,Valid: Iron Horse Cocktails (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 303
+House of Shields,The Sentinel,"25 Maiden Ln, San Francisco, CA 94108",ChIJP6l_oGKAhYARafMdGyI-75Q,SF,,Valid: The House Of Shields (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 712
+Ocean Beach Cafe - SF Breakfast Club,Ocean Beach Cafe,"734 La Playa St, San Francisco, CA 94121",ChIJg4qwGKeHhYARo41FFI_aOss,SF,,Invalid: Address match (0.94),MATCHED,1.0,verified_place_id,,Matched to DB row 491
+Bar 56,bar 56,"53 Water Street, Brooklyn, NY 11201",ChIJ5SzimXpbwokRR2U_8IFONFw,NYC,,Invalid: Address match (0.93),MATCHED,1.0,verified_place_id,,Matched to DB row 50
+Nick and Toni's,Nick and Toni's,,ChIJR2qJI-S66IkRDsNCmihMqXU,Li,,Invalid: Name match (0.86),MATCHED,1.0,verified_place_id,,Matched to DB row 482
+Doubles Amagansett- New Deal,Doubles,"12 Amagansett Square, Amagansett, NY 11930",ChIJqzMtFVex6IkRInzRqRHL-Rc,LI,,Valid: Doubles Amagansett (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 188
+Doubles Sag Harbor,Doubles,"12 Amagansett Square, Amagansett, NY 11930",ChIJqzMtFVex6IkRInzRqRHL-Rc,LI,,Corrected: Doubles Amagansett (conf: 0.80),NO_MATCH,0.0,,,No confident match found
+Carta Wine Bar,Carta Wine Bar," 35 Bedford St, New York, NY 10014",ChIJKzDkIQBZwokR1_OvS4ohkRg,NYC,,Valid: CARTA Wine Bar New York (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 138
+Hortus,Hortus NYC,"271 5th Ave, New York, NY 10016",ChIJyX-WBOZZwokRROjVTDdgeZE,NYC,,Valid: HORTUS NYC (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 286
+Fresno,Fresno,TBD - Ryan to fill when back from OOO,ChIJnU6eVOFdlIAREbijSWRAEns,LI,,Corrected: Fresno (conf: 0.70),MATCHED,1.0,high_similarity,,Matched to DB row 247
+Bon Banh Mi - S. Mt. Pleasant,Bon Banh Mi - S. Mt. Pleasant,"1440 Ben Sawyer Blvd, MT.P, SC 29464",ChIJcUCmAw1x_ogR_yzBMrmpL6o,CHS,,Valid: Bon Banh Mi Southeast Asian Kitchen (conf: 0.60),MATCHED,0.95,claude_verified,,Matched to DB row 101
+Bon Banh Mi - S. Mt. Pleasant,Bon Banh Mi,"1440 Ben Sawyer Blvd, MT.P, SC 29464",ChIJcUCmAw1x_ogR_yzBMrmpL6o,CHS,,Valid: Bon Banh Mi Southeast Asian Kitchen (conf: 0.60),NO_MATCH,0.0,,,No candidates passed pre-filtering
+Stretch Pizza,Stretch Pizza - Park Ave,"331 Park Ave S, New York, NY 10010",ChIJETw36R9ZwokRmPYazyfvpZ4,NYC,,Valid: Stretch Pizza (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 632
+Clam Bar,Clam Bar,"2025 Montauk Hwy, Amagansett, NY 11930",ChIJa9Ma4Nit6IkRZL9USMZ5EU0,LI,,Invalid: Address match (0.94),MATCHED,1.0,verified_place_id,,Matched to DB row 153
+Dive Bar Pizza,Dive Bar Pizza,466 West Lake Drive,ChIJu0_07FZV74kRhDxteFg83aU,NYC,,Valid: Dive Bar Pizza (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 185
+Rowdy Hall,Rowdy Hall,"177 Main St, Amagansett, NY 11930",ChIJq-pQXvy66IkR4_sosmglna4,LI,,Valid: Rowdy Hall (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 573
+La Fondita,La Fondita,"74 Montauk Highway, Amagansett, NY 11930",ChIJRem_lc-t6IkRFAsygSqVhu4,LI,,Valid: La Fondita (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 350
+Townline BBQ,Townline BBQ,"3593 Montauk Hwy, Sagaponack, NY 11962",ChIJ7RE7YDq86IkRDGtyIsrUaXU,LI,,Valid: Townline BBQ (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 757
+Cohche Comedor,Cohche Comedor,"74A Montauk Hwy, Amagansett, NY 11930",ChIJe_iMsOm76IkREotBMvZu2A4,LI,,Valid: Coche Comedor (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 156
+Charles Pan Fried Chicken (UWS),Charles Pan Fried Chicken (UWS),"146 W 72nd St. New York, NY 10023",ChIJ7_ptNH72wokRWJ29NvzJSd0,NYC,,Valid: Charles Pan-Fried Chicken (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 148
+Jane on Fillmore,Jane on Larkin,2123 Fillmore st,ChIJ7ctrNsaAhYARdwAVqJAAjlQ,SF,,Valid: Jane on Fillmore (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 313
+Jane on Larkin - Breakfast Club,,"925 Larkin St, San Francisco, CA 94115",ChIJPYugVJGAhYARLGnvHUwQkqs,SF,,Found: Jane on Larkin (conf: 0.78),MATCHED,1.0,verified_place_id,,Matched to DB row 314
+Jane the Bakery,Sweet Jane LLC - Parent,"1881 Geary Blvd, San Francisco, CA 94115",ChIJgdfmyLmAhYARS6fhSFcVbcY,SF,,Found: Jane The Bakery (conf: 0.97),MATCHED,1.0,verified_place_id,,Matched to DB row 315
+El Porteno,El Porteno,"1 Ferry Building, #18, SF, CA 94111",ChIJuQFUy02Aj4ARoaOaNCQq7Oc,SF,,Invalid: Partial address match (0.71),MATCHED,1.0,verified_place_id,,Matched to DB row 203
+"El Porteno (2nd, SF)",El Porteno,"700 2nd St., SF, CA 94107",ChIJpUD6A19_j4ARhWZQu-RmZIE,SF,,Valid: El Porteño Empanadas (conf: 0.60),NO_MATCH,0.0,,,No candidates passed pre-filtering
+La Newyorkina (Red Hook),La Newyorkina (HighLine),"30th Street (on the High Line) New York, NY 11001",ChIJJ4dQEWBawokRKThH6VuPK8Q,NYC,,Invalid: Partial name match (0.63),MATCHED,1.0,verified_place_id,,Matched to DB row 353
+La Newyorkina (Red Hook),La Newyorkina (Red Hook),"61 Commerce St,
+Brooklyn, NY 11231",ChIJJ4dQEWBawokRKThH6VuPK8Q,NYC,,Valid: La Tiendita: La Newyorkina Brooklyn (conf: 0.80),MATCHED,0.9102857142857143,high_similarity,,Matched to DB row 352
+La Newyorkina (HighLine),La Newyorkina (HighLine),"30th Street (on the High Line) New York, NY 11001",ChIJJ4dQEWBawokRKThH6VuPK8Q,NYC,,Invalid: Low confidence match,NO_MATCH,0.0,,,No candidates passed pre-filtering
+Mijo (High Line),Mijo (High Line),"30th Street (on the High Line), New York, NY 11001",ChIJ5bQPhMdZwokRkTwKhVxhP1g,NYC,,Corrected: The High Line (conf: 0.70),NO_MATCH,0.0,,,No confident match found
+Jacob's Pickles,Jacob's Pickles,"100 N Water St SL0300, Norwalk, CT 06854",ChIJu7LF_5Qf6IkRmZDNoVEEGMU,uws/ues,,Valid: Jacob's Pickles South Norwalk (conf: 0.80),MATCHED,1.0,high_similarity,,Matched to DB row 308
+Paper Son Coffee (3rd St),Paper Son Coffee (3rd St.),"2343 3rd St UNIT 100, San Francisco, CA 94107",ChIJR0WsBfx_j4AR1GwHWkeqeZ4,SF,,Valid: Paper Son Coffee - Dogpatch (conf: 0.80),NO_MATCH,0.0,,,No confident match found
+Tasca,Tasca,"505 Columbus Ave, New York, NY 10024",ChIJg-QDdKFZwokRumpX4_PxJuU,NYC,,Valid: Tasca NYC (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 676
+Friend of a Farmer (UWS),Friend of A Farmer,"77 Irving Pl Ground Floor, New York, NY 10003",ChIJeQcpsdFZwokRLvcPlPKdYuc,uws/ues,,Valid: Friend of a Farmer (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 250
+Rintaro,Rintaro," 82 14th St, San Francisco, CA 94103",ChIJgcIdeSZ-j4AR1BE-49mhR-E,SF,,Valid: Rintaro (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 557
+Katsubo Ramen,Katsubo Ramen,"4628 Spruill Ave Suite 101, North Charleston, SC 29405",ChIJMTWHOFRl_ogRfc9Npjg4vOc,CHS,,Valid: Katsubō Chicken & Ramen (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 325
+Sound Booth,,"88 King Street New York, NY 10014",,NYC,,Not found,MATCHED,1.0,verified_place_id,,Matched to DB row 325
+Meeting House,Meeting House,"4 Amagansett Square, Amagansett, NY 11930",ChIJrZkgVae66IkR2HGHO22tVys,LI,,Valid: Meeting House (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 441
+Carissa's the Bakery - Bay Street Sag Harbor,Carissa's the Bakery,,ChIJMQ84NJ296IkRs9bjYEIYZK0,LI,,Invalid: Name match (0.86),MATCHED,1.0,verified_place_id,,Matched to DB row 133
+Carissa's the Bakery - Newtown East Hampton,Carissa's the Bakery,,ChIJU7y0tKO66IkRgwM_iWVfvTA,LI,,Invalid: Name match (0.81),MATCHED,1.0,verified_place_id,,Matched to DB row 132
+Bernie's - SF Breakfast Club,Bernie's," 3966 24th St, San Francisco, CA 94114",ChIJ37ticRN-j4ARnoZeLusW0bI,SF,,Invalid: Address match (0.94),MATCHED,1.0,verified_place_id,,Matched to DB row 74
+Little Grenjai - New Deal,Little Grenjai," 477 Gates Ave, Brooklyn, NY 11216",ChIJvWLTO_1bwokRrZDrq9PGaWg,NYC,,Found: Little Grenjai (conf: 0.83),NO_MATCH,0.0,,,No candidates passed pre-filtering
+Little Grenjai - New Deal,Little Grenjai," 477 Gates Ave, Brooklyn, NY 11216",ChIJvWLTO_1bwokRrZDrq9PGaWg,NYC,,Found: Little Grenjai (conf: 0.83),NO_MATCH,0.0,,,No candidates passed pre-filtering
+Aftermath,Aftermath,"16-80 Madison St, Ridgewood, NY 11385",ChIJWUxCcGFdwokRB1mscVCGvyo,NYC,,Valid: Aftermath NYC (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 12
+Barn Joo (UNION SQUARE),Barn Joo,"UNION SQUARE 35 Union Square W, New York, NY 10003",ChIJQ7XpyqNZwokRQpVfvGEViWM,NYC,,Valid: Barn Joo Union Square (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 58
+L&W Market,L&W Market,,ChIJDehzRvm96IkRvAxxNbTFqRs,LI,,Invalid: Name match (1.00),MATCHED,1.0,high_similarity,,Matched to DB row 414
+Ilis,Ilis,"150 Green St, Brooklyn, NY 11222",ChIJHZyajD1ZwokREWLihHYSryQ,NYC,,Valid: ILIS (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 297
+Lazy Sundaes (LES),Lazy Sundaes (LES),"23 Clinton Street
+New York, NY, 10002",ChIJva8gSeVZwokR3TrD7QRjZAE,NYC,,Valid: Lazy Sundaes (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 362
+Lazy Sundaes (LES),Lazy Sundae (Greenwich Village),"11 Waverly Place
+New York, NY, 10003",ChIJva8gSeVZwokR3TrD7QRjZAE,NYC,,Valid: Lazy Sundaes (conf: 0.80),MATCHED,1.0,high_similarity,,Matched to DB row 361
+Lazy Sundae (Greenwich Village),Lazy Sundae (Greenwich Village),"11 Waverly Place
+New York, NY, 10003",ChIJ7w2fUTdZwokR9-nAUi9iQVE,NYC,,Invalid: Address match (0.93),NO_MATCH,0.0,,,No candidates passed pre-filtering
+Umbra,Umbra,"785 Hart St, Brooklyn, NY 11237",ChIJR_kku1tdwokROHIILkAiqwk,NYC,,Valid: Umbra (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 767
+Charles Pan Fried Chicken (Harlem Flagship),Charles Pan Fried Chicken (Harlem Flagship),"340 W 145th St. 
+New York, NY 10039",ChIJJ4MKaqP3wokRO-Z7EJaXyOk,NYC,,Valid: Charles Pan-Fried Chicken (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 146
+Mitsuru,Mitsuru,"149 W 4th St, New York, NY 10012",ChIJ53izUQBZwokRJTNgBT_Et_o,NYC,,Valid: Mitsuru (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 458
+Mitsuru,Parcelle Wine Bar Group,135 Division Street,ChIJ53izUQBZwokRJTNgBT_Et_o,NYC,,Invalid: Name match (1.00),NO_MATCH,0.0,,,No candidates passed pre-filtering
+Sunns,Sunns,"139 Division St, New York, NY 10002",ChIJJbrdCQBbwokR0msB9eFOzEE,NYC,,Valid: Sunn’s (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 639
+Sunns,Parcelle Wine Bar Group,135 Division Street,ChIJJbrdCQBbwokR0msB9eFOzEE,NYC,,Valid: Sunn’s (conf: 1.00),NO_MATCH,0.0,,,No candidates passed pre-filtering
+Amélie,Amelie,"566 Amsterdam Ave, New York, NY 10024",ChIJBV27hoNYwokR20JihLuQdUs,"NYC, DC, SF",,Invalid: Address match (0.95),MATCHED,0.95,claude_verified,,Matched to DB row 29
+"886 (886, WenWen)",886,"26 St Marks Pl, New York, NY 10003",ChIJKbjLf5xZwokRYa6BYJg0Xns,NYC,,Invalid: Address match (0.82),MATCHED,1.0,verified_place_id,,Matched to DB row 7
+"California Kahve (Lincoln, Presidio) - New Deal",,"210 Lincoln Blvd., SF, CA 94129",ChIJc7anRY6HhYARLwBiTgNYc48,SF,,Found: California Kahve (conf: 0.62),NO_MATCH,0.0,,,No confident match found
+"California Kahve (GG Park, Kezar)",California Kahve,"The Carousel, Kezar Dr., SF, CA 94118",ChIJc7anRY6HhYARLwBiTgNYc48,SF,,Invalid: Partial name match (0.70),NO_MATCH,0.0,,,No confident match found
+California Kahve (JFK Promenade),California Kahve,"JFK Promenade, GG Park, SF, CA 94118",ChIJMQznWQCHhYARYJ1o3D-rn04,SF,,Invalid: Partial name match (0.70),MATCHED,1.0,verified_place_id,,Matched to DB row 125
+Charles Pan Fried Chicken (Harlem West Side),Charles Pan Fried Chicken (Harlem West Side),"439 W 125th St. New York, NY 10027",ChIJgZ9BHmX3wokRbTO_1t6253k,NYC,,Valid: Charles Pan-Fried Chicken (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 147
+WenWen,Wenwen+,"1025 Manhattan Ave, Brooklyn, NY 11222",ChIJmcr2IF9ZwokRr-u_-UTxju4,NYC,,Valid: Wenwen (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 793
+Rosalind Bakery Cafe,,"450 Manor Plaza, Pacifica, CA 94044",ChIJAQDsaHJ6j4ARnFNgxFRfXRI,SF,,Found: Rosalind Bakery (conf: 0.99),NO_MATCH,0.0,,,No candidates passed pre-filtering
+Saison Cellar & Wine Bar,Saison Cellar & Wine,"234 Townsend St., SF, CA. 94107",ChIJRRzWRNZ_j4ARc86WTVLCrYk,SF,,Valid: Saison Cellar & Wine Bar (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 585
+Penelope's Coffee & Tea (SM),Penelope's Coffee & Tea (SM),"1326 W. Hillsdale, Blvd., San Mateo, CA 94403
+",ChIJKUL5JgCfj4ARXcz9vrkrHMg,SF,,Corrected: Penelopes Coffee and Tea (conf: 0.83),MATCHED,0.9263265306122449,high_similarity,,Matched to DB row 523
+Steuben’s (DEN),Steuben’s,523 E 17th Ave.,ChIJI8vB8Ct5bIcR40G-TvheRxE,DEN,,Valid: Steuben's Uptown (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 628
+Trellis - SF Breakfast Club,Trellis,"981 Mission St, San Francisco, CA 94103",ChIJIVO6vIaBhYARgO5BQbHn-c4,SF,,Corrected: Trellis Cafe (conf: 0.73),MATCHED,0.95,claude_verified,,Matched to DB row 760
+Cafe Ornithology,Cafe Ornithology," 1037 Broadway, Brooklyn, NY 11221",ChIJJUQ7iB9dwokRbAA0O_h71C4,NYC,,Valid: Cafe Ornithology (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 123
+Maison Pickle,Maison Pickle,"2315 Broadway, New York, NY 10024",ChIJrapahYZYwokRdCivYmoCbJ8,uws/ues,,Valid: Maison Pickle (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 420
+Tiki Chick,Tiki Chick,"517 Amsterdam Ave, New York, NY 10024",ChIJh3HkKvdZwokR-8i3PwLN_mI,NYC,,Valid: Tiki Chick (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 751
+PENELOPE'S COFFEE & TEA - (SF) New Deal,PENELOPE'S COFFEE & TEA," 121 Spear St., Suite B12, 94105",ChIJq7Ci1KWBhYARqSh4Y-NX06Q,SF,,Valid: Penelope's Coffee & Tea (conf: 0.80),NO_MATCH,0.0,,,No candidates passed pre-filtering
+Penelope's Coffee & Tea (FC),Penelope's Coffee & Tea,"Foster City, CA",ChIJrR5MCMyej4AR7p9_0Zsv4RQ,SF,,Valid: Penelope's Coffee and Tea (conf: 1.00),NO_MATCH,0.0,,,No candidates passed pre-filtering
+Bernie's - New Deal,," 3966 24th St, San Francisco, CA 94114",ChIJ37ticRN-j4ARnoZeLusW0bI,SF,,Found: Bernie's (conf: 0.76),NO_MATCH,0.0,,,No candidates passed pre-filtering
+Thief Cafe,Thief NYC,"595 Union Ave, Brooklyn, NY 11211",ChIJQwVjADNZwokRaaCi0RuPzWE,NTC,,Valid: Thief (conf: 1.00),NO_MATCH,0.0,,,No candidates passed pre-filtering
+Ace Eat Serve  (DEN),Ace Eat Serve,501 E 17th Ave,ChIJu-mW5St5bIcRmFpCS-fM6MA,DEN,,Valid: Ace Eat Serve (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 9
+Paulie Gee's,Paulie Gee's ,"60 Greenpoint Ave, Brooklyn, NY 11222",ChIJuc8AM0BZwokRtpm2S66ltsE,NYC,,Valid: Paulie Gee's (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 520
+Shinji's,Shinji's,"37 w 20th st NY, NY 10011",ChIJiy6z0-NZwokR7WHqoTS8wSE,NYC,,Valid: Shinji's (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 599
+Lunch (Lobster Roll Restaurant) - Southampton,Lunch (Lobster Roll Restaurant),"1980 Montauk Highway
+Amagansett, NY 11930",ChIJLTP91qaT6IkRKNx65swc0ks,LI,,Valid: LUNCH Lobster Roll Southampton (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 400
+Leon 1909,Leon 1909,,ChIJsZ0F8SiZ6IkRvpR9ZU0YGe4,LI,,Invalid: Name match (0.89),MATCHED,1.0,verified_place_id,,Matched to DB row 367
+Bird on the Roof,Bird on the Roof,,ChIJG3YZb5RT74kRsMwlDBs6FjQ,LI,,Invalid: Name match (1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 80
+Springs Tavern and Grill,Springs Tavern and Grill,"15 Fort Pond Blvd, East Hampton, NY 11937",ChIJRykSDwql6IkRMFvSRd_h91U,LI,,Valid: Springs Tavern and Grill (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 623
+Mother's Ruin NYC,Mother's Ruin NYC,18 Spring St,ChIJY-JJoYhZwokRF8FY6XrJo34,NYC,,Valid: Mother's Ruin (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 474
+Subject: A Cocktail Bar,Subject: A Cocktail Bar,"188 Suffolk St, New York, NY 10002",ChIJ98DPPIJZwokRLqsdDDnOPs8,NYC,,Valid: Subject: A Cocktail Bar (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 634
+Shuko,Shuko,"47 E 12th St, New York, NY 10003",ChIJe8WrB5lZwokREBs3DZYJyKc,NYC,,Valid: Shuko (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 603
+BLT Prime (NYC),BLT Prime,"1032 Lexington Ave, New York, NY 10021",ChIJkWzZwb9ZwokRY7IXGGtsH0s,NYC,,Valid: BLT Prime (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 89
+EJ's Luncheonette,EJ Lunchonette,"1271 3rd Ave, New York, NY 10021",ChIJm8GloepYwokRKQQXHlt9X9w,uws/ues,,Valid: EJ's Luncheonette (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 196
+The Drunken Munkey,The Drunken Munkey,"338 E 92nd St, New York, NY",ChIJi8Yi9a9YwokRco5vySESCUk,NYC,,Valid: The Drunken Munkey - UES (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 703
+L'avion Café,L'avion Café,338 E 92nd St,ChIJU0Us8KdZwokR-MV727eIY9I,NYC,,Valid: L'avion Café (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 358
+L'avion Café,l'Avion/Drunken Munkey Parent,338 E 92nd St,ChIJU0Us8KdZwokR-MV727eIY9I,NYC,,Valid: L'avion Café (conf: 0.80),NO_MATCH,0.0,,,No candidates passed pre-filtering
+Champagne Tiger,,"601 E Colfax Ave, Denver, CO 80203",ChIJtTnJEwB5bIcR8L30_aQs7fk,DEN,,Found: Champagne Tiger (conf: 0.95),MATCHED,1.0,verified_place_id,,Matched to DB row 145
+Lunch (Lobster Roll Restaurant) - Amagansett,Lunch (Lobster Roll Restaurant),"1980 Montauk Highway
+Amagansett, NY 11930",ChIJQUcL2Tau6IkR6i135p0tVNo,LI,,Valid: LUNCH Lobster Roll Amagansett (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 399
+Friend of a Farmer (Gramercy),Friend of A Farmer,"77 Irving Pl Ground Floor, New York, NY 10003",ChIJb85ryKFZwokRaCJqC07E0G0,uws/ues,,Valid: Friend Of A Farmer (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 249
+Montauk Project,Montauk Project,389 Broome St ,ChIJz7zqG0-r6IkRgvGPKq-BgWA,NYC,,Corrected: Montauk Project (conf: 0.71),MATCHED,1.0,verified_place_id,,Matched to DB row 468
+Tha Phraya,Tha Phraya,"1553 2nd Ave, New York, NY 10028
+",ChIJXbVh8gRZwokR-uEVlFisxFE,uws/ues,,Valid: Tha Phraya (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 681
+Sea Wolf,Sea Wolf,"19 Wyckoff Ave, Brooklyn, NY 11237
+",ChIJO_MlXh1cwokR1YDm45sn_Wo,nyc,,Valid: Sea Wolf (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 590
+Hungry Llama Cafe,Hungry Llama Cafe,"679 Washington St, New York, NY 10014",ChIJFXK3-LdZwokR41IAIP81AvM,NYC,,Valid: Hungry Llama (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 290
+Nick's Pizza,Nick's Pizza,"1814 2nd Ave, New York, NY 10128",ChIJPwPWh6VYwokRb4sccEaBC2w,uws/ues,,Valid: Nick's Pizza (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 481
+QUATORZE,quatorze,"1578 1st Ave, New York, NY 10028",ChIJ8XDAKr9YwokRHkja-tYpvOY,uws/ues,,Valid: QUATORZE (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 545
+The Green Room,The Green Room,"90 Main St, Sag Harbor, NY 11963",ChIJpWi5G_S96IkRVVn_x_Wkcpg,LI,,Valid: The Green Room (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 708
+Sagaponack General Store,Sagaponack General Store,"542 Sagg Main St, Sagaponack, NY 11962",ChIJzUXvnZe_6IkRg1Csa43tgfI,LI,,Valid: Sagaponack General Store (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 583
+Momofuku (Noodle Bar) - East Village,,171 1st Avenue,ChIJkXQ3_INZwokRE74ZvG46Jjc,NYC,,Found: Momofuku Noodle Bar (conf: 0.79),MATCHED,1.0,verified_place_id,,Matched to DB row 464
+Sen,Sen,,ChIJ5dQtsxBZwokRbBdZUxaHzFE,LI,,Invalid: Low confidence match,MATCHED,1.0,high_similarity,,Matched to DB row 592
+Essential,Essential by Christophe,103 w 77th,ChIJw6JyhoxZwokR3mKl4FLg5rM,NYC,,Invalid: Address match (0.87),MATCHED,1.0,verified_place_id,,Matched to DB row 211
+KUMISO,KUMISO,,ChIJZTgx5tC76IkRbKqJVoURbJU,LI,,Invalid: Name match (1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 344
+K Pasa,K Pasa,,ChIJoR5uY_y96IkRT0l4yM0uuaw,LI,,Invalid: Name match (1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 338
+Smokey Buns,Smokey Buns,,ChIJO0j96AS76IkRow_V0euMNzs,LI,,Invalid: Name match (1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 607
+Pil Pil,Pil Pil,"265 E 78th St, New York, NY 10075",ChIJh-ZRBb9YwokRSMkUC8lETk4,uws/ues,,Valid: Pil Pil (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 529
+Iggy's Place,Iggy's Place," 3519 Balboa St, San Francisco, CA 94121",ChIJ62Ob5guHhYARfQu8fH-BugE,SF,,Valid: Iggy's Place (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 294
+Dive Bar Pizza Slice Counter,Dive Bar Pizza,466 West Lake Drive,ChIJu0_07FZV74kRhDxteFg83aU,NYC,,Corrected: Dive Bar Pizza (conf: 0.67),MATCHED,1.0,verified_place_id,,Matched to DB row 186
+Carne,Carne,"2601 Larimer St, Denver, CO 80205",ChIJ8Vb5wQp5bIcRRcMRMAEzqbI,DEN,,Valid: Carne RiNo (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 136
+Sushi of Gari UWS,Sushi of Gari UWS,"370 Columbus Ave, New York, NY 10024",ChIJRf0k0Y5YwokR7hh2IBTl3LY,uws/ues,,Valid: Sushi of Gari UWS (Gari Columbus) (conf: 0.80),MATCHED,0.9136666666666666,high_similarity,,Matched to DB row 646
+Fish N Beer,Fish N Beer,"3510 Larimer St, Denver, CO 80205",ChIJf4b8dxp5bIcRSiXR0HEQ7xU,DEN,,Valid: Fish N Beer (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 231
+Pappardella,Pappardella,"316 COLUMBUS AVENUE, NEW YORK, New York 10023",ChIJN2DMVolYwokRZ3RY3IbatuA,NYC,,Valid: Pappardella (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 511
+Pizzeria Alberico,,"1730 Pearl St, Boulder, CO 80302",ChIJLRKtb_fta4cRf58cCOXY8Bs,Den,,Found: Pizzeria Alberico (conf: 0.96),MATCHED,1.0,verified_place_id,,Matched to DB row 531
+Sunday Vinyl,,"1803 16th St Mall, Denver, CO 80202",ChIJxxGvqc55bIcRQHfDdw9syE0,Den,,Found: Sunday Vinyl (conf: 0.97),MATCHED,1.0,verified_place_id,,Matched to DB row 638
+Frasca Food and Wine,,"1738 Boulder Street, Boulder CO 80302",ChIJ32ggfCnsa4cReukO2DP2hXY,DEN,,Found: Frasca Food and Wine (conf: 0.91),MATCHED,1.0,verified_place_id,,Matched to DB row 244
+Tavernetta,,"1889 16th St Mall, Denver, CO 80202",ChIJ5fIM0MN4bIcRb-fymS7_krs,Den,,Valid: Tavernetta (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 677
+Osteria Alberico,,"3455 S University Blvd, Englewood, CO 80113",ChIJEWGg8AeBbIcRIxHpsp2a-eQ,Den,,Found: Osteria Alberico (conf: 0.95),MATCHED,1.0,verified_place_id,,Matched to DB row 497
+Sabai Thai,Sabai Thai,"432 PARK AVE NEW YORK, New York 10022 New York County",ChIJ83Nr8qdZwokRlQ9NQpIpcw4,NYC,,Valid: Sabai Thai (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 580
+Sushi of Gari 46,Sushi of Gari 46,"347 W 46th St, New York, NY 10036",ChIJxbq5_FNYwokRwWVy7B9Kwrc,uws/ues,,Valid: Sushi of Gari 46 (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 644
+Sushi of Gari (UES),Sushi of Gari (UES),"402 E 78th St, New York, NY 10075",ChIJs9JDurhYwokRSjnRF8h3US8,ues/uws,,Valid: Sushi of Gari UES (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 645
+Amen Street Fish & Raw Bar,Amen Street Fish & Raw Bar,"205 E Bay St, Charleston, SC 29401",ChIJZ21LMAx6_ogRO1cje2Ji56c,CHS,,Valid: Amen Street Fish & Raw Bar (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 30
+Little Line Kitchen & Provisions,Little Line Kitchen & Provisions,"176 Line St, Charleston, SC 29403",ChIJZ2iqqt17_ogRLP5T9taXWxU,CHS,,Valid: Little Line Kitchen & Provisions (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 387
+Wild Taco  (Berkeley-DEN) - New Deal,Wild Taco,"4499 W 38th Ave., Denver, CO 80212",ChIJDXN_xtGHa4cRO1YlWuG53qY,DEN,,Valid: Wild Taco Denver - Berkeley (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 798
+Yingtao,Yingtao,"805 9th Ave, New York, NY 10019",ChIJkYkkoh1ZwokRE01ymVZhhpg,NYC,,Valid: Yingtao (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 806
+The Lost Draft,The Lost Draft,"398 Broome St, New York, NY 10013",ChIJHcFFXH9ZwokR_QKedPacLiQ,NYC,,Valid: The Lost Draft (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 716
+Maison May,Maison May,"246 DeKalb Ave, Brooklyn, NY 11205",ChIJ544uiblbwokR96qXy6668_I,NYC,,Valid: Maison May (conf: 1.00),MATCHED,1.0,high_similarity,,Matched to DB row 419
+Place des Fêtes,Place des Fêtes,"212 Greene Ave, Brooklyn, NY 11238",ChIJtx7ymGVbwokRzDZBJ8NVJz0,NYC,,Valid: Place des Fêtes (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 533
+Deux Luxe,Deux Luxe,"384 Broome St, New York, NY 10012",ChIJHfEjK2NZwokRf4WuY_AYrdw,NYC,,Valid: Deux Luxe (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 182
+Heavy Woods,Heavy Woods," 50 Wyckoff Ave, Brooklyn, NY 11237",ChIJpwu_dB1cwokRB_7Vq9WZDh0,NYC,,Valid: Heavy Woods (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 278
+Mecha Noodle Bar  (Denver),Mecha Noodle Bar," 2801 Walnut St, Denver, CO 80205",ChIJeb6mea15bIcRznDZJqRTKJM,DEN,,Valid: Mecha Noodle Bar (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 440
+Work & Class,Work & Class,"2500 Larimer St., Denver, CO 80205",ChIJS7FA8d94bIcR0Yx7VLagdMo,DEN,,Valid: Work & Class (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 804
+Sandro's,Sandro's,"322 East 86th St, New York, NY 10028
+",ChIJj9dKtb5YwokRHtC1_HyFZG0,UWS/UES,,Valid: Sandro's (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 587
+Friedmans Chelsea - New Deal,Friedmans Chelsea,"75 9th Ave, NY NY 10011",ChIJw2lMFL9ZwokRyO_5o2VT8os,NYC,,Found: Friedman's (conf: 0.63),MATCHED,0.95,claude_verified,,Matched to DB row 248
+Cafe Mado,Cafe Mado,"791 Washington Ave, Brooklyn, NY 11238",ChIJrwTqaQBbwokRaK-iQfAWdG4,NYC,,Valid: Cafe Mado (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 122
+Upstate Stock Cafe,Upstate Stock Cafe,,ChIJuc3ZQENZwokRZcX6QOJdqVA,NYC,,Invalid: Name match (1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 775
+E&O Kitchen and Bar,E&O Kitchen and Bar,"314 Sutter St, San Francisco, CA 94108",ChIJGXWXQYmAhYAR-Nr_OyKvI2o,SF,,Invalid: Address match (0.94),MATCHED,1.0,verified_place_id,,Matched to DB row 210
+QUICK ETERNITY,QUICK ETERNITY NYC,"22 Peck Slip, New York, NY 10038",ChIJm6bGIFZbwokRFj_nvTLlvZc,nyc,,Valid: Quick Eternity (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 546
+Monte's At the Manor Cafe,Monte's At the Manor,"236 Edgemere St Montauk, NY 11954",ChIJm8KDZEpV74kRl1hPl-aWoNc,LI,,Valid: Monte's At the Manor (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 469
+Tacos Tequila Whiskey,Tacos Tequila Whiskey,"3300 W 32nd Ave.,",ChIJG5tJJZ14bIcRACrcxGNDuJg,DEN,,Valid: Tacos Tequila Whiskey (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 670
+Lilia,Lilia,"567 Union Ave, Brooklyn, NY 11211",ChIJJXCD6ltZwokRJ_cwjKQH63c,NYC,,Valid: Lilia (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 379
+Misi,Misi,"329 Kent Ave, Brooklyn, NY 11249",ChIJw7SsU_pZwokREyGSSulF53U,NYC,,Valid: Misi (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 455
+Bella Luna,Bella Luna,"74 Columbus Ave, New York, NY 10024",ChIJkf3PqpxYwokRZlk0ie5vk2c,UWS/UES,,Valid: Bella Luna Restaurant (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 69
+Phil’s,Phil’s,"695 Knickerbocker Ave, Brooklyn, NY 11221
+",ChIJbffRPkdcwokR2__qmTHZHVs,NYC,,Valid: Phil’s (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 526
+Maloya,Maloya,"983 Flushing Ave, Brooklyn, NY 11206",ChIJma2fX15dwokR4N39k_xbPIY,NYC,,Valid: Maloya (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 429
+Le Farfalle,Le Farfalle,"15 Beaufain St, Charleston, SC 29401",ChIJC5AVwxN6_ogR9QnofBlebTg,CHS,,Valid: Le Farfalle (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 363
+Aquarelle,Aquarelle,,ChIJsSGRfXhZwokROD3euzl_76s,NYC,,Invalid: Name match (1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 34
+Evelina,Evelina," 211 DeKalb Ave, Brooklyn, NY 11205",ChIJzae3_LlbwokR6ts6PCZ3agM,NYC,,Valid: Evelina (conf: 1.00),NO_MATCH,0.0,,,No confident match found
+The Bronze Owl,The Bronze Owl,"52 W 33rd St, New York, NY 10001",ChIJYZdXSABZwokRozRIvQvhL-s,NYC,,Valid: The Bronze Owl (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 694
+Radio Kwara - New Deal,radio kwara,"291 Greene Avenue, Brooklyn, NY 11238",ChIJDyXcTupbwokRQtYLqQrV3ZI,NYC,,Valid: Radio Kwara (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 547
+Fish Cheeks Williamsburg,Fish Cheeks Williamsburg,"661 Driggs Ave Brooklyn, NY 11211",ChIJz-1-n9lZwokROnxtPfYbkHk,NYC,,Valid: Fish Cheeks Brooklyn (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 230
+Bāng Bar,Bāng Bar,"10 Columbus Circle Suite 300, New York, NY 10013",ChIJG-0gOVNZwokRVLu7o8Shq_Q,NYC,,Valid: Bāng Bar (conf: 0.80),NO_MATCH,0.0,,,No candidates passed pre-filtering
+Bāng Bar,Momofuku,104 West 27th Street,ChIJG-0gOVNZwokRVLu7o8Shq_Q,NYC,,Invalid: Partial name match (0.67),NO_MATCH,0.0,,,No candidates passed pre-filtering
+Maison Sun,Maison Sun,"200-3 Schermerhorn St, Brooklyn, NY 11201",ChIJVdRVFvZbwokRvTMvHpvu0PE,NYC,,Valid: Maison Sun (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 421
+Diwali Indian Cuisine - New Deal,Diwali Indian Cuisine,"1499 Valencia St, San Francisco, CA 94110",ChIJvfU3rUt_j4ARsfgMLoRcZ6s,sf,,Found: Diwali Indian Cuisine (conf: 0.87),MATCHED,1.0,verified_place_id,,Matched to DB row 187
+Do Not Feed Alligators,Do Not Feed Alligators WV,"337 Bleecker St. 10014 New York, NY",ChIJx3Lned1ZwokRHpVK3qlZZMA,NYC,,Valid: Do Not Feed Alligators (conf: 1.00),NO_MATCH,0.0,,,No candidates passed pre-filtering
+Cart Driver,Cart Driver,"2239 W 30th Ave., Denver, CA 80211",ChIJNbOe0ll5bIcRy71yQ4mqEvQ,DEN,,Valid: Cart Driver Lo-Hi (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 139
+The MOUTH Bar + Restaurant,The MOUTH Bar + Restaurant,"20 Marcy Ave, Brooklyn, NY 11211
+",ChIJteoD3TJZwokR2RQYq59OS60,nyc,,Invalid: Address match (0.94),MATCHED,1.0,verified_place_id,,Matched to DB row 720
+The Dutch,,"131 Sullivan Street, New York, NY 10012",ChIJ3RB9uI1ZwokRxCJXW-HpYZI,NYC,,Found: The Dutch (conf: 0.97),MATCHED,1.0,verified_place_id,,Matched to DB row 704
+Lafayette,,"380 Lafayette Street, New York, NY 10003",ChIJmeyVVSdawokR71_UbFfQuvA,NYC,,Found: Lafayette St (conf: 0.86),MATCHED,0.95,claude_verified,,Matched to DB row 349
+Bar Primi NoHo,,"325 Bowery, New York, NY 10003",ChIJSW8U34RZwokR-UhuJkjLDvk,NYC,,Invalid: Address match (0.98),MATCHED,1.0,verified_place_id,,Matched to DB row 59
+Rosticceria Evelina,Rosticceria Evelina,"455 MYRTLE AVE, BROOKLYN, NY 11205",ChIJ6dTbB5BbwokRQyM4pOUH76I,NYC,,Valid: Rosticceria Evelina (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 572
+Za-Ya,Za-Ya,"321 Starr St Suite D, Brooklyn, NY 11237",ChIJA5X-O_NfwokRuYuGvy82R_I,nyc,,Valid: Za-Ya (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 807
+Formosa Dumplings,Formosa Dumplings,"formosadumplings@gmail.com
+",ChIJ7etbil9dwokRYKe_oQSHsdY,NYC,,Invalid: Low confidence match,MATCHED,1.0,verified_place_id,,Matched to DB row 236
+Jax Fish House & Oyster Bar LoDo,Big Red F Restaurants,"946 Pearl St, Boulder, CO 80302",ChIJJ7tBzybsa4cRVBV3QVaLJ84,DEN,,Valid: Jax Fish House & Oyster Bar (conf: 1.00),MATCHED,0.9127450980392157,high_similarity,,Matched to DB row 316
+Golden Diner,Golden Diner,"123 Madison St, New York, NY 10002",ChIJ1-mW-LhbwokR7Ryv5ha-gzc,NYC,,Valid: Golden Diner (conf: 0.80),NO_MATCH,0.0,,,No confident match found
+Golden HOF,Golden HOF,"16 W 48th St, New York, NY 10036",ChIJc6vecABZwokRBHqMFj4UsbY,NYC,,Invalid: Partial address match (0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 256
+Bar Dough,The Culinary Creative Group,"1350 40th Street, Denver, CO 80205",ChIJrRxEypN4bIcR_GfxUkiSeCs,DEN,,Found: Bar Dough (conf: 0.65),MATCHED,1.0,verified_place_id,,Matched to DB row 52
+Mister Oso RiNo,The Culinary Creative Group,"1350 40th Street, Denver, CO 80205",ChIJ_2q1cg55bIcRKhYP9PxOiV4,DEN,,Found: Mister Oso RiNo (conf: 0.85),MATCHED,1.0,verified_place_id,,Matched to DB row 457
+Mister Oso Boulder,The Culinary Creative Group,"1350 40th Street, Denver, CO 80205",ChIJ_2q1cg55bIcRKhYP9PxOiV4,DEN,,Valid: Mister Oso RiNo (conf: 0.60),NO_MATCH,0.0,,,No confident match found
+Senor Bear,The Culinary Creative Group,"1350 40th Street, Denver, CO 80205",ChIJr6-a8JJ4bIcR5RM53KOyLI8,DEN,,Found: Senor Bear (conf: 0.86),MATCHED,1.0,verified_place_id,,Matched to DB row 593
+Ash Kara,The Culinary Creative Group,"1350 40th Street, Denver, CO 80205",ChIJw9FqUex4bIcRpV-3fHDv2TQ,DEN,,Found: Ash'Kara (conf: 0.76),MATCHED,1.0,verified_place_id,,Matched to DB row 42
+Fox and the Hen,The Culinary Creative Group,"1350 40th Street, Denver, CO 80205",ChIJccWEGAZ5bIcRocT3qmn25y0,DEN,,Found: Fox And The Hen (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 240
+Kothai Republic,Kothai Republic,"1398 9th Ave, San Francisco, CA 94122",ChIJBXYmaSKHhYAR2D4hlotI7TA,SF,,Valid: Kothai Republic (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 337
+EVO Craft Bakery,EVO Craft Bakery,"1075 E Montague Ave, North Charleston, SC 29405",ChIJs2HQ9ehk_ogR8j4Fa-8ARFA,CHS,,Valid: EVO Craft Bakery (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 216
+EVO Pizzeria,EVO Pizzeria,"1075 E Montague Ave, North Charleston, SC 29405",ChIJS79_9uhk_ogRXzmiDtLKcjo,CHS,,Valid: EVO Pizzeria (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 217
+Ornithology Jazz Club,Ornithology Jazz Club,"6 Suydam St, Brooklyn, NY 11221
+",ChIJ8SrMcWVdwokRAqKQSZARpE0,nyc,,Valid: Ornithology Jazz Club (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 496
+Designer's Collab (Coffee shop),Designers Collab,"96 N 5th St, Brooklyn, NY 11249
+",ChIJ3y1LyTFZwokRMC-XUpi7Nxw,nyc,,Valid: designers collab coffee. (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 181
+Super Mega Bien,Super Mega Bien,"1260 25th St., ",ChIJE6HJ3ml5bIcRhwzwllks4ug,DEN,,Valid: SuperMegaBien (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 640
+Bar Francis - New Deal,Bar Francis,"810 Fulton St, Brooklyn, NY 11238",ChIJH2vRDZBbwokRR9fWYeKp_BE,NYC,,Found: Bar Francis (conf: 0.71),MATCHED,1.0,verified_place_id,,Matched to DB row 54
+Sorry Gorgeous,The Culinary Creative Group,"1350 40th Street, Denver, CO 80205",ChIJ_xuUJwB5bIcR7LlApIZXg2g,DEN,,Found: Sorry Gorgeous (conf: 0.87),MATCHED,1.0,verified_place_id,,Matched to DB row 611
+Kraam,Kraam,"254 5th Ave, New York, NY 10001",ChIJX6wpqwdZwokRa3aTRWulWkA,NYC,,Valid: KRAAM (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 339
+Kilo Bravo  - New Deal,Bravo Bar Party ,"180 N 10th St, Brooklyn, NY 11211
+",ChIJgUDVXlxZwokRebVE4AXTO9Q,NYC,,Found: Kilo Bravo (conf: 0.76),MATCHED,1.0,verified_place_id,,Matched to DB row 329
+Kilo Bravo  - New Deal,Kilo Bravo,"180 N 10th St, Brooklyn, NY 11211
+",ChIJgUDVXlxZwokRebVE4AXTO9Q,NYC,,Found: Kilo Bravo (conf: 0.76),NO_MATCH,0.0,,,No candidates passed pre-filtering
+Palenque,Palenque,"298 Graham Ave, Brooklyn, NY 11211",ChIJ3_Ose-dZwokRkZMz4AVTIKs,nyc,,Invalid: Address match (0.94),MATCHED,1.0,verified_place_id,,Matched to DB row 506
+Le Pistol,Le Pistol,"780 Washington Ave, Brooklyn, NY 11238",ChIJFYeUIABbwokRRRiaj82mZAQ,NYC,,Valid: Le Pistol Bar & Cafe (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 371
+The Homestead - New Deal,The Homestead,"2301 Folsom St, San Francisco, CA 94110",ChIJvzf2ODp-j4ARFdkUw7a_nTw,SF,,Found: The Homestead (conf: 0.82),MATCHED,1.0,verified_place_id,,Matched to DB row 711
+The Shakespeare,The Shakespeare,"24 E 39th St, New York, NY 10016",ChIJI7jw2ABZwokR_N3wkrCRL0A,NYC,,Valid: The Shakespeare (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 735
+The Hunterian,The Hunterian,"413 E 70th St, New York, NY 10021",ChIJiVD59uZZwokRUwIDtSPgKX0,NYC,,Valid: The Hunterian (conf: 0.80),MATCHED,1.0,verified_place_id,,Matched to DB row 713
+The Hamilton,The Hamilton,"998 Amsterdam Ave, New York, NY 10025",ChIJcQDwuzz2wokR1N2euVBPAjM,NYC,,Valid: The Hamilton (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 709
+BierWax,BierWax,"556 Vanderbilt Ave, Brooklyn, NY 11238",ChIJk9RJNaRbwokRtMPbGlZp3uc,NYC,,Valid: BierWax (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 76
+"Tacolicious (24th, SF)","Tacolicious (24th, SF)","4063 24th St, San Francisco, CA",ChIJFRv3RAB_j4ARSgzEVFHvhGY,SF,,Valid: Tacolicious Noe Valley (conf: 0.80),NO_MATCH,0.0,,,No candidates passed pre-filtering
+Asano Cafe - New Deal,Asano Cafe,"322 East 86th St, New York, NY 10028",ChIJZ0hCG2pZwokR-OrHd4Gtt3w,nyc,,Found: Asano (conf: 0.71),MATCHED,1.0,verified_place_id,,Matched to DB row 41
+Tonchin BK- New Deal,Tonchin,"5665 Melrose Ave, Los Angeles, CA 90038
+",ChIJsZgsuim5woAR5U0hgdd4Q5s,NYC,,Found: TONCHIN LA (conf: 0.78),NO_MATCH,0.0,,,No confident match found
+Echo Bravo - New Deal,Echo Bravo,"445 Troutman St, Brooklyn, NY 1123",ChIJMS1iB4lfwokR-nGBu-VwMZ0,NYC,,Found: Echo Bravo (conf: 0.79),MATCHED,1.0,verified_place_id,,Matched to DB row 194
+South Edison,South Edison,"17 S Edison St, Montauk, NY 11954",ChIJN2EK2VdT74kRZ4a000eEozU,NYC,,Valid: South Edison (conf: 1.00),MATCHED,1.0,verified_place_id,,Matched to DB row 613
+Bar Sprezzatura,,"251 W 48th St, New York, NY 10036",ChIJNVkbEwBZwokRcQJBrkU_Wuo,NYC,,Valid: Bar Sprezzatura (conf: 0.80),NO_MATCH,0.0,,,No candidates passed pre-filtering
+Menya Kanemaru - Golden Ramen,Menya Kanemaru,"174 Valencia St, San Francisco, CA 94103",ChIJ2QN9pF5_j4AR16NfhOetuHk,SF,,Found: Menya Kanemaru Golden Ramen (conf: 0.95),MATCHED,1.0,verified_place_id,,Matched to DB row 443
+AQUA NYC,Aqua New York,"902 Broadway, New York, NY 10010",ChIJHQFj19tZwokRZLUlxxZmz2Q,NYC,,Valid: Aqua New York (conf: 0.80),NO_MATCH,0.0,,,No confident match found
+Mixteca - New Deal,Mixteca,1 Cornelia Street,ChIJmZNfKwBZwokRqfVT6PeEXCY,NYC,,Found: Mixteca (conf: 0.71),NO_MATCH,0.0,,,No candidates passed pre-filtering
+Judy Z’s Sports Tavern & Kitchen - New Deal,Judy Z’s Sports Tavern & Kitchen,"1 7th Ave S, New York, NY 10014",ChIJqYfcXz5ZwokRBU0xHJdmJBk,NYC,,Found: Judy Z’s Sports Tavern & Kitchen (conf: 0.74),MATCHED,1.0,verified_place_id,,Matched to DB row 318

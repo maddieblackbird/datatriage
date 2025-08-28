@@ -53,6 +53,40 @@ logger = logging.getLogger(__name__)
 
 
 # ============================================================================
+# UTILITY FUNCTIONS
+# ============================================================================
+
+def safe_place_id(place_id) -> Optional[str]:
+    """
+    Safely convert Place ID to string, handling NaN, None, and other data types
+    
+    Returns:
+        String Place ID if valid, None otherwise
+    """
+    if place_id is None or pd.isna(place_id):
+        return None
+    
+    try:
+        place_id_str = str(place_id).strip()
+        if place_id_str.lower() in ['nan', 'none', '']:
+            return None
+        return place_id_str
+    except Exception:
+        return None
+
+def safe_string(value, default: str = '') -> str:
+    """
+    Safely convert any value to string, handling NaN and None
+    """
+    if value is None or pd.isna(value):
+        return default
+    try:
+        return str(value).strip()
+    except Exception:
+        return default
+
+
+# ============================================================================
 # ADDRESS NORMALIZATION MODULE
 # ============================================================================
 
@@ -381,10 +415,10 @@ class EnhancedRestaurantRecord:
         else:
             self.normalized_address = AddressNormalizer.normalize_address('')
         
-        # Compute macro geo
-        if self.macro_geo:
-            # Clean up macro geo (handle variations like 'nyc', 'NYC', 'New York')
-            self.computed_macro_geo = self.macro_geo.upper().strip()
+        # Compute macro geo - FIX: Check if macro_geo is a string before calling upper()
+        if self.macro_geo and not pd.isna(self.macro_geo):
+            # Convert to string and clean up macro geo (handle variations like 'nyc', 'NYC', 'New York')
+            self.computed_macro_geo = str(self.macro_geo).upper().strip()
             if self.computed_macro_geo in ['NEW YORK', 'UWS/UES', 'UES/UWS']:
                 self.computed_macro_geo = 'NYC'
         else:
@@ -464,7 +498,8 @@ class PlaceIDVerifier:
         Returns:
             Dict with keys: is_valid, correct_place_id, place_name, confidence, reason
         """
-        if not record.google_places_id or pd.isna(record.google_places_id):
+        place_id = safe_place_id(record.google_places_id)
+        if not place_id:
             return {
                 'is_valid': False,
                 'correct_place_id': None,
@@ -472,8 +507,6 @@ class PlaceIDVerifier:
                 'confidence': 0,
                 'reason': 'No Place ID provided'
             }
-        
-        place_id = str(record.google_places_id).strip()
         
         # Check cache
         cache_key = f"{place_id}_{record.signature}"
@@ -701,9 +734,11 @@ class IntelligentPreFilter:
         candidates = []
         
         # Strategy 1: Exact Google Place ID match (if available and verified)
-        if query_record.google_places_id and query_record.google_places_id.strip():
+        query_place_id = safe_place_id(query_record.google_places_id)
+        if query_place_id:
             for target in target_records:
-                if target.google_places_id == query_record.google_places_id:
+                target_place_id = safe_place_id(target.google_places_id)
+                if target_place_id and target_place_id == query_place_id:
                     candidates.append((target, 1.0))  # Perfect score for Place ID match
         
         # Strategy 2: Geographic bucketing - only compare within same region
@@ -913,43 +948,63 @@ class EnhancedDataTriageAgent:
         verified = 0
         invalid = 0
         
+        verification_errors = []
+        
         for i, record in enumerate(records):
             if i % 50 == 0 and i > 0:
                 print(f"  Progress: {i}/{len(records)} records verified")
             
-            if not record.google_places_id or pd.isna(record.google_places_id):
-                # Try to find Place ID
-                result = self.place_verifier.find_correct_place_id(record)
-                if result['found']:
-                    df.at[record.row_index, 'google_places_id' if source_name == 'HubSpot' else 'google_place_id'] = result['place_id']
-                    df.at[record.row_index, 'place_id_verification'] = f"Found: {result['place_name']} (conf: {result['confidence']:.2f})"
-                    corrections += 1
-                    print(f"  ✅ Found Place ID for {record.normalized_name.get('original')}: {result['place_name']}")
-                else:
-                    df.at[record.row_index, 'place_id_verification'] = "Not found"
-            else:
-                # Verify existing Place ID
-                verification = self.place_verifier.verify_place_id(record)
-                
-                if verification['is_valid']:
-                    df.at[record.row_index, 'place_id_verification'] = f"Valid: {verification['place_name']} (conf: {verification['confidence']:.2f})"
-                    verified += 1
-                else:
-                    # Try to find correct Place ID
+            try:
+                place_id = safe_place_id(record.google_places_id)
+                if not place_id:
+                    # Try to find Place ID
                     result = self.place_verifier.find_correct_place_id(record)
-                    if result['found'] and result['place_id'] != record.google_places_id:
-                        old_id = record.google_places_id
+                    if result['found']:
                         df.at[record.row_index, 'google_places_id' if source_name == 'HubSpot' else 'google_place_id'] = result['place_id']
-                        df.at[record.row_index, 'place_id_verification'] = f"Corrected: {result['place_name']} (conf: {result['confidence']:.2f})"
+                        df.at[record.row_index, 'place_id_verification'] = f"Found: {result['place_name']} (conf: {result['confidence']:.2f})"
                         corrections += 1
-                        print(f"  🔄 Corrected Place ID for {record.normalized_name.get('original')}")
-                        print(f"     Old: {old_id}")
-                        print(f"     New: {result['place_id']} ({result['place_name']})")
+                        print(f"  ✅ Found Place ID for {record.normalized_name.get('original')}: {result['place_name']}")
                     else:
-                        df.at[record.row_index, 'place_id_verification'] = f"Invalid: {verification['reason']}"
-                        invalid += 1
+                        df.at[record.row_index, 'place_id_verification'] = "Not found"
+                else:
+                    # Verify existing Place ID
+                    verification = self.place_verifier.verify_place_id(record)
+                    
+                    if verification['is_valid']:
+                        df.at[record.row_index, 'place_id_verification'] = f"Valid: {verification['place_name']} (conf: {verification['confidence']:.2f})"
+                        verified += 1
+                    else:
+                        # Try to find correct Place ID
+                        result = self.place_verifier.find_correct_place_id(record)
+                        if result['found'] and result['place_id'] != record.google_places_id:
+                            old_id = record.google_places_id
+                            df.at[record.row_index, 'google_places_id' if source_name == 'HubSpot' else 'google_place_id'] = result['place_id']
+                            df.at[record.row_index, 'place_id_verification'] = f"Corrected: {result['place_name']} (conf: {result['confidence']:.2f})"
+                            corrections += 1
+                            print(f"  🔄 Corrected Place ID for {record.normalized_name.get('original')}")
+                            print(f"     Old: {old_id}")
+                            print(f"     New: {result['place_id']} ({result['place_name']})")
+                        else:
+                            df.at[record.row_index, 'place_id_verification'] = f"Invalid: {verification['reason']}"
+                            invalid += 1
+                            
+            except Exception as e:
+                error_msg = f"Error verifying Place ID for record {i} ({record.normalized_name.get('original', 'Unknown')}): {str(e)}"
+                logger.error(error_msg, exc_info=True)
+                verification_errors.append({
+                    'record_index': i,
+                    'record_name': record.normalized_name.get('original', 'Unknown'),
+                    'error': str(e)
+                })
+                
+                # Mark as verification error
+                df.at[record.row_index, 'place_id_verification'] = f"Error: {str(e)[:50]}"
+                invalid += 1
+                print(f"  ❌ Error verifying {record.normalized_name.get('original', 'Unknown')}: {str(e)}")
         
         print(f"\n📊 {source_name} Place ID Verification Results:")
+        if verification_errors:
+            print(f"  ⚠️ Verification errors: {len(verification_errors)}")
         print(f"  ✅ Valid: {verified}")
         print(f"  🔄 Corrected: {corrections}")
         print(f"  ❌ Invalid/Not Found: {invalid}")
@@ -1011,33 +1066,64 @@ class EnhancedDataTriageAgent:
         print("\n🔄 Converting to Enhanced Restaurant Records with normalization...")
         
         hubspot_records = []
+        record_creation_errors = []
+        
         for idx, row in hubspot_df.iterrows():
-            record = EnhancedRestaurantRecord(
-                source='hubspot',
-                row_index=idx,
-                deal_name=row.get('Deal Name'),
-                company_name=row.get('Company name'),
-                address=row.get('Address'),
-                google_places_id=row.get('google_places_id'),
-                macro_geo=row.get('Macro Geo (NYC, SF, CHS, DC, LA, NASH, DEN)')
-            )
-            hubspot_records.append(record)
+            try:
+                record = EnhancedRestaurantRecord(
+                    source='hubspot',
+                    row_index=idx,
+                    deal_name=row.get('Deal Name'),
+                    company_name=row.get('Company name'),
+                    address=row.get('Address'),
+                    google_places_id=row.get('google_places_id'),
+                    macro_geo=row.get('Macro Geo (NYC, SF, CHS, DC, LA, NASH, DEN)')
+                )
+                hubspot_records.append(record)
+            except Exception as e:
+                error_msg = f"Error creating HubSpot record {idx}: {str(e)}"
+                logger.error(error_msg, exc_info=True)
+                record_creation_errors.append({
+                    'source': 'hubspot',
+                    'index': idx,
+                    'error': str(e)
+                })
+                # Mark the row with error
+                hubspot_df.at[idx, 'match_status'] = 'CREATION_ERROR'
+                hubspot_df.at[idx, 'match_notes'] = f'Record creation error: {str(e)[:100]}'
         
         database_records = []
         for idx, row in database_df.iterrows():
-            record = EnhancedRestaurantRecord(
-                source='database',
-                row_index=idx,
-                restaurant_name=row.get('restaurant_name'),
-                location_name=row.get('location_name'),
-                street=row.get('street'),
-                city=row.get('city'),
-                state=row.get('state'),
-                zipcode=str(row.get('zipcode')) if pd.notna(row.get('zipcode')) else None,
-                coordinate=row.get('coordinate'),
-                google_places_id=row.get('google_place_id')
-            )
-            database_records.append(record)
+            try:
+                record = EnhancedRestaurantRecord(
+                    source='database',
+                    row_index=idx,
+                    restaurant_name=row.get('restaurant_name'),
+                    location_name=row.get('location_name'),
+                    street=row.get('street'),
+                    city=row.get('city'),
+                    state=row.get('state'),
+                    zipcode=str(row.get('zipcode')) if pd.notna(row.get('zipcode')) else None,
+                    coordinate=row.get('coordinate'),
+                    google_places_id=row.get('google_place_id')
+                )
+                database_records.append(record)
+            except Exception as e:
+                error_msg = f"Error creating Database record {idx}: {str(e)}"
+                logger.error(error_msg, exc_info=True)
+                record_creation_errors.append({
+                    'source': 'database',
+                    'index': idx,
+                    'error': str(e)
+                })
+                # Mark the row with error
+                database_df.at[idx, 'match_status'] = 'CREATION_ERROR'
+                database_df.at[idx, 'match_notes'] = f'Record creation error: {str(e)[:100]}'
+        
+        if record_creation_errors:
+            print(f"\n⚠️ Record creation errors: {len(record_creation_errors)}")
+            for error in record_creation_errors[:3]:
+                print(f"  - {error['source']} record {error['index']}: {error['error'][:60]}")
         
         # PHASE 1: PLACE ID VERIFICATION
         if not skip_verification:
@@ -1095,20 +1181,26 @@ class EnhancedDataTriageAgent:
         place_id_matches = 0
         claude_matches = 0
         
+        # Track processing errors
+        processing_errors = []
+        
         for hs_idx, hs_record in enumerate(hubspot_records):
             if hs_record.row_index in matched_hs:
                 continue
             
-            print(f"\n[{hs_idx+1}/{len(hubspot_records)}] Processing: {hs_record.normalized_name.get('original', 'Unknown')}")
-            
-            # First, check for exact Place ID match (after verification)
-            if hs_record.google_places_id and pd.notna(hs_record.google_places_id):
-                place_id_match = None
-                for db_record in database_records:
-                    if (db_record.row_index not in matched_db and 
-                        db_record.google_places_id == hs_record.google_places_id):
-                        place_id_match = db_record
-                        break
+            try:
+                print(f"\n[{hs_idx+1}/{len(hubspot_records)}] Processing: {hs_record.normalized_name.get('original', 'Unknown')}")
+                
+                # First, check for exact Place ID match (after verification)
+                hs_place_id = safe_place_id(hs_record.google_places_id)
+                if hs_place_id:
+                    place_id_match = None
+                    for db_record in database_records:
+                        db_place_id = safe_place_id(db_record.google_places_id)
+                        if (db_record.row_index not in matched_db and 
+                            db_place_id and db_place_id == hs_place_id):
+                            place_id_match = db_record
+                            break
                 
                 if place_id_match:
                     print(f"  ✅ Exact Place ID match found (verified)")
@@ -1128,78 +1220,94 @@ class EnhancedDataTriageAgent:
                     matched_db.add(place_id_match.row_index)
                     place_id_matches += 1
                     continue
-            
-            # Use pre-filter to find candidates
-            candidates = self.pre_filter.find_candidates(
-                hs_record, 
-                [r for r in database_records if r.row_index not in matched_db],
-                max_candidates=5,
-                min_similarity=0.5
-            )
-            
-            self.pre_filter_eliminations += len(database_records) - len(candidates)
-            
-            if not candidates:
-                print(f"  ❌ No candidates found by pre-filter")
-                hubspot_df.at[hs_record.row_index, 'match_status'] = 'NO_MATCH'
-                hubspot_df.at[hs_record.row_index, 'match_notes'] = 'No candidates passed pre-filtering'
-                continue
-            
-            print(f"  📊 Pre-filter found {len(candidates)} candidates")
-            
-            # Check top candidates with Claude
-            best_match = None
-            best_score = 0
-            best_method = ''
-            
-            for db_record, pre_score in candidates[:3]:  # Only check top 3
-                actual_comparisons += 1
                 
-                print(f"    🤖 Checking: {db_record.normalized_name.get('original')} (pre-score: {pre_score:.2f})")
+                # Use pre-filter to find candidates
+                candidates = self.pre_filter.find_candidates(
+                    hs_record, 
+                    [r for r in database_records if r.row_index not in matched_db],
+                    max_candidates=5,
+                    min_similarity=0.5
+                )
                 
-                # High confidence without Claude if names and addresses are very similar
-                if pre_score > 0.85:
-                    print(f"      ✅ Auto-matched (high similarity)")
-                    best_match = db_record
-                    best_score = pre_score
-                    best_method = 'high_similarity'
-                    break
+                self.pre_filter_eliminations += len(database_records) - len(candidates)
                 
-                # Use Claude for verification
-                verification = self._claude_verify_match(hs_record, db_record, pre_score)
-                self.claude_api_calls += 1
+                if not candidates:
+                    print(f"  ❌ No candidates found by pre-filter")
+                    hubspot_df.at[hs_record.row_index, 'match_status'] = 'NO_MATCH'
+                    hubspot_df.at[hs_record.row_index, 'match_notes'] = 'No candidates passed pre-filtering'
+                    continue
                 
-                if verification['is_match'] and verification['confidence'] > best_score:
-                    best_match = db_record
-                    best_score = verification['confidence']
-                    best_method = 'claude_verified'
-                    print(f"      ✅ Claude confirmed (confidence: {verification['confidence']:.2f})")
+                print(f"  📊 Pre-filter found {len(candidates)} candidates")
+            
+                # Check top candidates with Claude
+                best_match = None
+                best_score = 0
+                best_method = ''
+                
+                for db_record, pre_score in candidates[:3]:  # Only check top 3
+                    actual_comparisons += 1
+                    
+                    print(f"    🤖 Checking: {db_record.normalized_name.get('original')} (pre-score: {pre_score:.2f})")
+                    
+                    # High confidence without Claude if names and addresses are very similar
+                    if pre_score > 0.85:
+                        print(f"      ✅ Auto-matched (high similarity)")
+                        best_match = db_record
+                        best_score = pre_score
+                        best_method = 'high_similarity'
+                        break
+                    
+                    # Use Claude for verification
+                    verification = self._claude_verify_match(hs_record, db_record, pre_score)
+                    self.claude_api_calls += 1
+                    
+                    if verification['is_match'] and verification['confidence'] > best_score:
+                        best_match = db_record
+                        best_score = verification['confidence']
+                        best_method = 'claude_verified'
+                        print(f"      ✅ Claude confirmed (confidence: {verification['confidence']:.2f})")
+                    else:
+                        print(f"      ❌ Claude rejected (confidence: {verification.get('confidence', 0):.2f})")
+                
+                # Record the match if found
+                if best_match and best_score >= 0.6:
+                    hubspot_df.at[hs_record.row_index, 'match_status'] = 'MATCHED'
+                    hubspot_df.at[hs_record.row_index, 'match_confidence'] = best_score
+                    hubspot_df.at[hs_record.row_index, 'match_method'] = best_method
+                    hubspot_df.at[hs_record.row_index, 'match_notes'] = f'Matched to DB row {best_match.row_index}'
+                    
+                    database_df.at[best_match.row_index, 'match_status'] = 'MATCHED'
+                    database_df.at[best_match.row_index, 'match_confidence'] = best_score
+                    database_df.at[best_match.row_index, 'match_method'] = best_method
+                    database_df.at[best_match.row_index, 'match_notes'] = f'Matched to HS row {hs_record.row_index}'
+                    
+                    matched_hs.add(hs_record.row_index)
+                    matched_db.add(best_match.row_index)
+                    
+                    if best_method == 'claude_verified':
+                        claude_matches += 1
+                    
+                    print(f"  ✅ MATCHED with confidence {best_score:.2f}")
                 else:
-                    print(f"      ❌ Claude rejected (confidence: {verification.get('confidence', 0):.2f})")
-            
-            # Record the match if found
-            if best_match and best_score >= 0.6:
-                hubspot_df.at[hs_record.row_index, 'match_status'] = 'MATCHED'
-                hubspot_df.at[hs_record.row_index, 'match_confidence'] = best_score
-                hubspot_df.at[hs_record.row_index, 'match_method'] = best_method
-                hubspot_df.at[hs_record.row_index, 'match_notes'] = f'Matched to DB row {best_match.row_index}'
+                    hubspot_df.at[hs_record.row_index, 'match_status'] = 'NO_MATCH'
+                    hubspot_df.at[hs_record.row_index, 'match_notes'] = 'No confident match found'
+                    print(f"  ❌ No confident match found")
                 
-                database_df.at[best_match.row_index, 'match_status'] = 'MATCHED'
-                database_df.at[best_match.row_index, 'match_confidence'] = best_score
-                database_df.at[best_match.row_index, 'match_method'] = best_method
-                database_df.at[best_match.row_index, 'match_notes'] = f'Matched to HS row {hs_record.row_index}'
+            except Exception as e:
+                error_msg = f"Error processing record {hs_idx+1} ({hs_record.normalized_name.get('original', 'Unknown')}): {str(e)}"
+                logger.error(error_msg, exc_info=True)
+                processing_errors.append({
+                    'record_index': hs_idx,
+                    'record_name': hs_record.normalized_name.get('original', 'Unknown'),
+                    'error': str(e)
+                })
                 
-                matched_hs.add(hs_record.row_index)
-                matched_db.add(best_match.row_index)
-                
-                if best_method == 'claude_verified':
-                    claude_matches += 1
-                
-                print(f"  ✅ MATCHED with confidence {best_score:.2f}")
-            else:
-                hubspot_df.at[hs_record.row_index, 'match_status'] = 'NO_MATCH'
-                hubspot_df.at[hs_record.row_index, 'match_notes'] = 'No confident match found'
-                print(f"  ❌ No confident match found")
+                # Mark record as error
+                hubspot_df.at[hs_record.row_index, 'match_status'] = 'ERROR'
+                hubspot_df.at[hs_record.row_index, 'match_notes'] = f'Processing error: {str(e)[:100]}'
+                print(f"  ❌ ERROR: {str(e)}")
+                print(f"  ⏭️  Continuing with next record...")
+                continue
         
         # Mark remaining unmatched records
         for idx in range(len(database_df)):
@@ -1222,6 +1330,15 @@ class EnhancedDataTriageAgent:
         print(f"    - Via verified Place ID: {place_id_matches}")
         print(f"    - Via Claude verification: {claude_matches}")
         print(f"    - Via high similarity: {len(matched_hs) - place_id_matches - claude_matches}")
+        
+        if processing_errors:
+            print(f"\n⚠️ PROCESSING ERRORS:")
+            print(f"  Records with errors: {len(processing_errors)}")
+            print("  Error details:")
+            for error in processing_errors[:5]:  # Show first 5 errors
+                print(f"    - {error['record_name']}: {error['error'][:80]}")
+            if len(processing_errors) > 5:
+                print(f"    ... and {len(processing_errors) - 5} more errors (check log file)")
         
         print("\n⚡ EFFICIENCY METRICS:")
         print(f"  Possible comparisons without filtering: {total_comparisons_without_filter:,}")
@@ -1381,7 +1498,7 @@ def main(test_mode=True, skip_verification=False):
 
 if __name__ == "__main__":
     # Configuration flags
-    TEST_MODE = True  # KEEPING TEST MODE ON AS REQUESTED
+    TEST_MODE = False  # KEEPING TEST MODE ON AS REQUESTED
     SKIP_VERIFICATION = False  # Set to True to skip Place ID verification
     
     if TEST_MODE:
