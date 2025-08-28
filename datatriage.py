@@ -371,12 +371,12 @@ class EnhancedRestaurantRecord:
             self.normalized_name = RestaurantNameNormalizer.normalize('')
         
         # Normalize address
-        if self.address:
-            self.normalized_address = AddressNormalizer.normalize_address(self.address)
-        elif self.street:
+        if self.address and not pd.isna(self.address):
+            self.normalized_address = AddressNormalizer.normalize_address(str(self.address))
+        elif self.street and not pd.isna(self.street):
             # Construct address from components
             addr_parts = [self.street, self.city, self.state, str(self.zipcode) if self.zipcode else '']
-            full_addr = ', '.join([p for p in addr_parts if p and str(p).strip()])
+            full_addr = ', '.join([p for p in addr_parts if p and str(p).strip() and str(p).strip().lower() != 'nan'])
             self.normalized_address = AddressNormalizer.normalize_address(full_addr)
         else:
             self.normalized_address = AddressNormalizer.normalize_address('')
@@ -438,7 +438,7 @@ class EnhancedRestaurantRecord:
                     return name
             else:
                 # Single location - can trust address more
-                if self.address and len(self.address) > 10:  # Has substantial address
+                if self.address and not pd.isna(self.address) and isinstance(self.address, str) and len(self.address) > 10:  # Has substantial address
                     return f"{name}, {self.address}"
                 else:
                     # Just use name
@@ -484,7 +484,7 @@ class PlaceIDVerifier:
             # Get place details
             place_details = self.gmaps.place(
                 place_id=place_id,
-                fields=['name', 'formatted_address', 'place_id', 'types', 'business_status']
+                fields=['name', 'formatted_address', 'place_id', 'type', 'business_status']
             )
             self.api_calls += 1
             
@@ -542,7 +542,7 @@ class PlaceIDVerifier:
                         reasons.append(f"Partial address match ({addr_similarity:.2f})")
                 
                 # Check if it's a restaurant/food establishment
-                place_types = place.get('types', [])
+                place_types = place.get('type', [])
                 if any(t in place_types for t in ['restaurant', 'food', 'bar', 'cafe', 'bakery', 'meal_takeaway']):
                     confidence += 0.1
                     reasons.append("Is food establishment")
